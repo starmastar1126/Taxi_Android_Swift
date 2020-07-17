@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MaintenanceActivity">
+
+    <ImageView
+        android:id="@+id/imageMaintance"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:src="@mipmap/construction"
+        android:tint="@color/black" />
+
+
+    <com.view.MTextView
+        android:id="@+id/maitenanceHTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_20"
+        app:customTypeFace="roboto_light" />
+
+    <com.view.MTextView
+
+        android:id="@+id/maitenanceMsgTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_16"
+        app:customTypeFace="roboto_light" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@id/btnarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp">
+
+            <include
+                android:id="@+id/btn_type2"
+                layout="@layout/btn_type_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/all_btn_height"
+                android:layout_alignParentBottom="true" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

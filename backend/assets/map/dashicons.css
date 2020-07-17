@@ -1,0 +1,10 @@
+/* Dashicons */
+@font-face {
+	font-family: 'dashicons';
+	font-weight: normal;
+	font-style:  normal;
+	src: url('fonts/dashicons.eot'),
+	     url('fonts/dashicons.woff') format('woff'),
+	     url('fonts/dashicons.ttf') format('truetype'),
+	     url('fonts/dashicons.svg') format('svg');
+}

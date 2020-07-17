@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaintenancePageUV" customModule="DriverApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contactUsBtn" destination="ia8-qk-fP7" id="vlD-M8-jCR"/>
+                <outlet property="contentLbl" destination="nbN-jy-Aar" id="VWD-2b-k6D"/>
+                <outlet property="headerLbl" destination="k3R-QY-eI3" id="Mxn-pn-lx7"/>
+                <outlet property="maintennanceImgView" destination="izW-ug-374" id="eZy-XZ-Q0H"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_server_maintenance" translatesAutoresizingMaskIntoConstraints="NO" id="izW-ug-374">
+                    <rect key="frame" x="20" y="20" width="335" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="ydA-aa-8ta"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3R-QY-eI3" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                    <rect key="frame" x="20" y="140" width="335" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbN-jy-Aar" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                    <rect key="frame" x="20" y="183" width="335" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ia8-qk-fP7" customClass="MyButton" customModule="DriverApp" customModuleProvider="target">
+                    <rect key="frame" x="20" y="602" width="335" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="hSp-du-3je"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nbN-jy-Aar" firstAttribute="top" secondItem="k3R-QY-eI3" secondAttribute="bottom" constant="20" id="2ju-5n-YhS"/>
+                <constraint firstItem="ia8-qk-fP7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="7Wr-wG-vBi"/>
+                <constraint firstItem="k3R-QY-eI3" firstAttribute="top" secondItem="izW-ug-374" secondAttribute="bottom" constant="20" id="EdL-s4-Jjx"/>
+                <constraint firstItem="izW-ug-374" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="ExT-kR-usE"/>
+                <constraint firstAttribute="trailing" secondItem="ia8-qk-fP7" secondAttribute="trailing" constant="20" id="FXn-50-cZi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ia8-qk-fP7" secondAttribute="bottom" constant="20" id="JOF-4I-J6B"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="k3R-QY-eI3" secondAttribute="trailing" constant="20" id="TVb-Zq-f7U"/>
+                <constraint firstItem="k3R-QY-eI3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Wa8-hb-guQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="izW-ug-374" secondAttribute="trailing" constant="20" id="dCm-ZL-ISo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nbN-jy-Aar" secondAttribute="trailing" constant="20" id="e6C-Wy-hRc"/>
+                <constraint firstItem="nbN-jy-Aar" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="pz6-Ct-bzc"/>
+                <constraint firstItem="izW-ug-374" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="rXu-8a-9Ja"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_server_maintenance" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/pickup_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.view.MTextView
+                android:id="@+id/pickUpPetTypeTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:text="Choose Your Pet"
+                android:textAllCaps="true"
+                android:textColor="@color/appThemeColor_1"
+                android:textSize="@dimen/txt_size_16"
+                android:textStyle="bold" />
+
+
+            <FrameLayout
+                android:id="@+id/petTypeSelectArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="start|center"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp">
+
+                <include
+                    android:id="@+id/petTypeBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_arrow_down" />
+            </FrameLayout>
+
+            <com.view.MTextView
+                android:id="@+id/pickUpOptTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:text="Choose Option"
+                android:textAllCaps="true"
+                android:textColor="@color/appThemeColor_1"
+                android:textSize="@dimen/txt_size_16"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.view.MTextView
+                    android:id="@+id/pickUpNowArea"
+                    android:layout_width="200dp"
+                    android:layout_height="@dimen/all_btn_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/appThemeColor_TXT_2"
+                    android:textSize="@dimen/txt_size_16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp">
+
+                <com.view.MTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textAllCaps="true"
+                    android:textColor="@color/pickup_or_txt"
+                    android:textSize="@dimen/txt_size_16" />
+
+                <com.view.MTextView
+                    android:id="@+id/pickUpOrTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OR"
+                    android:textAllCaps="true"
+                    android:textColor="@color/pickup_or_txt"
+                    android:textSize="@dimen/txt_size_16"
+                    android:textStyle="bold" />
+
+                <com.view.MTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textAllCaps="true"
+                    android:textColor="@color/pickup_or_txt"
+                    android:textSize="@dimen/txt_size_18" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.view.MTextView
+                    android:id="@+id/pickUpLaterArea"
+                    android:layout_width="200dp"
+                    android:layout_height="@dimen/all_btn_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/appThemeColor_TXT_2"
+                    android:textSize="@dimen/txt_size_16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

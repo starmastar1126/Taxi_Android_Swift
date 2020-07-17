@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_tip"
+                android:tint="@color/appThemeColor_1" />
+
+            <com.view.MTextView
+                android:id="@+id/titileTxt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/all_btn_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/txt_size_16"
+                android:textStyle="bold" />
+
+            <com.view.MTextView
+                android:id="@+id/msgTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="@dimen/txt_size_14"
+                android:visibility="gone" />
+
+
+            <include
+                android:id="@+id/editBox"
+                layout="@layout/editbox_form_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:id="@+id/skipTxtArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/all_btn_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:text="cancel"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_16"
+                    android:textStyle="bold" />
+
+                <com.view.MTextView
+                    android:id="@+id/giveTipTxtArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/all_btn_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:text="ok"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/txt_size_16"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

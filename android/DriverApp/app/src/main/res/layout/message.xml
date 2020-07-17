@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.view.SelectableRoundedImageView
+            android:id="@+id/lefttuserImageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_no_pic_user"
+            android:visibility="gone"
+            app:sriv_border_color="@android:color/transparent"
+            app:sriv_left_bottom_corner_radius="25dip"
+            app:sriv_left_top_corner_radius="25dip"
+            app:sriv_oval="true"
+            app:sriv_right_bottom_corner_radius="25dip"
+            app:sriv_right_top_corner_radius="25dip" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/rightshape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_main"
+                android:layout_marginStart="-25dp"
+                android:layout_marginTop="-24dp"
+                android:layout_toEndOf="@+id/activity_main"
+                android:src="@drawable/testout"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/leftshap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_main"
+                android:layout_marginEnd="-25dp"
+                android:layout_marginTop="-24dp"
+                android:layout_toStartOf="@+id/activity_main"
+                android:src="@drawable/testin"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/activity_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/message_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="start"
+                    android:text="Test"
+                    android:textAlignment="viewStart"
+                    android:textStyle="normal|bold"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/message_user"
+                    android:gravity="start"
+                    android:padding="8dp"
+                    android:text=""
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/message_text"
+                    android:gravity="end"
+                    android:text="time"
+                    android:textAlignment="viewEnd"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.view.SelectableRoundedImageView
+            android:id="@+id/rightuserImageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_no_pic_user"
+            android:visibility="gone"
+            app:sriv_border_color="@android:color/transparent"
+            app:sriv_left_bottom_corner_radius="25dip"
+            app:sriv_left_top_corner_radius="25dip"
+            app:sriv_oval="true"
+            app:sriv_right_bottom_corner_radius="25dip"
+            app:sriv_right_top_corner_radius="25dip" />
+    </LinearLayout>
+
+
+</LinearLayout>

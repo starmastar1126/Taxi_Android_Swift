@@ -1,0 +1,29 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="txt_size_24">24sp</dimen> <!-- for banner -->
+    <dimen name="txt_size_20">20sp</dimen> <!-- for other cases -->
+    <dimen name="txt_size_18">18sp</dimen> <!-- for title -->
+    <dimen name="txt_size_16">16sp</dimen> <!-- for All text -->
+    <dimen name="txt_size_14">14sp</dimen> <!-- for Form -->
+    <dimen name="txt_size_12">12sp</dimen> <!-- for Form -->
+    <dimen name="txt_size_10">10sp</dimen> <!-- for Form -->
+
+    <dimen name="inner_components_spacing">8dp</dimen>
+    <dimen name="bottom_ellipsis_height">4dp</dimen>
+    <dimen name="floating_label_text_size">16sp</dimen>
+    <dimen name="bottom_text_size">12sp</dimen>
+
+    <dimen name="all_btn_height">45dp</dimen>
+    <dimen name="all_EditBox_height">60dp</dimen>
+    <dimen name="all_TxtView_height">60dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="default_corner_radius">4dp</dimen>
+    <dimen name="default_shadow_radius">4dp</dimen>
+
+    <dimen name="divider_size_vert">3dp</dimen>
+    <dimen name="divider_gap_vert">3dp</dimen>
+</resources>

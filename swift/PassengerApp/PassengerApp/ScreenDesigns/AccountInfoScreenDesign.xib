@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountInfoUV" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="continueBtn" destination="Kxh-aA-yba" id="Cdj-dx-Ghh"/>
+                <outlet property="countryTxtField" destination="LjG-ag-LhX" id="Rua-tF-82W"/>
+                <outlet property="emailAreaViewHeight" destination="Gbh-wg-Mvu" id="ew1-zl-H0Y"/>
+                <outlet property="emailTxtField" destination="acg-2N-4L9" id="SqQ-m3-OG6"/>
+                <outlet property="infoLbl" destination="4Ol-oB-HE5" id="pTX-RS-d5L"/>
+                <outlet property="mobileAreaViewHeight" destination="sKi-VX-6Is" id="nAj-eC-sil"/>
+                <outlet property="mobileNumArea" destination="fTb-FF-wRg" id="ovF-TA-wsU"/>
+                <outlet property="mobileTxtField" destination="8ic-RR-Rcq" id="jvY-vb-EW0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_account_lock" translatesAutoresizingMaskIntoConstraints="NO" id="zZm-Bd-H3q">
+                    <rect key="frame" x="137" y="25" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Tmr-RR-xYW"/>
+                        <constraint firstAttribute="height" constant="100" id="WsY-Sj-nEF"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ol-oB-HE5" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="140" width="345" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acg-2N-4L9" customClass="MyTextField" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="181.5" width="345" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Gbh-wg-Mvu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kxh-aA-yba" customClass="MyButton" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="16" y="331.5" width="343" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="PB4-K4-j3m"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fTb-FF-wRg">
+                    <rect key="frame" x="15" y="256.5" width="345" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LjG-ag-LhX" customClass="MyTextField" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="i4n-pf-g6N"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ic-RR-Rcq" customClass="MyTextField" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="115" y="0.0" width="230" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="sKi-VX-6Is"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kxh-aA-yba" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="0ce-cU-7O6"/>
+                <constraint firstAttribute="trailing" secondItem="fTb-FF-wRg" secondAttribute="trailing" constant="15" id="62D-cu-qNW"/>
+                <constraint firstItem="acg-2N-4L9" firstAttribute="top" secondItem="4Ol-oB-HE5" secondAttribute="bottom" constant="20" id="8GD-Qc-Pkh"/>
+                <constraint firstItem="fTb-FF-wRg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="CaV-40-kwZ"/>
+                <constraint firstItem="fTb-FF-wRg" firstAttribute="top" secondItem="acg-2N-4L9" secondAttribute="bottom" constant="15" id="JdY-GO-38Q"/>
+                <constraint firstItem="zZm-Bd-H3q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PQL-YV-EA2"/>
+                <constraint firstItem="zZm-Bd-H3q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="Pic-Sb-F1U"/>
+                <constraint firstAttribute="trailing" secondItem="Kxh-aA-yba" secondAttribute="trailing" constant="16" id="Tc9-aR-4z7"/>
+                <constraint firstItem="acg-2N-4L9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="bnn-I7-fJK"/>
+                <constraint firstItem="4Ol-oB-HE5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="dLe-Zd-TL9"/>
+                <constraint firstAttribute="trailing" secondItem="acg-2N-4L9" secondAttribute="trailing" constant="15" id="nuJ-Po-r5O"/>
+                <constraint firstAttribute="trailing" secondItem="4Ol-oB-HE5" secondAttribute="trailing" constant="15" id="xzB-8e-ISv"/>
+                <constraint firstItem="4Ol-oB-HE5" firstAttribute="top" secondItem="zZm-Bd-H3q" secondAttribute="bottom" constant="15" id="yZA-L4-bJ6"/>
+                <constraint firstItem="Kxh-aA-yba" firstAttribute="top" secondItem="fTb-FF-wRg" secondAttribute="bottom" constant="15" id="zeK-Dx-0yB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_account_lock" width="100" height="100"/>
+    </resources>
+</document>

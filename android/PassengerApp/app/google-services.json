@@ -1,0 +1,129 @@
+{
+  "project_info": {
+    "project_number": "950155036734",
+    "firebase_url": "https://fascab-app.firebaseio.com",
+    "project_id": "fascab-app",
+    "storage_bucket": "fascab-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950155036734:android:c48c740f12eb7ba5",
+        "android_client_info": {
+          "package_name": "com.fastcabtaxi.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950155036734-0f8ju7pvk83vviuvicsm0tj0sdncfctm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fastcabtaxi.driver",
+            "certificate_hash": "0075d29d2c391eaf84efc40f14ce0045c2fe392a"
+          }
+        },
+        {
+          "client_id": "950155036734-ss0e0frt5tq0fh1hvra8j399r9vn70er.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fastcabtaxi.driver",
+            "certificate_hash": "cf36b56e6676225aec2770071b80eef28f05e43e"
+          }
+        },
+        {
+          "client_id": "950155036734-h2u2kd262oep5d9tb0ntmag9fpngjtmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ4NcpqomuBunJ8rjF3Slfp1_Bvfueaiw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950155036734-h2u2kd262oep5d9tb0ntmag9fpngjtmh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "950155036734-ioenvbrfijcbjb41g32pn4agg39s0gja.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fastcab.passenger"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950155036734:android:3f45455a8383b898",
+        "android_client_info": {
+          "package_name": "com.fastcabtaxi.passenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950155036734-0cjibjj6th8sses2j3ap4gab2kcmf9la.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fastcabtaxi.passenger",
+            "certificate_hash": "0075d29d2c391eaf84efc40f14ce0045c2fe392a"
+          }
+        },
+        {
+          "client_id": "950155036734-0joi8ve9edfqr41av7mbnemjmoa21737.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fastcabtaxi.passenger",
+            "certificate_hash": "cf36b56e6676225aec2770071b80eef28f05e43e"
+          }
+        },
+        {
+          "client_id": "950155036734-h2u2kd262oep5d9tb0ntmag9fpngjtmh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ4NcpqomuBunJ8rjF3Slfp1_Bvfueaiw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950155036734-h2u2kd262oep5d9tb0ntmag9fpngjtmh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "950155036734-ioenvbrfijcbjb41g32pn4agg39s0gja.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fastcab.passenger"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

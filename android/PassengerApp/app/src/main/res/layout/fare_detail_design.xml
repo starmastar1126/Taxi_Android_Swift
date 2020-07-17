@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <com.view.MTextView
+        android:id="@+id/fareDetailHTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="FARE DETAIL"
+        android:textColor="#3A3A48"
+        android:textSize="@dimen/txt_size_18"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.view.MTextView
+            android:id="@+id/baseFareVTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="2dp"
+            android:text="$20"
+            android:textColor="#09091A"
+            android:textSize="@dimen/txt_size_16"
+            android:textStyle="bold" />
+
+        <com.view.MTextView
+            android:id="@+id/baseFareHTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="2dp"
+            android:text="BASE FARE"
+            android:textColor="#6B6B76"
+            android:textSize="@dimen/txt_size_16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#C0C0C8" />
+
+        <com.view.MTextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="#6B6B76"
+            android:textSize="@dimen/txt_size_16" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#C0C0C8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.view.MTextView
+                android:id="@+id/parMinVTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="2dp"
+                android:text="$20"
+                android:textColor="#09091A"
+                android:textSize="@dimen/txt_size_16"
+                android:textStyle="bold" />
+
+            <com.view.MTextView
+                android:id="@+id/parMinHTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="2dp"
+                android:text=" / MIN"
+                android:textColor="#6B6B76"
+                android:textSize="@dimen/txt_size_16"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.view.MTextView
+            android:id="@+id/andTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="AND"
+            android:textColor="#9D9DA3"
+            android:textSize="@dimen/txt_size_16" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.view.MTextView
+                android:id="@+id/parKmVTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="2dp"
+                android:text="$20"
+                android:textColor="#09091A"
+                android:textSize="@dimen/txt_size_16"
+                android:textStyle="bold" />
+
+            <com.view.MTextView
+                android:id="@+id/parKmHTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="2dp"
+                android:text=" / KM"
+                android:textColor="#6B6B76"
+                android:textSize="@dimen/txt_size_16"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

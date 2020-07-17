@@ -1,0 +1,51 @@
+#main-slider{ margin:0px; padding:0px; float:left; width:100%; /*background:url(../img/home/main-sldier-bg.jpg) repeat-x; height:891px;*/}
+
+#container{
+	max-width:852px;
+	margin:0 auto;
+	padding:0px;
+	background:url(../../img/home/car-bg.png) no-repeat scroll top center;
+}
+
+#banner-fade,
+#banner-slide{ margin:0px;
+	padding:160px 0 0;
+}
+
+#banner-fade h2{ margin:0px; padding:0px; float:left; width:100%; font-size:37px; color:#fff; position:absolute; top:-110px; left:0; right:0; text-align:center;}
+#banner-fade h2 b{ margin:8px 0 0; padding:0px; float:left; width:100%; font-size:14px; color:#000000; text-transform:uppercase;
+font-weight:400;}
+#banner-fade p{ margin:20px 0; padding:0px; float:left; width:100%; text-align:center; color:#5d5d5d; text-transform:uppercase; font-size:14px;}
+#banner-fade span{ margin:20px 0; padding:0px; float:left; width:100%; text-align:center; color:#5d5d5d; text-transform:uppercase; font-size:14px;}
+#banner-fade span em{ margin:0 23px; padding:0px; font-style:normal; font-weight:600; display:inline;}
+
+ul.bjqs-controls.v-centered li a{
+	display:block;
+	padding:10px;
+	background:#fff;
+	color:#000;
+	text-decoration: none;
+}
+
+ul.bjqs-controls.v-centered li a:hover{
+	background:#000;
+	color:#fff;
+}
+
+ol.bjqs-markers li a{
+	padding:0px;
+	background:none;
+	color:#fff;
+	margin:5px;
+	text-decoration: none;
+	width:76px; height:45px;
+}
+
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover{
+	background:url(../../img/home/point-active.png) no-repeat scroll center;
+}
+
+p.bjqs-caption{
+	background: rgba(255,255,255,0.5);
+}

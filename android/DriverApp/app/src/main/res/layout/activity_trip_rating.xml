@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TripRatingActivity">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:layout_above="@+id/ratingArea"
+                android:id="@+id/mapV2"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <LinearLayout
+                android:id="@+id/ratingArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#FFFFFF"
+                android:minHeight="150dp"
+                android:orientation="vertical">
+
+                <com.view.MTextView
+                    android:id="@+id/rateTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="20dp"
+                    android:text="Rate"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/appThemeColor_1"
+                    android:textSize="@dimen/txt_size_18" />
+
+                <com.view.MTextView
+                    android:id="@+id/nameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="20dp"
+                    android:text="NAME"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/appThemeColor_2"
+                    android:textSize="@dimen/txt_size_20"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/commentArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="5dp">
+
+                    <include
+                        android:id="@+id/commentBox"
+                        layout="@layout/editbox_form_design"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+                </RelativeLayout>
+
+
+                <!--<RatingBar-->
+                <!--android:id="@+id/ratingBar"-->
+                <!--style="?attr/ratingBarStyle"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:numStars="5"-->
+                <!--android:progressTint="@color/appThemeColor_1"-->
+                <!--/>-->
+                <!--style="@style/RatingBar"-->
+                <com.view.simpleratingbar.SimpleRatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/gray_holo_light"
+                    android:padding="2dp"
+                    app:SRB_fillColor="@color/appThemeColor_1"
+                    app:SRB_starBackgroundColor="@color/gray_holo_light"
+                    app:SRB_starSize="40sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <include
+                        android:id="@+id/btn_type2"
+                        layout="@layout/btn_type_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/all_btn_height" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

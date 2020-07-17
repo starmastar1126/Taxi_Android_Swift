@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuScreenUV" customModule="DriverApp" customModuleProvider="target">
+            <connections>
+                <outlet property="femaleImgView" destination="AX1-7v-JVf" id="Gd5-qe-iOl"/>
+                <outlet property="femaleLbl" destination="1bh-U5-VxW" id="TCM-3o-hxD"/>
+                <outlet property="genderHLbl" destination="hND-bs-brx" id="X9c-dL-R7i"/>
+                <outlet property="genderVCloseImgView" destination="Vwj-52-k4B" id="dGQ-bZ-ud5"/>
+                <outlet property="maleImgView" destination="Sfk-U1-oPK" id="M5v-hu-VlD"/>
+                <outlet property="maleLbl" destination="zWy-oM-hpO" id="PTd-Ga-pqd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Odk-EN-aZS">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="645"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_close_detail" translatesAutoresizingMaskIntoConstraints="NO" id="Vwj-52-k4B">
+                    <rect key="frame" x="335" y="25" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="gAQ-zf-RCs"/>
+                        <constraint firstAttribute="width" constant="40" id="hAU-4k-Gba"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your gender to continue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hND-bs-brx" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="75" width="345" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Medium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sel_male" translatesAutoresizingMaskIntoConstraints="NO" id="Sfk-U1-oPK">
+                    <rect key="frame" x="117" y="151.5" width="140" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="MJP-BL-NPp"/>
+                        <constraint firstAttribute="height" constant="140" id="YWB-wa-IKz"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sel_female" translatesAutoresizingMaskIntoConstraints="NO" id="AX1-7v-JVf">
+                    <rect key="frame" x="117" y="372.5" width="140" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="OIY-eS-dBg"/>
+                        <constraint firstAttribute="height" constant="140" id="vRF-y3-sfX"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWy-oM-hpO" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                    <rect key="frame" x="167.5" y="301.5" width="39" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bh-U5-VxW" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                    <rect key="frame" x="159" y="522.5" width="58.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.14353981599999999" green="0.14353981599999999" blue="0.14353981599999999" alpha="0.84859267979999997" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hND-bs-brx" firstAttribute="leading" secondItem="Odk-EN-aZS" secondAttribute="leading" constant="15" id="0Zs-9F-2R8"/>
+                <constraint firstItem="Vwj-52-k4B" firstAttribute="top" secondItem="Odk-EN-aZS" secondAttribute="top" constant="25" id="9KF-q2-nu9"/>
+                <constraint firstItem="Sfk-U1-oPK" firstAttribute="centerX" secondItem="Odk-EN-aZS" secondAttribute="centerX" id="9KK-5W-8Xu"/>
+                <constraint firstItem="AX1-7v-JVf" firstAttribute="top" secondItem="zWy-oM-hpO" secondAttribute="bottom" constant="50" id="CoZ-9a-sFK"/>
+                <constraint firstItem="zWy-oM-hpO" firstAttribute="top" secondItem="Sfk-U1-oPK" secondAttribute="bottom" constant="10" id="HZf-Bo-xgf"/>
+                <constraint firstAttribute="trailing" secondItem="hND-bs-brx" secondAttribute="trailing" constant="15" id="JDi-MK-pM9"/>
+                <constraint firstItem="1bh-U5-VxW" firstAttribute="top" secondItem="AX1-7v-JVf" secondAttribute="bottom" constant="10" id="Qb7-7d-mRG"/>
+                <constraint firstItem="hND-bs-brx" firstAttribute="top" secondItem="Odk-EN-aZS" secondAttribute="top" constant="75" id="W4d-1a-8AD"/>
+                <constraint firstItem="AX1-7v-JVf" firstAttribute="centerX" secondItem="Odk-EN-aZS" secondAttribute="centerX" id="Yxo-Xb-C98"/>
+                <constraint firstItem="zWy-oM-hpO" firstAttribute="centerX" secondItem="Odk-EN-aZS" secondAttribute="centerX" id="aiH-Il-xHh"/>
+                <constraint firstAttribute="trailing" secondItem="Vwj-52-k4B" secondAttribute="trailing" id="bKo-3O-bBj"/>
+                <constraint firstItem="1bh-U5-VxW" firstAttribute="centerX" secondItem="Odk-EN-aZS" secondAttribute="centerX" id="bMj-m7-YRN"/>
+                <constraint firstItem="Sfk-U1-oPK" firstAttribute="top" secondItem="hND-bs-brx" secondAttribute="bottom" constant="50" id="vPE-hA-nd2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24" y="27"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_close_detail" width="72" height="72"/>
+        <image name="ic_sel_female" width="16" height="16"/>
+        <image name="ic_sel_male" width="16" height="16"/>
+    </resources>
+</document>

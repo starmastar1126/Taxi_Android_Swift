@@ -1,0 +1,40 @@
+<resources>
+    <string name="google_api_get_address_from_location_serverApi">AIzaSyAPlGLULDM0b3ff_38hpZvwWUsSi6MdDqU</string>
+    <string name="google_android_geo_api_key">AIzaSyDK_WJaVvYjtqbMiJrroJ2S6RWfXYAVbCw</string>
+
+
+    <string name="app_name">FastCab Driver</string>
+    <string name="defaultFont">fonts/roboto_light.ttf</string>
+    <string name="demo_text">Note:\nSince this is the demo version, please use below dummy credit/debit card for testing. The actual payment will not be deducted.\n\nCard Type: VISA\nCard Number: 41111111111111\nExpiry: 12/2018\nCVV: 123</string>
+    <string name="demo_mobile_help">Note: Please enter the OTP \"12345\" If you do not receive SMS/EMAIL on your registered number in next one minute.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="robotomediumFont">fonts/roboto_medium.ttf</string>
+
+    <string name="robotolightFont">fonts/roboto_light.ttf</string>
+    <string name="robotobold">fonts/roboto_bold.ttf</string>
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">uBsCtx2LRNMvgt2EZ8sa4E0Pv</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">IET3DNeyY7bbCmKALSLCIOAaHYzLnZOrx9mzF5HLfdq8NAqNno</string>
+
+    <string name="html" translatable="false">
+        <![CDATA[
+        <html>
+            <head></head>
+            <body>%1$s</body>
+        </html>"
+        ]]>
+    </string>
+
+    <string name="html_rtl" translatable="false">
+        <![CDATA[
+        <html dir="rtl">
+            <head></head>
+            <body>%1$s</body>
+        </html>"
+        ]]>
+    </string>
+
+</resources>

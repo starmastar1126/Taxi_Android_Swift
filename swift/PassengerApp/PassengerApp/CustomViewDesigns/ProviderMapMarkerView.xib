@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_marker_provider" translatesAutoresizingMaskIntoConstraints="NO" id="Big-eP-DxM">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_no_pic_user" translatesAutoresizingMaskIntoConstraints="NO" id="jCR-sC-8u8">
+                    <rect key="frame" x="7" y="8" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Fez-bs-ruV"/>
+                        <constraint firstAttribute="width" constant="50" id="r0o-qa-7f3"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Big-eP-DxM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8GJ-K8-tMq"/>
+                <constraint firstAttribute="bottom" secondItem="Big-eP-DxM" secondAttribute="bottom" id="Mjn-Dm-cvu"/>
+                <constraint firstItem="jCR-sC-8u8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="P28-sr-Clb"/>
+                <constraint firstItem="jCR-sC-8u8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ymg-8L-whm"/>
+                <constraint firstAttribute="trailing" secondItem="Big-eP-DxM" secondAttribute="trailing" id="grk-Ur-aDs"/>
+                <constraint firstItem="Big-eP-DxM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="h3l-p0-XOW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="479.5" y="345"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_marker_provider" width="95" height="150"/>
+        <image name="ic_no_pic_user" width="110" height="110"/>
+    </resources>
+</document>

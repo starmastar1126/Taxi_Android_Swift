@@ -1,0 +1,1242 @@
+@media print {
+* {
+	text-shadow: none!important;
+	color: #000!important;
+	background: transparent!important;
+	box-shadow: none!important
+}
+a, a:visited {
+	text-decoration: underline
+}
+a[href]:after {
+	content: " (" attr(href) ")"
+}
+abbr[title]:after {
+	content: " (" attr(title) ")"
+}
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+	content: ""
+}
+pre, blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid
+}
+thead {
+	display: table-header-group
+}
+tr, img {
+	page-break-inside: avoid
+}
+img {
+	max-width:100%!important
+}
+@page {
+    margin:.5cm
+}
+p, h2, h3 {
+	orphans:3;
+	widows:3;
+}
+h2, h3 {
+	page-break-after:avoid
+}
+
+}
+
+@media screen and (min-width:1px) and (max-width:767px) {
+.footer-box1 .lang-all { width: 100%;  padding: 0px;}
+.footer-box1 .lang-all ul li { margin: 0 9px 6px 0; /*width: 46.5%;*/}
+.footer-box1 .lang-all ul li a { padding: 5px 4px;}
+#display { right: 10px; width: 337px; top: 91px;}
+.custom-error-page .breadcrumbs .breadcrumbs-inner-a{width:100%;}
+.custom-error-page .page-contant-inner-a { width: 100%;}
+.custom-error-left-part{width:100%;}
+.custom-error-right-part{width:100%;}
+.login-socials .fa{width:10%;}
+.create-account .captcha-dd .chapcha-img{width:70px; margin:10px 0; font-size:11px;}
+.create-account span strong.captcha-signup .create-account-input{width:45px;}
+.col-vs {margin-left:0px;}
+.user-part-login{display:none;}
+
+#main-uber-page{max-width:98%;}
+nav button{left:0%;}
+
+.faq-page{margin:30px 0 0;}
+.faq-bottom-part{margin:0px;}
+
+.menu-logo label{width:100%; margin:10px 0; text-align:center;}
+.menu-logo label a{width:100%; margin-left:7%;}
+.menu-logo label em{margin:0px; float:none; display:inline-block;}
+
+nav ul#listMenu .menu-left-new{ margin:41px auto 0; width:83%;}
+
+/*.listOpen .desktop{ display:none;}
+.listOpen .mobile{ display:block;}*/
+
+.logo{ margin:0 0 0 9%;}
+/*.logo img{height:70px;}*/
+
+.get-there{ margin:83px 0 0;}
+.get-there-inner h2{ margin:18px 0 0; width:100%;}
+.get-there-inner span{ display:none;}
+.home-hero-page{ margin:30px 0 0;}
+.home-hero-page-left-text{ width:95%;}
+.home-sldier-inner ul li{margin:0 20px 30px;}
+
+.top-logo-link{ display:none;}
+
+.top-link{ display:none;}
+.top-right-button{ display:none;}
+.top-link-login{ display:none;}
+
+.people-going-way-mid-inner{ margin:11.5% auto 0; width:90%;}
+.people-going-way-mid-inner h2{font-size:24px; margin:0 0 20px; width:100%;}
+.people-going-way-left{ width:10%;}
+.people-going-way-mid{ width:40%;}
+.people-going-way-right{ width:50%;}
+
+.tap-app-ride-inner{ margin:; width:95%;}
+
+.helping-cities-left{ width:50%;}
+.helping-cities-mid{ width:40%;}
+.helping-cities-mid-inner{ width:90%; margin:11.5% auto 0;}
+.helping-cities-mid-inner h2{font-size:27px; margin:0 0 20px;}
+.helping-cities-right{ width:10%;}
+
+.Safety-people-text h2{font-size:27px; margin:0 0 10px;}
+.Safety-people-right-inner{ width:96%;}
+.Safety-people-left{ width:10%;}
+.Safety-people-right{ width:88%;}
+.Safety-people-img{ width:56%;}
+.Safety-people-img img{ width:100%;}
+
+.footer-inner{ width:98%;}
+.footer-box1{ width:35%;}
+.footer-box2{ width:53%;}
+
+.mytrip-page span b{float:right; margin:15px 0 0; padding:0;}	
+.mytrip-page span b .driver-trip-btn{ padding:0 20px; width:auto;}
+
+.driver-profile-info span{ float:right; margin:0; padding:0; width:85%;}
+
+.ph_no {width:74%!important;}
+.c_code{width:26%!important;}
+.c_country{float:left; width:49%!important;}
+.create-account span{ margin:0; padding:0;width:100%;}
+.footer-bottom-part span{ width:100%; text-align:center;}
+.validation-form span i{ right:0; top:-4px;}
+
+/***home****/
+.home-hero-page-left-text span a{ margin-left:15px;}
+.home-body-mid-part-inner{ width:390px;}
+.home-body-mid-part-inner ul li{ margin:0 0 20px; width:100%;}
+.home-body-mid-part-inner ul li .home-body-mid-img img{ max-width:100%;}
+.home-mobile-app-inner{ width:98%;}
+.home-mobile-app{ background-size:cover;}
+.home-mobile-app-left{ width:46%;}
+.home-mobile-app-left img{ max-width:100%;}
+.home-mobile-app-right{ width:49%; margin:55px 0 0;}
+.home-mobile-app-right h3{ font-size:35px; text-transform:none; font-size:30px;}
+.get-fare-estimation-inner{ width:98%;}
+.get-fare-estimation-left{ width:100%;}
+.get-fare-estimation-left span input{ width:93.5%;}
+.home-page-map{ margin:25px 0 0; padding:0px; float:left; width:100%;}
+.home-hero-page-right-text{ width:240px;}
+.home-hero-page-right-text span{ margin:20px 0 0 25px;}
+
+.taxi-app{ height:auto; background:#f2e5d5!important;}
+.taxi-app1{height:auto; background:#f2e5d5!important;}
+.taxi-app-inner{ width:98%;}
+.taxi-app-right-part{ margin:30px 0 0; width:100%;}
+.taxi-app-right-part h3{ font-size:36px; margin:0 0 15px;}
+.taxi-app-right-part p{ margin:0 0 20px; height:auto;}
+.taxi-app-right-part-img-res{ display:block;}
+.taxi-app-right-part-img-res img{ max-width:100%;}
+
+.gallery-page{ width:645px;}
+.gallery-part{ padding-bottom:0px;}
+.gallery-part .gallery-page .box{ margin-bottom:20px;}
+
+.home-page-map{ height:300px;}
+
+.get-fare-estimation-inner .get-free1{ width:100%; float:left;}
+.get-fare-estimation-left{ margin:0px;}
+.home-page-map{ margin:0px;}
+.custom-error-page .breadcrumbs .breadcrumbs-inner-a b input{width: 335px;}
+}
+
+
+@media screen and (min-width:1px) and (max-width:567px) {
+.header-page-know{position:none!important;}
+#display{right:95px; width:337px; top:51px;}
+.custom-error-right-part-box ul{width:100%; min-height:0px;}
+.custom-error-right-part{float:none; width:100%;}
+.custom-error-left-part{width:100%;}
+/*.custom-error-page .page-contant-inner-a{margin:0px 15px}*/
+.login-socials .fa{width:10%;}
+.logo {margin:8px 0 0 10%;}
+.logo img{ margin-top:0;}
+.home-sldier-inner{width:260px;}
+nav ul#listMenu{ width:50%; left:-50%;}
+.home-hero-page-left{ background-size:cover; min-height:inherit; padding:0 0 40px;}
+.home-hero-page-right{ background-size:cover; min-height:342px;}
+.home-hero-page-right-text{ height:170px;}
+.home-hero-page-right-text span{ margin:14px 0 0 25px;}
+.home-hero-page-left-text{ width:90%;}
+.home-sldier{ margin:40px 0 0;}
+.home-sldier-inner ul li{ margin:0 6px 20px;}
+
+/*.menu-logo .signin img{ width:150px;}*/
+nav section{left:10px; top:5px;}
+
+.home-hero-page-left{ min-height:232px; background-size:100%;}
+.home-hero-page-left-text{ display:none;}
+.home-hero-page-right{ min-height:213px; background-size:cover;}
+.home-hero-page-right-text{ display:none;}
+
+.banner-res-text{ display:block;}
+.banner-res-text-inner{ margin:0 auto; padding:0 5px; width:97%;}
+.banner-res-text .home-hero-page-left-text{ display:block;}
+.banner-res-text .home-hero-page-left-text span p{ display:inline-block; margin:0 auto; float:none; width:95%;}
+.banner-res-text .home-hero-page-right-text span p{ display:inline-block; margin:0 auto; float:none; width:95%;}
+.banner-res-text .home-hero-page-right-text{ display:block;}
+
+.people-going-way{ height:auto; margin:20px 0 0;}
+.people-going-way-left{background-size:cover; height:500px; width:20%;}
+.people-going-way-mid{ width:80%;}
+.people-going-way-mid-inner{width:95%; margin:9% auto 0;}
+.people-going-way-right{ width:100%; background-size:cover; height:450px; float:left; margin:10px 0;} 
+
+.helping-cities{ height:auto;}
+.helping-cities-left{ width:100%; margin:0 0 10px; background-size:cover; height:450px;}
+.helping-cities-mid{ width:80%;}
+.helping-cities-mid-inner{width:95%; margin:9% auto 0;}
+.helping-cities-right{background-size:cover; height:auto; width:20%; min-height:350px;}
+
+.Safety-people-left{ width:20%; min-height:590px; background-size:cover;}
+.Safety-people-right{ width:80%;}
+.Safety-people-right-inner{ margin:9% auto 0;}
+.Safety-people-text{ width:100%;}
+.Safety-people-img{ width:100%; margin:20px 0 0;}	
+
+.footer{ height:auto;}
+.footer-inner{ width:96%;}	
+.footer-top-part{ height:auto;}
+.footer-box1{ width:100%; margin:0px; text-align:center;}
+.footer-box1 .lang b{ padding:10px 0; width:100%;}	
+.footer-box1 span{ /*margin:10px 0;*/ text-align:center; margin:25px 0 15px;}
+.footer-box1 span a{ float:none; display:inline-table;}
+.footer-box2{ width:100%; margin:0px;}
+.footer-box3{ width:100%; float:left; text-align:center; margin:20px 0 0;}
+.footer-box3 span{ float:none; width:auto; margin:0 5px;}
+.footer-bottom-part{ padding:12px 0;}
+
+/****************inner**********************/
+
+.page-contant{ background-position:right -130px top 0; padding:0 0 20px; margin:100px 0 0;}
+.page-contant-inner{ margin:30px 0 0 5px; float:left; width:94%;}
+.driver-signup-page{ width:100%;}
+.create-account span{ margin:0px;}
+.create-account span strong{ width:100%; margin:0 0 15px;}
+.create-account span strong:nth-child(2n){ float:left;}
+.driver-signup-page .create-account span strong:nth-child(2n){ float:right;}
+.create-account span .create-account-input1{ float:left;}
+.create-account span b{ float:left; width:auto;}	
+.create-account span b .select-wrapper, .select-wrapper select{ margin:0px; padding:2px 11px; background-position:right 0 top 20px; width:45px;}
+.create-account span b .select-wrapper:hover{background-position:right 0 top 20px;}
+.create-account span abbr{margin:15px 0 0; width:100%;}
+.create-account span .select-wrapper, .select-wrapper select{ width:95%;}
+.contact-form{ width:100%;}
+.login-form-left{ width:100%; padding:0; border:none;}
+.login-form-left b .login-input{ width:99%;}
+/*.login-form-left b .submit-but{ width:auto; padding:0 30px;}*/
+.login-form-right{ width:100%; margin:20px 0 0;}
+.driver-profile-img{ width:130px; height:133px;}
+.driver-profile-img span{ width:125px; height:125px;}
+.driver-profile-info{ margin:15px 0 0 10px; width:69%;}
+.driver-profile-mid-part ul li{ margin:0 3px 70px; width:48%;}
+.driver-profile-mid-part ul li:nth-child(even){ margin:0 3px 70px;}
+.driver-profile-mid-part ul li:last-child{  margin:0 3px 70px;}
+.driver-profile-mid-part{ margin:20px 0 0; padding:80px 0 0;}
+
+.driver-profile-bottom-part li h4{ text-transform:none; font-size:16px;}
+.driver-profile-bottom-part li{ margin:0 15px 20px 0; width:48%;}
+.driver-profile-bottom-part li:last-child{ margin:0 15px 20px 0;}
+.driver-profile-bottom-part li:nth-child(even){ margin-right:0px;}
+
+.accordion-section .driver-vehicles-page-new li h4{ text-transform:none;}
+.accordion-section .driver-vehicles-page-new li{ margin:0 15px 20px 0; width:48%;}
+.accordion-section .driver-vehicles-page-new li:nth-child(even){ margin-right:0px;}
+
+.car-type{ width:100%;}
+.car-type ul li{ width:50%; margin:0 0 20px;}
+.car-type ul li b{ width:100px; margin:10px 0 0;}
+.car-type ul li:last-child{ float:left; width:50%; margin-bottom:0px;}
+.time-period span a{ margin-bottom:5px;}
+
+.driver-trip-table{ overflow-x:scroll;}
+.driver-trip-table .dataTables_wrapper{width:1000px!important; padding:0 0 10px!important;}
+.trip-detail-page-inner{ margin:0 auto; float:none; padding:0px; width:460px;}
+.trip-detail-page-left{ width:100%; margin:0 0 25px;}
+.trip-detail-page-right{ margin:80px 0 20px; width:100%; float:left;}
+.trips-table{ margin:30px 0 0; padding:20px 0 0;}
+.trips-table-driver{ margin:0px; padding:0px;}
+.header-page{font-size:34px;}
+.driver-vehicles-page li h4{ text-transform:none;}
+.driver-vehicles-page li{ margin:0 15px 20px 0; width:48%;}
+.driver-vehicles-page li:nth-child(even){ margin-right:0px;}
+
+.driver-action-page-right{ margin:0 0 0 10px; width:75%;}
+.driver-action-page-right span .input-phNumber2{width:78%;}
+
+.contact-form b{ width:100%;}
+.contact-form b .contact-input{ width:99%;}
+.contact-form b .contact-textarea{ width:99%;}	
+
+.driver-profile-bottom-part{ margin:0;}
+.show-edit-profile-part{ width:97%; float:none;}
+.show-edit-profile-part span .input-phNumber2{ margin:0 0 0 0px; width:85%;}
+.profile-Password{ width:98%;}
+.profile-Password span .current-pas{width:30%;}
+
+.driver-add-vehicle span{margin:0px;}
+.driver-add-vehicle span b{ width:100%; margin:0 0 15px;}
+
+.time-period{ margin:20px 0 0;}
+.Posted-date span input{ width:38%;}
+
+.edit-profile-detail-form-inner{ width:100%; margin:0px;}
+
+.sign-in-driver { width:49%;}
+.sign-in-driver p{ width:100%;}
+.sign-in-rider { width:49%;}
+.sign-in-rider p{ width:100%;}
+
+.profile-Password span .new-pas{ margin:0 0 0 10px;}
+.profile-Password span .con-new-pas{ margin:0 0 0 10px;}
+
+.accordionheading h3{font-size:15px!important;}
+
+.faq-top-part li{ width:auto; margin:0 15px 0 0;}
+.faq-top-part li a{ padding:10px;}
+
+.tap-app-ride-inner h2{ font-size:30px;}
+
+.required-documents-bottom-part ul{ margin:0 0 10px;}
+.required-documents-bottom-part ul li{ width:auto; margin:0 10px 10px 0;}
+.required-documents-bottom-part ul li:nth-child(2n){ width:auto; margin:0 10px 10px 0;}
+.required-documents-bottom-part ul li a{ width:auto; padding:0 10px; font-size:18px; text-transform:none;}
+.required-documents-bottom-part ul.last li{ width:auto;}
+.required-documents-bottom-part ul.last li a{padding:0 10px; width:100%;}
+
+.payment-tabs ul li a{ width:auto; padding:0 10px; font-size:16px;}
+
+.ph_no {width:74%!important;}
+.c_code {width:26%!important;}
+.c_country {float:left; width:100%!important;}
+.create-account span{ margin:0 !important; padding:0;width:100% !important;}
+
+.driver-action-page{ margin:15px 0 0;}
+.validation-form{ margin:0px; width:100%;}
+.validation-form span .input-phNumber2{ width:89%;}
+
+.required-company ul li{ width:auto!important;}
+.required-company ul li a{ width:auto; padding:0 15px; font-size:16px;}
+
+/*******home********/
+.home-mobile-app-inner{ width:95%;}
+.home-mobile-app-left{ width:100%; text-align:center;}
+.home-mobile-app-left img{ max-width:90%;}
+.home-mobile-app-right{ width:100%; margin:20px 0 0;}
+.home-mobile-app-right h3{ margin:0 0 10px;}
+
+.get-fare-estimation-inner{ width:96%;}
+.get-fare-estimation-left span input{ padding-right:0px; width:91.5%;}
+
+.gallery-page{ width:100%; float:left;}
+.gallery-page-inner{ margin:0 auto; float:none; width:291px;}
+.gallery-page .box{ margin:0 0 20px!important;}
+
+.home-hero-page-right{min-height:271px;}
+.reset-password .page-contant-inner{ width:98%;}
+
+.profile-req-doc .upload-clicking{ margin:0 20px 20px 0;}
+.taxi-app-inner{width:93%;}
+
+.img-b {margin-left:0px;}
+.border_class-bb1{padding-left:4px;}
+.div-img1 { margin-left: 0;}
+
+.tap-app-ride{ margin:40px 0 20px;}
+.taxi-app-right-part h3{font-size:31px; margin:0 0 10px;}
+
+/*.footer-box1 span{margin:15px 0 10px;}*/
+
+.driver-document-action-page .profile-req-doc-inner .upload-clicking{width:100%; margin:0 0 20px;}
+
+.sign-in-driver{ width:100%;}
+.sign-in-rider{ width:100%; float:left;}
+.sign-in-driver p{ min-height:inherit;}
+.sign-in-rider p{ min-height:inherit;}
+
+}
+
+
+@media screen and (min-width:1px) and (max-width:414px) {
+#display { right: 10px; width: 337px; top: 91px;}
+.driver-pad { margin:0px;}
+.sign-in-driver span { top:120px;}
+.sign-in-driver-a { margin:30px 0 0 0; width:100%;}
+.rider-pad-b { margin:0px;}
+
+.menu-logo label a{ margin-left:0px;}
+.menu-logo .logo-left{ margin-left:7%;}
+/*.menu-logo .logo-left img{width:130px;}*/
+
+.create-account span strong.c_code{width:22%; margin:0px;}
+.create-account span strong.ph_no{width:78%; margin:0px;}
+.col-vs { margin-left: -39px;}
+nav button{ margin:0 0 0 10px;}
+nav button.navOpen{ margin:7px 0 0 10px;}
+nav section{ margin:0 0 0 10px; left:10px; top:0px;}
+nav section.navOpen{ margin:7px 0 0 0px;}
+nav ul#listMenu{ width:65%; left:-65%; margin:0px;}
+.logo{ margin:9px 0 0 12%;}
+/*.logo img{ width:170px;}*/
+
+.home-sldier-inner ul li{ margin:0 0 20px; width:228px;}
+.people-going-way-mid-inner h3{font-size:22px;}
+.people-going-way-mid-inner h2{font-size:22px; margin:0 0 10px;}
+.people-going-way-mid-inner p{ font-size:17px; line-height:30px;}
+
+.get-there-inner h2{ font-size:40px;}
+.get-there-inner h2 b{ font-size:28px; margin:8px 0 0;}
+
+.helping-cities-mid-inner h3{font-size:22px;}
+.helping-cities-mid-inner h2{font-size:22px; margin:0 0 10px;}
+.helping-cities-mid-inner p{ font-size:17px; line-height:30px;}
+
+.Safety-people{ min-height:inherit;}
+.Safety-people-left{min-height: 510px;}
+.Safety-people-text h3{font-size:22px;}
+.Safety-people-text h2{font-size:22px; margin:0 0 10px;}
+.Safety-people-text p{ font-size:17px; line-height:30px;}
+
+.Safety-people-right{ min-height:inherit;}
+
+.home-body-mid-part-inner{ width:95%;}
+
+/***********inner*******************/
+
+.page-contant{background-position:right -136px top 0;}
+.page-contant-inner{ margin:10px 0 0 0px; width:97%;}
+
+.sign-in{ margin:30px 0 0;}
+.sign-in-driver{ width:100%; margin:0 0 30px;}
+.sign-in-driver h3{ margin:0 0 10px; padding:10px 0 0;}
+.sign-in-driver span a{ margin:0px;}
+.sign-in-rider{ width:100%; float:left;}
+.sign-in-rider h3{ margin:0 0 10px; padding:10px 0 0;}
+.sign-in-rider span a{ margin:0px;}
+
+.driver-vehicles-page-new ul {float:none; margin:0 auto; padding:0; width:300px;}
+.accordion .driver-vehicles-page-new ul {float:none; margin:10px auto 0; padding:0; width:300px;}
+.accordion-section .driver-vehicles-page-new li{margin:10px 0; width:100%;}
+
+.individual-driver span em{ margin:0 0 10px;}
+.driver-signup-page .create-account{ margin:0;}
+.create-account span b{ width:100%; margin:0 0 10px;}
+/*.create-account span b .select-wrapper, .select-wrapper select{ width:53px;}*/
+.driver-signup-page h3{ margin:0 0 20px; padding-top:0px;}
+.driver-profile-info{ width:100%; margin:15px 0 0;}
+
+.driver-profile-mid-part ul{ margin:0 auto; float:none; width:300px;}
+.driver-profile-mid-part ul li{ width:100%; margin:0 0 70px;}
+
+.driver-profile-bottom-part ul{ margin:0 auto; float:none; width:300px;}
+.driver-profile-bottom-part ul li{ width:100%; margin:0 0 20px;}
+
+.car-type ul li{ width:100%;}
+.car-type ul li:last-child{ width:100%;}
+
+.time-period b{ margin:20px 0 0;}
+.trips-table { margin: 20px 0 0; padding: 10px 0 0;}
+.Posted-date span input{width:45%;}
+
+.trip-detail-page-inner{ width:100%;}
+.trip-detail a{ margin:12px 0 10px;}
+.trip-detail-page-left{ width:99%;}
+.map-address ul li span{ width:91%;}
+.trips-table-driver-res{ margin:0px; padding:0px;}
+
+.driver-vehicles-page ul{ margin:0 auto; float:none; width:300px;}
+.driver-vehicles-page ul li{ width:100%; margin:0 0 20px;}
+
+.driver-action-page-right{ width:100%; float:left; margin:15px 0 0;}
+.profile-Password span .current-pas{ width:100%; margin:0 0 10px;}
+.profile-Password span .new-pas{ width:100%; margin:0 0 10px;}
+.profile-Password span .con-new-pas{ width:100%; margin:0 0 10px;}
+.show-edit-profile-part span .input-phNumber2{ width:81%;}
+.edit-profile-detail-form{ margin:10px 0 0;}
+
+.sign-up-bottom-part span .custom-file-input1{ margin-bottom:10px;}
+
+.required-documents-bottom-part ul li{ border:none; width:100% !important; padding:0 0 0 0; margin:0 0 10px 0;}
+.required-documents-bottom-part ul li a{ padding:0px; width:100%; margin:0px;}
+.required-documents-bottom-part ul li:nth-child(2n){ padding:0 0 0 0; width:100%; margin:0 0 10px 0;}
+.required-documents-bottom-part ul.last li{ border:none; width:100%; margin:0 6px 10px 0;}
+.required-documents-bottom-part ul.last li a{ padding:0px; width:100%; margin:0px;}
+
+.create-account span b .select-wrapper, .select-wrapper select{ padding:2px 11px;}
+.driver-add-vehicle{ margin:70px auto 0; width:97%; float:none; display:table;}
+.create-account span{ margin:0; padding:0;width:100%;}
+
+.validation-form{ margin:0px;}
+.validation-form span .input-phNumber2{ width:86%;}
+
+.page-contant{ background-position:0; background:none;}
+.page-contant-inner{float:none; margin:0 auto; width:95%;}
+.required-company ul li a{ font-size:18px;}
+
+/******home****/
+.get-fare-estimation-left span input{ width:89%;}
+.taxi-app-right-part h3{font-size:27px;}
+.gallery-page h2{font-size:35px;}
+
+.home-page-map iframe{ height:300px!important;}
+.page-contant .page-contant-inner-sign-up{ width:93%;}
+.home-page-map{ height:250px;}
+.accordionheading span{ width:97%!important; margin:10px 0 0!important;}
+.accordionheading span b span{ width:auto!important; margin:4px 7px 0 0!important;}
+.accordionheading span b .active{ padding:6px 9px!important;}
+
+.driver-action-page-right .driver-action1 span b strong{ width:100px;}
+.driver-action-page-right .driver-action1 span b .select-wrapper, .select-wrapper select{margin:0; padding:2px 7px; width:92px;}
+
+.profile-req-doc-inner{ margin:0 auto; padding:0px; width:230px; float:none;}
+
+.border_class-bb1{padding-left:4px;}
+.div-img1{margin-left:0;}
+.row-a1{margin:0px;}
+.img-b{margin-left:0px;}
+
+.driver-action-new .col-md-6{padding:0px;}
+.driver-action-new .col-md-4{padding:0px;}
+.driver-action-new .row .col-md-4{padding:0 15px;}
+.driver-action-new .row .col-md-8{padding:0 15px;}
+
+.driver-document-action-page .profile-req-doc-inner{width:100%;}
+.driver-document-action-page .profile-req-doc-inner .upload-clicking{width:100%; margin:0 0 20px;}
+
+.create-account span .create-account-input{ width:96%;}
+
+.create-account span strong.captcha-signup .create-account-input{ width:60px;}
+.captcha-dd{font-size:15px;}
+
+.create-account p.sign-up-button{ text-align:center;}
+.create-account p.sign-up-button .submit{ float:none; display:inline-block;}
+
+.driver-profile-info span{ margin:15px 0 0; width:100%; text-align:center;}
+.driver-profile-info span a{ float:none; display:inline-block;}
+.driver-profile-mid-part ul li:last-child{ margin:0 3px 30px;}
+
+.show-edit-profile-part p.save-button11{ text-align:center;}
+.show-edit-profile-part p.save-button11 input{ float:none; display:inline-block;}
+
+}
+
+@media screen and (min-width:1px) and (max-width:400px) {
+#display { right: 10px; width: 337px; top: 91px;}
+
+.create-account span strong.c_code{width:22%;}
+.create-account span strong.ph_no{width:78%;}
+.logo{ margin:9px 0 0 15%;}
+/*.logo img{ height:60px;}*/
+.get-there-inner h2{ margin:6px 0 0;}
+nav button.navOpen{ margin:7px 0 0 7px;}
+.page-contant-inner {float:none; margin:0 auto; width:95%;}
+.page-contant{ background:none; background-position:left;}
+.create-account span b strong{ width:auto; padding:0 10px;}
+.create-account span .create-account-input{ width:96%;}
+.create-account span .select-wrapper, .select-wrapper select{ width:97%;}
+.show-edit-profile-part span .input-phNumber2{ width:82%;}
+.edit-profile-detail-form{ margin:10px 0 0;}
+.driver-action-page-right span .input-phNumber2{ width:83%; margin:0;}
+
+.faq-top-part li{ margin:0 10px 0 0;}
+.faq-bottom-part li span h3{ margin:10px 0 0 8px; font-size:20px;}
+
+/*.footer-box1 .lang-all{ width:346px;}*/
+
+.payment-tabs ul li{ margin:0 0 5px; width:100%;}
+.payment-tabs ul li a{ padding:0px; width:100%; font-size:18px;}
+
+.footer-box2{ margin:10px 0;}
+.footer-box2 ul{ width:100%;} 
+.footer-box2 ul:last-child{ width:100%;} 
+
+.home-hero-page-left{min-height:202px;}
+.home-hero-page-right{min-height:242px;}
+
+.home-mobile-app{ padding:30px 0;}
+.home-mobile-app-right h3{ font-size:25px;}
+.home-mobile-app-right p{font-size:18px; line-height:27px; margin:0px;}
+/******home****/
+.get-fare-estimation-left span input{ width:89%;}
+.taxi-app-right-part h3{font-size:27px;}
+.get-there-inner h2{ font-size:35px;}
+.get-there-inner h2 b{ font-size:26px;}
+.gallery-page h2{font-size:35px;}
+.get-fare-estimation-left h3{font-size:29px; margin:0 0 20px;}
+
+.driver-action-page-right .driver-action1 span b strong{ width:100px;}
+.driver-action-page-right .driver-action1 span b .select-wrapper, .select-wrapper select{margin:0; padding:2px 7px; width:80px;}
+.driver-action-page-right .driver-action1 span b .select-wrapper{ background-position:right 4px top 19px;}
+.driver-action-page-right .driver-action1 span b .select-wrapper:hover{ background-position:right 4px top 19px;}
+
+.gender-span001 .radio-but b{width:27%!important;}
+
+.row-a1 {margin-left:0px;}
+.border_class-bb1{padding-left:4px;}
+.div-img1 {margin-left:0;}
+.col-vs {margin-left:-27px;}
+.img-b {margin-left:0px;}
+
+.gallery-part{ padding-top:25px;}
+.gallery-page em{font-size:22px;}
+
+.footer-inner{width:90%;}
+
+}
+
+@media screen and (min-width:1px) and (max-width:350px) {
+.menu-logo p{margin:0 0 0 25px;}
+.create-account span strong.c_code{width:26%!important;}
+.create-account span strong.ph_no{width:74%!important;}
+.create-account span b .select-wrapper, .select-wrapper select{padding:2px 6px;}
+.show-edit-profile-part span .input-phNumber2{width:80%;}
+.get-fare-estimation-left span input{width:88%;}
+/*.accordionheading span{ width:97%!important; margin:10px 0 0!important;}
+.accordionheading span b span{ width:auto!important; margin:4px 7px 0 0!important;}
+.accordionheading span b .active{ padding:6px 9px !important;}*/
+
+.driver-action-page-right .driver-action1 span b strong{ width:89px; font-size:13px;}
+.driver-action-page-right .driver-action1 span b .select-wrapper, .select-wrapper select{margin:0; padding:2px 5px; width:71px;}
+.driver-action-page-right .driver-action1 span b .select-wrapper{ background-position:right 4px top 19px;}
+.driver-action-page-right .driver-action1 span b .select-wrapper:hover{ background-position:right 4px top 19px;}
+.driver-action-page-right .driver-action1 span b .select-wrapper .holder{ font-size:14px;}
+
+.row-a1{margin-left:0px;}
+.col-vs{margin-left:-27px;}
+.img-b{margin-left:0px;}
+.border_class-bb1{padding:0px;}
+.div-img1{margin-left:0;}
+#display { right: 90px;}
+}
+
+@media screen and (min-width:568px) and (max-width:666px) {
+#display { right: 95px; width: 337px; top: 51px;}
+.custom-error-page .breadcrumbs .breadcrumbs-inner-a{width:100%;}
+.login-socials .fa{width:10%;}
+nav ul#listMenu{ width:50%; left:-50%;}
+.home-sldier-inner{ width:260px;}
+.logo {margin:10px 0 0 10%;}
+.logo img{margin-top:0;}
+.home-hero-page-left{background-size:cover; min-height:inherit; padding:0 0 40px;}
+.home-hero-page-right{background-size:cover; min-height:342px;}
+.home-hero-page-right-text{height:170px;}
+.home-hero-page-right-text span{margin:10px 0 0 25px;}
+.home-hero-page-left-text{width:90%;}
+.home-sldier{margin:40px 0 0;}
+.menu-logo .signin img{width:150px;}
+nav section.navOpen{left:10px; top:5px;}
+.people-going-way{height:auto; margin:20px 0 0;}
+.people-going-way-left{background-size:cover; height:450px; width:20%;}
+.people-going-way-mid{width:80%;}
+.people-going-way-mid-inner{width:95%; margin:9% auto 0;}
+.people-going-way-right{width:100%; background-size:cover; height:450px; float:left; margin:10px 0;} 
+
+.helping-cities{ height:auto;}
+.helping-cities-left{ width:100%; margin:0 0 10px; background-size:cover; height:450px;}
+.helping-cities-mid{ width:80%;}
+.helping-cities-mid-inner{width:95%; margin:9% auto 0;}
+.helping-cities-right{background-size:cover; height:auto; width:20%; min-height:350px;}
+
+.Safety-people-left{ width:20%; min-height:590px; background-size:cover;}
+.Safety-people-right{ width:80%;}
+.Safety-people-right-inner{ margin:9% auto 0;}
+.Safety-people-text{ width:100%;}
+.Safety-people-img{ width:100%; margin:20px 0 0;}
+
+.tap-app-ride{margin:30px 0 20px;}
+.tap-app-ride-inner h2{ font-size:37px;}
+
+.footer{ height:auto;}
+.footer-inner{ width:96%;}
+.footer-top-part{ height:auto;}
+.footer-box1{ width:100%; margin:0px; text-align:center;}
+.footer-box1 .lang{ margin:0 0 20px;}
+.footer-box1 .lang b{ padding:10px 0; text-align:center; width:100%;}
+.footer-box1 span{ /*margin:10px 0;*/ text-align:center;}
+.footer-box1 span a{ float:none; display:inline-table;}
+.footer-box2{ width:100%; margin:0px;}
+.footer-box3{ width:100%; float:left; text-align:center; margin:20px 0 0;}
+.footer-box3 span{ float:none; width:auto; margin:0 5px;}
+.footer-bottom-part{ padding:12px 0;}
+
+/****************inner**********************/
+
+.payment-tabs ul li a{ width:auto; padding:0 20px;}
+
+.page-contant{ background-position:right -100px top 0; padding:0 0 20px; margin:80px 0 0;}
+.page-contant-inner{ margin:30px 0 0 5px; float:left; width:89%;}
+.reset-password .page-contant-inner{ width:89%;}
+.driver-signup-page{ width:100%;}
+.create-account span{ margin:0px;}
+.create-account span strong{ width:100%; margin:0 0 15px;}
+.create-account span strong:nth-child(2n){ float:left;}
+.create-account span .create-account-input1{ float:left;}
+.create-account span b{ float:left; width:auto;}	
+.create-account span b .select-wrapper, .select-wrapper select{ margin:0px; padding:2px 11px; background-position:right 0 top 20px; width:45px;}
+.create-account span b .select-wrapper:hover{background-position:right 0 top 20px;}
+.create-account span abbr{margin:15px 0 0; width:100%;}
+.create-account span .select-wrapper, .select-wrapper select{ width:95%;}
+.contact-form{ width:100%;}
+.login-form-left{ width:100%; padding:0; border:none;}
+.login-form-left b .login-input{ width:99%;}
+/*.login-form-left b .submit-but{ width:auto; padding:0 30px;}*/
+.login-form-right{ width:100%;}
+.driver-profile-img{ width:130px; height:133px;}
+.driver-profile-img span{ width:125px; height:125px;}
+.driver-profile-info{ margin:15px 0 0 10px; width:71%;}
+.driver-profile-mid-part ul li{ margin:0 15px 70px 0; width:48%;}
+.driver-profile-mid-part ul li:nth-child(even){ margin-right:0px;}
+.driver-profile-mid-part ul li:last-child{ margin-bottom:0px;}
+.driver-profile-mid-part{ margin:20px 0 0; padding:80px 0 0;}
+
+.driver-profile-bottom-part li h4{ text-transform:none; font-size:16px;}
+.driver-profile-bottom-part li{ margin:0 15px 20px 0; width:48%;}
+.driver-profile-bottom-part li:last-child{ margin:0 15px 20px 0;}
+.driver-profile-bottom-part li:nth-child(even){ margin-right:0px;}
+
+.accordion-section .driver-vehicles-page-new li h4{ text-transform:none;}
+.accordion-section .driver-vehicles-page-new li{ margin:0 0px 20px 9px; width:48%;}
+.accordion-section .driver-vehicles-page-new li:nth-child(even){ margin-right:0px;}
+
+.car-type{ width:100%;}
+.car-type ul li{ width:50%; margin:0 0 20px;}
+.car-type ul li b{ width:100px; margin:10px 0 0;}
+.car-type ul li:last-child{ float:left; width:50%; margin-bottom:0px;}
+.time-period span a{ margin-bottom:5px;}
+
+.driver-trip-table{ overflow-x:scroll;}
+.driver-trip-table .dataTables_wrapper{width:1000px!important; padding:0 0 10px!important;}
+.trip-detail-page-inner{ margin:0 auto; float:none; padding:0px; width:460px;}
+.trip-detail-page-left{ width:100%; margin:0 0 25px;}
+.trip-detail-page-right{ margin:80px 0 20px; width:100%; float:left;}
+.trips-table{ margin:30px 0 0; padding:20px 0 0;}
+.trips-table-driver{ margin:0px; padding:0px;}
+.header-page{font-size:34px;}
+.driver-vehicles-page li h4{ text-transform:none;}
+.driver-vehicles-page li{ margin:0 15px 20px 0; width:48%;}
+.driver-vehicles-page li:nth-child(even){ margin-right:0px;}
+
+.driver-action-page-right{ margin:0 0 0 15px; width:75%;}
+.driver-action-page-right span .input-phNumber2{width:78%;}
+
+.contact-form b{ width:100%;}
+.contact-form b .contact-input{ width:99%;}
+.contact-form b .contact-textarea{ width:99%;}	
+
+.driver-profile-bottom-part{ margin:0;}
+.show-edit-profile-part{ width:100%; float:left;}
+.show-edit-profile-part span .input-phNumber2{ margin:0 0 0 15px; width:85%;}
+.profile-Password{ width:98%;}
+.profile-Password span .current-pas{width:30%;}
+
+.driver-add-vehicle span{margin:0px;}
+.driver-add-vehicle span b{ width:100%; margin:0 0 15px;}
+
+.time-period{ margin:20px 0 0;}
+.Posted-date span input{ width:38%;}
+
+.edit-profile-detail-form-inner{ width:100%; margin:0px;}
+
+.sign-in-driver p{ width:90%;}
+.sign-in-rider p{ width:90%; min-height:0px;}
+.login-socials .fa{width:9%;}
+.profile-Password span .new-pas{ margin:0 0 0 10px;}
+.profile-Password span .con-new-pas{ margin:0 0 0 10px;}
+
+.accordionheading h3{font-size:15px!important;}
+
+.faq-top-part li{ width:auto; margin:0 15px 0 0;}
+.faq-top-part li a{ padding:10px;}
+
+.required-documents-bottom-part ul{ margin:0 0 10px;}
+.required-documents-bottom-part ul li{ width:auto; margin:0 10px 10px 0;}
+.required-documents-bottom-part ul li:nth-child(2n){ width:auto; margin:0 10px 10px 0;}
+.required-documents-bottom-part ul li a{ width:auto; padding:0 10px; font-size:18px; text-transform:none;}
+.required-documents-bottom-part ul.last li{ width:auto;}
+.required-documents-bottom-part ul.last li a{padding:0 10px; width:100%;}
+
+.driver-action-page{ margin:15px 0 0;}
+.validation-form{ margin:0px; width:100%;}
+.validation-form span .input-phNumber2{ width:89%;}
+
+.required-company ul li{ width:auto!important;}
+.required-company ul li a{ width:auto; padding:0 15px; font-size:16px;}
+
+/*******home********/
+.home-mobile-app-inner{ width:96%;}
+.home-mobile-app-left{ width:100%; text-align:center;}
+.home-mobile-app-left img{ max-width:90%;}
+.home-mobile-app-right{ width:100%; margin:20px 0 0;}
+.home-mobile-app-right h3{ margin:0 0 10px;}
+
+.get-fare-estimation-inner{ width:96%;}
+.get-fare-estimation-left span input{ padding-right:0px;}
+
+.gallery-page{ width:100%; float:left;}
+.gallery-page-inner{ margin:0 auto; float:none; width:291px;}
+
+.taxi-app-right-part{ width:100%;}
+.profile-req-doc .upload-clicking{ margin:0 10px 10px 0;}
+
+.driver-document-action-page .profile-req-doc-inner .upload-clicking{width:100%; margin:0 0 20px;}
+.driver-document-action-page .profile-req-doc-inner .upload-clicking:nth-child(even){margin-right:0px;}
+
+.sign-in-driver{ width:49%;}
+.sign-in-rider{ width:49%; float:left;}
+}
+
+@media screen and (min-width:667px) and (max-width:767px) {
+#display {right: 95px; width: 337px; top: 51px;}
+.custom-error-page .breadcrumbs .breadcrumbs-inner-a{width:100%;}
+.login-socials .fa{width:10%;}
+.home-sldier-inner{ width:510px;}
+
+nav ul#listMenu{ width:45%; left:-50%;}
+.home-hero-page-left{background-size:cover; min-height:inherit; padding:0 0 40px;}
+.home-hero-page-right {background-size:cover; min-height:373px;}
+
+.people-going-way-mid-inner{width:91%;}
+.people-going-way-mid{ width:45%;}
+.people-going-way-right{ width:45%;}
+.helping-cities-left{ width:45%;}
+.helping-cities-mid{ width:45%;}
+.Safety-people-right{ width:89%;}
+.Safety-people-text{ width:45%;}
+.Safety-people-img{ width:54%;}
+
+.footer{ height:auto;}
+.footer-inner{ width:98%;}
+.footer-top-part{ height:auto;}
+.footer-box1{ width:243px; margin:0px;}
+.footer-box2{ width:60%; margin:0 0 0 10px; float:right;}
+.footer-box3{ width:100%; float:left; text-align:center; margin:20px 0 0;}
+.footer-box3 span{ float:none; width:auto; margin:0 5px;}
+.footer-bottom-part{ padding:12px 0;}
+
+/****************inner**********************/
+.page-contant{ background-position:right -70px top 0; padding:0 0 20px; margin:80px 0 0;}
+.page-contant-inner{ margin:30px 0 0 5px; float:left; width:86%;}
+.driver-signup-page{ width:100%;}
+.create-account span{ margin:0px;}
+.create-account span strong{ width:100%; margin:0 0 15px;}
+.create-account span strong:nth-child(2n){ float:left;}
+.create-account span .create-account-input1{ float:left;}
+.create-account span b{ float:left; width:auto;}	
+.create-account span b .select-wrapper, .select-wrapper select{ margin:0px; padding:2px 11px; background-position:right 0 top 20px; width:45px;}
+.create-account span b .select-wrapper:hover{background-position:right 0 top 20px;}
+.create-account span abbr{margin:15px 0 0; width:100%;}
+.create-account span .select-wrapper, .select-wrapper select{ width:95%;}
+.contact-form{ width:100%;}
+.login-form-left{ width:100%; padding:0; border:none;}
+.login-form-left b .login-input{ width:99%;}
+/*.login-form-left b .submit-but{ width:auto; padding:0 30px;}*/
+.login-form-right{ width:100%;}
+.driver-profile-img{ width:140px; height:143px;}
+.driver-profile-img span{ width:135px; height:135px;}
+.driver-profile-info{ margin:15px 0 0 15px; width:71%;}
+.driver-profile-mid-part ul li{ margin:0 15px 70px 0; width:48%;}
+.driver-profile-mid-part ul li:nth-child(even){ margin-right:0px;}
+.driver-profile-mid-part ul li:last-child{ margin-bottom:0px;}
+.driver-profile-mid-part{ margin:20px 0 0; padding:80px 0 0;}
+
+.driver-profile-bottom-part li h4{ text-transform:none; font-size:16px;}
+.driver-profile-bottom-part li{ margin:0 15px 20px 0; width:48%;}
+.driver-profile-bottom-part li:last-child{ margin:0 15px 20px 0;}
+.driver-profile-bottom-part li:nth-child(even){ margin-right:0px;}
+
+.accordion-section .driver-vehicles-page-new li h4{ text-transform:none;}
+.accordion-section .driver-vehicles-page-new li{ margin:0 15px 20px 0; width:48%;}
+.accordion-section .driver-vehicles-page-new li:nth-child(even){ margin-right:0px;}
+
+.car-type{ width:100%;}
+.car-type ul li{ width:50%; margin:0 0 20px;}
+.car-type ul li b{ width:100px; margin:10px 0 0;}
+.car-type ul li:last-child{ float:left; width:50%; margin-bottom:0px;}
+.time-period span a{ margin-bottom:5px;}
+
+.driver-trip-table{ overflow-x:scroll;}
+.driver-trip-table .dataTables_wrapper{width:1000px!important; padding:0 0 10px!important;}
+.trip-detail-page-inner{ margin:0 auto; float:none; padding:0px; width:460px;}
+.trip-detail-page-left{ width:100%; margin:0 0 25px;}
+.trip-detail-page-right{ margin:80px 0 20px; width:100%; float:left;}
+.trips-table{ margin:30px 0 0; padding:20px 0 0;}
+.trips-table-driver{ margin:0px; padding:0px;}
+.header-page{font-size:34px;}
+.driver-vehicles-page li h4{ text-transform:none;}
+.driver-vehicles-page li{ margin:0 15px 20px 0; width:48%;}
+.driver-vehicles-page li:nth-child(even){ margin-right:0px;}
+
+.driver-action-page-right{ margin:0 0 0 20px; width:78%;}
+.driver-action-page-right span .input-phNumber2{width:81%;}
+
+.contact-form b{ width:100%;}
+.contact-form b .contact-input{ width:99%;}
+.contact-form b .contact-textarea{ width:99%;}	
+
+.driver-profile-bottom-part{ margin:40px 0 0;}
+.show-edit-profile-part{ width:100%; float:left;}
+.show-edit-profile-part span .input-phNumber2{ margin:0 0 0 15px;}
+.profile-Password{ width:98%;}
+.profile-Password span .current-pas{width:30%;}
+
+.driver-add-vehicle span{margin:0px;}
+.driver-add-vehicle span b{ width:100%; margin:0 0 15px;}
+
+.time-period{ margin:20px 0 0;}
+.Posted-date span input{ width:33%;}
+
+.edit-profile-detail-form-inner{ width:100%; margin:0px;}
+
+.faq-top-part li{ width:auto; margin:0 15px 0 0;}
+.faq-top-part li a{ padding:10px;}
+
+.required-documents-bottom-part ul{ margin:0 0 10px;}
+.required-documents-bottom-part ul li{ width:auto; margin:0 10px 10px 0;}
+.required-documents-bottom-part ul li:nth-child(2n){ width:auto; margin:0 10px 10px 0;}
+.required-documents-bottom-part ul li a{ width:auto; padding:0 10px; font-size:18px;}
+.required-documents-bottom-part ul.last li{ width:32%;}
+.required-documents-bottom-part ul.last li a{padding:0px; width:100%;}
+
+.driver-action-page{ margin:15px 0 0;}
+.validation-form{ margin:0px; width:100%;}
+.validation-form span .input-phNumber2{ width:92%;}
+
+.required-company ul li a{ width:100%; padding:0px; font-size:16px;}
+.reset-password .page-contant-inner{ width:86%;}
+
+.profile-req-doc .upload-clicking{ margin:0 20px 20px 0;}
+
+.driver-document-action-page .profile-req-doc-inner .upload-clicking{width:46%;}
+.driver-document-action-page .profile-req-doc-inner .upload-clicking:nth-child(even){margin-right:0px;}
+
+.sign-in-driver{ width:49%;}
+.sign-in-rider{ width:49%; float:left;}
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+.custom-error-page .breadcrumbs .breadcrumbs-inner-a{width: 100%;}
+#display{right: 95px;}
+.custom-error-page .breadcrumbs .breadcrumbs-inner-a{width:100%;}
+.custom-error-page .page-contant-inner-a { width: 100%;}
+.custom-error-left-part{width:100%;}
+.custom-error-right-part{width:100%; float:none;}
+.login-socials .fa-facebook{padding: 7px 12px 7px 12px;}
+.sign-in-driver p{min-height:110px;}
+.driver-vehicles-page-new li .select-image1 .fileupload-new{margin:0 0 0 -9px!important; padding:10px 6px 8px 4px!important;}
+/*.sign-in-driver p{ min-height: 109px;}*/
+.sign-in-rider p{min-height:109px;}
+.col-vs { margin-left:-39px;}
+.logo{ margin-left:7%; width:72%;}
+/*.logo img{ width:152px;}*/
+nav ul#listMenu{ width:40%; left:-41%; margin:0px;}
+nav ul#listMenu .menu-left-new{ margin:41px auto 0;}
+.top-part-inner{ width:98%;}
+nav button{left:0%;}
+nav section{left:13px;}
+
+.menu-logo label{ width:100%; margin:10px 0; text-align:center;}
+.menu-logo label a{ width:100%; margin-left:0;}
+.menu-logo label em{ margin:0px; float:none; display:inline-block;}
+
+.top-link-login span{margin:0px; width:100%; text-align:center; height:auto;}
+.top-link-login span a{ margin:0 8px; font-size:16px; float:none; display:inline-block; height:47px; line-height:40px;}
+.top-link-login span a img{ margin:0 5px 0 0; width:21px;}
+
+.get-there-inner span{ width:auto; margin-right:0px;}
+.get-there-inner span a{ padding:10px 15px; width:auto;}
+
+/*.logo img{ width:130px;}*/
+
+.faq-page{ margin:30px 0 0;}
+
+.get-there-inner h2{ margin:18px 0 0; width:67%;}
+.home-hero-page-left-text{ width:95%;}
+.home-sldier-inner ul li{margin:0 10px 20px;}
+
+.home-hero-page-left{background-size:cover; min-height:inherit; padding:0 0 40px;}
+.home-hero-page-right {background-size:cover; min-height:412px;}
+
+.people-going-way-mid-inner{ margin:11.5% auto 0; width:90%;}
+.people-going-way-mid-inner h2{font-size:27px; margin:0 0 20px;}
+.people-going-way-left{ width:10%;}
+.people-going-way-mid{ width:40%;}
+.people-going-way-right{ width:50%;}
+
+.tap-app-ride-inner{ margin:; width:95%;}
+
+.helping-cities-left{ width:50%;}
+.helping-cities-mid{ width:40%;}
+.helping-cities-mid-inner{ width:90%; margin:11.5% auto 0;}
+.helping-cities-mid-inner h2{font-size:27px; margin:0 0 20px;}
+.helping-cities-right{ width:10%;}
+
+.Safety-people-text h2{font-size:27px; margin:0 0 10px;}
+.Safety-people-right-inner{ width:96%;}
+.Safety-people-left{ width:10%;}
+.Safety-people-right{ width:88%;}
+.Safety-people-img{ width:56%;}
+.Safety-people-img img{ width:100%;}
+
+.footer{ height:auto;}
+.footer-inner{ width:98%;}
+.footer-top-part{ height:auto;}
+.footer-box1{ width:235px;}
+.footer-box1 .lang b{ padding:10px 0; text-align:center;}
+.footer-box2{ width:46%; margin:0 0 0 22px;}
+.footer-box2 ul:last-child{ width:40%;}
+.footer-box3{ width:140px; float:right; text-align:center; margin:0;}
+.footer-box3 span{ margin:0 0 10px; float:left; width:100%;}
+.footer-bottom-part{ padding:12px 0;}
+/*.footer-box1 .lang-all{ width:750px;}*/
+.home-sldier-inner{ width:510px;}
+.reset-password .page-contant-inner{ width:84%;}
+.menu-logo .logo-left{ margin:0 0 0 10%;}
+
+/****************inner**********************/
+.page-contant{ background-position:right -50px top 0; margin:76px 0 0;}
+.page-contant-inner{ margin:30px 0 0 15px; float:left; width:84%;}
+.driver-signup-page{ width:100%;}
+.create-account span b strong{ width:110px;}
+.create-account span b .select-wrapper, .select-wrapper select{ margin:0px; padding:2px 14px; background-position:right 0 top 20px; width:38px;}
+.create-account span b .select-wrapper:hover{background-position:right 0 top 20px;}
+.contact-form{ width:100%;}
+.login-form-left{ width:60%; padding:0 20px 0 0;}
+.login-form-left b .submit-but{ width:auto; padding:0 30px;}
+.login-form-right{ width:35%;}
+.driver-profile-info{ margin:15px 0 0 20px; width:70%;}
+.driver-profile-mid-part ul li{ padding:0 30px 80px 0; width:50%; margin:0;}
+.driver-profile-mid-part ul li:nth-child(3n){padding-bottom:0px;}
+.driver-profile-mid-part ul li:nth-child(4n){padding-bottom:0px;}
+.driver-profile-mid-part{ margin:20px 0 0; padding:80px 0 0;}
+
+.driver-profile-bottom-part li h4{ text-transform:none; font-size:16px;}
+.driver-profile-bottom-part li{ margin:0 10px 0 0; width:32%;}
+.driver-vehicles-page-new li:nth-child(3n){ float:left;}
+
+.accordion-section .driver-vehicles-page-new li h4{ text-transform:none;}
+.accordion-section .driver-vehicles-page-new li{ margin:0 10px 20px 0; width:48%; min-height:392px;}
+.accordion-section .driver-vehicles-page-new li:nth-child(even){ float:right;}
+.driver-vehicles-page-new li:nth-child(3n){ float:left;}
+
+.car-type{ width:100%;}
+.car-type ul li{ width:33%;}
+.car-type ul li b{font-size:15px; width:80px;}
+.time-period span a{ margin-bottom:5px;}
+
+.driver-trip-table{ overflow-x:scroll;}
+.driver-trip-table .dataTables_wrapper{width:1000px!important; padding:0 0 10px!important;}
+.trip-detail-page-inner{ margin:0 auto; float:none; padding:0px; width:460px;}
+.trip-detail-page-left{ width:100%; margin:0 0 25px;}
+.trip-detail-page-right{ margin:80px 0 0; width:100%; float:left;}
+.trips-table{ margin:30px 0 0; padding:20px 0 0;}
+.trips-table-driver{ margin:0px; padding:0px;}
+.header-page{font-size:38px;}
+.driver-vehicles-page li h4{ text-transform:none;}
+.driver-vehicles-page li{ margin:0 20px 20px 0; width:45%;}
+.driver-action-page-right{ margin:0 0 0 20px; width:80%;}
+.driver-action-page-right span .input-phNumber2{width:90%;}
+.driver-profile-bottom-part li{ margin:0 20px 20px 0; width:45%;}
+
+.faq-top-part li{ width:auto; margin:0 15px 0 0;}
+.faq-top-part li a{ padding:10px;}
+
+.required-documents-bottom-part ul li{ width:auto; margin:0 10px 0 0;}
+.required-documents-bottom-part ul li:nth-child(2n){ width:auto;}
+.required-documents-bottom-part ul li a{ padding:0 10px; font-size:18px;}
+.required-documents-bottom-part ul.last li{ width:32%;}
+.required-documents-bottom-part ul.last li a{padding:0px; width:100%;}
+
+.mytrip-page span b{float:right; margin:15px 0 0; padding:0;}	
+.ph_no {width:74%!important;}
+.c_code {width:26%!important;}
+.c_country {float:left; width:49%!important;}
+.top-link span{ height:auto;}
+
+.driver-action-page{ margin:15px 0 0;}
+.validation-form{ margin:0px; width:100%;}
+.validation-form span .input-phNumber2{ width:92%;}
+
+.validation-form span i{ right:0; top:-4px;}
+
+.two-part-document ul li a{ padding:0 22px;}
+.two-part-document ul.last li{ width:33%;}
+
+/***home****/
+.home-hero-page-left-text span a{ margin-left:15px;}
+.home-body-mid-part-inner{ width:100%;}
+.home-body-mid-part-inner ul li{ margin:0 5px 20px; width:48%;}
+.home-body-mid-part-inner ul li .home-body-mid-img img{ max-width:100%;}
+.home-mobile-app-inner{ width:98%;}
+.home-mobile-app{ background-size:cover;}
+.home-mobile-app-left{ width:46%;}
+.home-mobile-app-left img{ max-width:100%;}
+.home-mobile-app-right{ width:49%; margin:15px 0 0;}
+.home-mobile-app-right h3{text-transform:none; font-size:30px; margin:0 0 20px;}
+.home-mobile-app-right p{font-size:19px;}
+.get-fare-estimation-inner{ width:98%;}
+.get-fare-estimation-left{ width:100%;}
+.get-fare-estimation-left span input{ width:93.5%;}
+.home-page-map{ margin:25px 0 0; padding:0px; float:left; width:100%; height:350px;}
+.home-hero-page-right-text{ width:240px;}
+.home-hero-page-right-text span{ margin:20px 0 0 25px;}
+
+.taxi-app{ height:auto; background:#f2e5d5!important;}
+.taxi-app1{height:auto; background:#f2e5d5!important;}
+.taxi-app-inner{ width:98%;}
+.taxi-app-right-part{ margin:30px 0 0; width:100%;}
+.taxi-app-right-part h3{ font-size:36px; margin:0 0 15px;}
+.taxi-app-right-part p{ margin:0 0 20px; height:auto;}
+.taxi-app-right-part-img-res{ display:block;}
+.taxi-app-right-part-img-res img{ max-width:100%;}
+
+.gallery-page{ width:645px;}
+.gallery-part{ padding-bottom:0px;}
+.gallery-part .gallery-page .box{ margin-bottom:20px;}
+
+.get-fare-estimation-inner .get-free1{ width:100%; float:left;}
+.get-fare-estimation-left{ margin:0px;}
+.home-page-map{ margin:0px;}
+
+.profile-req-doc .upload-clicking{margin:0 20px 20px 0;}
+
+.gender-span001 .radio-but{padding:5px 0 0;}
+.gender-span001 .radio-but em{margin-right:10px;}
+.gender-span001 .radio-but b{width:27%!important;}
+.create-account span strong.captcha-signup{width:100%;}
+
+.driver-document-action-page .profile-req-doc-inner .upload-clicking{width:46%;}
+
+
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1099px) {
+.custom-error-page .breadcrumbs .breadcrumbs-inner-a{width: 100%;}
+#display{right: 90px;}
+.custom-error-page .breadcrumbs .breadcrumbs-inner-a{width:100%;}
+.create-account span strong.captcha-signup .create-account-input{width: 45px;}
+.logo{ margin-left:7%; width:65%;}
+/*.logo img{ width:152px;}*/
+nav ul#listMenu{ width:36%; left:-40%;}
+
+.top-link-login span{margin:0px; width:100%; text-align:center; height:auto;}
+.top-link-login span a{ margin:0 8px; font-size:16px; float:none; display:inline-block; height:47px; line-height:40px;}
+.top-link-login span a img{ margin:0 5px 0 0; width:21px;}
+
+.get-there-inner h2{ margin:18px 0 0 4%; width:80%;}
+.home-sldier-inner ul li{ margin:0 10px;}
+.tap-app-ride-inner{ width:95%;}
+.people-going-way-mid-inner h2{font-size:31px; margin:0 0 20px;}
+.helping-cities-mid-inner{ width:80%;}
+.helping-cities-mid-inner h2{font-size:31px; margin:0 0 20px;}
+.Safety-people-text h2{font-size:31px; margin:0 0 20px;}
+.Safety-people-right-inner{ width:93%;}
+
+/****************inner**********************/
+
+.page-contant{ background-position:right -30px top 0;}
+.page-contant-inner{ margin:15px 0 0 15px; float:left; width:86%;}
+.create-account span b .select-wrapper, .select-wrapper select{ padding:2px 9px;}
+.time-period span a{ margin:0 10px 0 0; padding:0 10px 0 0;}
+
+.trip-detail-page-left{ width:50%;}
+.trip-detail-page-right{ width:48%;}
+.fare-breakdown-inner h3{ margin:0 0 16px;}
+
+.driver-vehicles-page li{ margin:0 20px 0 0; width:31%;}
+
+.home-sldier-inner{ width:900px;}
+
+.required-documents-bottom-part ul li{ width:auto;}
+.required-documents-bottom-part ul li:nth-child(2n){ width:auto;}
+.required-documents-bottom-part ul li a{ width:auto; padding:0 30px;}
+.required-documents-bottom-part ul.last li{ width:29%;}
+.required-documents-bottom-part ul.last li a{padding:0px; width:100%;}
+
+.top-part-inner{ margin:0px; width:97%;}
+.validation-form span i{ right:0; top:-4px;}
+
+.footer-inner{ width:98%;}
+.footer-box1{ width:240px;}
+.footer-box2{ margin:0 0 0 30px; width:41%;} 
+.required-company ul li a{ width:100%; padding:0px;}
+
+/***home****/
+.home-body-mid-part-inner{ width:870px;}
+.home-body-mid-part-inner ul li{ margin:0 20px 30px;}
+.home-mobile-app-inner{ width:98%;}
+.home-mobile-app{ background-size:cover;}
+.home-mobile-app-left{ width:50%;}
+.home-mobile-app-left img{ max-width:100%;}
+.home-mobile-app-right{ width:45%;}
+.home-mobile-app-right h3{ font-size:35px;}
+.get-fare-estimation-inner{ width:98%;}
+.get-fare-estimation-left{ width:40%;}
+.home-page-map{ margin:0px; padding:0px; float:right; width:57%;}
+
+.taxi-app-inner{ width:98%;}
+
+.gallery-page{ width:965px;}
+.gallery-part .gallery-page .box{ margin-bottom:20px;}
+.get-fare-estimation-inner .get-free1{ width:100%; float:left;}
+
+}
+
+@media screen and (min-width:1100px) and (max-width:1199px) {
+.logo{ margin:18px 0 0 7%;}
+.get-there-inner h2{ margin:18px 0 0 7%;}
+.tap-app-ride-inner{ width:95%;}
+.people-going-way-mid-inner h2{font-size:33px;}
+.helping-cities-mid-inner{ width:80%;}
+.helping-cities-mid-inner h2{font-size:33px;}
+.Safety-people-right-inner{ width:93%;}
+.page-contant{ background-position:right -30px top 0;}
+.page-contant-inner{ margin:58px 0 0 15px; float:left; width:86%;}
+
+.footer-inner{ width:98%;}
+.footer-box1{ width:210px;}
+.footer-box2{ margin:0px; width:470px;} 
+
+.required-company ul li a{ width:100%; padding:0px;}
+.custom-error-page .breadcrumbs .breadcrumbs-inner-a{width:100%;}
+#display{right: 90px;}
+.custom-error-page .breadcrumbs .breadcrumbs-inner-a{width: 100%;}
+
+}
+
+@media screen and (min-width:1280px) and (max-width:1400px) {
+.top-link-login span a{font-size:18px; margin:0 16px 0 8px;}
+.footer-inner{ width:98%;}
+
+.home-mobile-app{ padding:40px 0 20px;}
+.get-fare-estimation-left span input{ width:88%;}
+.custom-error-page .breadcrumbs .breadcrumbs-inner-a{width:100%;}
+#display{right:7% !important; }
+}

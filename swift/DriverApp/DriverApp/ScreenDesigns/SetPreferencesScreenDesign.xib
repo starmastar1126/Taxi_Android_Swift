@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetPreferencesUV" customModule="DriverApp" customModuleProvider="target">
+            <connections>
+                <outlet property="genderChkBox" destination="TxO-g2-bdD" id="KGf-yc-vcy"/>
+                <outlet property="genderLbl" destination="ssr-XZ-H5s" id="Pk0-gr-bJx"/>
+                <outlet property="genderView" destination="3Hp-3h-IEn" id="1Sg-Oj-cd0"/>
+                <outlet property="genderViewHeight" destination="P65-hG-YDe" id="eNg-Y9-Beo"/>
+                <outlet property="handiCapView" destination="0m0-DC-nMy" id="O34-eA-LoU"/>
+                <outlet property="handiCapViewHeight" destination="fLi-FP-jtX" id="Kt7-T7-hu1"/>
+                <outlet property="handiCaplbl" destination="P1L-VW-deX" id="Qkr-ID-TsH"/>
+                <outlet property="updateBtn" destination="xet-eX-5F6" id="sQf-xk-wNv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hp-3h-IEn">
+                    <rect key="frame" x="15" y="15" width="345" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TxO-g2-bdD" customClass="BEMCheckBox">
+                            <rect key="frame" x="0.0" y="12.5" width="25" height="25"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="Eol-hP-ubm"/>
+                                <constraint firstAttribute="width" constant="25" id="dJh-EF-ari"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssr-XZ-H5s" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                            <rect key="frame" x="35" y="15" width="300" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ssr-XZ-H5s" secondAttribute="trailing" constant="10" id="2Ij-QC-LN6"/>
+                        <constraint firstAttribute="height" constant="50" id="P65-hG-YDe"/>
+                        <constraint firstItem="ssr-XZ-H5s" firstAttribute="centerY" secondItem="3Hp-3h-IEn" secondAttribute="centerY" id="bIK-iz-8V4"/>
+                        <constraint firstItem="ssr-XZ-H5s" firstAttribute="leading" secondItem="TxO-g2-bdD" secondAttribute="trailing" constant="10" id="bwm-AD-FZV"/>
+                        <constraint firstItem="TxO-g2-bdD" firstAttribute="centerY" secondItem="3Hp-3h-IEn" secondAttribute="centerY" id="g5K-qH-7G3"/>
+                        <constraint firstItem="TxO-g2-bdD" firstAttribute="leading" secondItem="3Hp-3h-IEn" secondAttribute="leading" id="iaP-SS-Pio"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0m0-DC-nMy">
+                    <rect key="frame" x="15" y="80" width="345" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvj-jZ-xuf">
+                            <rect key="frame" x="0.0" y="12.5" width="25" height="25"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="WU1-Ik-gbd"/>
+                                <constraint firstAttribute="height" constant="25" id="bDp-S3-d9X"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1L-VW-deX" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                            <rect key="frame" x="35" y="15" width="300" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="dvj-jZ-xuf" firstAttribute="centerY" secondItem="0m0-DC-nMy" secondAttribute="centerY" id="BOS-Qp-YHG"/>
+                        <constraint firstAttribute="height" constant="50" id="fLi-FP-jtX"/>
+                        <constraint firstItem="P1L-VW-deX" firstAttribute="leading" secondItem="dvj-jZ-xuf" secondAttribute="trailing" constant="10" id="i8z-AJ-eqe"/>
+                        <constraint firstItem="dvj-jZ-xuf" firstAttribute="leading" secondItem="0m0-DC-nMy" secondAttribute="leading" id="vrb-gz-0wK"/>
+                        <constraint firstAttribute="trailing" secondItem="P1L-VW-deX" secondAttribute="trailing" constant="10" id="yXO-4M-dRF"/>
+                        <constraint firstItem="P1L-VW-deX" firstAttribute="centerY" secondItem="0m0-DC-nMy" secondAttribute="centerY" id="z6Z-Ag-tfz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xet-eX-5F6" customClass="MyButton" customModule="DriverApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="597" width="345" height="55"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="3k1-cr-Wzm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xet-eX-5F6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="0Bn-Gf-o86"/>
+                <constraint firstAttribute="trailing" secondItem="xet-eX-5F6" secondAttribute="trailing" constant="15" id="446-RR-sm7"/>
+                <constraint firstItem="0m0-DC-nMy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="5pS-Vp-d1P"/>
+                <constraint firstAttribute="bottom" secondItem="xet-eX-5F6" secondAttribute="bottom" constant="15" id="PNt-5V-3ds"/>
+                <constraint firstItem="3Hp-3h-IEn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="Wct-jV-PbL"/>
+                <constraint firstItem="3Hp-3h-IEn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="WpL-vt-bVc"/>
+                <constraint firstAttribute="trailing" secondItem="0m0-DC-nMy" secondAttribute="trailing" constant="15" id="jiC-YQ-sLB"/>
+                <constraint firstAttribute="trailing" secondItem="3Hp-3h-IEn" secondAttribute="trailing" constant="15" id="nab-Xs-2zh"/>
+                <constraint firstItem="0m0-DC-nMy" firstAttribute="top" secondItem="3Hp-3h-IEn" secondAttribute="bottom" constant="15" id="v8y-dT-iov"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+        </view>
+    </objects>
+</document>

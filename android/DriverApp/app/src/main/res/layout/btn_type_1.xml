@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.view.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/all_btn_height"
+    android:layout_gravity="center_horizontal"
+    app:mrl_rippleAlpha="@string/ripple_alpha_type1"
+    app:mrl_rippleColor="@color/btn_hover_color_type1"
+    app:mrl_rippleDelayClick="true"
+    app:mrl_rippleDuration="@integer/rippleDuration_type1"
+    app:mrl_rippleFadeDuration="@integer/rippleFadeDuration_type1"
+    app:met_isMButton_type1="true"
+    app:mrl_rippleHover="true"
+    app:mrl_rippleOverlay="true">
+
+</com.view.MaterialRippleLayout>

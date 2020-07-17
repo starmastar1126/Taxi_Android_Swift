@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/left_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_area"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:background="@mipmap/drawer_back">
+
+        <com.view.SelectableRoundedImageView
+            android:id="@+id/userImgView"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="start"
+            android:layout_marginStart="14dp"
+            android:scaleType="centerCrop"
+            app:sriv_border_color="@android:color/transparent"
+            app:sriv_border_width="2dip"
+            app:sriv_left_bottom_corner_radius="20dip"
+            app:sriv_left_top_corner_radius="20dip"
+            app:sriv_oval="true"
+            app:sriv_right_bottom_corner_radius="20dip"
+            app:sriv_right_top_corner_radius="20dip" />
+
+        <com.view.MTextView
+            android:id="@+id/userNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/userImgView"
+            android:layout_toStartOf="@+id/imgSetting"
+            android:ellipsize="end"
+            android:ems="3"
+            android:singleLine="true"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:customTypeFace="roboto_light" />
+
+        <com.view.MTextView
+            android:id="@+id/walletbalncetxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="bottom"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:customTypeFace="roboto_light" />
+
+        <ImageView
+            android:id="@+id/imgSetting"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+
+            android:src="@mipmap/ic_setting" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/menuListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/logoutarea"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" />
+
+        <LinearLayout
+            android:id="@+id/logoutarea"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_back_color"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/logoutimage"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="10dp"
+                android:clickable="false"
+                android:rotationY="@integer/angle_rtl_180"
+                android:src="@mipmap/ic_menu_logout"
+                android:tint="@color/light_back_logout_txt_color" />
+
+            <com.view.MTextView
+                android:id="@+id/logoutTxt"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="Logout"
+                android:textAlignment="viewStart"
+                android:textColor="@color/light_back_logout_txt_color"
+                android:textSize="@dimen/txt_size_14"
+                app:customTypeFace="roboto_light" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

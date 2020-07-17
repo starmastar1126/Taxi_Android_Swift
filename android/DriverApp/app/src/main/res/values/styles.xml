@@ -1,0 +1,176 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppCompatTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:textColorSecondary">@android:color/black</item>
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/appThemeColor_1</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/appThemeColor_Dark_1</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/appThemeColor_2</item>
+
+        <!--<item name="android:actionOverflowButtonStyle">@style/OverflowMenuButton</item>-->
+        <!--<item name="actionOverflowButtonStyle">@style/OverflowMenuButton</item>-->
+        <item name="android:actionOverflowButtonStyle">@style/OverflowMenu</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/appThemeColor_1</item>
+        <item name="android:textColorPrimary">@color/appThemeColor_1</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- <style name="OverflowMenuButton" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+         <item name="android:src">@drawable/ic_menu_overflow</item>
+     </style>-->
+    <style name="bgcard_materialEditText" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="theme_my_progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="bg_materialEditText" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/editBox_primary</item>
+        <item name="colorPrimaryDark">@color/editBox_primary_dark</item>
+        <item name="colorAccent">@color/editBox_accent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="FBtheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="FBDialogtheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="AppCompatTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppCompatTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ImageSourceDialogStyle">
+        <item name="android:windowAnimationStyle">@style/ImageSourceDialogAnimStyle</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="ImageSourceDialogAnimStyle">
+        <item name="android:windowEnterAnimation">@anim/slide_up_anim</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down_anim</item>
+    </style>
+
+    <!--<style name="Theme.Rating" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/appThemeColor_2</item>
+        <item name="colorControlActivated">@color/appThemeColor_1</item>
+    </style>-->
+    <style name="Theme.App.Base" parent="AppCompatTheme">
+        <item name="colorControlNormal">@color/appThemeColor_1</item>
+        <item name="colorControlActivated">@color/appThemeColor_1</item>
+        <item name="colorControlHighlight">@color/appThemeColor_1</item>
+    </style>
+
+    <style name="Theme_Dialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+
+    <style name="RatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/star_rating_bar_full</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
+
+    <style name="MidRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/star_rating_bar_full_2</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:maxHeight">40dip</item>
+    </style>
+
+    <style name="smallRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/star_rating_bar_full_1</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+
+    <style name="StackedAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="buttonBarButtonStyle">@style/StackedButtonBarButtonStyle</item>
+    </style>
+
+    <style name="StackedButtonBarButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+    <style name="CalendarView" />
+
+    <style name="CalendarView.MonthTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarView.DayOfTheWeek">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CalendarView.DayOfTheMonth">
+        <item name="android:textSize">14sp</item>
+        <item name="android:minHeight">@dimen/minDayCellHeight</item>
+    </style>
+
+    <style name="OverflowMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <!-- Required for pre-Lollipop. -->
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">-4.0dip</item>
+
+        <item name="android:src">@drawable/ic_menu_overflow</item>
+        <item name="android:popupBackground">@color/appThemeColor_1</item>
+
+    </style>
+
+</resources>

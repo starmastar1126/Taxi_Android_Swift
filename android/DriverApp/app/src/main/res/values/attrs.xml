@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MTextView">
+        <attr name="customTypeFace" format="string" />
+    </declare-styleable>
+    <declare-styleable name="MButton">
+        <attr name="customButtonTypeFace" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialRippleLayout">
+        <attr name="mrl_rippleColor" format="color" localization="suggested" />
+        <attr name="mrl_rippleDimension" format="dimension" localization="suggested" />
+        <attr name="mrl_rippleOverlay" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleAlpha" format="float" localization="suggested" />
+        <attr name="mrl_rippleDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleFadeDuration" format="integer" localization="suggested" />
+        <attr name="mrl_rippleHover" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleBackground" format="color" localization="suggested" />
+        <attr name="mrl_rippleDelayClick" format="boolean" localization="suggested" />
+        <attr name="mrl_ripplePersistent" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleInAdapter" format="boolean" localization="suggested" />
+        <attr name="mrl_rippleRoundedCorners" format="dimension" localization="suggested" />
+
+        <!-- Application specific -->
+        <attr name="met_isMButton_type1" format="boolean"/>
+        <attr name="met_isMButton_type2" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingUpPanelLayout">
+        <attr name="umanoPanelHeight" format="dimension" />
+        <attr name="umanoShadowHeight" format="dimension" />
+        <attr name="umanoParallaxOffset" format="dimension" />
+        <attr name="umanoFadeColor" format="color" />
+        <attr name="umanoFlingVelocity" format="integer" />
+        <attr name="umanoDragView" format="reference" />
+        <attr name="umanoScrollableView" format="reference" />
+        <attr name="umanoOverlay" format="boolean"/>
+        <attr name="umanoClipPanel" format="boolean"/>
+        <attr name="umanoAnchorPoint" format="float" />
+        <attr name="umanoInitialState" format="enum">
+            <enum name="expanded" value="0" />
+            <enum name="collapsed" value="1" />
+            <enum name="anchored" value="2" />
+            <enum name="hidden" value="3" />
+        </attr>
+        <attr name="umanoScrollInterpolator" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialEditText">
+        <!-- The base color of the line and the texts. Default is black. -->
+        <attr name="met_baseColor" format="color" />
+        <!-- The highlight color of the line, and the floating label if the highlightFloatingLabel is true. -->
+        <attr name="met_primaryColor" format="color" />
+        <!-- How the floating label should be shown. Default is none -->
+        <attr name="met_floatingLabel">
+            <enum name="none" value="0" />
+            <enum name="normal" value="1" />
+            <enum name="highlight" value="2" />
+        </attr>
+        <!-- The color for when something is wrong.(e.g. exceeding max characters) -->
+        <attr name="met_errorColor" format="color" />
+        <!-- Min characters count limit. 0 means no limit. -->
+        <attr name="met_minCharacters" format="integer" />
+        <!-- max Characters count limit. 0 means no limit. -->
+        <attr name="met_maxCharacters" format="integer" />
+        <!-- Whether to show the bottom ellipsis in singleLine mode -->
+        <attr name="met_singleLineEllipsis" format="boolean" />
+        <!-- Reserved bottom text lines count, no matter if there is some helper/error text. -->
+        <attr name="met_minBottomTextLines" format="integer" />
+        <!-- Helper text at the bottom -->
+        <attr name="met_helperText" format="string" />
+        <!-- Helper text color -->
+        <attr name="met_helperTextColor" format="color" />
+        <!-- Font of the paint used to draw accent texts -->
+        <attr name="met_accentTypeface" format="string" />
+        <!-- Font used on view -->
+        <attr name="met_typeface" format="string" />
+        <!-- Custom float label text -->
+        <attr name="met_floatingLabelText" format="string" />
+        <!-- spacing between the main text and the floating label -->
+        <attr name="met_floatingLabelPadding" format="dimension" />
+        <!-- Hide underline -->
+        <attr name="met_hideUnderline" format="boolean" />
+        <!-- Underline's color -->
+        <attr name="met_underlineColor" format="color" />
+        <!-- Auto validate -->
+        <attr name="met_autoValidate" format="boolean" />
+        <!-- Left icon -->
+        <attr name="met_iconLeft" format="reference" />
+        <!-- Right icon -->
+        <attr name="met_iconRight" format="reference" />
+        <!-- Padding between icon(s) and the main area. 8dp by default. -->
+        <attr name="met_iconPadding" format="dimension" />
+        <!-- Clear button -->
+        <attr name="met_clearButton" format="boolean" />
+        <!-- The floating label's text size. 12sp by default. -->
+        <attr name="met_floatingLabelTextSize" format="dimension" />
+        <!-- The floating label's text color. -1 by default. -->
+        <attr name="met_floatingLabelTextColor" format="color" />
+        <!-- The bottom texts' size. 12sp by default. -->
+        <attr name="met_bottomTextSize" format="dimension" />
+        <!-- Always show the floating label, instead of animating it in/out. False by default. -->
+        <attr name="met_floatingLabelAlwaysShown" format="boolean" />
+        <!-- Always show the helper text, no matter if the edit text is focused. False by default. -->
+        <attr name="met_helperTextAlwaysShown" format="boolean" />
+        <!-- Whether use animation to show/hide the floating label. True by default. -->
+        <attr name="met_floatingLabelAnimating" format="boolean"/>
+        <!-- Text color -->
+        <attr name="met_textColor" format="color" />
+        <!-- Hint Text Color -->
+        <attr name="met_textColorHint" format="color" />
+        <!-- Auto validate on focus lost. False by default. -->
+        <attr name="met_validateOnFocusLost" format="boolean"/>
+        <!-- Whether check the characters count at the beginning it's shown. True by default. -->
+        <attr name="met_checkCharactersCountAtBeginning" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="MaterialTabs">
+        <attr name="mtIndicatorColor" format="color" />
+        <attr name="mtUnderlineColor" format="color" />
+        <attr name="mtIndicatorHeight" format="dimension" />
+        <attr name="mtUnderlineHeight" format="dimension" />
+        <attr name="mtTabPaddingLeftRight" format="dimension" />
+        <attr name="mtSameWeightTabs" format="boolean" />
+        <attr name="mtTextAllCaps" format="boolean" />
+        <attr name="mtPaddingMiddle" format="boolean" />
+        <attr name="mtTextColorSelected" format="color" />
+        <attr name="mtTextColorUnSelected" format="color" />
+        <attr name="mtMrlRippleColor" format="color" localization="suggested" />
+        <attr name="mtMrlRippleHighlightColor" format="color" localization="suggested" />
+        <attr name="mtMrlRippleDiameter" format="dimension" localization="suggested" />
+        <attr name="mtMrlRippleOverlay" format="boolean" localization="suggested" />
+        <attr name="mtMrlRippleAlpha" format="float" localization="suggested" />
+        <attr name="mtMrlRippleDuration" format="integer" localization="suggested" />
+        <attr name="mtMrlRippleFadeDuration" format="integer" localization="suggested" />
+        <attr name="mtMrlRippleDelayClick" format="boolean" localization="suggested" />
+        <attr name="mtMrlRipplePersistent" format="boolean" localization="suggested" />
+        <attr name="mtMrlRippleInAdapter" format="boolean" localization="suggested" />
+        <attr name="mtMrlRippleRoundedCorners" format="dimension" localization="suggested" />
+    </declare-styleable>
+
+    <declare-styleable name="BorderFrameLayout">
+        <attr name="leftBorderWidth" format="dimension" />
+        <attr name="leftBorderColor" format="color" />
+        <attr name="topBorderWidth" format="dimension" />
+        <attr name="topBorderColor" format="color" />
+        <attr name="rightBorderWidth" format="dimension" />
+        <attr name="rightBorderColor" format="color" />
+        <attr name="bottomBorderWidth" format="dimension" />
+        <attr name="bottomBorderColor" format="color" />
+        <attr name="allBorderWidth" format="dimension" />
+        <attr name="allBorderColor" format="color" />
+        <attr name="allBorderSet" format="boolean" />
+        <attr name="allBorderDashed" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ErrorView">
+        <attr name="ev_title" format="string" />
+        <attr name="ev_titleColor" format="color" />
+        <attr name="ev_subtitle" format="string" />
+        <attr name="ev_subtitleColor" format="color" />
+        <attr name="ev_errorImage" format="reference" />
+        <attr name="ev_showTitle" format="boolean" />
+        <attr name="ev_showSubtitle" format="boolean" />
+        <attr name="ev_showRetryButton" format="boolean" />
+        <attr name="ev_retryButtonText" format="string" />
+        <attr name="ev_retryButtonBackground" format="reference" />
+        <attr name="ev_retryButtonTextColor" format="color" />
+        <attr name="ev_subtitleAlignment" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ErrorViewStyle">
+        <attr name="ev_style" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="isRoundedImgAvoid" format="boolean"/>
+        <attr name="isShadowAvoid" format="boolean"/>
+        <attr name="imgViewBorderWidth" format="dimension"/>
+        <attr name="imgViewBorderColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="NetworkRImgView">
+        <attr name="nr_left_top_corner_radius" format="dimension" />
+        <attr name="nr_right_top_corner_radius" format="dimension" />
+        <attr name="nr_left_bottom_corner_radius" format="dimension" />
+        <attr name="nr_right_bottom_corner_radius" format="dimension" />
+        <attr name="nr_border_width" format="dimension" />
+        <attr name="nr_border_color" format="color" />
+        <attr name="nr_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
+            <flag name="BallPulse" value="0"/>
+            <flag name="BallGridPulse" value="1"/>
+            <flag name="BallClipRotate" value="2"/>
+            <flag name="BallClipRotatePulse" value="3"/>
+            <flag name="SquareSpin" value="4"/>
+            <flag name="BallClipRotateMultiple" value="5"/>
+            <flag name="BallPulseRise" value="6"/>
+            <flag name="BallRotate" value="7"/>
+            <flag name="CubeTransition" value="8"/>
+            <flag name="BallZigZag" value="9"/>
+            <flag name="BallZigZagDeflect" value="10"/>
+            <flag name="BallTrianglePath" value="11"/>
+            <flag name="BallScale" value="12"/>
+            <flag name="LineScale" value="13"/>
+            <flag name="LineScaleParty" value="14"/>
+            <flag name="BallScaleMultiple" value="15"/>
+            <flag name="BallPulseSync" value="16"/>
+            <flag name="BallBeat" value="17"/>
+            <flag name="LineScalePulseOut" value="18"/>
+            <flag name="LineScalePulseOutRapid" value="19"/>
+            <flag name="BallScaleRipple" value="20"/>
+            <flag name="BallScaleRippleMultiple" value="21"/>
+            <flag name="BallSpinFadeLoader" value="22"/>
+            <flag name="LineSpinFadeLoader" value="23"/>
+            <flag name="TriangleSkewSpin" value="24"/>
+            <flag name="Pacman" value="25"/>
+            <flag name="BallGridBeat" value="26"/>
+            <flag name="SemiCircleSpin" value="27"/>
+        </attr>
+        <attr name="indicator_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomCalendarView">
+        <attr name="calendarTitleTextColor" format="color" />
+        <attr name="dayOfWeekTextColor" format="color" />
+        <attr name="dayOfMonthTextColor" format="color" />
+        <attr name="calendarBackgroundColor" format="color" />
+        <attr name="disabledDayBackgroundColor" format="color" />
+        <attr name="disabledDayTextColor" format="color" />
+        <attr name="selectedDayBackgroundColor" format="color" />
+        <attr name="selectedDayTextColor" format="color" />
+        <attr name="weekLayoutBackgroundColor" format="color" />
+        <attr name="titleLayoutBackgroundColor" format="color" />
+        <attr name="currentDayOfMonthColor" format="color" />
+        <attr name="currentDayOfMonthBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <!--<declare-styleable name="SimpleRatingBar">-->
+        <!--<attr name="SRB_hideRatingNumber" format="boolean"/>-->
+        <!--<attr name="SRB_size" format="dimension"/>-->
+        <!--<attr name="SRB_maxRating" format="integer"/>-->
+        <!--<attr name="SRB_filledIcon" format="string"/>-->
+        <!--<attr name="SRB_unfilledIcon" format="string"/>-->
+        <!--<attr name="SRB_textColor" format="color"/>-->
+        <!--<attr name="SRB_filledIconColor" format="color"/>-->
+        <!--<attr name="SRB_unfilledIconColor" format="color"/>-->
+    <!--</declare-styleable>-->
+    <declare-styleable name="timeline_style" >
+        <attr name="marker" format="color|reference"/>
+        <attr name="line" format="color|reference"/>
+        <attr name="markerSize" format="dimension"/>
+        <attr name="lineSize" format="dimension"/>
+        <attr name="lineOrientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="linePadding" format="dimension"/>
+        <attr name="markerInCenter" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SimpleRatingBar">
+        <attr name="SRB_borderColor" format="color" />
+        <attr name="SRB_fillColor" format="color" />
+        <attr name="SRB_backgroundColor" format="color" />
+        <attr name="SRB_starBackgroundColor" format="color" />
+        <attr name="SRB_pressedBorderColor" format="color" />
+        <attr name="SRB_pressedFillColor" format="color" />
+        <attr name="SRB_pressedBackgroundColor" format="color" />
+        <attr name="SRB_pressedStarBackgroundColor" format="color" />
+        <attr name="SRB_numberOfStars" format="integer" />
+        <attr name="SRB_starSize" format="dimension" />
+        <attr name="SRB_maxStarSize" format="dimension" />
+        <attr name="SRB_starsSeparation" format="dimension" />
+        <attr name="SRB_starBorderWidth" format="float" />
+        <attr name="SRB_starCornerRadius" format="float" />
+        <attr name="SRB_isIndicator" format="boolean" />
+        <attr name="SRB_rating" format="float" />
+        <attr name="SRB_stepSize" format="float" />
+        <attr name="SRB_drawBorderEnabled" format="boolean" />
+        <attr name="SRB_gravity" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

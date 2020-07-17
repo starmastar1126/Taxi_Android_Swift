@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_dialog_car"
+            android:tint="@color/appThemeColor_1" />
+
+        <com.view.MTextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/VehiclesTitleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="Select Your Vehicles"
+            android:textColor="#1C1C1C"
+            android:textSize="@dimen/txt_size_20" />
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/vehiclesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+        <LinearLayout
+            android:visibility="gone"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <com.view.MTextView
+                android:id="@+id/mangeVehiclesTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="MANAGE VEHICLES"
+                android:textColor="#1C1C1C"
+                android:textSize="@dimen/txt_size_16" />
+
+            <com.view.MTextView
+                android:id="@+id/addVehiclesTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="ADD NEW"
+                android:textColor="@color/appThemeColor_1"
+                android:textSize="@dimen/txt_size_16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

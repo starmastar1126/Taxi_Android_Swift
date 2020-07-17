@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_nav_option"
+            android:tint="@color/appThemeColor_1" />
+
+        <com.view.MTextView
+            android:id="@+id/NavigationTitleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="Choose Option"
+            android:textColor="#1C1C1C"
+            android:textSize="@dimen/txt_size_20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiogmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/appThemeColor_1" />
+
+
+            <com.view.MTextView
+                android:id="@+id/googlemmapTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#272727"
+                android:textSize="@dimen/txt_size_16"
+                app:customTypeFace="roboto_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiowazemap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/appThemeColor_1" />
+
+
+            <com.view.MTextView
+                android:id="@+id/wazemapTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#272727"
+                android:textSize="@dimen/txt_size_16"
+                app:customTypeFace="roboto_light" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

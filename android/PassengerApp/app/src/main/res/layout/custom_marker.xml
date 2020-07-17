@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/dotimage"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/dot"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+    <android.support.v7.widget.CardView
+
+        android:layout_below="@+id/dotimage"
+        android:id="@+id/generalCommentArea"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#ffffff">
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.view.MTextView
+            android:id="@+id/etaTxt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_12" />
+
+        <com.view.MTextView
+            android:layout_weight="1"
+            android:id="@+id/addressTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="start|center_vertical"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/txt_size_12" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView
+>
+
+    </RelativeLayout>
+</LinearLayout>

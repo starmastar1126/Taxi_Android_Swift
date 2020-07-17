@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_view_tutor_detail"
+        android:title="View Tutor Detail"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/menu_call"
+        android:title="Call" />
+    <item
+        android:id="@+id/menu_message"
+        android:title="Message" />
+
+    <item
+        android:id="@+id/menu_track"
+        android:title="Live Track" />
+    <item
+        android:id="@+id/menu_sos"
+        android:title="Emergency or SOS" />
+    <item
+        android:id="@+id/menu_cancel_trip"
+        android:title="Cancel" />
+</menu>

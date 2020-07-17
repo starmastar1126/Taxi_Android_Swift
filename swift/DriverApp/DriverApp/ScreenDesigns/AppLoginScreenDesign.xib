@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppLoginUV" customModule="DriverApp" customModuleProvider="target">
+            <connections>
+                <outlet property="bgImgView" destination="Am7-JU-qas" id="acO-Oy-dlw"/>
+                <outlet property="currencyLbl" destination="a7X-9G-d9G" id="bHt-1y-vTg"/>
+                <outlet property="currencySelectView" destination="EyW-ym-81E" id="o3w-4n-G7s"/>
+                <outlet property="currencyTxtField" destination="5Yq-M7-dR7" id="XF5-IQ-RgS"/>
+                <outlet property="introSubLbl" destination="Rm0-sG-6vU" id="Z0d-U5-aMe"/>
+                <outlet property="languageSelectView" destination="BnS-r1-i33" id="k0O-BZ-ALE"/>
+                <outlet property="languageTxtField" destination="A7l-DP-EKd" id="6ru-px-fq8"/>
+                <outlet property="lngLbl" destination="93e-lr-HvK" id="c6p-30-BSq"/>
+                <outlet property="registerBtn" destination="poQ-ym-Hbd" id="5CJ-Of-eDb"/>
+                <outlet property="selectStackViewBottomMargin" destination="w9m-jr-NqT" id="hES-c0-3aX"/>
+                <outlet property="selectStackViewHeight" destination="br5-Nu-UR7" id="CH8-IW-Dwn"/>
+                <outlet property="signInBtn" destination="sCW-Jo-gLl" id="lRM-RV-TBo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Am7-JU-qas">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="M8X-cA-pSi">
+                    <rect key="frame" x="26" y="587" width="323" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCW-Jo-gLl" customClass="MyButton" customModule="DriverApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="152.5" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="SIGNIN"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="pulseColor">
+                                    <color key="value" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poQ-ym-Hbd" customClass="MyButton" customModule="DriverApp" customModuleProvider="target">
+                            <rect key="frame" x="170.5" y="0.0" width="152.5" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="REGISTER"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                    <color key="value" red="0.10588235294117647" green="0.10980392156862745" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="pulseColor">
+                                    <color key="value" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="9me-Rk-8Vy"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7h5-0L-ln5">
+                    <rect key="frame" x="28" y="512" width="319" height="55"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BnS-r1-i33">
+                            <rect key="frame" x="0.0" y="0.0" width="149.5" height="55"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5rr-0e-YK7">
+                                    <rect key="frame" x="0.0" y="18.5" width="0.0" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="5u9-20-LMP"/>
+                                        <constraint firstAttribute="width" id="fde-VQ-jY7"/>
+                                    </constraints>
+                                </imageView>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93e-lr-HvK" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                                    <rect key="frame" x="5" y="17.5" width="109.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Medium"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_down_app_login" translatesAutoresizingMaskIntoConstraints="NO" id="kPs-bI-9qv">
+                                    <rect key="frame" x="119.5" y="20" width="20" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="6zr-jw-hdI"/>
+                                        <constraint firstAttribute="height" constant="16" id="OV3-Wc-VTv"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A7l-DP-EKd" customClass="MyTextField" customModule="DriverApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="149.5" height="55"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="allColor">
+                                            <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="kPs-bI-9qv" firstAttribute="centerY" secondItem="BnS-r1-i33" secondAttribute="centerY" id="5oM-Qs-dot"/>
+                                <constraint firstItem="A7l-DP-EKd" firstAttribute="leading" secondItem="BnS-r1-i33" secondAttribute="leading" id="6Uf-kh-LOQ"/>
+                                <constraint firstItem="kPs-bI-9qv" firstAttribute="leading" secondItem="93e-lr-HvK" secondAttribute="trailing" constant="5" id="7ML-mL-djs"/>
+                                <constraint firstItem="5rr-0e-YK7" firstAttribute="leading" secondItem="BnS-r1-i33" secondAttribute="leading" id="GF6-gc-D2E"/>
+                                <constraint firstAttribute="bottom" secondItem="A7l-DP-EKd" secondAttribute="bottom" id="K5b-G4-hCv"/>
+                                <constraint firstAttribute="trailing" secondItem="A7l-DP-EKd" secondAttribute="trailing" id="aan-r3-tua"/>
+                                <constraint firstItem="5rr-0e-YK7" firstAttribute="centerY" secondItem="BnS-r1-i33" secondAttribute="centerY" id="dJF-F5-9Lr"/>
+                                <constraint firstItem="93e-lr-HvK" firstAttribute="leading" secondItem="5rr-0e-YK7" secondAttribute="trailing" constant="5" id="ikB-aW-IIZ"/>
+                                <constraint firstAttribute="trailing" secondItem="kPs-bI-9qv" secondAttribute="trailing" constant="10" id="kMI-LX-Cbf"/>
+                                <constraint firstItem="A7l-DP-EKd" firstAttribute="top" secondItem="BnS-r1-i33" secondAttribute="top" id="pK1-is-cyh"/>
+                                <constraint firstItem="93e-lr-HvK" firstAttribute="centerY" secondItem="BnS-r1-i33" secondAttribute="centerY" id="zwT-57-EBx"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EyW-ym-81E">
+                            <rect key="frame" x="169.5" y="0.0" width="149.5" height="55"/>
+                            <subviews>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7X-9G-d9G" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                                    <rect key="frame" x="5" y="17.5" width="109.5" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Medium"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_down_app_login" translatesAutoresizingMaskIntoConstraints="NO" id="CiZ-a2-K9h">
+                                    <rect key="frame" x="119.5" y="19.5" width="20" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="6nv-5L-A4a"/>
+                                        <constraint firstAttribute="height" constant="16" id="UaY-RX-odq"/>
+                                    </constraints>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Yq-M7-dR7" customClass="MyTextField" customModule="DriverApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="149.5" height="55"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="allColor">
+                                            <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="CiZ-a2-K9h" firstAttribute="leading" secondItem="a7X-9G-d9G" secondAttribute="trailing" constant="5" id="IaC-Lj-ou9"/>
+                                <constraint firstItem="5Yq-M7-dR7" firstAttribute="leading" secondItem="EyW-ym-81E" secondAttribute="leading" id="Iw2-MS-DiC"/>
+                                <constraint firstItem="CiZ-a2-K9h" firstAttribute="centerY" secondItem="EyW-ym-81E" secondAttribute="centerY" id="WpP-23-2At"/>
+                                <constraint firstAttribute="trailing" secondItem="5Yq-M7-dR7" secondAttribute="trailing" id="YLa-oZ-lWE"/>
+                                <constraint firstItem="a7X-9G-d9G" firstAttribute="centerY" secondItem="EyW-ym-81E" secondAttribute="centerY" id="doM-l5-9Od"/>
+                                <constraint firstAttribute="trailing" secondItem="CiZ-a2-K9h" secondAttribute="trailing" constant="10" id="eir-2R-nnW"/>
+                                <constraint firstAttribute="bottom" secondItem="5Yq-M7-dR7" secondAttribute="bottom" id="emM-3M-p78"/>
+                                <constraint firstItem="a7X-9G-d9G" firstAttribute="leading" secondItem="EyW-ym-81E" secondAttribute="leading" constant="5" id="gtP-sG-2za"/>
+                                <constraint firstItem="5Yq-M7-dR7" firstAttribute="top" secondItem="EyW-ym-81E" secondAttribute="top" id="nwX-k9-wKA"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="br5-Nu-UR7"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rm0-sG-6vU" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                    <rect key="frame" x="22" y="472.5" width="331" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Am7-JU-qas" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5ji-B7-mMo"/>
+                <constraint firstItem="Am7-JU-qas" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Aqp-8J-cmA"/>
+                <constraint firstAttribute="trailing" secondItem="M8X-cA-pSi" secondAttribute="trailing" constant="26" id="JXb-eQ-MO8"/>
+                <constraint firstAttribute="trailing" secondItem="Am7-JU-qas" secondAttribute="trailing" id="Od9-P3-sgy"/>
+                <constraint firstAttribute="trailing" secondItem="Rm0-sG-6vU" secondAttribute="trailing" constant="22" id="Opy-Xl-tIP"/>
+                <constraint firstItem="Rm0-sG-6vU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="bzL-bS-aVV"/>
+                <constraint firstAttribute="trailing" secondItem="7h5-0L-ln5" secondAttribute="trailing" constant="28" id="c8L-bT-xiH"/>
+                <constraint firstAttribute="bottom" secondItem="Am7-JU-qas" secondAttribute="bottom" id="ezS-ps-HmI"/>
+                <constraint firstItem="7h5-0L-ln5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="ol8-bx-Sp9"/>
+                <constraint firstAttribute="bottom" secondItem="M8X-cA-pSi" secondAttribute="bottom" constant="20" id="r8T-g2-sLM"/>
+                <constraint firstItem="M8X-cA-pSi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="26" id="swi-aA-cMr"/>
+                <constraint firstItem="7h5-0L-ln5" firstAttribute="top" secondItem="Rm0-sG-6vU" secondAttribute="bottom" constant="20" id="u2J-HD-j4Z"/>
+                <constraint firstItem="M8X-cA-pSi" firstAttribute="top" secondItem="7h5-0L-ln5" secondAttribute="bottom" constant="20" id="w9m-jr-NqT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="39.5" y="59.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_arrow_down_app_login" width="20" height="12"/>
+    </resources>
+</document>

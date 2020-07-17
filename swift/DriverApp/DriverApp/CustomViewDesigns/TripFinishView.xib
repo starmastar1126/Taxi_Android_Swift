@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_trip_finish_check" translatesAutoresizingMaskIntoConstraints="NO" id="VdF-f8-BFJ">
+                    <rect key="frame" x="152.5" y="25" width="65" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="8hV-up-xN7"/>
+                        <constraint firstAttribute="height" constant="65" id="LEV-IU-zTX"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="1dN-Df-SQp" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="110" width="340" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Medium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wlh-Ew-amW" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="160.5" width="340" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fag-Yh-Od1">
+                    <rect key="frame" x="0.0" y="243" width="370" height="57"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjt-1T-Z1H" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                            <rect key="frame" x="308.5" y="17" width="46.5" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <color key="textColor" red="0.086274509803921567" green="0.090196078431372548" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Medium"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sjt-1T-Z1H" firstAttribute="centerY" secondItem="Fag-Yh-Od1" secondAttribute="centerY" id="9yl-n6-Ewb"/>
+                        <constraint firstAttribute="trailing" secondItem="sjt-1T-Z1H" secondAttribute="trailing" constant="15" id="JwP-22-BcO"/>
+                        <constraint firstAttribute="height" constant="57" id="Yn0-Hm-qGK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PkA-YI-hCR">
+                    <rect key="frame" x="0.0" y="242" width="370" height="1"/>
+                    <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="mLw-8z-oIw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PkA-YI-hCR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6vZ-9B-55l"/>
+                <constraint firstItem="Wlh-Ew-amW" firstAttribute="top" secondItem="1dN-Df-SQp" secondAttribute="bottom" constant="17" id="9I5-t1-RLe"/>
+                <constraint firstItem="Wlh-Ew-amW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="LXZ-j0-y9d"/>
+                <constraint firstAttribute="bottom" secondItem="Fag-Yh-Od1" secondAttribute="bottom" id="MoX-K9-Ei2"/>
+                <constraint firstAttribute="trailing" secondItem="Wlh-Ew-amW" secondAttribute="trailing" constant="15" id="RRB-r4-cNK"/>
+                <constraint firstItem="Fag-Yh-Od1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XzA-q8-66n"/>
+                <constraint firstItem="1dN-Df-SQp" firstAttribute="top" secondItem="VdF-f8-BFJ" secondAttribute="bottom" constant="20" id="c9c-hX-OpE"/>
+                <constraint firstAttribute="trailing" secondItem="1dN-Df-SQp" secondAttribute="trailing" constant="15" id="f4B-f2-GGV"/>
+                <constraint firstItem="VdF-f8-BFJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="n2x-fg-haZ"/>
+                <constraint firstAttribute="trailing" secondItem="Fag-Yh-Od1" secondAttribute="trailing" id="ns5-Za-BmV"/>
+                <constraint firstItem="VdF-f8-BFJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="q7t-UV-04s"/>
+                <constraint firstItem="Fag-Yh-Od1" firstAttribute="top" secondItem="PkA-YI-hCR" secondAttribute="bottom" id="srT-IC-OpR"/>
+                <constraint firstItem="1dN-Df-SQp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="tXV-NE-6XX"/>
+                <constraint firstAttribute="trailing" secondItem="PkA-YI-hCR" secondAttribute="trailing" id="v20-fG-XUb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_trip_finish_check" width="65" height="65"/>
+    </resources>
+</document>

@@ -1,0 +1,260 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:context="com.fragments.PickUpLocSelectedFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/backImgView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:rotationY="@integer/angle_rtl_180"
+            android:src="@mipmap/ic_back_arrow"
+            android:tint="@color/black" />
+
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/design_toolbar_general"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/sourceLocCardArea"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="-5dp"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imagemarkerdest"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:src="@mipmap/hmarker"
+                android:tint="@color/pickup_req_later_btn" />
+
+
+            <com.view.MTextView
+                android:id="@+id/destLocSelectTxt"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_toLeftOf="@+id/imgdestbtn"
+                android:layout_toRightOf="@+id/imagemarkerdest"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:paddingEnd="22dp"
+                android:text="Add destination"
+                android:textAlignment="viewStart"
+                android:textColor="#818181"
+                android:textSize="@dimen/txt_size_16"
+                app:customTypeFace="roboto_light" />
+
+            <ImageView
+                android:id="@+id/imgdestbtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="5dp"
+                android:src="@mipmap/plus" />
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/sourceLocCardArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:src="@mipmap/hmarker"
+                    android:tint="@color/pickup_req_now_btn" />
+
+                <com.view.MTextView
+                    android:id="@+id/pickUpLocTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    android:textColor="#757575"
+                    android:textSize="@dimen/txt_size_16"
+                    app:customTypeFace="roboto_light" />
+
+
+                <ImageView
+                    android:id="@+id/addDestLocImgView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="0"
+                    android:src="@mipmap/plus"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/area2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/sourceArea"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:src="@mipmap/hmarker"
+                    android:tint="@color/pickup_req_now_btn" />
+
+                <com.view.MTextView
+                    android:id="@+id/sourceLocSelectTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:text="Source loc"
+                    android:textAlignment="viewStart"
+                    android:textColor="#818181"
+                    android:textSize="@dimen/txt_size_16"
+                    app:customTypeFace="roboto_light" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sourceArea"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-10dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"
+                        android:src="@mipmap/hmarker"
+                        android:tint="@color/pickup_req_later_btn" />
+
+
+                    <com.view.MTextView
+                        android:id="@+id/destLocTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="start|center_vertical"
+                        android:maxLines="1"
+                        android:textAlignment="viewStart"
+                        android:textColor="#757575"
+                        android:textSize="@dimen/txt_size_16"
+                        app:customTypeFace="roboto_light" />
+
+
+                    <ImageView
+                        android:id="@+id/rmDestLocImgView"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="0"
+                        android:padding="5dp"
+                        android:src="@mipmap/ic_rm_dest"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

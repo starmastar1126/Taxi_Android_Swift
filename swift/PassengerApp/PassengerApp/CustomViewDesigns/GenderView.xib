@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainScreenUV" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="femaleImgView" destination="Mca-UQ-UYS" id="lCU-32-fsC"/>
+                <outlet property="femaleLbl" destination="pAY-nE-UCp" id="OeO-ue-mAc"/>
+                <outlet property="genderHLbl" destination="6x3-9s-A5g" id="Hka-Hu-apX"/>
+                <outlet property="genderVCloseImgView" destination="9V1-k0-c5k" id="yeP-iu-W3e"/>
+                <outlet property="maleImgView" destination="mhW-gE-0vT" id="4Ra-Xw-a9d"/>
+                <outlet property="maleLbl" destination="H3I-rt-bZK" id="Zdv-WO-qSo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="645"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_close_detail" translatesAutoresizingMaskIntoConstraints="NO" id="9V1-k0-c5k">
+                    <rect key="frame" x="335" y="25" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="wOx-ni-y25"/>
+                        <constraint firstAttribute="height" constant="40" id="zCa-3t-tRz"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your gender to continue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6x3-9s-A5g" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="75" width="345" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Medium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sel_male" translatesAutoresizingMaskIntoConstraints="NO" id="mhW-gE-0vT">
+                    <rect key="frame" x="117" y="151.5" width="140" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="KuW-Yj-UgF"/>
+                        <constraint firstAttribute="height" constant="140" id="eaN-ri-XDs"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sel_female" translatesAutoresizingMaskIntoConstraints="NO" id="Mca-UQ-UYS">
+                    <rect key="frame" x="117" y="372.5" width="140" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="OQh-uF-dE5"/>
+                        <constraint firstAttribute="height" constant="140" id="r4r-gL-y5m"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3I-rt-bZK" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="167.5" y="301.5" width="39" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAY-nE-UCp" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="159" y="522.5" width="58.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.14353981598984766" green="0.14353981598984766" blue="0.14353981598984766" alpha="0.84859267979452058" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6x3-9s-A5g" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="75" id="2Nn-iM-JgC"/>
+                <constraint firstItem="Mca-UQ-UYS" firstAttribute="top" secondItem="H3I-rt-bZK" secondAttribute="bottom" constant="50" id="8Xo-GQ-pZX"/>
+                <constraint firstItem="H3I-rt-bZK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="H4S-h7-bZR"/>
+                <constraint firstItem="pAY-nE-UCp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="K0I-cP-pNG"/>
+                <constraint firstItem="mhW-gE-0vT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LaQ-XD-hqp"/>
+                <constraint firstItem="H3I-rt-bZK" firstAttribute="top" secondItem="mhW-gE-0vT" secondAttribute="bottom" constant="10" id="M4v-hC-rUt"/>
+                <constraint firstAttribute="trailing" secondItem="6x3-9s-A5g" secondAttribute="trailing" constant="15" id="OSk-0R-12X"/>
+                <constraint firstItem="pAY-nE-UCp" firstAttribute="top" secondItem="Mca-UQ-UYS" secondAttribute="bottom" constant="10" id="R0q-KQ-EXk"/>
+                <constraint firstItem="6x3-9s-A5g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Rm6-Fg-Pee"/>
+                <constraint firstItem="mhW-gE-0vT" firstAttribute="top" secondItem="6x3-9s-A5g" secondAttribute="bottom" constant="50" id="dCh-fM-wC4"/>
+                <constraint firstItem="Mca-UQ-UYS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dWc-Mz-biN"/>
+                <constraint firstItem="9V1-k0-c5k" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="iCd-ar-XaX"/>
+                <constraint firstAttribute="trailing" secondItem="9V1-k0-c5k" secondAttribute="trailing" id="x80-5J-Z2P"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24" y="27"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_close_detail" width="72" height="72"/>
+        <image name="ic_sel_female" width="210" height="210"/>
+        <image name="ic_sel_male" width="210" height="210"/>
+    </resources>
+</document>

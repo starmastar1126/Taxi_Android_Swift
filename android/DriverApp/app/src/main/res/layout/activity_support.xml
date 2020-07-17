@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_support"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <LinearLayout
+        android:id="@+id/aboutusarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="false"
+            android:src="@mipmap/ic_menu_about_us" />
+
+        <com.view.MTextView
+            android:id="@+id/aboutusHTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="start|center_vertical"
+            android:paddingStart="10dp"
+            android:text="About Us"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_16"
+            app:customTypeFace="roboto_light" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/seperationLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/privacyarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="false"
+            android:src="@mipmap/ic_menu_privacy" />
+
+        <com.view.MTextView
+            android:id="@+id/privacyHTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="start|center_vertical"
+            android:paddingStart="10dp"
+            android:text="Privacy Policy"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_16"
+            app:customTypeFace="roboto_light" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+
+        android:layout_height="0.5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/termsCondArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="false"
+            android:src="@mipmap/ic_menu_terms" />
+
+        <com.view.MTextView
+            android:id="@+id/termsHTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="start|center_vertical"
+            android:paddingStart="10dp"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_16"
+            app:customTypeFace="roboto_light" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+
+        android:layout_height="0.5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/contactarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="false"
+            android:src="@mipmap/ic_menu_contact_us" />
+
+        <com.view.MTextView
+            android:id="@+id/contactHTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="start|center_vertical"
+            android:paddingStart="10dp"
+            android:text="Contact Us"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_16"
+            app:customTypeFace="roboto_light" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/seperationLine_contact"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/helparea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="false"
+            android:src="@mipmap/ic_menu_help" />
+
+        <com.view.MTextView
+            android:id="@+id/helpHTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="start|center_vertical"
+            android:paddingStart="10dp"
+            android:text="Help"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_16"
+            app:customTypeFace="roboto_light" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/seperationLine_help"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#000000" />
+
+</LinearLayout>

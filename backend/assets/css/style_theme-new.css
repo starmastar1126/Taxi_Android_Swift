@@ -1,0 +1,8 @@
+.home-hero-page-right-text span a{ background:none;padding: 10px 15px 10px 10px}
+.home-hero-page-right-text span a:hover{ background:none;}
+.home-hero-page-left-text span a{ background:none;padding: 10px 15px 10px 10px;}
+.home-hero-page-left-text span a:hover{ background:none;}
+.top-link-login span .active i {margin-right:10px;}
+.top-link-login span a i{ margin-right:10px;}
+.top-link-login span a i:hover{ margin-right:10px;}
+.profile-icon i{ margin:0; padding:0; color: white; font-size:50px; border-radius: 60px;height: 80px;line-height: 1.6; width:80px;}

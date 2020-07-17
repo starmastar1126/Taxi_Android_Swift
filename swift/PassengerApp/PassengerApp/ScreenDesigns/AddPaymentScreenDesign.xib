@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddPaymentUV" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="configCardBtn" destination="yee-vN-IvI" id="93Q-yF-ScO"/>
+                <outlet property="creditCardNumView" destination="Vsg-Mg-YKf" id="yoB-Co-7c9"/>
+                <outlet property="creditCardTxtField" destination="WKs-fC-d8i" id="uZC-4B-whk"/>
+                <outlet property="cvvTxtField" destination="5oQ-7A-ZEI" id="Lg4-rb-J56"/>
+                <outlet property="cvvView" destination="0oM-YZ-glS" id="YJS-yf-liY"/>
+                <outlet property="expiryView" destination="dSQ-9j-djj" id="nS1-Wa-BRm"/>
+                <outlet property="monthTxtField" destination="O4G-mN-1A7" id="3Cz-ys-7bD"/>
+                <outlet property="yearTxtField" destination="0Gj-96-NPJ" id="VfM-qN-iRd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_sample" translatesAutoresizingMaskIntoConstraints="NO" id="y1G-Sk-rBa">
+                    <rect key="frame" x="16" y="16" width="343" height="235"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="235" id="npt-CE-bk5"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="TbL-8O-Liq">
+                    <rect key="frame" x="42" y="257" width="291" height="306"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsg-Mg-YKf">
+                            <rect key="frame" x="0.0" y="0.0" width="291" height="94"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WKs-fC-d8i" customClass="MyTextField" customModule="PassengerApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="22" width="251" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="1mj-Ee-gf1"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="WKs-fC-d8i" secondAttribute="trailing" constant="20" id="D10-aP-EJG"/>
+                                <constraint firstItem="WKs-fC-d8i" firstAttribute="centerY" secondItem="Vsg-Mg-YKf" secondAttribute="centerY" constant="5" id="Jl3-1R-Ymo"/>
+                                <constraint firstItem="WKs-fC-d8i" firstAttribute="leading" secondItem="Vsg-Mg-YKf" secondAttribute="leading" constant="20" id="wQF-No-gps"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSQ-9j-djj">
+                            <rect key="frame" x="0.0" y="106" width="291" height="94"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4G-mN-1A7" customClass="MyTextField" customModule="PassengerApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="22" width="120" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="KXS-Uv-y8V"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrO-MD-t6m">
+                                    <rect key="frame" x="145" y="5" width="1" height="84"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="1" id="0MV-5Q-WVu"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Gj-96-NPJ" customClass="MyTextField" customModule="PassengerApp" customModuleProvider="target">
+                                    <rect key="frame" x="151" y="22" width="120" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="RGB-91-3fc"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="O4G-mN-1A7" firstAttribute="centerY" secondItem="dSQ-9j-djj" secondAttribute="centerY" constant="5" id="3Zh-gQ-4Bz"/>
+                                <constraint firstItem="0Gj-96-NPJ" firstAttribute="centerY" secondItem="dSQ-9j-djj" secondAttribute="centerY" constant="5" id="6Co-YJ-4m2"/>
+                                <constraint firstItem="NrO-MD-t6m" firstAttribute="top" secondItem="dSQ-9j-djj" secondAttribute="top" constant="5" id="K5f-cl-TKf"/>
+                                <constraint firstItem="NrO-MD-t6m" firstAttribute="centerX" secondItem="dSQ-9j-djj" secondAttribute="centerX" id="MUC-yp-9ve"/>
+                                <constraint firstAttribute="bottom" secondItem="NrO-MD-t6m" secondAttribute="bottom" constant="5" id="VFP-gV-5GX"/>
+                                <constraint firstItem="NrO-MD-t6m" firstAttribute="leading" secondItem="O4G-mN-1A7" secondAttribute="trailing" constant="5" id="aXs-W1-JAl"/>
+                                <constraint firstItem="NrO-MD-t6m" firstAttribute="centerY" secondItem="dSQ-9j-djj" secondAttribute="centerY" id="b7d-hO-g86"/>
+                                <constraint firstItem="O4G-mN-1A7" firstAttribute="leading" secondItem="dSQ-9j-djj" secondAttribute="leading" constant="20" id="eiH-rH-ALa"/>
+                                <constraint firstAttribute="trailing" secondItem="0Gj-96-NPJ" secondAttribute="trailing" constant="20" id="ig7-6g-K9t"/>
+                                <constraint firstItem="0Gj-96-NPJ" firstAttribute="leading" secondItem="NrO-MD-t6m" secondAttribute="trailing" constant="5" id="oR1-p4-uER"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oM-YZ-glS">
+                            <rect key="frame" x="0.0" y="212" width="291" height="94"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oQ-7A-ZEI" customClass="MyTextField" customModule="PassengerApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="22" width="251" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="3lX-8H-521"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="5oQ-7A-ZEI" firstAttribute="centerY" secondItem="0oM-YZ-glS" secondAttribute="centerY" constant="5" id="6Mc-n1-PsC"/>
+                                <constraint firstItem="5oQ-7A-ZEI" firstAttribute="leading" secondItem="0oM-YZ-glS" secondAttribute="leading" constant="20" id="Ci8-TU-mKM"/>
+                                <constraint firstAttribute="trailing" secondItem="5oQ-7A-ZEI" secondAttribute="trailing" constant="20" id="PxK-LQ-Bv9"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="306" id="qqU-AS-m0z"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yee-vN-IvI" customClass="MyButton" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="16" y="583" width="343" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="nkW-QS-qt7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="y1G-Sk-rBa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="Bh4-t7-PL1"/>
+                <constraint firstAttribute="trailing" secondItem="TbL-8O-Liq" secondAttribute="trailing" constant="42" id="YZX-bw-b0S"/>
+                <constraint firstAttribute="trailing" secondItem="yee-vN-IvI" secondAttribute="trailing" constant="16" id="Zg3-tS-3xh"/>
+                <constraint firstItem="yee-vN-IvI" firstAttribute="top" secondItem="TbL-8O-Liq" secondAttribute="bottom" constant="20" id="ak8-Vc-C9U"/>
+                <constraint firstItem="yee-vN-IvI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="dIq-hi-MfT"/>
+                <constraint firstItem="y1G-Sk-rBa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="esw-Si-pXV"/>
+                <constraint firstItem="TbL-8O-Liq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="42" id="pfj-qj-wMe"/>
+                <constraint firstAttribute="trailing" secondItem="y1G-Sk-rBa" secondAttribute="trailing" constant="16" id="wUX-Sb-mOK"/>
+                <constraint firstItem="TbL-8O-Liq" firstAttribute="top" secondItem="y1G-Sk-rBa" secondAttribute="bottom" constant="6" id="z4M-fn-MfM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="VV2-kg-mIL"/>
+            <point key="canvasLocation" x="42.5" y="59.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="card_sample" width="512" height="320"/>
+    </resources>
+</document>

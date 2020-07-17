@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddDestinationUV" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="addLocationBtn" destination="bH9-Pj-pKI" id="Xod-pG-Gna"/>
+                <outlet property="googleMapContainerView" destination="msV-M3-hdM" id="XvO-Ey-cI0"/>
+                <outlet property="locAreaView" destination="Hi0-D5-Rot" id="NHB-vy-PCW"/>
+                <outlet property="locLbl" destination="dFL-fm-mmz" id="cca-eE-Oq5"/>
+                <outlet property="selectLocImgView" destination="sTk-5M-ahE" id="VcL-Ed-cD3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="msV-M3-hdM">
+                    <rect key="frame" x="0.0" y="60" width="375" height="547"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hi0-D5-Rot">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_search" translatesAutoresizingMaskIntoConstraints="NO" id="obu-hB-iAZ">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="mdt-bv-vf1"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="      " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFL-fm-mmz" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="60" y="0.0" width="315" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="obu-hB-iAZ" secondAttribute="bottom" id="DsJ-QB-MJp"/>
+                        <constraint firstAttribute="trailing" secondItem="dFL-fm-mmz" secondAttribute="trailing" id="JXU-Av-J1C"/>
+                        <constraint firstItem="dFL-fm-mmz" firstAttribute="leading" secondItem="obu-hB-iAZ" secondAttribute="trailing" id="QG3-Kf-ZxQ"/>
+                        <constraint firstItem="dFL-fm-mmz" firstAttribute="top" secondItem="Hi0-D5-Rot" secondAttribute="top" id="ez9-fR-1W2"/>
+                        <constraint firstAttribute="bottom" secondItem="dFL-fm-mmz" secondAttribute="bottom" id="iu7-av-dwO"/>
+                        <constraint firstItem="obu-hB-iAZ" firstAttribute="top" secondItem="Hi0-D5-Rot" secondAttribute="top" id="lRe-vH-oA2"/>
+                        <constraint firstAttribute="height" constant="60" id="nQW-HO-wdE"/>
+                        <constraint firstItem="obu-hB-iAZ" firstAttribute="leading" secondItem="Hi0-D5-Rot" secondAttribute="leading" id="xVR-bz-UmY"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bH9-Pj-pKI" customClass="MyButton" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="VGi-RV-yEU"/>
+                    </constraints>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_pin_source_selection" translatesAutoresizingMaskIntoConstraints="NO" id="sTk-5M-ahE">
+                    <rect key="frame" x="162.5" y="283.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="X6Q-8E-E38"/>
+                        <constraint firstAttribute="width" constant="50" id="XJo-m9-Nfr"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Hi0-D5-Rot" secondAttribute="trailing" id="3mQ-6J-hcf"/>
+                <constraint firstItem="bH9-Pj-pKI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Eex-vy-DMx"/>
+                <constraint firstItem="msV-M3-hdM" firstAttribute="top" secondItem="Hi0-D5-Rot" secondAttribute="bottom" id="Jbr-KH-J9H"/>
+                <constraint firstItem="msV-M3-hdM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZU0-Mn-ITW"/>
+                <constraint firstAttribute="bottom" secondItem="bH9-Pj-pKI" secondAttribute="bottom" id="aGX-mz-mg3"/>
+                <constraint firstItem="sTk-5M-ahE" firstAttribute="centerX" secondItem="msV-M3-hdM" secondAttribute="centerX" id="aOW-sk-vlP"/>
+                <constraint firstAttribute="trailing" secondItem="bH9-Pj-pKI" secondAttribute="trailing" id="ate-Ta-BOM"/>
+                <constraint firstItem="bH9-Pj-pKI" firstAttribute="top" secondItem="msV-M3-hdM" secondAttribute="bottom" id="hYb-zN-z4M"/>
+                <constraint firstAttribute="trailing" secondItem="msV-M3-hdM" secondAttribute="trailing" id="mA1-sG-Hkj"/>
+                <constraint firstItem="sTk-5M-ahE" firstAttribute="centerY" secondItem="msV-M3-hdM" secondAttribute="centerY" constant="-25" id="pl6-qp-pTd"/>
+                <constraint firstItem="Hi0-D5-Rot" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xJl-EW-S6p"/>
+                <constraint firstItem="Hi0-D5-Rot" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xfU-kr-zhx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Myb-w4-g0l"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_pin_source_selection" width="50" height="50"/>
+        <image name="ic_search" width="60" height="60"/>
+    </resources>
+</document>

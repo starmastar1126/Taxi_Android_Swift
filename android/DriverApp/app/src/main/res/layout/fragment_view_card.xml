@@ -1,0 +1,304 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f2f2f4"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f4"
+        android:orientation="vertical"
+        tools:context="com.fragments.ViewCardFragment">
+
+        <RelativeLayout
+            android:id="@+id/cardArea"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@color/appThemeColor_1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="30dp">
+
+                <com.view.editBox.MaterialEditText
+                    android:cursorVisible="false"
+                    android:enabled="false"
+                    android:editable="false"
+                    android:id="@+id/creditCardBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/all_EditBox_height"
+                    android:ellipsize="end"
+                    android:inputType="textNoSuggestions"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="viewStart"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="@dimen/txt_size_16"
+                    android:theme="@style/bgcard_materialEditText"
+                    app:met_accentTypeface="@string/defaultFont"
+                    app:met_clearButton="false"
+                    app:met_floatingLabel="highlight"
+                    app:met_typeface="@string/defaultFont" />
+
+            </LinearLayout>
+
+            <com.view.MTextView
+                android:id="@+id/noCardAvailheadrTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:text="NO CARD AVAILABEL"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <com.view.MTextView
+                android:id="@+id/noCardAvailTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noCardAvailheadrTxt"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/txt_size_14" />
+
+            <LinearLayout
+                android:id="@+id/cardAddArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <include
+                    android:id="@+id/btn_type2"
+                    layout="@layout/btn_type_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/all_btn_height"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="15dp" />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:background="@color/appThemeColor_1"
+                android:id="@+id/cardViewArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:background="@color/appThemeColor_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.view.MTextView
+                        android:id="@+id/cardTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.6"
+                        android:gravity="center"
+                        android:textColor="#272727"
+                        android:textSize="@dimen/txt_size_16"
+                        android:visibility="gone" />
+
+                    <!--<include-->
+                    <!--android:id="@+id/btn_type2_change"-->
+                    <!--layout="@layout/btn_type_2"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="@dimen/all_btn_height"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_weight="0.4" />-->
+
+                    <include
+                        android:id="@+id/btn_type2_change"
+                        layout="@layout/btn_type_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/all_btn_height"
+                        android:layout_gravity="bottom" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/cardArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.view.MTextView
+                android:paddingStart="10dp"
+                android:id="@+id/demonoteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_size_18"
+                android:textColor="#ec1414"
+                android:text="NOTES"
+                />
+
+            <com.view.MTextView
+                android:visibility="gone"
+                android:id="@+id/demoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="10dp"
+                android:text="@string/demo_text"
+                android:textAlignment="viewStart"
+                android:textColor="#272727"
+                android:textSize="@dimen/txt_size_16" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/demoarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFFFFF">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.view.MTextView
+                            android:layout_weight="1"
+                            android:id="@+id/cardtypeHText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="Card Type"
+                            android:textAlignment="viewStart"
+                            android:textColor="#272727"
+                            android:textSize="@dimen/txt_size_16" />
+                        <com.view.MTextView
+                            android:layout_weight="1"
+                            android:id="@+id/cardtypeVText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="Visa"
+                            android:textAlignment="viewStart"
+                            android:textColor="#272727"
+                            android:textSize="@dimen/txt_size_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.view.MTextView
+                            android:layout_weight="1"
+                            android:id="@+id/cardnoHText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="Card Number"
+                            android:textAlignment="viewStart"
+                            android:textColor="#272727"
+                            android:textSize="@dimen/txt_size_16" />
+                        <com.view.MTextView
+                            android:layout_weight="1"
+                            android:id="@+id/cardnoVText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="4111 1111 1111"
+                            android:textAlignment="viewStart"
+                            android:textColor="#272727"
+                            android:textSize="@dimen/txt_size_16" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.view.MTextView
+                            android:layout_weight="1"
+                            android:id="@+id/cardexpiryHText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="Expiry"
+                            android:textAlignment="viewStart"
+                            android:textColor="#272727"
+                            android:textSize="@dimen/txt_size_16" />
+                        <com.view.MTextView
+                            android:layout_weight="1"
+                            android:id="@+id/cardexpiryVText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="12/2023"
+                            android:textAlignment="viewStart"
+                            android:textColor="#272727"
+                            android:textSize="@dimen/txt_size_16" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.view.MTextView
+                            android:layout_weight="1"
+                            android:id="@+id/cardcvvHText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="cvv"
+                            android:textAlignment="viewStart"
+                            android:textColor="#272727"
+                            android:textSize="@dimen/txt_size_16" />
+                        <com.view.MTextView
+                            android:layout_weight="1"
+                            android:id="@+id/cardcvvVText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="123"
+                            android:textAlignment="viewStart"
+                            android:textColor="#272727"
+                            android:textSize="@dimen/txt_size_16" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

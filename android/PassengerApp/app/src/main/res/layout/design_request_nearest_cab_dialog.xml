@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <RelativeLayout
+        android:id="@+id/rootRelView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/noloactionview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+
+                layout="@layout/no_location_view" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reqRelView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- <View
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#881C1C1C"/>-->
+
+        <ProgressBar
+            android:id="@+id/mProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/retryBtnArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mProgressBar"
+            android:background="@color/appThemeColor_1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.view.MTextView
+                android:id="@+id/noDriverNotifyTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:maxLines="5"
+                android:minHeight="50dp"
+                android:padding="5dp"
+                android:text="Driver is not able to take your request. Please cancel request and try again OR retry."
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txt_size_16" />
+
+            <include
+                android:id="@+id/btn_type2"
+                layout="@layout/btn_type_2"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/all_btn_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="@color/white" />
+
+            <ImageView
+                android:id="@+id/cancelImgView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_cancel_cab_request"
+                android:tint="@color/appThemeColor_1" />
+        </RelativeLayout>
+
+
+        <com.skyfishjy.library.RippleBackground
+            android:id="@+id/rippleBgView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:rb_color="@color/appThemeColor_1"
+            app:rb_duration="3000"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="4"
+            app:rb_scale="6">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/req_marker" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/req_man" />
+            </RelativeLayout>
+        </com.skyfishjy.library.RippleBackground>
+
+    </RelativeLayout>
+</LinearLayout>

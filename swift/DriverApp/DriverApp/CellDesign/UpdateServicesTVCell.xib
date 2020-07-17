@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="vsv-aL-kEQ" customClass="UpdateServicesTVCell" customModule="DriverApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vsv-aL-kEQ" id="mU1-JV-mBO">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="115.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2G-m8-xCG" customClass="BEMCheckBox">
+                        <rect key="frame" x="10" y="8" width="19" height="19"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="19" id="Cag-1G-S2a"/>
+                            <constraint firstAttribute="height" constant="19" id="LlK-MC-hje"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgC-DZ-2Xy" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                        <rect key="frame" x="39" y="7.5" width="347" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Medium"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gft-ag-8yg">
+                        <rect key="frame" x="0.0" y="0.0" width="396" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="CZR-54-zE8"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q2-cZ-aXS" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                        <rect key="frame" x="39" y="30" width="347" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.41566862310000002" green="0.41566862310000002" blue="0.41566862310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Fk-Ua-YqS">
+                        <rect key="frame" x="10" y="46" width="376" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service Amount" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Q99-an-Ekg" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="15" width="121.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 15" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="qIP-99-AlC" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                                <rect key="frame" x="131.5" y="15" width="33" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="75" id="GnQ-b2-6Pg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Bold"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSJ-FQ-gG1" customClass="MyButton" customModule="DriverApp" customModuleProvider="target">
+                                <rect key="frame" x="174.5" y="8" width="80" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="CCJ-pk-sUE"/>
+                                    <constraint firstAttribute="width" constant="80" id="eiA-Kx-8F8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qIP-99-AlC" firstAttribute="leading" secondItem="Q99-an-Ekg" secondAttribute="trailing" constant="10" id="2e4-OM-w18"/>
+                            <constraint firstItem="Q99-an-Ekg" firstAttribute="width" relation="lessThanOrEqual" secondItem="4Fk-Ua-YqS" secondAttribute="width" constant="-180" id="6Zr-LZ-qcL"/>
+                            <constraint firstItem="qIP-99-AlC" firstAttribute="centerY" secondItem="4Fk-Ua-YqS" secondAttribute="centerY" id="VJX-LH-mJO"/>
+                            <constraint firstAttribute="height" constant="50" id="dhr-Ib-pBB"/>
+                            <constraint firstItem="dSJ-FQ-gG1" firstAttribute="leading" secondItem="qIP-99-AlC" secondAttribute="trailing" constant="10" id="gPn-I9-1zy"/>
+                            <constraint firstItem="Q99-an-Ekg" firstAttribute="leading" secondItem="4Fk-Ua-YqS" secondAttribute="leading" id="mfE-aR-J3F"/>
+                            <constraint firstItem="dSJ-FQ-gG1" firstAttribute="centerY" secondItem="qIP-99-AlC" secondAttribute="centerY" id="nQN-RK-UbN"/>
+                            <constraint firstItem="Q99-an-Ekg" firstAttribute="centerY" secondItem="qIP-99-AlC" secondAttribute="centerY" id="okc-n0-A9V"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="u2G-m8-xCG" firstAttribute="leading" secondItem="mU1-JV-mBO" secondAttribute="leading" constant="10" id="00F-S2-u3z"/>
+                    <constraint firstItem="u2G-m8-xCG" firstAttribute="top" secondItem="mU1-JV-mBO" secondAttribute="top" constant="8" id="38y-AU-tq1"/>
+                    <constraint firstItem="Gft-ag-8yg" firstAttribute="leading" secondItem="mU1-JV-mBO" secondAttribute="leading" id="4Pk-Xb-Riu"/>
+                    <constraint firstItem="4Fk-Ua-YqS" firstAttribute="top" secondItem="6q2-cZ-aXS" secondAttribute="bottom" id="8fN-Py-VsK"/>
+                    <constraint firstItem="4Fk-Ua-YqS" firstAttribute="leading" secondItem="mU1-JV-mBO" secondAttribute="leading" constant="10" id="A4d-y1-hPu"/>
+                    <constraint firstAttribute="trailing" secondItem="wgC-DZ-2Xy" secondAttribute="trailing" constant="10" id="BS8-CS-NJn"/>
+                    <constraint firstAttribute="trailing" secondItem="4Fk-Ua-YqS" secondAttribute="trailing" constant="10" id="RUW-7E-0TU"/>
+                    <constraint firstItem="6q2-cZ-aXS" firstAttribute="trailing" secondItem="wgC-DZ-2Xy" secondAttribute="trailing" id="YX8-pK-XjT"/>
+                    <constraint firstItem="wgC-DZ-2Xy" firstAttribute="leading" secondItem="u2G-m8-xCG" secondAttribute="trailing" constant="10" id="aCS-NN-8LD"/>
+                    <constraint firstAttribute="trailing" secondItem="Gft-ag-8yg" secondAttribute="trailing" id="cLA-UZ-zau"/>
+                    <constraint firstItem="wgC-DZ-2Xy" firstAttribute="centerY" secondItem="u2G-m8-xCG" secondAttribute="centerY" id="cqn-6I-QFy"/>
+                    <constraint firstItem="6q2-cZ-aXS" firstAttribute="leading" secondItem="wgC-DZ-2Xy" secondAttribute="leading" id="e48-sa-sP4"/>
+                    <constraint firstItem="6q2-cZ-aXS" firstAttribute="top" secondItem="wgC-DZ-2Xy" secondAttribute="bottom" constant="2" id="ivj-s1-Xg6"/>
+                    <constraint firstItem="Gft-ag-8yg" firstAttribute="top" secondItem="mU1-JV-mBO" secondAttribute="top" id="l3s-T7-22Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="editBtn" destination="dSJ-FQ-gG1" id="I8P-q1-TbB"/>
+                <outlet property="priceLbl" destination="qIP-99-AlC" id="jtA-cg-1cI"/>
+                <outlet property="serviceAmountAreaView" destination="4Fk-Ua-YqS" id="PFE-P4-LBu"/>
+                <outlet property="serviceAmountLbl" destination="Q99-an-Ekg" id="b3C-Dl-m7e"/>
+                <outlet property="serviceCHKContainerView" destination="Gft-ag-8yg" id="EeW-fD-hEc"/>
+                <outlet property="serviceChkBox" destination="u2G-m8-xCG" id="49w-u4-ifJ"/>
+                <outlet property="serviceLbl" destination="wgC-DZ-2Xy" id="dFj-Hy-7FW"/>
+                <outlet property="subTitleLbl" destination="6q2-cZ-aXS" id="2sk-vc-9Tr"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="-70"/>
+        </tableViewCell>
+    </objects>
+</document>

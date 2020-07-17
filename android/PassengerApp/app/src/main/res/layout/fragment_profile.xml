@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fragments.ProfileFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/nameArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/fNameBox"
+                layout="@layout/editbox_form_design"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/lNameBox"
+                layout="@layout/editbox_form_design"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/emailBox"
+            layout="@layout/editbox_form_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <include
+            android:id="@+id/mobileBox"
+            layout="@layout/editbox_form_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <include
+            android:id="@+id/langBox"
+            layout="@layout/editbox_form_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <include
+            android:id="@+id/currencyBox"
+            layout="@layout/editbox_form_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:id="@+id/placearea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.view.MTextView
+                android:id="@+id/placesTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:text="PLACES"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_16"
+                app:customTypeFace="roboto_medium" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/appThemeColor_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_home"
+                    android:tint="@color/appThemeColor_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.view.MTextView
+                        android:id="@+id/homePlaceHTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="start|center_vertical"
+                        android:maxLines="1"
+                        android:text="Add Home"
+                        android:textAlignment="viewStart"
+                        android:textColor="#909090"
+                        android:textSize="@dimen/txt_size_12"
+                        android:visibility="gone"
+                        app:customTypeFace="roboto_light" />
+
+                    <com.view.MTextView
+                        android:id="@+id/homePlaceTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="start|center_vertical"
+                        android:maxLines="1"
+                        android:text="Add Home"
+                        android:textAlignment="viewStart"
+                        android:textColor="#909090"
+                        android:textSize="@dimen/txt_size_16"
+                        app:customTypeFace="roboto_light" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--  <com.view.MTextView
+                  android:id="@+id/homePlaceTxt"
+                  android:layout_width="match_parent"
+                  android:layout_height="45dp"
+                  android:layout_marginTop="10dp"
+                  android:drawableStart="@mipmap/ic_home"
+                  android:gravity="start|center_vertical"
+                  android:text="Add Home"
+                  android:textAlignment="viewStart"
+                  android:textColor="#2F2F2F"
+                  android:textSize="@dimen/txt_size_16" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#D4D4D4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:src="@mipmap/ic_work"
+                    android:textAlignment="viewStart"
+                    android:tint="#343d44" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.view.MTextView
+                        android:id="@+id/workPlaceHTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="start|center_vertical"
+                        android:maxLines="1"
+                        android:text="Add Work"
+                        android:textAlignment="viewStart"
+                        android:textColor="#909090"
+                        android:textSize="@dimen/txt_size_12"
+                        android:visibility="gone"
+                        app:customTypeFace="roboto_light" />
+
+                    <com.view.MTextView
+                        android:id="@+id/workPlaceTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="start|center_vertical"
+                        android:maxLines="1"
+                        android:text="Add Work"
+                        android:textAlignment="viewStart"
+                        android:textColor="#909090"
+                        android:textSize="@dimen/txt_size_16"
+                        app:customTypeFace="roboto_light" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <com.view.MTextView
+             android:id="@+id/workPlaceTxt"
+             android:layout_width="match_parent"
+             android:layout_height="45dp"
+             android:layout_marginTop="5dp"
+             android:drawableStart="@mipmap/ic_work"
+             android:gravity="start|center_vertical"
+             android:text="Add Work"
+             android:textAlignment="viewStart"
+             android:textColor="#2F2F2F"
+             android:textSize="@dimen/txt_size_16" />-->
+
+    </LinearLayout>
+</LinearLayout>

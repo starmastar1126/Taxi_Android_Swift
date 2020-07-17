@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.fastcabtaxi.passenger.MyProfileActivity">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <ScrollView
+        android:id="@+id/profile_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:background="#1c1c1c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/profileimageback"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/userImgArea"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center">
+
+                        <com.view.SelectableRoundedImageView
+                            android:id="@+id/userProfileImgView"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            app:sriv_border_color="@color/editBox_primary"
+                            app:sriv_border_width="2dip"
+                            app:sriv_left_bottom_corner_radius="20dip"
+                            app:sriv_left_top_corner_radius="20dip"
+                            app:sriv_oval="true"
+                            app:sriv_right_bottom_corner_radius="20dip"
+                            app:sriv_right_top_corner_radius="20dip" />
+
+                        <com.view.SelectableRoundedImageView
+                            android:id="@+id/editIconImgView"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:background="@color/editBox_primary"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_edit"
+                            app:sriv_border_color="@color/editBox_primary"
+                            app:sriv_border_width="2dip"
+                            app:sriv_left_bottom_corner_radius="5dip"
+                            app:sriv_left_top_corner_radius="5dip"
+                            app:sriv_oval="true"
+                            app:sriv_right_bottom_corner_radius="5dip"
+                            app:sriv_right_top_corner_radius="5dip" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/fragContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

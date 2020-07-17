@@ -1,0 +1,574 @@
+.logo{ float:right; margin-left:0px;}
+.logo{ margin:0 3% 0 0;}
+.get-there-inner{width:98%;}
+/*.get-there-inner span a{width:77%;}*/
+input[type="radio"], input[type="checkbox"]{float:left !important;}
+.add-services-hatch .make-switch { float: right;}
+.add-services-taxi ul li .form-control { float: right; width: 200px;}
+.add-services-taxi ul li label{ float: right; font-weight: normal; margin: 7px 10px 0px 0px; font-weight: 600;}
+.logo img{ float:right;}
+.top-link{ float:left; margin-left:7%;}
+.logo .top-logo-link{ float:right; margin:0 5% 0 0;}
+.logo .top-logo-link a{ float:right;}
+.get-there-inner span a{width:71%;}
+.top-link-login-new{ float:left;}
+.top-link-login ul li a i{ margin:0 0 0 10px;}
+.get-there-inner h2{ margin:23px 4% 0 0; float:right; text-align:right; width:71%;}
+.get-there-inner span{  margin:34px 35px 0 0; width: 217px;}
+.add-car-services-hatch fieldset legend{right: 51px;}
+.add-car-services-hatch fieldset legend strong{float: right;}
+.home-hero-page-left{ float:right;}
+.home-hero-page-right{ float:left;}
+.home-hero-page-right-text{ left:0; right:auto;}
+.home-hero-page-right-text span p{ text-align:right;}
+.home-hero-page-right-text span a{ float:right;}
+.home-hero-page-left-text{ float:right;}
+.home-hero-page-left-text span{ width:96%;}
+.home-hero-page-left-text span a{ float:left;}
+.add-services-hatch .hatchback-search { float: right; width: auto; margin: 3px 10px 0 0px;}
+.people-going-way-left{ float:right;}
+.people-going-way-mid{ float:right;}
+.people-going-way-mid-inner{ text-align:right;}
+.people-going-way-mid-inner h2{ float:right;}
+.people-going-way-mid-inner h3::after{ left:auto; right:0;}
+.people-going-way-mid-inner span a{ float:right;}
+
+.helping-cities-left{ float:right;}
+.helping-cities-mid{ float:right;}
+.helping-cities-mid-inner{ text-align:right;}
+.helping-cities-mid-inner h2{ float:right;}
+.helping-cities-mid-inner h3::after{ left:auto; right:0;}
+
+.Safety-people-text{ float:right; text-align:right;}
+.Safety-people-text h2{ float:right;}
+.Safety-people-text h3::after{ left:auto; right:0;}
+.Safety-people-img{ float:left;}
+
+.footer-box1{ float:right;}
+.footer-box2{ margin:0; float:right;}
+.footer-box2 ul{float: right;}
+
+.footer-box2 ul li a{ float:right; padding:0 18px 0 0; background-position:right center;}
+/*.footer-box3{ margin:10px 50px 0 0;}*/
+.footer-bottom-part span{ float:right;}
+.footer-box1 span a .fa{ float:right;}
+
+.footer-box1 .lang-all{ left:auto; right:0;}
+
+.top-link-login{ float:right; margin:0px; left:0; right:auto;}
+.top-link-login label img{left:0; right:auto;}
+.user-part-login{ float:left;}
+.top-link-login span a{float:right;}
+
+.header-page{text-align:right; float:right;}
+.sign-in-driver{float: right; text-align:right; position: relative;}
+.sign-in-driver h3{background-position:right top;}
+.sign-in-driver p{float:right; min-height: 54px;}
+.sign-in-driver span a{ float:right;}
+
+.sign-in-rider{float: left; text-align:right;}
+.sign-in-rider h3{ background-position:right top;}
+.sign-in-rider p{ float:right; min-height: 54px;}
+.sign-in-rider span a{ float:right;}
+
+.header-page p{ background-position:right bottom;}
+.login-form-left {border:none; float:right; border-left:1px solid #e4e4e4; padding:0 0 0 50px}
+.login-form-right1  {float:right;}
+.login-form-left b {float:right;}
+.login-form-left b .login-input { text-align:right; margin:0 0 15px; padding:0 15px 0 0; float:right;}
+.login-form-left b a {float: left;}
+.login-form-left b .submit-but {float:right;}
+.login-form-right h3 {float:right;}
+.login-form-right span{float:right;}
+.login-form-right1 .login-form-right1-inner{float:right;}
+.login-form-right  {float:right;}
+.driver-profile-page {float:right;}
+.driver-profile-top-part {float:right;}
+.driver-profile-img {float:right;}
+.driver-profile-info {float:right; text-align:right; margin:27px 45px 0 0;}
+.driver-profile-info h3 {float:right; font-size: 25px;}
+
+.driver-profile-info p  {float:right;}
+.driver-profile-info span {float:right;}
+.driver-profile-info span a{float:left;}
+/*.driver-profile-mid-part {float:right;}*/
+.driver-profile-mid-part ul {float:right;}
+.driver-profile-mid-part ul li {float:right; margin:0 0 0 26px; }
+.driver-profile-mid-part ul li .driver-profile-mid-inner {float:right;}
+.driver-profile-mid-part ul li .driver-profile-mid-inner .profile-icon {float:right;}
+.driver-profile-mid-part ul li .driver-profile-mid-inner h3 {float:right;}
+.driver-profile-mid-part ul li .driver-profile-mid-inner p {float:right;}
+.driver-profile-mid-part ul li .driver-profile-mid-inner span a img{float: right;margin: 0 8px 0 0;padding: 3px 0 0 4px;}
+.profile-Password {float: right;}
+.profile-Password h3 img {float: right; margin:0 0px 0 10px}
+.profile-Password h3 {float: right; text-align:right;}
+.profile-language-part {float: right;}
+/*.profile-Password span {float: right;}*/
+.profile-Password span b {float:left;}
+.edit-profile-detail-form-password-inner span .edit-profile-detail-form-input {float: right; text-align: right;padding: 0 10px 0 0; width: 100%;}
+.profile-Password span .profile-Password-save {margin: 0 0 0 10px; float: right;}
+.profile-Password span .current-pas {float: right; padding :0 10px 0 0; text-align: right;}
+.profile-Password span .new-pas {float: right; text-align: right;padding :0 10px 0 0; margin: 0 15px 0 0;}
+.profile-Password span .con-new-pas{float: right; text-align: right;padding :0 10px 0 0;margin: 0 15px 0 0;}
+.trips-page {float: right;}
+.Posted-date {float: right; text-align: right;}
+.Posted-date h3 {float: right;}
+.Posted-date span {float: right; }
+.Posted-date span input {float: right; text-align: right; background-position: left 11px top 11px; padding:0 15px 0 0; margin:0 0 0 15px;}
+.time-period {float: right;}
+.time-period h3 {float: right; text-align: right;}
+.time-period span {float: right;}
+.time-period span a {float: right; background-position: left 3px; margin: 0 0 0 15px;
+    padding: 0 0 0 15px;}
+.time-period b {float: right;}
+.time-period b .driver-trip-btn {float: right;}
+.trips-table {float: right;}
+.trips-table-inner{float: right;}
+.driver-trip-table{float: right;}
+#dataTables-example_wrapper{float: right;}
+.dataTables_length{float: right; text-align: right;}
+.dataTables_length label{float: right;}
+#dataTables-example_length label .select-wrapper { background-position: left 17px;}
+#dataTables-example_length label .select-wrapper:hover { background-position: left 17px;}
+.dataTables_filter{float: left; text-align: right;}
+.dataTables_filter label input { text-align:right; background-position: left 11px top 11px; padding: 0 10px 0 0;}
+.driver-profile-bottom-part h3{float: right; text-align: right; background-position: right top;}
+.required-documents-bottom-part ul{float: right;}
+.required-documents-bottom-part ul li{float: right; margin: 0 0 0 15px;}
+.required-documents-bottom-part ul li a{float: right;}
+.demo-warning {float: right; text-align: right;}
+.add-car-vehicle a {float: left;}
+.driver-vehicles-page-new {float: right;}
+.vehicles-page{float: right !important;}
+.accordion{float: right !important;}
+.accordion .accordion-section{float: right !important;}
+.accordionheading{float: right !important;}
+.accordionheading h3{float: right !important; margin: 8px 10px 0 0 !important;}
+.accordionheading span{float: left !important;}
+.accordionheading span b{float: right !important;}
+.accordionheading span b .active{float: right !important;}
+.driver-vehicles-page-new h2 {float: right !important; text-align:right !important;}
+.driver-vehicles-page-new ul {float: right !important;}
+.driver-vehicles-page-new li {float: left !important; margin: 0 10px 10px 0px !important;}
+.driver-vehicles-page-new li h4 {float: right !important;}
+.driver-vehicles-page-new li .select-image1 {float: right !important;}
+.trip-detail a {float: left;}
+.driver-add-vehicle span {float: right;}
+.driver-add-vehicle span b {float: right;}
+.driver-add-vehicle span .select-wrapper { background-position: top 17px left 10px; text-align: right; padding: 10px 0px 0px 12px; float:right;} 
+.driver-add-vehicle span .select-wrapper:hover { background-position: top 17px left 10px;}
+.has-switch span.switch-success{ float:right;}
+.has-switch > div.switch-off{right:-50%;}
+.driver-add-vehicle span b input {text-align: right;}
+.driver-add-vehicle h3 {float: right; text-align: right;}
+.car-type {float: right;}
+.payment-tabs  {float: right;}
+.payment-tabs ul  {float: right;}
+.payment-tabs ul li {float: right;}
+.payment-tabs ul li a {float: right;}
+.static-page { float: left; text-align: right}
+.your-requestd {float: right; text-align: right; padding-right: 10px;}
+.your-requestd b {float: none;}
+.driver-signup-page {float: right;}
+.create-account {float: right;}
+.create-account h3 {float: right; text-align: right; background-position: right top;}
+.create-account span {float: right;}
+.create-account span strong {float: right;}
+.create-account span .create-account-input {float: right; text-align: right; padding: 0 10px 0 0;}
+.create-account span strong:nth-child(2n) {float:left;}
+.c_code_ph_no { margin: 0 !important; margin-right:2% !important}
+.create-account span .select-wrapper { background-position: left 12px top 19px; text-align:right;}
+.create-account span .select-wrapper:hover { background-position: left 12px top 19px; }
+.create-account span abbr {float: right; text-align: right;}
+.checkbox-n {float: right !important; padding-left: 10px !important;}
+.create-account p {float: right;}
+.create-account p .submit {float: right;}
+.driver-signup-page h3 {float: right; text-align: right;}
+.driver-signup-page p {float: right; text-align: right;}
+.individual-driver {float: right; text-align: right;}
+.individual-driver h4 {float: right;}
+.individual-driver span {float: right;}
+.individual-driver span em {float: right; padding-right:10px; width:auto;}
+.radio-but {float: right !important;}
+.radio-but b {float: right !important;}
+.create-account span b {float:right;}
+.create-account span b .select-wrapper {background-position:left 21px top 21px}
+.create-account span b .select-wrapper:hover {background-position:left 21px top 21px}
+.create-account span b strong{ float:right; border:none; border-left:1px solid #d4d4d4;}
+
+.trips-table-inner table{direction:rtl;}
+.trips-table-inner table th:First-child {border-right:1px solid #c5c5c5;}
+.trips-table-inner table td:First-child {border-right:1px solid #c5c5c5;}
+
+.top-link-login span a img{ margin:0 0 0 10px;}
+.demo-warning p{ float:right;}
+.driver-profile-mid-part ul li .driver-profile-mid-inner span{ float:right;}
+.driver-profile-mid-part ul li .driver-profile-mid-inner span a{ padding:9px 14px 9px 18px;}
+.driver-profile-mid-part ul li .driver-profile-mid-inner span a img{ margin:0 0 0 8px;}
+.page-contant{ float:right;}
+.required-documents-bottom-part ul li a img{ margin:0  0 0 10px;}
+nav button{ margin:0 20px 0 0;}
+.edit-profile-detail-form{ float:right;}
+.show-edit-profile-part span{ float:right;}
+.show-edit-profile-part span .edit-profile-detail-form-input{ float:right; padding:0  10px 0 0;}
+.show-edit-profile-part span{ float:left;}
+.show-edit-profile-part span .select-wrapper{ background-position:left 12px top 19px;}
+.show-edit-profile-part span .select-wrapper:hover{ background-position:left 12px top 19px;}
+.show-edit-profile-part span .input-phNumber1{ float:right;}
+.show-edit-profile-part p{}
+.show-edit-profile-part p .save-but{ float:right;}
+.show-edit-profile-part p .cancel-but{ float:right; margin:0 10px 0 0;}
+.profile-Password p{ float:right;}
+.profile-address-part{ float:right;}
+.profile-address-part span .profile-address-input{ float:right; padding:0 10px 0 0;}
+.profile-Password span b{float: left;}
+.edit-profile-detail-form-password-inner span .select-wrapper{ background-position:left 12px top 19px; padding-right:8px;}
+.edit-profile-detail-form-password-inner span .select-wrapper:hover{ background-position:left 12px top 19px; padding-right:8px;}
+nav ul#listMenu.listOpen{left:auto; right:0px;}
+.exp-date h5{ float:right; margin:0 0 7px;}
+.driver-add-vehicle{ float:right;}
+.exp-date .input-append input{background-position:left 7px top 7px;}
+.popup-box1 .save{ float:right;}
+.popup-box1 .cancel{ float:left;}
+.popup-box3 .save{ float:right;}
+.popup-box3 .cancel{ float:left;}
+.popup-box2 .save{ float:right;}
+.popup-box2 .cancel{ float:left;}
+.dataTables_filter label{ float:right;}
+.dataTables_filter label input{margin:0 7px 0 0 ;}
+.trips-table-inner table.dataTable thead .sorting:after{ float:left;}
+.trips-table-inner table th{text-align: right;border-right: 1px solid #c5c5c5;}
+.trips-table-inner table.dataTable thead .sorting_desc:after{ float:left;}
+.trips-table-inner table.dataTable thead .sorting_asc:after{ float:left;}
+.dataTables_info{ float:right;}
+.paging_simple_numbers{ float:left;}
+.paging_simple_numbers a{ float:right; margin:0 5px 0 0;}
+.payment-tabs ul li{ margin:0 0 0 10px;}
+#dataTables-example_length label .select-wrapper {background-position: left 5px top 17px; float:right;}
+#dataTables-example_length label .select-wrapper:hover{background-position: left 5px top 17px;}
+.your-requestd b{ margin:0 55px  0 10px;}
+.paging_simple_numbers span{ float:left;}
+.paging_simple_numbers span span{ float:left;}
+.driver-vehicles-page-new{ float:right;}
+.accordionheading span strong{ float:left;}
+.accordionheading span b .active{ margin:0 0 0 10px; }
+.accordionheading .accordion-section-title{float:right; margin:5px 0 0 10px !important;}
+.accordionheading span strong{ float:right;}
+.accordionheading span b{margin:0  0 0 10px !important; }
+.trip-detail a img{ padding:0 0 0  8px;}
+.driver-add-vehicle span .select-wrapper, .select-wrapper select{margin: 0px;padding: 0;height: 45px;line-height: 44px;padding: 0 12px 0 0;}
+.driver-add-vehicle span .select-wrapper .holder{ margin:0;}
+.driver-add-vehicle span .select-wrapper select option{padding:10px 10px 10px 0px;}
+.driver-add-vehicle span .select-wrapper select option:hover{padding:10px 10px 10px 0px;}
+.user-part-login span{ float:right; margin:5px  0 0 15px; text-align:left;}
+.car-type ul{ float:right;}
+.car-type ul li{ float:right;}
+.car-type ul li b{ float:right;}
+.has-switch span.switch-success{ float:right;}
+.has-switch label{ float:right;}
+.car-type strong{ float:right;}
+.Safety-people-left{ float:right;}
+.contact-form{ float:right;}
+.contact-form b{ float:right;}
+.contact-form b .contact-input{ float:right; padding:0 10px 0 0 }
+.contact-form b .contact-textarea{ float:right; padding:10px 10px 0 0 ;}
+.contact-form b .submit-but{ float:left; margin: 15px 28px 0;}
+.static-page p{ float:right;}
+.page-contant{ background-position:top left 0; padding:0;}
+.driver-vehicles-page-new li b{ float:right;}
+.radio-but b{margin:0 0 0 25px;}
+.radio-but b input[type="radio"] + label::before{ margin:-2px 0 0 8px !important;}
+.checkbox-n{ margin:0  0 0 15px;}
+nav ul#listMenu span{ float:right;}
+nav section.navOpen{float:right; left:0; margin: 7px 30px 0 13px; right:auto;}
+.menu-logo .logo-left{float: right;}
+
+nav ul#listMenu li{ float:right;}
+nav ul#listMenu li a{ float:right;}
+.sign-in-driver h3{ float:right;}
+.sign-in{ float:right;}
+.sign-in-driver span{ float:right;/* position: absolute;left: 0px;top: 150px;*/}
+.sign-in-driver span a img{  padding:0 0 0 20px; transform: rotate(180deg);}
+.sign-in-rider span{ float:right;}
+.sign-in-rider span a img{ padding:0 0 0 20px; transform: rotate(180deg);}
+.login-form-right1 .fb-login a img{ margin:0  0 0 5px;}
+.faq-page{ float:right;}
+.faq-top-part{ float:right;}
+.faq-top-part ul{ float:right;}
+.faq-top-part li{ float:right; margin:0 0 0 20px;}
+.faq-top-part li a{ float:right;}
+.faq-bottom-part{ float:right;}
+.faq-bottom-part ul{ float:right;}
+.faq-bottom-part li{ float:right;}
+.faq-bottom-part li span{ float:right;}
+.faq-bottom-part li b{ float:right;}
+.faq-bottom-part li span h3{ float:right;  margin:8px 10px 0 0 ;}
+.edit-profile-detail-form-inner span .edit-profile-detail-form-input{padding:0 10px 0 0;float:right;}
+/*.edit-profile-detail-form-inner span{ float:right;}*/
+.edit-profile-detail-form-inner span .select-wrapper{ background-position:left 12px top 19px; float:right;}
+.edit-profile-detail-form-inner span .select-wrapper:hover{ background-position:left 12px top 19px;}
+.edit-profile-detail-form-inner p{ float:right;}
+.edit-profile-detail-form-inner p .save-but{ float:right;}
+.edit-profile-detail-form-inner p .cancel-but{margin:0 10px 0 0; float:right;s}
+.show-edit-profile-part span .select-wrapper .holder{ padding-right:10px;}
+.driver-action-page-right span .select-wrapper .holder { padding-right:10px;}
+.show-edit-profile-part span .select-wrapper{ float:right;}
+ .trip-detail-page{ float:right;}
+ .trip-detail-page-left{ float:right;}
+ .trip-detail-map{ float:right;} 
+ .map-address{ float:right;}
+ .map-address ul{float:right;}
+ .map-address ul li{ float:right;}
+ .map-address ul li b{ float:right; margin:2px 15px 0 0;}
+ .map-address ul li span{ float:right;}
+ .map-address ul li span h3{ float:right;}
+ 
+ .location-time{ float:right;}
+ .location-time ul{float:right;}
+ .location-time ul li{ float:right;} 
+ .location-time ul li h3{ float:right;}
+ .trip-detail-page-right{ float:left;}
+ .driver-info{ float:right;}
+ .driver-img{ float:right;}
+ .driver-info h3{ float:right;}
+ .fare-breakdown{ float:right;}
+ .fare-breakdown-inner h3{ float:right;}
+ .fare-breakdown-inner ul{ float:right;}
+ .fare-breakdown-inner ul li{ float:right; background-position: right 9px;}
+ .fare-breakdown-inner ul li strong{ float:right; margin:0  0 0 10px;}
+ .fare-breakdown-inner ul li b{ float:left; padding:0 10px 0 0;}  
+ .fare-breakdown-inner span{ float:right;}
+ .fare-breakdown-inner span h4{ float:right;}
+ .fare-breakdown-inner span em{ float:left;}
+.home-hero-page-right-text span{ float:right; margin:22px 35px 0 0;}
+.home-hero-page-right-text{ float:right;}
+.footer-box1 .lang b{ background-position:left 8px top 21px!important; float:right; width: 100%;}
+.people-going-way-mid-inner span .fa{float:left; margin:6px 10px 0 0; transform:rotate(180deg);}
+.top-link-login span a i{ margin-left:10px;}
+.driver-profile-mid-part ul li .driver-profile-mid-inner span a i{ margin:3px 0 0 8px;float:right;}
+.driver-profile-img b a i{ padding:9px 9px 0 0; float:right;}
+.driver-profile-info span a i{ margin:10px 0 0 7px; float:right;}
+.profile-Password h3 i{ margin:0 0 0 10px;}
+.sign-in-rider h3:after{float:right; right:0;top:0;}
+.driver-profile-bottom-part h3::after { float:right;right:0;bottom:0;}
+.sign-in-driver h3:after{ float:right;right:0;top:0;}
+.driver-signup-page .line-dro h3:before {float:right;right:0;top:0;}
+.create-account span strong label{ float:right; margin:0 0 7px 0;}
+.profile-Password span .input-box{ padding:0 10px 0 0; float:right;}
+.profile-Password span label{ float:right;}
+.driver-action-page-right span .input-phNumber2{ margin:0 20px 0 0 ; float:right;}
+.driver-action-page-right span .driver-action-page-input{ padding:0 10px 0 0; float:right; margin:0;}
+.driver-action-page-right span .select-wrapper{ float:right; background-position:left 12px top 19px;}
+.driver-action-page-right span .select-wrapper:hover{ float:right; background-position:left 12px top 19px;}
+.driver-action-page-right span .input-phNumber1{ float:right;}
+.driver-action-page-right p{margin:17px 0 0; float:right;}
+.driver-action-page-right p .save-but{ float:right; margin:0 15px 0 0;}
+.driver-action-page-right span{ margin:15px 0 0; float:right;}
+.mytrip-page span a{margin:0 0 0 15px; padding:0 0 0 15px; float:right; background-position:left 3px;}
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11{ float:right;} 
+.driver-add-vehicle span b label{ float:right;}
+.edit-profile-detail-form-inner span .select-wrapper .holder{ padding:0 10px 0 0;}
+.create-account span .select-wrapper .holder{ margin-right:10px;}
+.driver-action-user-image{ float:right;}
+.profile-Password .language-pointer img{left:30%;right:auto;}
+.profile-Password .bankdeail-pointer img{ left:5%;right:auto;}
+.profile-Password .password-pointer img{right:35%; left:auto;}
+.profile-Password .address-pointer img{ right:10%; left:auto;}
+
+.static-page ul{ float:right; margin:0px; width:100%;}
+.static-page ul li{ background-position:right; padding:0 15px 0 0;}
+
+.get-fare-estimation-left span .trip-start{ background-position:right 8px center; padding:9px 35px 9px 9px;}
+.get-fare-estimation-left span .trip-end{ background-position:right 8px center; padding:9px 35px 9px 9px;}
+.get-fare-estimation-left span b button{ right:auto; left:0;}
+
+.password-l .col-md-4{ float:right;}
+.driver-info p b{float:right; margin:0 0 0 10px;}
+
+.menu-logo a i{ margin:0 0 0 10px;}
+.menu-logo label{float:left; margin: 0 7% 0 20px;}
+.home-mobile-app-left{float:right;}
+.home-mobile-app-right span{float:right;}
+.footer-box2 ul li{width: 80%;}
+.home-mobile-app-right{float:left;}
+.gender-span001 .radio-but em{float:right;}
+.gender-span001 .radio-but b{float:right !important;}
+.header-page-theepjo-add:before{left:auto;}
+.header-page-rd::before{left:auto;}
+.header-page-sinu::before{left:auto;}
+.header-page-a::before{left:auto;}
+.header-page-b::before{left:auto;}
+.header-page-c::before{left:auto;}
+.header-page-d::before{left:auto;}
+.header-page-f::before{left:auto;}
+.header-page::before{left:auto;}
+.header-page-ab::before{left:auto;}
+.header-page-p::before{left:auto;}
+.header-page-d1::before{left:auto;}
+.header-page-act:before{left:auto;}
+.header-page-hidr:before{left:auto;}
+.header-page-vehicle::before{left:auto;}
+.header-page-company1:before{left:auto;}
+.header-page-dr-doc:before{left:auto;}
+.header-page-profil-rd:before{left:auto;}
+.header-page-mytrip-ac:before{left:auto;}
+.header-page-rider-waller-a:before{left:auto;}
+.header-page-sign-in:before{left:auto;}
+.header-page-login-new-a:before{left:auto;}
+.header-page-help-cent:before{left:auto;}
+.header-page-privacy-a:before{left:auto;}
+.header-page-about-us-a:before{left:auto;}
+.header-page-kabme-driver::before{left:auto;}
+
+nav ul#listMenu span .menu-left-new li span{margin: 0 14px 0px 0px;}
+nav ul#listMenu span .menu-left-new li b{float:right;}
+.profile-req-doc .upload-clicking{float:right;}
+.top-link-login ul{float:right;}
+.menu-logo strong{float:right; margin:0 20px 0 0;}
+.menu-logo p{float:right; margin:20px 25px 0 0;}
+.driver-profile-mid-part ul li .driver-profile-mid-inner-a span{top: 138px;}
+.header-page-vehicle{font-size: 30px;}
+.home-mobile-app-right p a { border: 1px solid #ffa523; color: #FFFFFF; text-align: center; font-size: 15px; margin: 0px; padding: 12px 40px 12px 20px; transition: all 0.5s; cursor: pointer; text-transform: uppercase; float: right; line-height: normal; background: #ffa523 ; font-family: 'maven_promedium';}
+.home-mobile-app-right p a em {cursor: pointer; display: inline-block; position: relative; transition: 0.5s; font-style:normal;}
+.home-mobile-app-right p a em:before {content: '\00bb'; position:absolute; opacity:0; bottom:0; right:-26px; transition: 0.5s; font-size:25px; line-height:22px;}
+.home-mobile-app-right p a em:before{opacity:1; right:-26px;}
+.home-mobile-app-right p a:hover em {padding-right:0;}
+
+.home-mobile-app-right p a em:after {position:absolute; opacity:0; top:0; right:-26px; transition: 0.5s; font-size:25px;  line-height:29px;}
+.home-mobile-app-right p a:hover em:after {opacity:1; /*right:0;*/}
+.home-mobile-app-right p a:hover {
+    border-color: #fcb44c;
+    background: #fcb44c;
+}
+
+.taxi-app-right-part p a { border: 1px solid #ffa523; color: #FFFFFF; background: #ffa523;}
+.taxi-app-right-part p a { text-align: center; font-size: 15px; margin: 0px; padding: 12px 40px 12px 20px; transition: all 0.5s; cursor: pointer; text-transform: uppercase; float: right; line-height: normal; font-family: 'maven_promedium';}
+@media screen and (min-width:1px) and (max-width:767px) {
+
+.home-hero-page-right-text span{margin: 8px 35px 0 0;}
+.profile-req-doc .upload-clicking { margin: 0 3px 16px 13px;}
+.menu-logo label{margin:10px 0;}
+#main-uber-page{width:100%;}
+.logo{ margin:0 6% 0px 0px;}
+.header-page-hidr::before { bottom: 0px;}
+.header-page-vehicle{font-size: 30px;}
+.header-page-act{font-size:30px;}
+.header-page-act::before { bottom: -4px; font-size:30px;}
+.menu-logo img {/*width:auto;*/ margin: 0 11px 0 10%;}
+.logo{ margin:0px 9% 0 0!important;}
+nav button{ left:auto!important; right:0!important; top:12px; margin:0 12px 0 0!important;}
+.driver-profile-info{ margin:15px 15px 0 0!important;}
+nav section.navOpen{float:right; left:auto; margin:5px 0 0 20px; right:30px;}
+/*.logo img{width: 100%;}*/
+.get-there-inner h2{margin:0px;}
+/*.footer-box1 .lang-all{width: 100%;}*/
+/*.driver-profile-mid-part{width: 90%;}*/
+.sign-in-rider p{min-height:0px;}
+.sign-in-driver p{min-height:0px;}
+}
+
+@media screen and (min-width:1px) and (max-width:567px) {
+
+.logo img { margin-top: 0px;}
+.page-contant-inner{float: right;}
+.driver-profile-mid-part ul li{width: 45%;}
+.page-contant { background-position: left -130px top 0;}
+}
+
+@media screen and (min-width:568px) and (max-width:666px) {
+.login-socials .fa{width:9%;}
+.page-contant-inner { margin: 30px 0 0 5px; float: right; width: 89%;}
+.page-contant { background-position: left -100px top 0; padding: 0 0 20px; margin: 80px 0 0;}
+.driver-profile-mid-part ul li { margin: 0px 19px 51px 18px; width: 43%;}
+.sign-in-driver p{min-height: 53px;}
+.sign-in-rider p{min-height: 53px;}
+.small_box{padding:18px;}
+}
+
+
+@media screen and (min-width:1px) and (max-width:414px) {
+.driver-profile-mid-part ul li { width: 100%; margin: 0 0 70px;}
+.header-page-kabme-vehicle::before{bottom: 33px;}
+.header-page-d1::before{bottom:0px;}
+.footer-box2 ul li{width:100%;}
+nav section.navOpen{ margin:5px 0 0 10px; right:10px;}
+.header-page-rd::before{left:auto; float:right;}
+.menu-logo img {width:70px;}
+/*nav section.navOpen{margin: 5px 0 0 40px; right: 35px;}*/
+.driver-profile-mid-part ul li{margin: 0 0 70px;}
+.profile-req-doc{width:100%;}
+.header-page{font-size: 35px;}
+.trip-detail a{font-size: 15px; padding: 9px 5px;}
+.sign-in-rider{margin: 0px 0 0 0;}
+.sign-in-driver{margin: 0px 0 30px;}
+.sign-in-driver span{top: 120px;}
+.add-car-vehicle a{padding: 12px 5px;font-size: 15px;}
+.driver-profile-mid-part ul{ float:none;}
+.page-contant-inner{ width:94%;}
+.menu-logo p{ margin-top:10px;}
+}
+
+@media screen and (min-width:1px) and (max-width:400px) {
+.logo{ margin:14px 15% 0 0!important;}
+.header-page-rd::befor{left:auto; float:right;}
+.menu-logo img{ width:150px;}
+.footer-box2 ul:last-child{ width:100%;}
+.menu-logo img {width:70px;}
+.driver-profile-mid-part{width:100%;}
+}
+
+@media screen and (min-width:1px) and (max-width:350px) {
+.small_box{padding:18px;}
+.header-page-act::before{ bottom:40px; font-size:30px;}
+.menu-logo p{ margin-top:3px;}
+}
+
+@media screen and (min-width:667px) and (max-width:767px) {
+.page-contant-inner{float: right;}
+.page-contant{background-position: left -70px top 0;}
+
+.header-page-vehicle::before { bottom: 30px;}
+.driver-profile-mid-part ul li{ margin:0 0 70px 15px!important;}
+.driver-profile-mid-part ul li:nth-child(2n){margin-left:0!important;}
+.header-page-rd::before{left:auto; float:right;}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+.driver-vehicles-page-new li { float: right !important; margin: 0 10px 12px 0px !important;}
+
+
+.small_box{padding:18px;}
+.home-hero-page-right-text span{margin: 21px 35px 0 0;}
+.get-there-inner h2{width:58%;}
+.sign-in-rider p{min-height: 79px;}
+.sign-in-driver p{min-height:81px;}
+.profile-req-doc .upload-clicking { margin: 0 3px 16px 13px;}
+.get-there-inner span a { padding: 10px 51px; width: auto;}
+.sign-in-driver span a{padding: 9px 18px 9px 6px; font-size: 14px;}
+.sign-in-rider span a{padding: 8px 18px 13px 8px; font-size: 13px;}
+.sign-in-rider span a img{padding: 0 0 0 13px;}
+.logo{margin: 0 6% 0 0; width: 65%;}
+nav button{ left:auto!important; right:0!important;}
+.page-contant-inner{margin:30px 15px 0 0; float:right; width:75%;}
+.create-account {margin: 0;padding:0px;float:left; /*width:90%;*/}
+.c_code {width:31%!important;} 
+.ph_no {width:68%!important;}
+.driver-profile-info{ margin:15px 20px 0 0!important;}
+nav section.navOpen{float:right; left:auto; margin:5px 0 0 20px; right:30px;}
+.footer-box1 .lang b{width: 100%;}
+
+}
+@media screen and (min-width:1100px) and (max-width:1199px) {
+.page-contant-inner{float: right;}
+}
+@media screen and (min-width:1024px) and (max-width:1099px) {
+.page-contant-inner{float: right;}
+.logo{width:70%; margin: 0 5% 0px 0;}
+.home-mobile-app-right{margin:0px;}
+.header-page-rd::before{left:auto; float:right;}
+.page-contant-inner{float:right; width:85%;}
+.footer-box1 .lang b{width:100%;}
+}
+
+.input{ direction:rtl;}
+.input:focus{ text-align:left; direction:ltr;}

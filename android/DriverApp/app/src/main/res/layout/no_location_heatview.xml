@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000"
+    android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/MainHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/nolocmenuImgView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_weight="0"
+            android:clickable="true"
+            android:src="@mipmap/ic_drawer_menu"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/nolocbackImgView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:src="@mipmap/ic_back_arrow"
+            android:tint="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MainHeaderLayout"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/noLocImgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_gps_off"
+            android:tint="@android:color/white" />
+
+        <com.view.MTextView
+            android:id="@+id/noLocTitleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <com.view.MTextView
+            android:id="@+id/noLocMsgTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_18" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomarea"
+        android:layout_marginBottom="-25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bottomarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.view.MTextView
+            android:id="@+id/settingTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Select Your Vehicles"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_20" />
+
+        <com.view.MTextView
+            android:id="@+id/pickupredirectTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Select Your Vehicles"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_20" />
+
+    </LinearLayout>
+
+</RelativeLayout>

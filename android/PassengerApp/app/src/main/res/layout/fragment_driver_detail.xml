@@ -1,0 +1,450 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.fragments.DriverDetailFragment">
+
+    <com.view.MTextView
+        android:id="@+id/deliveryConfirmCodeTxt"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/slideUpForDetailTxt"
+        android:background="@color/appThemeColor_1"
+        android:gravity="center_vertical|start"
+        android:paddingStart="10dp"
+        android:text="Delivery Confirm Code"
+        android:textColor="@color/appThemeColor_TXT_1"
+        android:textSize="@dimen/txt_size_16"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.view.MTextView
+            android:id="@+id/slideUpForDetailTxt"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:background="@color/appThemeColor_2"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:text="Slide Up for detail"
+            android:textColor="@color/appThemeColor_TXT_2"
+            android:textSize="@dimen/txt_size_18"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/driverImageArea"
+            android:layout_width="wrap_content"
+            android:layout_height="102dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center">
+
+            <com.view.SelectableRoundedImageView
+                android:id="@+id/driverImgView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/slideUpForDetailTxt"
+                android:layout_centerVertical="true"
+
+                android:scaleType="centerCrop"
+                app:sriv_border_color="#FFFFFF"
+                app:sriv_border_width="4dip"
+                app:sriv_left_bottom_corner_radius="20dip"
+                app:sriv_left_top_corner_radius="20dip"
+                app:sriv_oval="true"
+                app:sriv_right_bottom_corner_radius="20dip"
+                app:sriv_right_top_corner_radius="20dip" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:layout_below="@id/slideUpForDetailTxt"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/driverImageArea"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical">
+
+                    <com.view.MTextView
+                        android:id="@+id/driver_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Driver Name"
+                        android:textAlignment="viewStart"
+                        android:textColor="#1B1B1B"
+                        android:textSize="16sp"
+                        app:customTypeFace="roboto_light" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:orientation="horizontal">
+
+
+                        <!--<RatingBar-->
+                        <!--android:backgroundTint="@color/appThemeColor_1"-->
+                        <!--android:progressTint="@color/appThemeColor_1"-->
+                        <!--android:id="@+id/ratingBar"-->
+                        <!--style="?attr/ratingBarStyleSmall"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:clickable="false"-->
+                        <!--android:isIndicator="true"-->
+                        <!--android:max="5"-->
+                        <!--android:numStars="5"-->
+                        <!--android:rating="2.5"-->
+                        <!--/>-->
+                        <com.view.simpleratingbar.SimpleRatingBar
+                            android:id="@+id/ratingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:backgroundTint="@color/gray_holo_light"
+                            android:padding="1dp"
+                            app:SRB_fillColor="@color/appThemeColor_1"
+                            app:SRB_isIndicator="true"
+                            app:SRB_starBackgroundColor="@color/gray_holo_light"
+                            app:SRB_starSize="15sp"
+                            app:SRB_stepSize="0.1" />
+
+                        <com.view.MTextView
+                            android:id="@+id/txt_rating"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="3dp"
+                            android:gravity="start"
+                            android:text="2.0"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/appThemeColor_1"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                    <com.view.MTextView
+                        android:id="@+id/driver_car_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textAlignment="viewStart"
+                        android:textColor="#1B1B1B"
+                        android:textSize="16sp" />
+
+                    <com.view.MTextView
+                        android:id="@+id/driver_car_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textAlignment="viewStart"
+                        android:textColor="#787878"
+                        android:textSize="14sp" />
+
+                    <com.view.MTextView
+                        android:id="@+id/driver_car_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:paddingTop="1dp"
+                        android:text="Car Type"
+                        android:textAlignment="viewStart"
+                        android:textColor="#787878"
+                        android:textSize="14sp"
+                        app:customTypeFace="roboto_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/driverCarDetailArea"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="0.8"
+                    android:gravity="end|center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/numberPlateArea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:background="#535353"
+                        android:elevation="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/appThemeColor_1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/car_img"
+                                android:layout_width="32dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:background="@color/appThemeColor_1"
+                                android:padding="1dp"
+                                android:src="@mipmap/ic_car" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#535353">
+
+                            <com.view.MTextView
+                                android:id="@+id/numberPlate_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="#535353"
+                                android:gravity="center_vertical"
+                                android:paddingEnd="10dp"
+                                android:maxHeight="60dp"
+                                android:paddingStart="10dp"
+                                android:textColor="#FFFFFF"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C6C6C6" />
+
+    <!--<RelativeLayout
+        android:id="@+id/btn_contact_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:clickable="true">
+
+        <com.view.MTextView
+            android:id="@+id/contact_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@mipmap/ic_contact_driver"
+            android:drawablePadding="5dp"
+            android:enabled="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="Contact"
+            android:textColor="#000000"
+            android:textSize="@dimen/txt_size_18" />
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/subBtnDetail_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/contactarea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:src="@mipmap/ic_call"
+                    android:tint="@color/appThemeColor_1" />
+
+                <com.view.MTextView
+                    android:id="@+id/contact_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="call"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_14"
+                    app:customTypeFace="roboto_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/contactview"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#C6C6C6" />
+
+        <LinearLayout
+            android:id="@+id/msgarea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:src="@mipmap/ic_msg"
+                    android:tint="@color/appThemeColor_1" />
+
+                <com.view.MTextView
+                    android:id="@+id/btn_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:maxEms="11"
+                    android:text="Message"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_14"
+                    app:customTypeFace="roboto_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#C6C6C6" />
+
+        <LinearLayout
+            android:id="@+id/cancelarea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:src="@mipmap/ic_cancel_trip"
+                    android:tint="@color/appThemeColor_1" />
+
+                <com.view.MTextView
+                    android:id="@+id/btn_cancle_trip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:maxEms="11"
+                    android:text="Cancel trip"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_14"
+                    app:customTypeFace="roboto_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#C6C6C6" />
+
+        <LinearLayout
+            android:id="@+id/sharearea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:src="@mipmap/ic_share_status"
+                    android:tint="@color/appThemeColor_1" />
+
+                <com.view.MTextView
+                    android:id="@+id/btn_share_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:maxEms="12"
+                    android:text="Share Status"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_14"
+                    app:customTypeFace="roboto_light" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

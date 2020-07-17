@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="btn_bg_color_type1">@color/appThemeColor_1</color>
+    <color name="btn_hover_color_type1">@color/appThemeColor_hover_1</color>
+    <color name="btn_text_color_type1">@color/appThemeColor_TXT_1</color>
+    <string name="ripple_alpha_type1">0.4</string>
+    <integer name="rippleDuration_type1">350</integer>
+    <integer name="rippleFadeDuration_type1">75</integer>
+
+    <color name="btn_bg_color_type2">@color/appThemeColor_2</color>
+    <color name="btn_hover_color_type2">@color/appThemeColor_hover_2</color>
+    <color name="btn_text_color_type2">@color/appThemeColor_TXT_2</color>
+    <string name="ripple_alpha_type2">0.4</string>
+    <integer name="rippleDuration_type2">350</integer>
+    <integer name="rippleFadeDuration_type2">75</integer>
+</resources>
+
+

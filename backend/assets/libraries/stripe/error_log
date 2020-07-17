@@ -1,0 +1,208 @@
+[22-May-2015 08:12:01] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/eswdemo/public_html/accounting_hub/stripe-test/charge.php on line 8
+[22-May-2015 08:12:01] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/eswdemo/public_html/accounting_hub/stripe-test/charge.php on line 13
+[22-May-2015 08:12:01] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[22-May-2015 08:12:01] PHP Fatal error:  Uncaught exception 'Stripe_CardError' with message 'Cannot charge a customer that has no active card' in /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php:158
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(212): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 402, Array)
+#1 /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(114): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 402)
+#2 /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiResource.php(111): Stripe_ApiRequestor->request('post', '/v1/charges', Array)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/Charge.php(38): Stripe_ApiResource::_scopedCreate('Stripe_Charge', Array, NULL)
+#4 /home3/eswdemo/public_html/accounting_hub/stripe-test/charge.php(18): Stripe_Charge::create(Array)
+#5 {main}
+  throw in /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php on line 158
+[22-May-2015 08:12:48] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/eswdemo/public_html/accounting_hub/stripe-test/charge.php on line 8
+[22-May-2015 08:12:48] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/eswdemo/public_html/accounting_hub/stripe-test/charge.php on line 13
+[22-May-2015 08:12:48] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[22-May-2015 08:13:33] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/eswdemo/public_html/accounting_hub/stripe-test/charge.php on line 8
+[22-May-2015 08:13:33] PHP Warning:  Unexpected character in input:  '\' (ASCII=92) state=1 in /home3/eswdemo/public_html/accounting_hub/stripe-test/charge.php on line 13
+[22-May-2015 08:13:33] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[22-May-2015 08:14:27] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 00:30:54] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 01:27:39] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 01:28:17] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 01:29:05] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 01:29:05] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'You cannot use a Stripe token more than once: tok_166F4MBTMtMNTxWMh9nSyVAg.' in /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php:152
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(212): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 400, Array)
+#1 /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(114): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 400)
+#2 /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiResource.php(111): Stripe_ApiRequestor->request('post', '/v1/customers', Array)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/Customer.php(38): Stripe_ApiResource::_scopedCreate('Stripe_Customer', Array, NULL)
+#4 /home3/eswdemo/public_html/accounting_hub/stripe-test/charge.php(12): Str in /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php on line 152
+[25-May-2015 01:29:31] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 01:32:16] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 01:36:08] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 01:48:10] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 01:48:54] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 01:48:54] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'There is no token with ID tok_166FOIBTMtMNTxWMMTTDWzod.' in /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php:152
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(212): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 400, Array)
+#1 /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(114): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 400)
+#2 /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiResource.php(111): Stripe_ApiRequestor->request('post', '/v1/customers', Array)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/Customer.php(38): Stripe_ApiResource::_scopedCreate('Stripe_Customer', Array, NULL)
+#4 /home3/eswdemo/public_html/accounting_hub/stripe-test/charge.php(12): Stripe_Customer::create in /home3/eswdemo/public_html/accounting_hub/stripe-test/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php on line 152
+[25-May-2015 01:56:07] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 04:11:02] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 04:13:49] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 04:13:49] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'You cannot use a Stripe token more than once: tok_166HbqHMmw2anrY6hSEt6zoI.' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php:152
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(212): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 400, Array)
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(114): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 400)
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(111): Stripe_ApiRequestor->request('post', '/v1/customers', Array)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/Customer.php(38): Stripe_ApiResource::_scopedCreate('Stripe_Customer', Array, NULL)
+#4 /home3/eswdemo/public_html/accounting_hub/stripe/charge.php(12): Stripe_Customer::create(Array)
+#5 in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php on line 152
+[25-May-2015 04:14:09] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 04:29:50] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 04:31:03] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 04:32:42] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 04:33:38] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 04:33:39] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswdemo/public_html/accounting_hub/stripe/charge.php on line 22
+[25-May-2015 04:37:22] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 04:40:25] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 04:42:40] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 04:59:42] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 05:04:12] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 05:05:21] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 06:06:14] PHP Warning:  require_once(/home3/eswdemo/public_html/accounting_hub/stripe/includes/defines.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home3/eswdemo/public_html/accounting_hub/stripe/review_payment.php on line 12
+[25-May-2015 06:06:14] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home3/eswdemo/public_html/accounting_hub/stripe/includes/defines.php' (include_path='.:/opt/php52/lib/php') in /home3/eswdemo/public_html/accounting_hub/stripe/review_payment.php on line 12
+[25-May-2015 06:15:55] PHP Parse error:  syntax error, unexpected $end in /home3/eswdemo/public_html/accounting_hub/stripe/review_payment.php on line 160
+[25-May-2015 06:20:13] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 06:37:01] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 06:44:14] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 08:39:22] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 08:39:22] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'There is no token with ID tok_166LnWHMmw2anrY61YgMshmf.' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php:152
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(212): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 400, Array)
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(114): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 400)
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(111): Stripe_ApiRequestor->request('post', '/v1/customers', Array)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/Customer.php(38): Stripe_ApiResource::_scopedCreate('Stripe_Customer', Array, NULL)
+#4 /home3/eswdemo/public_html/accounting_hub/stripe/review_payment.php(62): Stripe_Customer::create(Array)
+#5 {main}
+  th in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php on line 152
+[25-May-2015 08:45:50] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 08:45:50] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'There is no token with ID tok_166LtmHMmw2anrY6VwyleSvB.' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php:152
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(212): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 400, Array)
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(114): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 400)
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(111): Stripe_ApiRequestor->request('post', '/v1/customers', Array)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/Customer.php(38): Stripe_ApiResource::_scopedCreate('Stripe_Customer', Array, NULL)
+#4 /home3/eswdemo/public_html/accounting_hub/stripe/review_payment.php(62): Stripe_Customer::create(Array)
+#5 {main}
+  th in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php on line 152
+[25-May-2015 08:50:24] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 08:50:24] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'There is no token with ID tok_166LyDHMmw2anrY6ubnGSY1a.' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php:152
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(212): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 400, Array)
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(114): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 400)
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(111): Stripe_ApiRequestor->request('post', '/v1/customers', Array)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/Customer.php(38): Stripe_ApiResource::_scopedCreate('Stripe_Customer', Array, NULL)
+#4 /home3/eswdemo/public_html/accounting_hub/stripe/review_payment.php(62): Stripe_Customer::create(Array)
+#5 {main}
+  th in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php on line 152
+[25-May-2015 08:54:40] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[25-May-2015 09:01:48] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[26-May-2015 03:06:24] PHP Fatal error:  Call to undefined function  http_response_code() in /home3/eswdemo/public_html/accounting_hub/stripe/response_ad.php on line 19
+[26-May-2015 04:23:12] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswdemo/public_html/accounting_hub/stripe/response_ad.php on line 20
+[26-May-2015 05:14:50] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[26-May-2015 08:44:28] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[26-May-2015 08:44:28] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Customer cus_6JHeGD6IDmxypJ does not have a subscription with ID ch_166f5DBTMtMNTxWMlLVsk7Gg' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php:152
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(212): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 404, Array)
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(114): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 404)
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/List.php(33): Stripe_ApiRequestor->request('get', '/v1/customers/c...', NULL)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/cancel.php(24): Stripe_List->retrieve('ch_166f5DBTMtMN...')
+#4 {main}
+  thrown in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php on line 152
+[26-May-2015 09:05:20] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[26-May-2015 09:22:25] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[26-May-2015 09:27:53] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[26-May-2015 09:30:45] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[26-May-2015 09:35:36] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[27-May-2015 06:49:31] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Could not determine which URL to request: Stripe_Customer instance has invalid ID: ' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php:69
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(18): Stripe_ApiResource->instanceUrl()
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(8): Stripe_ApiResource->refresh()
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/Customer.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Customer', '', NULL)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/review_payment_ad.php(95): Stripe_Customer::retrieve('')
+#4 {main}
+  thrown in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php on line 69
+[27-May-2015 06:51:31] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Could not determine which URL to request: Stripe_Customer instance has invalid ID: ' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php:69
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(18): Stripe_ApiResource->instanceUrl()
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(8): Stripe_ApiResource->refresh()
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/Customer.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Customer', '', NULL)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/review_payment_ad.php(95): Stripe_Customer::retrieve('')
+#4 {main}
+  thrown in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php on line 69
+[27-May-2015 06:52:28] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Could not determine which URL to request: Stripe_Customer instance has invalid ID: ' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php:69
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(18): Stripe_ApiResource->instanceUrl()
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(8): Stripe_ApiResource->refresh()
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/Customer.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Customer', '', NULL)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/review_payment_ad.php(95): Stripe_Customer::retrieve('')
+#4 {main}
+  thrown in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php on line 69
+[27-May-2015 06:54:27] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Could not determine which URL to request: Stripe_Customer instance has invalid ID: ' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php:69
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(18): Stripe_ApiResource->instanceUrl()
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(8): Stripe_ApiResource->refresh()
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/Customer.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Customer', '', NULL)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/review_payment_ad.php(95): Stripe_Customer::retrieve('')
+#4 {main}
+  thrown in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php on line 69
+[27-May-2015 06:56:03] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Could not determine which URL to request: Stripe_Customer instance has invalid ID: ' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php:69
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(18): Stripe_ApiResource->instanceUrl()
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(8): Stripe_ApiResource->refresh()
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/Customer.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Customer', '', NULL)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/review_payment_ad.php(95): Stripe_Customer::retrieve('')
+#4 {main}
+  thrown in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php on line 69
+[27-May-2015 06:58:03] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Could not determine which URL to request: Stripe_Customer instance has invalid ID: ' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php:69
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(18): Stripe_ApiResource->instanceUrl()
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(8): Stripe_ApiResource->refresh()
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/Customer.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Customer', '', NULL)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/review_payment_ad.php(95): Stripe_Customer::retrieve('')
+#4 {main}
+  thrown in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php on line 69
+[27-May-2015 07:00:39] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Could not determine which URL to request: Stripe_Customer instance has invalid ID: ' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php:69
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(18): Stripe_ApiResource->instanceUrl()
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(8): Stripe_ApiResource->refresh()
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/Customer.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Customer', '', NULL)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/review_payment_ad.php(95): Stripe_Customer::retrieve('')
+#4 {main}
+  thrown in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php on line 69
+[27-May-2015 13:40:10] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[28-May-2015 01:54:43] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[28-May-2015 03:50:42] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[28-May-2015 04:04:26] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[28-May-2015 04:58:02] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[28-May-2015 04:59:28] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Could not determine which URL to request: Stripe_Customer instance has invalid ID: ' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php:69
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(18): Stripe_ApiResource->instanceUrl()
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php(8): Stripe_ApiResource->refresh()
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/Customer.php(14): Stripe_ApiResource::_scopedRetrieve('Stripe_Customer', '', NULL)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/review_payment_ad.php(95): Stripe_Customer::retrieve('')
+#4 {main}
+  thrown in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiResource.php on line 69
+[02-Jun-2015 15:13:03] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[02-Jun-2015 15:14:29] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[02-Jun-2015 15:14:29] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Customer cus_6Jn1U5rwqKNDLF does not have a subscription with ID ii_167Nm3BTMtMNTxWMPb9WzPiU' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php:152
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(212): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 404, Array)
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(114): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 404)
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/List.php(33): Stripe_ApiRequestor->request('get', '/v1/customers/c...', NULL)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/cancel.php(31): Stripe_List->retrieve('ii_167Nm3BTMtMN...')
+#4 {main}
+  thrown in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php on line 152
+[02-Jun-2015 15:15:02] Warning: This version of PHP is tool old to check SSL certificates correctly. Stripe cannot guarantee that the server has a certificate which is not blacklisted
+[02-Jun-2015 15:15:03] PHP Fatal error:  Uncaught exception 'Stripe_InvalidRequestError' with message 'Customer cus_6Jn1U5rwqKNDLF does not have a subscription with ID ii_167Nm3BTMtMNTxWMPb9WzPiU' in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php:152
+Stack trace:
+#0 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(212): Stripe_ApiRequestor->handleApiError('{?  "error": {?...', 404, Array)
+#1 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php(114): Stripe_ApiRequestor->_interpretResponse('{?  "error": {?...', 404)
+#2 /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/List.php(33): Stripe_ApiRequestor->request('get', '/v1/customers/c...', NULL)
+#3 /home3/eswdemo/public_html/accounting_hub/stripe/cancel.php(31): Stripe_List->retrieve('ii_167Nm3BTMtMN...')
+#4 {main}
+  thrown in /home3/eswdemo/public_html/accounting_hub/stripe/stripe-php-2.1.4/lib/Stripe/ApiRequestor.php on line 152

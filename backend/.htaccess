@@ -1,0 +1,150 @@
+IndexIgnore *
+
+RewriteEngine On
+
+RewriteBase /
+
+
+RewriteRule ^help-center$ help_center.php
+
+
+RewriteRule ^login-new$ login_new.php
+
+
+RewriteRule ^profile$ profile.php
+
+
+RewriteRule ^vehicle$ vehicle.php
+
+#RewriteRule ^vehicle/(.*)$ vehicle.php?iDriverId=$1
+
+
+RewriteRule ^vehicle-add$ vehicle_add_form.php
+
+
+RewriteRule ^driver-trip$ driver_trip.php
+
+
+RewriteRule ^payment-request$ payment_request.php
+
+
+RewriteRule ^logout$ logout.php
+
+
+RewriteRule ^driverlist$ driver.php
+
+
+RewriteRule ^company-trip$ company_trip.php
+
+
+RewriteRule ^profile-rider$ profile_rider.php
+
+
+RewriteRule ^mytrip$ mytrip.php
+
+
+RewriteRule ^driver_wallet$ rider_wallet.php?type=Driver
+
+
+RewriteRule ^rider_wallet$ rider_wallet.php?type=Rider
+
+
+RewriteRule ^rider-login$ login_new.php?action=rider
+
+
+RewriteRule ^driver-login$ login_new.php?action=driver
+
+
+RewriteRule ^user-login$ login_new.php?action=rider
+
+
+RewriteRule ^provider-login$ login_new.php?action=driver
+
+
+RewriteRule ^company-login$ login_new.php?action=driver&iscompany=1
+
+
+RewriteRule ^rider$ login_new.php?action=rider
+
+
+RewriteRule ^driver$ login_new.php?action=driver
+
+#RewriteRule ^facebook$ fbconnect.php
+
+
+RewriteRule ^facebook$ fb-login/fbconfig.php
+
+
+RewriteRule ^facebook/(.*)$ fb-login/fbconfig.php?userType=$1
+
+
+RewriteRule ^facebook-rider/(.*)$ fb-login/fbconfig-rider.php?userType=$1
+
+
+RewriteRule ^twitter/(.*)$ twconnect.php?userType=$1
+
+
+RewriteRule ^google/(.*)$ gpconnect.php?userType=$1
+
+
+RewriteRule ^sign-in$ sign-in.php
+
+
+RewriteRule ^sign-up-rider$ sign-up_rider.php
+
+
+RewriteRule ^sign-up$ sign-up.php
+
+
+RewriteRule ^about-us$ about.php
+
+
+RewriteRule ^trust-safty-insurance$ trust_safty_insurance.php
+
+
+RewriteRule ^how-it-works$ how_it_works.php
+
+
+RewriteRule ^terms-condition$ terms_condition.php
+
+
+RewriteRule ^faq$ faq.php
+
+
+RewriteRule ^about$ about.php
+
+
+RewriteRule ^contact-us$ contact_us.php
+
+
+RewriteRule ^help-center$ help_center.php
+
+
+RewriteRule ^legal$ legal.php
+
+
+RewriteRule ^dummy$ dummy_data_insert.php
+
+
+RewriteRule ^privacy-policy$ privacy-policy.php
+
+
+RewriteRule ^SignUp sign-up.php
+
+
+RewriteRule ^my-account my-account.php
+
+
+RewriteRule ^Logout logout.php
+
+
+RewriteRule ^Page-Not-Found 404-error.php
+
+
+RewriteRule ^Site-Maintenance-Page site_maintenance.php
+
+ErrorDocument 404 http://192.168.0.75/Page-Not-Found
+
+
+
+####################################################################################################################################

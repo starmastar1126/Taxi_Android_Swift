@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp"
+    android:paddingTop="5dp">
+
+    <com.view.MTextView
+        android:id="@+id/dayTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="SUN"
+        android:textColor="#1C1C1C"
+        android:textSize="@dimen/txt_size_18" />
+
+
+    <com.view.MTextView
+        android:id="@+id/dayNumTxtView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="22"
+        android:textColor="#1C1C1C"
+        android:textSize="@dimen/txt_size_18" />
+</LinearLayout>

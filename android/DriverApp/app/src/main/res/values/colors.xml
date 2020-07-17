@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Theme configuration -->
+    <color name="appThemeColor_1">#2fcc71</color> <!--used for bg-->
+    <color name="appThemeColor_Dark_1">#2fcc71</color> <!--used for Border OR Others-->
+    <color name="appThemeColor_hover_1">#2fcc71</color> <!--used for hover-->
+    <color name="appThemeColor_TXT_1">#FFFFFF</color> <!--used for text color-->
+    <color name="appThemeColor_bg_parent_1">@android:color/transparent</color> <!--used for parent bg color if applies-->
+    <color name="appThemeColor_Accent">#2fcc71</color>
+
+    <color name="appThemeColor_2">#2c3032</color> <!--used for bg-->
+    <color name="appThemeColor_hover_2">#56595a</color> <!--used for hover-->
+    <color name="appThemeColor_TXT_2">#FFFFFF</color> <!--used for text color-->
+    <color name="appThemeColor_bg_parent_2">#192635</color> <!--used for parent bg color if applies-->
+    <!-- Theme configuration End-->
+
+
+    <!--Screen specific color start-->
+
+    <color name="app_login_box_color">#2fcc71</color> <!--used for parent bg color if applies-->
+    <color name="app_login_box_border_color">#FFFFFF
+    </color> <!--used for parent bg color if applies-->
+    <color name="app_login_selected_border_color">#FFFFFF
+    </color> <!--used for parent bg color if applies-->
+    <color name="app_login_unselected_border_color">#FFFFFF
+    </color> <!--used for parent bg color if applies-->
+    <color name="app_login_selected_filled_color">#FFFFFF
+    </color> <!--used for parent bg color if applies-->
+
+
+    <color name="lightchatbtncolor">#2fcc71</color>
+
+    <color name="history_txt_color">#2fcc71</color> <!--used for parent bg color if applies-->
+    <color name="light_back_color">#ffdeaf</color> <!--used for parent bg color if applies-->
+    <color name="light_back_signin_txt_color">#2fcc71
+    </color> <!--used for parent bg color if applies-->
+    <color name="light_back_logout_txt_color">#454545
+    </color> <!--used for parent bg color if applies-->
+    <color name="eme_txt_color">#333333</color> <!--used for parent bg color if applies-->
+    <color name="eme_title_txt_color">#2fcc71</color> <!--used for parent bg color if applies-->
+    <color name="eme_back_color">#f2f2f4</color> <!--used for parent bg color if applies-->
+
+
+    <!--Screen specific color end-->
+
+    <color name="menu_header_bg">#FFFFFF</color>
+    <color name="menu_header_txt">#303030</color>
+    <!-- EditBox configuration Start-->
+    <color name="editBox_primary">#2fcc71</color> <!--used for EditBox-->
+    <color name="editBox_primary_dark">#2fcc71</color> <!--used for EditBox-->
+    <color name="editBox_accent">#2fcc71</color> <!--used for EditBox-->
+    <!-- EditBox configuration End-->
+
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+
+    <color name="Gray">#808080</color>
+    <color name="disable_color">#1000</color>
+    <color name="Green">#009900</color>
+    <color name="default_shadow_color">#88757575</color>
+
+    <!--errorView colors-->
+    <color name="error_view_retry_btn_txt_color">#bc4100</color>
+    <color name="error_view_text">#656565</color>
+    <color name="error_view_text_dark">#CC000000</color>
+    <color name="error_view_text_light">#858585</color>
+
+    <color name="error_view_retry_button_background">#30000000</color>
+    <color name="error_view_retry_button_background_stroke">#50000000</color>
+    <!--error view colors finished-->
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#222222</color>
+    <color name="day_disabled_background_color">#ececec</color>
+    <color name="day_disabled_text_color">#9c9c9c</color>
+    <color name="selected_day_background">#03A7E9</color>
+    <color name="current_day_of_month">#03A7E9</color>
+    <color name="border_color">#dedede</color>
+    <color name="gray">#90909090</color>
+
+    <color name="bg_select">#ededed</color>
+    <color name="pickup_req_later_btn">#E04847</color>
+
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+</resources>

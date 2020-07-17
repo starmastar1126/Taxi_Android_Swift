@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fastcabtaxi.driver">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- <permission android:name="android.permission.INTERNET" /> -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.FLAG_GRANT_READ_URI_PERMISSION" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+
+    <permission
+        android:name="com.fastcabtaxi.driver.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission
+        android:name="com.fastcabtaxi.driver.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <permission
+        android:name="com.fastcabtaxi.driver.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.fastcabtaxi.driver.gcm.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REBOOT" />
+
+    <application
+        android:name="com.general.files.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppCompatTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_android_geo_api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- <meta-data -->
+        <!-- android:name="io.fabric.ApiKey" -->
+        <!-- android:value="1eef6e436485c8cf780409a74796511bb9c9c8b0" /> -->
+
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.fastcabtaxi.driver.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.fastcabtaxi.driver" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Network on off Receiver Start -->
+        <receiver
+            android:name="com.fastcabtaxi.driver.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Network on off Receiver End -->
+
+        <service android:name="com.general.files.ChatHeadService" />
+        <service android:name="com.fastcabtaxi.driver.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.fastcabtaxi.driver.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.general.files.UpdateDriverStatus"
+            android:enabled="true"
+            android:exported="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Update Status" />
+        <service
+            android:name="com.general.files.UpdateDriverLocationService"
+            android:enabled="true"
+            android:exported="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Update Locations" />
+        <service
+            android:name="com.general.files.UpdateTripLocationsService"
+            android:enabled="true"
+            android:exported="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Update Locations" />
+        <service
+            android:name="com.general.files.MyBackGroundService"
+            android:enabled="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Service Alert"
+            android:persistent="true" />
+
+        <receiver
+            android:name="com.fastcabtaxi.driver.StartServiceReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.fastcabtaxi.driver.StartServiceReceiver" />
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.general.files.NotificationClickReceiver"
+            android:exported="true" />
+
+        <activity android:name="com.fastcabtaxi.driver.LauncherActivity">
+
+            <!-- android:launchMode="singleTask" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/FBtheme"
+            tools:replace="android:theme" />
+        <activity android:name="com.twitter.sdk.android.core.identity.OAuthActivity" />
+        <activity android:name="com.fastcabtaxi.driver.AppLoginActivity" />
+        <activity android:name="com.fastcabtaxi.driver.SelectCountryActivity" />
+        <activity
+            android:name="com.fastcabtaxi.driver.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.fastcabtaxi.driver.MyHeatViewActivity" />
+        <activity android:name="com.fastcabtaxi.driver.SearchPickupLocationActivity" />
+        <activity android:name="com.fastcabtaxi.driver.AppLoignRegisterActivity" />
+        <activity android:name="com.fastcabtaxi.driver.SupportActivity" />
+        <activity
+            android:name="com.fastcabtaxi.driver.MyProfileActivity"
+            android:theme="@style/AppCompatTheme" />
+        <activity android:name="com.fastcabtaxi.driver.StaticPageActivity" />
+        <activity android:name="com.fastcabtaxi.driver.ContactUsActivity" />
+        <activity android:name="com.fastcabtaxi.driver.HelpActivity" />
+        <activity android:name="com.fastcabtaxi.driver.QuestionAnswerActivity" />
+        <activity
+            android:name="com.fastcabtaxi.driver.CabRequestedActivity"
+            android:exported="true" />
+        <!-- android:launchMode="singleTask" -->
+        <activity android:name="com.fastcabtaxi.driver.DriverArrivedActivity" />
+        <activity android:name="com.fastcabtaxi.driver.ActiveTripActivity" />
+        <activity android:name="com.fastcabtaxi.driver.CollectPaymentActivity" />
+        <activity android:name="com.fastcabtaxi.driver.TripRatingActivity" />
+        <activity android:name="com.fastcabtaxi.driver.RideHistoryActivity" />
+        <activity android:name="com.fastcabtaxi.driver.SelectedDayHistoryActivity" />
+        <activity android:name="com.fastcabtaxi.driver.RideHistoryDetailActivity" />
+        <activity android:name="com.fastcabtaxi.driver.DriverFeedbackActivity" />
+        <activity android:name="com.fastcabtaxi.driver.MyBookingsActivity" />
+        <activity android:name="com.fastcabtaxi.driver.MyWalletActivity" />
+        <activity android:name="com.fastcabtaxi.driver.MyWalletHistoryActivity" />
+        <activity android:name="com.fastcabtaxi.driver.InviteFriendsActivity" />
+        <activity android:name="com.fastcabtaxi.driver.VerifyInfoActivity" />
+        <activity android:name="com.fastcabtaxi.driver.CardPaymentActivity" />
+        <activity android:name="com.fastcabtaxi.driver.HistoryActivity" />
+        <activity android:name="com.fastcabtaxi.driver.ListOfDocumentActivity" />
+        <activity android:name="com.fastcabtaxi.driver.UploadDocActivity" />
+        <activity android:name="com.fastcabtaxi.driver.ManageVehiclesActivity" />
+        <activity android:name="com.fastcabtaxi.driver.AddVehicleActivity" />
+        <activity android:name="com.fastcabtaxi.driver.StatisticsActivity" />
+        <activity android:name="com.fastcabtaxi.driver.AccountverificationActivity" />
+        <activity android:name="com.fastcabtaxi.driver.SuspendedDriver_Activity" />
+        <activity android:name="com.fastcabtaxi.driver.EmergencyContactActivity" />
+        <activity android:name="com.fastcabtaxi.driver.ConfirmEmergencyTapActivity" />
+        <activity android:name="com.fastcabtaxi.driver.ForgotPasswordActivity" />
+        <activity android:name="com.fastcabtaxi.driver.WayBillActivity" />
+        <activity android:name="com.fastcabtaxi.driver.HailActivity" />
+        <activity android:name="com.fastcabtaxi.driver.FareBreakDownActivity" />
+        <activity android:name="com.fastcabtaxi.driver.PrefranceActivity" />
+        <activity android:name="com.fastcabtaxi.driver.BankDetailActivity" />
+
+        <receiver
+            android:name="com.fastcabtaxi.driver.FirebaseDataReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.fastcabtaxi.driver.ChatActivity" />
+        <activity android:name="com.fastcabtaxi.driver.AddServiceActivity" />
+        <activity android:name="com.fastcabtaxi.driver.SetAvailabilityActivity" />
+        <activity android:name="com.fastcabtaxi.driver.setTimeScheduleActivity" />
+        <activity android:name="com.fastcabtaxi.driver.SearchLocationActivity" />
+        <activity android:name="com.fastcabtaxi.driver.MaintenanceActivity"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="2cb1c0f58f1003e523f0e3323238609ee6bd182f" />
+    </application>
+
+</manifest>

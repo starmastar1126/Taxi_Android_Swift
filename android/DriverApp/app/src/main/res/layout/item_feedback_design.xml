@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/contentArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:layout_gravity="start|center"
+                android:orientation="horizontal">
+
+                <com.view.SelectableRoundedImageView
+                    android:id="@+id/userProfileImgView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    app:sriv_border_color="@android:color/transparent"
+                    app:sriv_border_width="2dip"
+                    app:sriv_left_bottom_corner_radius="20dip"
+                    app:sriv_left_top_corner_radius="20dip"
+                    app:sriv_oval="true"
+                    app:sriv_right_bottom_corner_radius="20dip"
+                    app:sriv_right_top_corner_radius="20dip" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.view.MTextView
+                        android:id="@+id/nameTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#232323"
+                        android:textSize="17sp"
+                        app:customTypeFace="roboto_medium" />
+
+
+                    <!--<com.view.simpleratingbar.SimpleRatingBar-->
+                    <!--android:id="@+id/ratingBar"-->
+                    <!--style="@style/RatingBar"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:SRB_filledIconColor="@color/appThemeColor_1"-->
+                    <!--app:SRB_hideRatingNumber="true"-->
+                    <!--app:SRB_size="18sp"-->
+                    <!--app:SRB_unfilledIconColor="#BCBCBC" />-->
+                    <com.view.simpleratingbar.SimpleRatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:backgroundTint="@color/gray_holo_light"
+                        android:padding="2dp"
+                        app:SRB_fillColor="@color/appThemeColor_1"
+                        app:SRB_isIndicator="true"
+                        app:SRB_numberOfStars="5"
+                        app:SRB_starBackgroundColor="@color/gray_holo_light"
+                        app:SRB_starSize="18sp" />
+
+                </LinearLayout>
+
+                <com.view.MTextView
+                    android:id="@+id/dateTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="date"
+                    android:gravity="end|center"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#7D7D7D"
+                    android:textSize="@dimen/txt_size_14"
+                    app:customTypeFace="roboto_light" />
+
+
+            </LinearLayout>
+
+
+            <com.view.MTextView
+                android:id="@+id/commentTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:ellipsize="start"
+                android:gravity="start"
+                android:text="comment"
+                android:textAlignment="viewStart"
+                android:textColor="@color/appThemeColor_2"
+                android:textSize="@dimen/txt_size_16"
+                app:customTypeFace="roboto_light" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fastcabtaxi.passenger.HistoryDetailActivity">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar_include"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/profilebgarea"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                android:gravity="center">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                   <!-- <ImageView
+                        android:id="@+id/profileimageback"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#BF000000"
+                        android:scaleType="fitXY" />-->
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:id="@+id/profileimageback"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/profileimageback1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:background="#66000000"
+                            android:scaleType="fitXY" />
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.35"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingEnd="4dp"
+                            android:paddingStart="4dp"
+                            android:visibility="gone">
+
+                            <com.view.MTextView
+                                android:id="@+id/ratingHTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rating"
+                                android:textColor="#727272"
+                                android:textSize="@dimen/txt_size_16" />
+
+                            <android.support.v7.widget.AppCompatRatingBar
+                                android:id="@+id/tripRating"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginStart="5dip"
+                                android:isIndicator="true"
+                                android:max="5"
+                                android:numStars="5" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.65"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:paddingEnd="4dp">
+
+                            <com.view.SelectableRoundedImageView
+                                android:id="@+id/driverImgView"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="15dp"
+                                android:scaleType="centerCrop"
+                                app:sriv_border_color="@android:color/transparent"
+                                app:sriv_border_width="2dip"
+                                app:sriv_left_bottom_corner_radius="20dip"
+                                app:sriv_left_top_corner_radius="20dip"
+                                app:sriv_oval="true"
+                                app:sriv_right_bottom_corner_radius="20dip"
+                                app:sriv_right_top_corner_radius="20dip" />
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="25dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+
+                                <com.view.MTextView
+                                    android:id="@+id/driverHTxt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Driver"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/history_txt_color"
+                                    android:textSize="@dimen/txt_size_16"
+                                    app:customTypeFace="roboto_light" />
+
+                                <com.view.MTextView
+                                    android:id="@+id/nameDriverVTxt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Demo demo"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/txt_size_16"
+                                    app:customTypeFace="roboto_light" />
+
+                                <com.view.MTextView
+                                    android:id="@+id/passengerHTxt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Passenger"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/history_txt_color"
+                                    android:textSize="@dimen/txt_size_16"
+                                    android:visibility="gone"
+                                    app:customTypeFace="roboto_light" />
+
+                                <com.view.MTextView
+                                    android:id="@+id/namePassengerVTxt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Demo demo"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#ffffff"
+                                    android:textSize="@dimen/txt_size_16"
+                                    android:visibility="gone"
+                                    app:customTypeFace="roboto_light" />
+
+                                <com.view.MTextView
+                                    android:id="@+id/ratingDriverHTxt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start"
+                                    android:text="Driver"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/history_txt_color"
+                                    android:textSize="@dimen/txt_size_16"
+                                    app:customTypeFace="roboto_light" />
+
+                                <!--<com.view.simpleratingbar.SimpleRatingBar-->
+                                <!--android:id="@+id/ratingBar"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--app:SRB_filledIconColor="@color/appThemeColor_1"-->
+                                <!--app:SRB_hideRatingNumber="true"-->
+                                <!--app:SRB_size="29sp"-->
+                                <!--app:SRB_unfilledIconColor="#BCBCBC"-->
+                                <!--android:backgroundTint="@color/white"-->
+                                <!--/>-->
+
+                                <com.view.simpleratingbar.SimpleRatingBar
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:backgroundTint="@color/gray_holo_light"
+                                    android:padding="2dp"
+                                    app:SRB_fillColor="@color/appThemeColor_1"
+                                    app:SRB_isIndicator="true"
+                                    app:SRB_numberOfStars="5"
+                                    app:SRB_starBackgroundColor="@color/gray_holo_light"
+                                    app:SRB_starSize="19sp"
+                                    app:SRB_stepSize="0.1" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.view.MTextView
+                android:id="@+id/headerTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="Thanks for riding with us."
+                android:textAllCaps="true"
+                android:textColor="@color/history_txt_color"
+                android:textSize="@dimen/txt_size_16"
+                app:customTypeFace="roboto_medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:id="@+id/rideNoHTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingEnd="2dp"
+                    android:paddingStart="2dp"
+                    android:text="Ride No.# "
+                    android:textColor="#000000"
+                    android:textSize="@dimen/txt_size_20"
+                    app:customTypeFace="roboto_medium" />
+
+                <com.view.MTextView
+                    android:id="@+id/rideNoVTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingEnd="2dp"
+                    android:paddingStart="2dp"
+                    android:text="123456"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/txt_size_20"
+                    app:customTypeFace="roboto_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <com.view.MTextView
+                    android:id="@+id/tripdateHTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="TRIP REQUEST DATE"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/txt_size_16"
+                    app:customTypeFace="roboto_light" />
+
+                <com.view.MTextView
+                    android:id="@+id/tripdateVTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="27/05 at 03:00 AM"
+                    android:textAlignment="viewStart"
+                    android:textColor="#303030"
+                    android:textSize="@dimen/txt_size_16"
+                    app:customTypeFace="roboto_medium" />
+
+
+                <com.view.MTextView
+                    android:id="@+id/pickUpHTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:text="PICK UP LOCATION"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
+                    android:textColor="#727272"
+                    android:textSize="@dimen/txt_size_16"
+                    app:customTypeFace="roboto_light" />
+
+                <com.view.MTextView
+                    android:id="@+id/pickUpVTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="start"
+                    android:text="Place name"
+                    android:textAlignment="viewStart"
+                    android:textColor="#303030"
+                    android:textSize="@dimen/txt_size_16"
+                    app:customTypeFace="roboto_medium" />
+
+
+                <LinearLayout
+                    android:id="@+id/tripDetailArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <com.view.MTextView
+                        android:id="@+id/dropOffHTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:text="DROP OFF LOCATION"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="true"
+                        android:textColor="#727272"
+                        android:textSize="@dimen/txt_size_16"
+                        app:customTypeFace="roboto_light" />
+
+                    <com.view.MTextView
+                        android:id="@+id/dropOffVTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="start"
+                        android:text="Place name"
+                        android:textAlignment="viewStart"
+                        android:textColor="#303030"
+                        android:textSize="@dimen/txt_size_16"
+                        app:customTypeFace="roboto_medium" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--<fragment-->
+            <!--android:id="@+id/mapV2"-->
+            <!--android:name="com.fragments.CustomSupportMapFragment"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <com.view.MTextView
+                    android:id="@+id/serviceHTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:text="SERVICE"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
+                    android:textColor="@color/appThemeColor_1"
+                    android:textSize="@dimen/txt_size_16"
+                    android:visibility="gone" />
+
+                <TableLayout
+                    android:id="@+id/service_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:stretchColumns="1,1"
+                    android:visibility="gone">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <com.view.MTextView
+                            android:id="@+id/serviceTypeHTxt"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:text="Base Fare"
+                            android:textAlignment="viewStart"
+                            android:textColor="#303030"
+                            android:textSize="@dimen/txt_size_16" />
+
+                        <com.view.MTextView
+                            android:id="@+id/serviceTypeVTxt"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="BSF"
+                            android:textAlignment="viewEnd"
+                            android:textColor="#111111"
+                            android:textSize="@dimen/txt_size_16" />
+                    </TableRow>
+                </TableLayout>
+
+                <com.view.MTextView
+                    android:id="@+id/chargesHTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="start"
+                    android:text="CHARGES"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
+                    android:textColor="@color/appThemeColor_2"
+                    android:textSize="@dimen/txt_size_16"
+                    app:customTypeFace="roboto_medium" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="2dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="10dp"
+                        app:cardBackgroundColor="#ffffff"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.view.MTextView
+                                android:id="@+id/cartypeTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:textColor="@color/appThemeColor_1"
+                                android:textSize="@dimen/txt_size_18"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/fareDetailDisplayArea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </ScrollView>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/petDetailCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:id="@+id/photoArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/beforeServiceArea"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.view.MTextView
+                            android:id="@+id/beforeImgHTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Before Service"
+                            android:textColor="#727272"
+                            android:textSize="@dimen/txt_size_16" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/beforeImgHTxt"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/iv_before_img"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center" />
+
+                            <ProgressBar
+                                android:id="@+id/before_loading"
+                                style="?android:attr/progressBarStyleLarge"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:visibility="gone" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/afterServiceArea"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.view.MTextView
+                            android:id="@+id/afterImgHTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="After Service"
+                            android:textColor="#727272"
+                            android:textSize="@dimen/txt_size_16" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/afterImgHTxt"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/iv_after_img"
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:layout_gravity="center" />
+
+                            <ProgressBar
+                                android:id="@+id/after_loading"
+                                style="?android:attr/progressBarStyleLarge"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:visibility="gone" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/tiparea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:visibility="gone"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.view.MTextView
+                        android:id="@+id/tipHTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textAllCaps="true"
+                        android:textColor="@color/appThemeColor_1"
+                        android:textSize="@dimen/txt_size_18" />
+
+                    <com.view.MTextView
+                        android:id="@+id/tipamtTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_18" />
+
+                    <com.view.MTextView
+                        android:id="@+id/tipmsgTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_18"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/rateCardDriverArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:id="@+id/rateDriverArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.view.MTextView
+                        android:id="@+id/ufxratingDriverHTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="How's your ride ? Rate Driver"
+                        android:textColor="#727272"
+                        android:textSize="@dimen/txt_size_16" />
+
+                    <com.view.simpleratingbar.SimpleRatingBar
+                        android:id="@+id/ufxratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/gray_holo_light"
+                        android:padding="2dp"
+                        app:SRB_fillColor="@color/appThemeColor_1"
+                        app:SRB_numberOfStars="5"
+                        app:SRB_starBackgroundColor="@color/gray_holo_light"
+                        app:SRB_starSize="39sp"
+                        app:SRB_stepSize="0.1" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/commentArea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingEnd="15dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="5dp"
+                        android:visibility="visible">
+
+                        <include
+                            android:id="@+id/commentBox"
+                            layout="@layout/editbox_form_design"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </RelativeLayout>
+
+                    <include
+                        android:id="@+id/btn_type2"
+                        layout="@layout/btn_type_2"
+                        android:layout_width="150dp"
+                        android:layout_height="@dimen/all_btn_height"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <ImageView
+                    android:id="@+id/paymentTypeImgeView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_cash_new"
+                    android:tint="@color/appThemeColor_1" />
+
+                <com.view.MTextView
+                    android:id="@+id/paymentTypeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:text="Cash payment"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/appThemeColor_2"
+                    android:textSize="@dimen/txt_size_16" />
+            </LinearLayout>
+
+            <com.view.MTextView
+                android:id="@+id/tripStatusTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/appThemeColor_2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Your trip was successfully finished."
+                android:textColor="@color/appThemeColor_TXT_2"
+                android:textSize="@dimen/txt_size_16" />
+
+            <com.view.MTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/appThemeColor_TXT_2"
+                android:textSize="@dimen/txt_size_16" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="25dp">
+
+        <com.view.MTextView
+            android:id="@+id/helpTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/help_selected_border"
+            android:gravity="center"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:text="Help?"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            app:customTypeFace="roboto_light" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

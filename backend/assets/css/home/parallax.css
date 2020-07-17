@@ -1,0 +1,293 @@
+.parallax-background.fixed {
+    background-attachment: fixed !important;
+	height:556px;
+}
+
+
+.parallax-overlay-pattern.style_one {
+	/*background:url("../images/home-header-img-up-effact.png") repeat;*/
+}
+
+
+#our-process.parallax-section {
+	background-repeat:no-repeat !important;
+	background-size:cover !important;
+	background:url("../../../assets/img/home/explor-city-img.jpg") no-repeat scroll center top;
+	padding:0px;
+}
+
+.ut-fancy-slider-fullwidth {
+	height: 600px;
+}
+.ut-fancy-slider-fullwidth .hero-inner {
+	height: 600px;
+}
+
+#contact-section .parallax-title {
+}
+#contact-section .parallax-overlay {
+
+}
+#contact-section .parallax-overlay {
+
+}
+#contact-section .parallax-overlay { padding:0px;
+}
+blockquote {
+
+}
+p.lead, .taxonomy-description {
+	
+}
+#ut-loader-logo {
+	background-image: url(http://hipcreativeinc.com/wp-content/uploads/2014/07/Logo_03.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#about-hip {
+	padding-top:40px;
+	padding-bottom:40px;
+}
+#about-hip .ut-offset-anchor {
+	top:-159px;
+}
+#about-hip .parallax-header {
+	padding-bottom:30px;
+}
+#about-hip .section-header {
+	padding-bottom:30px;
+}
+#about-hip .parallax-title {
+	
+}
+#about-hip .section-title {
+	
+}
+#about-hip {
+background-color:;
+}
+#about-hip .section-header.pt-style-1 .section-title span {
+background-color:;
+}
+#hip-team {
+	padding-top:80px;
+	padding-bottom:60px;
+}
+#hip-team .ut-offset-anchor {
+	top:-159px;
+}
+#hip-team .parallax-header {
+	padding-bottom:30px;
+}
+#hip-team .section-header {
+	padding-bottom:30px;
+}
+#hip-team .parallax-title {
+	
+}
+#hip-team .section-title {
+	
+}
+#hip-team {
+background-color:;
+}
+#hip-team .section-header.pt-style-1 .section-title span {
+background-color:;
+}
+#drop-us-a-line {
+	padding-top:40px;
+	padding-bottom:40px;
+	float:left; width:100%;
+}
+#drop-us-a-line .ut-offset-anchor {
+	top:-119px;
+}
+#drop-us-a-line .parallax-header {
+	padding-bottom:30px;
+}
+#drop-us-a-line .section-header {
+	padding-bottom:30px;
+}
+#drop-us-a-line .parallax-title {
+	
+}
+#drop-us-a-line .section-title {
+	
+}
+#drop-us-a-line {
+	background-color: #0c9cc6;
+}
+#drop-us-a-line .section-header.pt-style-1 .section-title span {
+	background-color: #F37420;
+}
+#our-process .parallax-overlay { padding:0px;
+	
+}
+#our-process .parallax-header {
+	padding-bottom:30px;
+}
+#our-process .section-header {
+	padding-bottom:30px;
+}
+#our-process .parallax-title {
+	
+}
+#our-process .section-title {
+	
+}
+
+#our-process {
+background-color:;
+}
+#our-process .section-header.pt-style-1 .section-title span {
+background-color:;
+}
+#our-process .section-content h1 {
+	color: #F37420 !important;
+}
+#our-process .section-content h2 {
+	color: #F37420 !important;
+}
+#our-process .section-content h3 {
+	color: #F37420 !important;
+}
+#our-process .section-content h4 {
+	color: #F37420 !important;
+}
+#our-process .section-content h5 {
+	color: #F37420 !important;
+}
+#our-process .section-content h6 {
+	color: #F37420 !important;
+}
+#our-process .parallax-overlay {
+
+}
+#our-process .parallax-overlay {
+
+}
+#portfolio {
+	padding-top:80px;
+	padding-bottom:60px;
+}
+#portfolio .ut-offset-anchor {
+	top:-159px;
+}
+#portfolio .parallax-header {
+	padding-bottom:30px;
+}
+#portfolio .section-header {
+	padding-bottom:30px;
+}
+#portfolio .parallax-title {
+	
+}
+#portfolio .section-title {
+	
+}
+#portfolio {
+background-color:;
+}
+#portfolio .section-header.pt-style-1 .section-title span {
+background-color:;
+}
+#get-connected .parallax-overlay {
+	padding-top:80px;
+	padding-bottom:60px;
+}
+#get-connected .parallax-header {
+	padding-bottom:30px;
+}
+#get-connected .section-header {
+	padding-bottom:30px;
+}
+#get-connected .parallax-title {
+	
+}
+#get-connected .section-title {
+	
+}
+#get-connected {
+background-color:;
+}
+#get-connected .section-header.pt-style-1 .section-title span {
+background-color:;
+}
+#get-connected .section-content h1 {
+	color: #F37420 !important;
+}
+#get-connected .section-content h2 {
+	color: #F37420 !important;
+}
+#get-connected .section-content h3 {
+	color: #F37420 !important;
+}
+#get-connected .section-content h4 {
+	color: #F37420 !important;
+}
+#get-connected .section-content h5 {
+	color: #F37420 !important;
+}
+#get-connected .section-content h6 {
+	color: #F37420 !important;
+}
+#get-connected .parallax-overlay {
+	background-color: rgb(23,102,142);
+}
+#get-connected .parallax-overlay {
+	background-color: rgba(23, 102, 142, 0.6 );
+}
+#our-philosophy-is {
+	padding:50px 0 0;
+}
+#our-philosophy-is .ut-offset-anchor {
+	top:-199px;
+}
+#our-philosophy-is .parallax-header {
+	padding-bottom:30px;
+}
+#our-philosophy-is .section-header {
+	padding-bottom:30px;
+}
+#our-philosophy-is .parallax-title {
+	
+}
+#our-philosophy-is .section-title {
+	
+}
+
+#last{ padding:0px;}
+
+#our-philosophy-is {
+background-color:;
+}
+#our-philosophy-is .section-header.pt-style-1 .section-title span {
+background-color:;
+}
+#our-philosophy-is .section-content {
+	color: #f37420;
+}
+#our-philosophy-is .section-content h1 {
+	color: #f37420 !important;
+}
+#our-philosophy-is .section-content h2 {
+	color: #f37420 !important;
+}
+#our-philosophy-is .section-content h3 {
+	color: #f37420 !important;
+}
+#our-philosophy-is .section-content h4 {
+	color: #f37420 !important;
+}
+#our-philosophy-is .section-content h5 {
+	color: #f37420 !important;
+}
+#our-philosophy-is .section-content h6 {
+	color: #f37420 !important;
+}
+#our-philosophy-is p.lead {
+	color: #f37420;
+}
+.parallax-overlay-pattern.style_two {
+	background-image: url(" http://hipcreativeinc.com/wp-content/themes/brooklyn/images/overlay-pattern2.png") !important;
+}

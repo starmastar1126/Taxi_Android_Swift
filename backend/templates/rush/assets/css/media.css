@@ -1,0 +1,682 @@
+@media print {
+* {
+	text-shadow: none!important;
+	color: #000!important;
+	background: transparent!important;
+	box-shadow: none!important
+}
+a, a:visited {
+	text-decoration: underline
+}
+a[href]:after {
+	content: " (" attr(href) ")"
+}
+abbr[title]:after {
+	content: " (" attr(title) ")"
+}
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+	content: ""
+}
+pre, blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid
+}
+thead {
+	display: table-header-group
+}
+tr, img {
+	page-break-inside: avoid
+}
+img {
+	max-width: 100%!important
+}
+@page {
+    margin:.5cm
+}
+p, h2, h3 {
+	orphans: 3;
+	widows: 3
+}
+h2, h3 {
+	page-break-after: avoid
+}
+
+}
+
+@media screen and (min-width:1px) and (max-width:767px) {
+#main-uber-page{max-width:98%;}
+nav button{ left:0%;}
+
+.listOpen .desktop{ display:none;}
+.listOpen .mobile{ display:block;}
+
+.logo{ margin:14px 0 0 9%;}
+.get-there{ margin:60px 0 0;}
+.get-there-inner h2{ margin:18px 0 0; width:100%;}
+.get-there-inner span{ display:none;}
+.home-hero-page{ margin:30px 0 0;}
+.home-hero-page-left-text{ width:95%;}
+.home-sldier-inner ul li{margin:0 20px 30px;}
+
+.top-link{ display:none;}
+.top-right-button{ display:none;}
+.top-link-login{ display:none;}
+
+.people-going-way-mid-inner{ margin:11.5% auto 0; width:90%;}
+.people-going-way-mid-inner h2{font-size:24px; margin:0 0 20px; width:100%;}
+.people-going-way-left{ width:10%;}
+.people-going-way-mid{ width:40%;}
+.people-going-way-right{ width:50%;}
+
+.tap-app-ride-inner{ margin:; width:95%;}
+
+.helping-cities-left{ width:50%;}
+.helping-cities-mid{ width:40%;}
+.helping-cities-mid-inner{ width:90%; margin:11.5% auto 0;}
+.helping-cities-mid-inner h2{font-size:27px; margin:0 0 20px;}
+.helping-cities-right{ width:10%;}
+
+.Safety-people-text h2{font-size:27px; margin:0 0 10px;}
+.Safety-people-right-inner{ width:96%;}
+.Safety-people-left{ width:10%;}
+.Safety-people-right{ width:88%;}
+.Safety-people-img{ width:56%;}
+.Safety-people-img img{ width:100%;}
+
+.footer-inner{ width:98%;}
+.footer-box1{ width:35%;}
+.footer-box2{ width:53%;}
+
+}
+
+
+
+@media screen and (min-width:1px) and (max-width:567px) {
+nav ul#listMenu{ width:50%; left:-50%;}
+.home-hero-page-left{ background-size:cover; min-height:inherit; padding:0 0 40px;}
+.home-hero-page-right{ background-size:cover; min-height:342px;}
+.home-hero-page-right-text{ height:170px;}
+.home-hero-page-right-text span{ margin:14px 0 0 25px;}
+.home-hero-page-left-text{ width:90%;}
+.home-sldier{ margin:40px 0 0;}
+.home-sldier-inner ul li{ margin:0 6px 20px;}
+
+.home-hero-page-left{ min-height:232px; background-size:100%;}
+.home-hero-page-left-text{ display:none;}
+.home-hero-page-right{ min-height:213px; background-size:cover;}
+.home-hero-page-right-text{ display:none;}
+
+
+.people-going-way{ height:auto; margin:20px 0 0;}
+.people-going-way-left{background-size:cover; height:500px; width:20%;}
+.people-going-way-mid{ width:80%;}
+.people-going-way-mid-inner{width:95%; margin:9% auto 0;}
+.people-going-way-right{ width:100%; background-size:cover; height:450px; float:left; margin:10px 0;} 
+
+.helping-cities{ height:auto;}
+.helping-cities-left{ width:100%; margin:0 0 10px; background-size:cover; height:450px;}
+.helping-cities-mid{ width:80%;}
+.helping-cities-mid-inner{width:95%; margin:9% auto 0;}
+.helping-cities-right{background-size:cover; height:auto; width:20%; min-height:350px;}
+
+.Safety-people-left{ width:20%; min-height:590px;  background-size:cover;}
+.Safety-people-right{ width:80%;}
+.Safety-people-right-inner{ margin:9% auto 0;}
+.Safety-people-text{ width:100%;}
+.Safety-people-img{ width:100%; margin:20px 0 0;}	
+.footer{ height:auto; padding:0 0 15px;}
+.footer-top-part{ height:auto; padding:0 0 14px;}
+
+.footer-box1{ width:25%; margin:0 0 10px;}
+.footer-box1 .lang{ margin:0 0 10px;}
+.footer-box1 span{ margin:10px 0 0; width:auto;}
+.footer-box1 span a .fa{ margin:0 17px 0 0;}
+.footer-box2{ margin:0 0 0 20px; width:69%;}
+.footer-box3{ margin:15px 0 5px; width:100%; text-align:center;}
+.footer-box3 span{ width:auto; float:none;}	
+
+
+/****************inner**********************/
+
+.page-contant{ background-position:right -130px top 0; padding:0 0 20px;}
+.page-contant-inner{ margin:30px 0 0 5px; float:left; width:94%;}
+.driver-signup-page{ width:100%;}
+.create-account span{ margin:0px;}
+.create-account span strong{ width:100%; margin:0 0 15px;}
+.create-account span strong:nth-child(2n){ float:left;}
+.create-account span .create-account-input1{ float:left;}
+.create-account span b{ float:left; width:342px;}	
+.create-account span b .select-wrapper, .select-wrapper select{ margin:0px; padding:15px 11px; background-position:right 0 top 20px; width:45px;}
+.create-account span b .select-wrapper:hover{background-position:right 0 top 20px;}
+.create-account span abbr{margin:15px 0 0; width:100%;}
+.create-account span .select-wrapper, .select-wrapper select{ width:95%;}
+.contact-form{ width:100%;}
+.login-form-left{ width:100%; padding:0; border:none;}
+.login-form-left b .login-input{ width:99%;}
+/*.login-form-left b .submit-but{ width:auto; padding:0 30px;}*/
+.login-form-right{ width:100%;}
+.driver-profile-img{ width:130px; height:133px;}
+.driver-profile-img span{ width:125px; height:125px;}
+.driver-profile-info{ margin:15px 0 0 10px; width:69%;}
+.driver-profile-mid-part ul li{ margin:0 15px 70px 0; width:48%;}
+.driver-profile-mid-part ul li:nth-child(even){ margin-right:0px;}
+.driver-profile-mid-part ul li:last-child{ margin-bottom:0px;}
+.driver-profile-mid-part{ margin:20px 0 0; padding:80px 0 0;}
+
+.driver-profile-bottom-part li h4{ text-transform:none; font-size:16px;}
+.driver-profile-bottom-part li{ margin:0 15px 20px 0; width:48%;}
+.driver-profile-bottom-part li:last-child{ margin:0 15px 20px 0;}
+.driver-profile-bottom-part li:nth-child(even){ margin-right:0px;}
+
+.accordion-section .driver-vehicles-page-new li h4{ text-transform:none;}
+.accordion-section .driver-vehicles-page-new li{ margin:0 15px 20px 0; width:48%;}
+.accordion-section .driver-vehicles-page-new li:nth-child(even){ margin-right:0px;}
+
+.car-type{ width:100%;}
+.car-type ul li{ width:50%; margin:0 0 20px;}
+.car-type ul li b{ width:100px; margin:10px 0 0;}
+.car-type ul li:last-child{ float:left; width:50%; margin-bottom:0px;}
+.time-period span a{ margin-bottom:5px;}
+
+.driver-trip-table{ overflow-x:scroll;}
+.driver-trip-table .dataTables_wrapper{width:1000px!important; padding:0 0 10px!important;}
+.trip-detail-page-inner{ margin:0 auto; float:none; padding:0px; width:460px;}
+.trip-detail-page-left{ width:100%; margin:0 0 25px;}
+.trip-detail-page-right{ margin:80px 0 20px; width:100%; float:left;}
+.trips-table{ margin:30px 0 0; padding:20px 0 0;}
+.trips-table-driver{ margin:0px; padding:0px;}
+.header-page{font-size:34px;}
+.driver-vehicles-page li h4{ text-transform:none;}
+.driver-vehicles-page li{ margin:0 15px 20px 0; width:48%;}
+.driver-vehicles-page li:nth-child(even){ margin-right:0px;}
+
+.driver-action-page-right{ margin:0 0 0 10px; width:75%;}
+.driver-action-page-right span .input-phNumber2{width:78%;}
+
+.contact-form b{ width:100%;}
+.contact-form b .contact-input{ width:99%;}
+.contact-form b .contact-textarea{ width:99%;}	
+
+.driver-profile-bottom-part{ margin:40px 0 0;}
+.show-edit-profile-part{ width:100%; float:left;}
+.show-edit-profile-part span .input-phNumber2{ margin:0 0 0 15px; width:85%;}
+.profile-Password{ width:98%;}
+.profile-Password span .current-pas{width:30%;}
+
+.driver-add-vehicle span{margin:0px;}
+.driver-add-vehicle span b{ width:100%; margin:0 0 15px;}
+
+.time-period{ margin:20px 0 0;}
+.Posted-date span input{ width:38%;}
+
+.edit-profile-detail-form-inner{ width:100%; margin:0px;}
+
+.sign-in-driver { width:49%;}
+.sign-in-driver p{ width:100%;}
+.sign-in-rider { width:49%;}
+.sign-in-rider p{ width:100%;}
+
+.profile-Password span .new-pas{ margin:0 0 0 10px;}
+.profile-Password span .con-new-pas{ margin:0 0 0 10px;}
+
+.accordionheading h3{font-size:15px!important;}
+
+.faq-top-part li{ width:auto; margin:0 15px 0 0;}
+.faq-top-part li a{ padding:10px;}
+
+}
+
+
+@media screen and (min-width:1px) and (max-width:414px) {
+
+nav button{ margin:0 0 0 10px;}
+nav button.navOpen{ margin:7px 0 0 10px;}
+nav ul#listMenu{ width:65%; left:-65%;}
+.logo{ margin:14px 0 0 5%;}
+
+.home-sldier-inner ul li{ margin:0 0 20px; width:228px;}
+.people-going-way-mid-inner h3{font-size:22px;}
+.people-going-way-mid-inner h2{font-size:22px; margin:0 0 10px;}
+.people-going-way-mid-inner p{ font-size:17px; line-height:30px;}
+
+.get-there-inner h2{ font-size:43px;}
+.get-there-inner h2 b{ font-size: 32px;}
+
+.helping-cities-mid-inner h3{font-size:22px;}
+.helping-cities-mid-inner h2{font-size:22px; margin:0 0 10px;}
+.helping-cities-mid-inner p{ font-size:17px; line-height:30px;}
+
+.Safety-people{ min-height:inherit;}
+.Safety-people-left{min-height: 510px;}
+.Safety-people-text h3{font-size:22px;}
+.Safety-people-text h2{font-size:22px; margin:0 0 10px;}
+.Safety-people-text p{ font-size:17px; line-height:30px;}
+
+.Safety-people-right{ min-height:inherit;}
+
+.footer-box1{ margin:10px 0; width:100%;}
+.footer-box2{ width:100%; margin:0px;}
+.footer-box3{ margin:15px 0 5px; width:100%; text-align:center;}
+.footer-box3 span{ width:auto; float:none;}
+
+.footer-bottom-part span{ width:100%; float:left; text-align:center; margin:0 0 5px;}
+.footer-bottom-part p{ width:100%; float:left; text-align:center;}
+
+/***********inner*******************/
+
+.page-contant{background-position:right -136px top 0;}
+.page-contant-inner{ margin:10px 0 0 0px; width:97%;}
+
+.sign-in{ margin:30px 0 0;}
+.sign-in-driver{ width:100%; margin:0 0 30px;}
+.sign-in-driver h3{ margin:0 0 10px; padding:10px 0 0;}
+.sign-in-driver span a{ margin:0px;}
+.sign-in-rider{ width:100%; float:left;}
+.sign-in-rider h3{ margin:0 0 10px; padding:10px 0 0;}
+.sign-in-rider span a{ margin:0px;}
+
+.driver-vehicles-page-new ul {float:none; margin:0 auto; padding:0; width:300px;}
+.accordion .driver-vehicles-page-new ul {float:none; margin:10px auto 0; padding:0; width:300px;}
+.accordion-section .driver-vehicles-page-new li{margin:10px 0; width:100%;}
+
+.individual-driver span em{ margin:0 0 10px;}
+.driver-signup-page .create-account{ margin:25px 0 0;}
+.create-account span b{ width:100%;}
+.create-account span b .select-wrapper, .select-wrapper select{ width:53px;}
+.driver-signup-page h3{ margin:0 0 20px;}
+.driver-profile-info{ width:100%; margin:15px 0 0;}
+
+.driver-profile-mid-part ul{ margin:0 auto; float:none; width:300px;}
+.driver-profile-mid-part ul li{ width:100%; margin:0 0 70px;}
+
+.driver-profile-bottom-part ul{ margin:0 auto; float:none; width:300px;}
+.driver-profile-bottom-part ul li{ width:100%; margin:0 0 20px;}
+
+.car-type ul li{ width:100%;}
+.car-type ul li:last-child{ width:100%;}
+
+.time-period b{ margin:20px 0 0;}
+.trips-table { margin: 20px 0 0; padding: 10px 0 0;}
+.Posted-date span input{width:45%;}
+
+.trip-detail-page-inner{ width:100%;}
+.trip-detail a{ margin:12px 0 10px;}
+.trip-detail-page-left{ width:99%;}
+.map-address ul li span{ width:91%;}
+.trips-table-driver-res{ margin:0px; padding:0px;}
+
+.driver-vehicles-page ul{ margin:0 auto; float:none; width:300px;}
+.driver-vehicles-page ul li{ width:100%; margin:0 0 20px;}
+
+.driver-action-page-right{ width:100%; float:left; margin:15px 0 0;}
+.profile-Password span .current-pas{ width:100%; margin:0 0 10px;}
+.profile-Password span .new-pas{ width:100%; margin:0 0 10px;}
+.profile-Password span .con-new-pas{ width:100%; margin:0 0 10px;}
+.show-edit-profile-part span .input-phNumber2{ width:81%;}
+.edit-profile-detail-form{ margin:10px 0 0;}
+}
+
+@media screen and (min-width:1px) and (max-width:400px) {
+nav button.navOpen{ margin:7px 0 0 7px;}
+.page-contant-inner {float:none; margin:0 auto; width:97%;}
+.page-contant{ background:none; background-position:left;}
+.create-account span b strong{ width:auto; padding:0 10px;}
+.create-account span .create-account-input{ width:97%;}
+.create-account span .select-wrapper, .select-wrapper select{ width:94%;}
+.show-edit-profile-part span .input-phNumber2{ width:78%;}
+.edit-profile-detail-form{ margin:10px 0 0;}
+.driver-action-page-right span .input-phNumber2{ width:79%;}
+
+.faq-top-part li{ margin:0 10px 0 0;}
+
+.faq-bottom-part li span h3{ margin:10px 0 0 8px; font-size:20px;}
+
+}
+
+@media screen and (min-width:568px) and (max-width:666px) {
+
+nav ul#listMenu{ width:50%; left:-50%;}
+
+.home-hero-page-left{ background-size:cover; min-height:inherit; padding:0 0 40px;}
+.home-hero-page-right{ background-size:cover; min-height:342px;}
+.home-hero-page-right-text{ height:170px;}
+.home-hero-page-right-text span{ margin:14px 0 0 25px;}
+.home-hero-page-left-text{ width:90%;}
+.home-sldier{ margin:40px 0 0;}
+
+.people-going-way{ height:auto; margin:20px 0 0;}
+.people-going-way-left{background-size:cover; height:450px; width: 20%;}
+.people-going-way-mid{ width:80%;}
+.people-going-way-mid-inner{width:95%; margin:9% auto 0;}
+.people-going-way-right{ width:100%; background-size:cover; height:450px; float:left; margin:10px 0;} 
+
+.helping-cities{ height:auto;}
+.helping-cities-left{ width:100%; margin:0 0 10px; background-size:cover; height:450px;}
+.helping-cities-mid{ width:80%;}
+.helping-cities-mid-inner{width:95%; margin:9% auto 0;}
+.helping-cities-right{background-size:cover; height:auto; width:20%; min-height:350px;}
+
+.Safety-people-left{ width:20%; min-height:590px;  background-size:cover;}
+.Safety-people-right{ width:80%;}
+.Safety-people-right-inner{ margin:9% auto 0;}
+.Safety-people-text{ width:100%;}
+.Safety-people-img{ width:100%; margin:20px 0 0;}	
+.footer{ height:auto; padding:0 0 15px;}
+.footer-top-part{ height:auto; padding:0 0 14px;}
+
+.footer-box1{ width:29%; margin:0 0 10px;}
+.footer-box1 .lang{ margin:0 0 10px;}
+.footer-box1 span{ margin:10px 0 0;}
+.footer-box2{ margin:0 0 0 20px; width:66%;}
+.footer-box3{ margin:15px 0 5px; width:100%; text-align:center;}
+.footer-box3 span{ width:auto; float:none;}	
+
+/****************inner**********************/
+
+.page-contant{ background-position:right -100px top 0; padding:0 0 20px;}
+.page-contant-inner{ margin:30px 0 0 5px; float:left; width:89%;}
+.driver-signup-page{ width:100%;}
+.create-account span{ margin:0px;}
+.create-account span strong{ width:100%; margin:0 0 15px;}
+.create-account span strong:nth-child(2n){ float:left;}
+.create-account span .create-account-input1{ float:left;}
+.create-account span b{ float:left; width:342px;}	
+.create-account span b .select-wrapper, .select-wrapper select{ margin:0px; padding:15px 11px; background-position:right 0 top 20px; width:45px;}
+.create-account span b .select-wrapper:hover{background-position:right 0 top 20px;}
+.create-account span abbr{margin:15px 0 0; width:100%;}
+.create-account span .select-wrapper, .select-wrapper select{ width:95%;}
+.contact-form{ width:100%;}
+.login-form-left{ width:100%; padding:0; border:none;}
+.login-form-left b .login-input{ width:99%;}
+/*.login-form-left b .submit-but{ width:auto; padding:0 30px;}*/
+.login-form-right{ width:100%;}
+.driver-profile-img{ width:130px; height:133px;}
+.driver-profile-img span{ width:125px; height:125px;}
+.driver-profile-info{ margin:15px 0 0 10px; width:71%;}
+.driver-profile-mid-part ul li{ margin:0 15px 70px 0; width:48%;}
+.driver-profile-mid-part ul li:nth-child(even){ margin-right:0px;}
+.driver-profile-mid-part ul li:last-child{ margin-bottom:0px;}
+.driver-profile-mid-part{ margin:20px 0 0; padding:80px 0 0;}
+
+.driver-profile-bottom-part li h4{ text-transform:none; font-size:16px;}
+.driver-profile-bottom-part li{ margin:0 15px 20px 0; width:48%;}
+.driver-profile-bottom-part li:last-child{ margin:0 15px 20px 0;}
+.driver-profile-bottom-part li:nth-child(even){ margin-right:0px;}
+
+.accordion-section .driver-vehicles-page-new li h4{ text-transform:none;}
+.accordion-section .driver-vehicles-page-new li{ margin:0 15px 20px 0; width:48%;}
+.accordion-section .driver-vehicles-page-new li:nth-child(even){ margin-right:0px;}
+
+.car-type{ width:100%;}
+.car-type ul li{ width:50%; margin:0 0 20px;}
+.car-type ul li b{ width:100px; margin:10px 0 0;}
+.car-type ul li:last-child{ float:left; width:50%; margin-bottom:0px;}
+.time-period span a{ margin-bottom:5px;}
+
+.driver-trip-table{ overflow-x:scroll;}
+.driver-trip-table .dataTables_wrapper{width:1000px!important; padding:0 0 10px!important;}
+.trip-detail-page-inner{ margin:0 auto; float:none; padding:0px; width:460px;}
+.trip-detail-page-left{ width:100%; margin:0 0 25px;}
+.trip-detail-page-right{ margin:80px 0 20px; width:100%; float:left;}
+.trips-table{ margin:30px 0 0; padding:20px 0 0;}
+.trips-table-driver{ margin:0px; padding:0px;}
+.header-page{font-size:34px;}
+.driver-vehicles-page li h4{ text-transform:none;}
+.driver-vehicles-page li{ margin:0 15px 20px 0; width:48%;}
+.driver-vehicles-page li:nth-child(even){ margin-right:0px;}
+
+.driver-action-page-right{ margin:0 0 0 15px; width:75%;}
+.driver-action-page-right span .input-phNumber2{width:78%;}
+
+.contact-form b{ width:100%;}
+.contact-form b .contact-input{ width:99%;}
+.contact-form b .contact-textarea{ width:99%;}	
+
+.driver-profile-bottom-part{ margin:40px 0 0;}
+.show-edit-profile-part{ width:100%; float:left;}
+.show-edit-profile-part span .input-phNumber2{ margin:0 0 0 15px; width:85%;}
+.profile-Password{ width:98%;}
+.profile-Password span .current-pas{width:30%;}
+
+.driver-add-vehicle span{margin:0px;}
+.driver-add-vehicle span b{ width:100%; margin:0 0 15px;}
+
+.time-period{ margin:20px 0 0;}
+.Posted-date span input{ width:38%;}
+
+.edit-profile-detail-form-inner{ width:100%; margin:0px;}
+
+.sign-in-driver p{ width:100%;}
+.sign-in-rider p{ width:100%;}
+.profile-Password span .new-pas{ margin:0 0 0 10px;}
+.profile-Password span .con-new-pas{ margin:0 0 0 10px;}
+
+.accordionheading h3{font-size:15px!important;}
+
+.faq-top-part li{ width:auto; margin:0 15px 0 0;}
+.faq-top-part li a{ padding:10px;}
+}
+
+
+@media screen and (min-width:667px) and (max-width:767px) {
+nav ul#listMenu{ width:45%; left:-50%;}
+.home-hero-page-left{background-size:cover; min-height:inherit; padding:0 0 40px;}
+.home-hero-page-right {background-size:cover; min-height:373px;}
+
+.people-going-way-mid-inner{width:91%;}
+.people-going-way-mid{ width:45%;}
+.people-going-way-right{ width:45%;}
+.helping-cities-left{ width:45%;}
+.helping-cities-mid{ width:45%;}
+.Safety-people-right{ width:89%;}
+.Safety-people-text{ width:45%;}
+.Safety-people-img{ width:54%;}
+.footer{ height:auto; padding:0 0 15px;}
+.footer-top-part{ height:auto; padding:0 0 14px; margin:20px 0 0;}
+
+.footer-box1{ width:26%; margin:0 0 10px;}
+.footer-box1 .lang{ margin:0 0 10px;}
+.footer-box1 span{ margin:10px 0 0;}
+.footer-box2{ margin:0 0 0 20px; width:56%;}
+
+/****************inner**********************/
+.page-contant{ background-position:right -70px top 0; padding:0 0 20px;}
+.page-contant-inner{ margin:30px 0 0 5px; float:left; width:86%;}
+.driver-signup-page{ width:100%;}
+.create-account span{ margin:0px;}
+.create-account span strong{ width:100%; margin:0 0 15px;}
+.create-account span strong:nth-child(2n){ float:left;}
+.create-account span .create-account-input1{ float:left;}
+.create-account span b{ float:left; width:342px;}	
+.create-account span b .select-wrapper, .select-wrapper select{ margin:0px; padding:15px 11px; background-position:right 0 top 20px; width:45px;}
+.create-account span b .select-wrapper:hover{background-position:right 0 top 20px;}
+.create-account span abbr{margin:15px 0 0; width:100%;}
+.create-account span .select-wrapper, .select-wrapper select{ width:95%;}
+.contact-form{ width:100%;}
+.login-form-left{ width:100%; padding:0; border:none;}
+.login-form-left b .login-input{ width:99%;}
+/*.login-form-left b .submit-but{ width:auto; padding:0 30px;}*/
+.login-form-right{ width:100%;}
+.driver-profile-img{ width:140px; height:143px;}
+.driver-profile-img span{ width:135px; height:135px;}
+.driver-profile-info{ margin:15px 0 0 15px; width:71%;}
+.driver-profile-mid-part ul li{ margin:0 15px 70px 0; width:48%;}
+.driver-profile-mid-part ul li:nth-child(even){ margin-right:0px;}
+.driver-profile-mid-part ul li:last-child{ margin-bottom:0px;}
+.driver-profile-mid-part{ margin:20px 0 0; padding:80px 0 0;}
+
+.driver-profile-bottom-part li h4{ text-transform:none; font-size:16px;}
+.driver-profile-bottom-part li{ margin:0 15px 20px 0; width:48%;}
+.driver-profile-bottom-part li:last-child{ margin:0 15px 20px 0;}
+.driver-profile-bottom-part li:nth-child(even){ margin-right:0px;}
+
+.accordion-section .driver-vehicles-page-new li h4{ text-transform:none;}
+.accordion-section .driver-vehicles-page-new li{ margin:0 15px 20px 0; width:48%;}
+.accordion-section .driver-vehicles-page-new li:nth-child(even){ margin-right:0px;}
+
+.car-type{ width:100%;}
+.car-type ul li{ width:50%; margin:0 0 20px;}
+.car-type ul li b{ width:100px; margin:10px 0 0;}
+.car-type ul li:last-child{ float:left; width:50%; margin-bottom:0px;}
+.time-period span a{ margin-bottom:5px;}
+
+.driver-trip-table{ overflow-x:scroll;}
+.driver-trip-table .dataTables_wrapper{width:1000px!important; padding:0 0 10px!important;}
+.trip-detail-page-inner{ margin:0 auto; float:none; padding:0px; width:460px;}
+.trip-detail-page-left{ width:100%; margin:0 0 25px;}
+.trip-detail-page-right{ margin:80px 0 20px; width:100%; float:left;}
+.trips-table{ margin:30px 0 0; padding:20px 0 0;}
+.trips-table-driver{ margin:0px; padding:0px;}
+.header-page{font-size:34px;}
+.driver-vehicles-page li h4{ text-transform:none;}
+.driver-vehicles-page li{ margin:0 15px 20px 0; width:48%;}
+.driver-vehicles-page li:nth-child(even){ margin-right:0px;}
+
+.driver-action-page-right{ margin:0 0 0 20px; width:78%;}
+.driver-action-page-right span .input-phNumber2{width:81%;}
+
+.contact-form b{ width:100%;}
+.contact-form b .contact-input{ width:99%;}
+.contact-form b .contact-textarea{ width:99%;}	
+
+.driver-profile-bottom-part{ margin:40px 0 0;}
+.show-edit-profile-part{ width:100%; float:left;}
+.show-edit-profile-part span .input-phNumber2{ margin:0 0 0 15px;}
+.profile-Password{ width:98%;}
+.profile-Password span .current-pas{width:30%;}
+
+.driver-add-vehicle span{margin:0px;}
+.driver-add-vehicle span b{ width:100%; margin:0 0 15px;}
+
+.time-period{ margin:20px 0 0;}
+.Posted-date span input{ width:33%;}
+
+.edit-profile-detail-form-inner{ width:100%; margin:0px;}
+
+.faq-top-part li{ width:auto; margin:0 15px 0 0;}
+.faq-top-part li a{ padding:10px;}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+nav ul#listMenu{ width:40%; left:-41%;}
+.top-part-inner{ width:98%;}
+nav button{left:0%;}
+.top-link-login{ margin:0 0 0 10px; width:69%;}
+.top-link-login span a{ margin:0 7px; font-size:18px;}
+
+.logo{ margin:18px 0 0 7%;}
+.get-there-inner h2{ margin:18px 0 0; width:70%;}
+.home-hero-page-left-text{ width:95%;}
+.home-sldier-inner ul li{margin:0 10px 20px;}
+
+.home-hero-page-left{background-size:cover; min-height:inherit; padding:0 0 40px;}
+.home-hero-page-right {background-size:cover; min-height:412px;}
+
+.people-going-way-mid-inner{ margin:11.5% auto 0; width:90%;}
+.people-going-way-mid-inner h2{font-size:27px; margin:0 0 20px;}
+.people-going-way-left{ width:10%;}
+.people-going-way-mid{ width:40%;}
+.people-going-way-right{ width:50%;}
+
+.tap-app-ride-inner{ margin:; width:95%;}
+
+.helping-cities-left{ width:50%;}
+.helping-cities-mid{ width:40%;}
+.helping-cities-mid-inner{ width:90%; margin:11.5% auto 0;}
+.helping-cities-mid-inner h2{font-size:27px; margin:0 0 20px;}
+.helping-cities-right{ width:10%;}
+
+.Safety-people-text h2{font-size:27px; margin:0 0 10px;}
+.Safety-people-right-inner{ width:96%;}
+.Safety-people-left{ width:10%;}
+.Safety-people-right{ width:88%;}
+.Safety-people-img{ width:56%;}
+.Safety-people-img img{ width:100%;}
+
+.footer-inner{ width:98%;}
+.footer-box1{ width:215px;}
+.footer-box2{ width:55%; margin:0 0 0 20px;}
+
+/****************inner**********************/
+.page-contant{ background-position:right -50px top 0;}
+.page-contant-inner{ margin:30px 0 0 15px; float:left; width:84%;}
+.driver-signup-page{ width:100%;}
+.create-account span b .select-wrapper, .select-wrapper select{ margin:0px; padding:15px 11px; background-position:right 0 top 20px; width:38px;}
+.create-account span b .select-wrapper:hover{background-position:right 0 top 20px;}
+.contact-form{ width:100%;}
+.login-form-left{ width:60%; padding:0 20px 0 0;}
+.login-form-left b .submit-but{ width:auto; padding:0 30px;}
+.login-form-right{ width:35%;}
+.driver-profile-info{ margin:15px 0 0 20px; width:70%;}
+.driver-profile-mid-part ul li{ margin:0 15px 0 0; width:31%;}
+.driver-profile-mid-part{ margin:20px 0 0; padding:80px 0 0;}
+
+.driver-profile-bottom-part li h4{ text-transform:none; font-size:16px;}
+.driver-profile-bottom-part li{ margin:0 10px 0 0; width:32%;}
+.accordion-section .driver-vehicles-page-new li h4{ text-transform:none;}
+.accordion-section .driver-vehicles-page-new li{ margin:0 10px 0 0; width:32%;}
+
+.car-type{ width:100%;}
+.car-type ul li{ width:33%;}
+.time-period span a{ margin-bottom:5px;}
+
+.driver-trip-table{ overflow-x:scroll;}
+.driver-trip-table .dataTables_wrapper{width:1000px!important; padding:0 0 10px!important;}
+.trip-detail-page-inner{ margin:0 auto; float:none; padding:0px; width:460px;}
+.trip-detail-page-left{ width:100%; margin:0 0 25px;}
+.trip-detail-page-right{ margin:80px 0 0; width:100%; float:left;}
+.trips-table{ margin:30px 0 0; padding:20px 0 0;}
+.trips-table-driver{ margin:0px; padding:0px;}
+.header-page{font-size:38px;}
+.driver-vehicles-page li h4{ text-transform:none;}
+.driver-vehicles-page li{ margin:0 20px 20px 0; width:45%;}
+.driver-action-page-right{ margin:0 0 0 20px; width:80%;}
+.driver-action-page-right span .input-phNumber2{width:84%;}
+.driver-profile-bottom-part li{ margin:0 20px 20px 0; width:45%;}
+
+.faq-top-part li{ width:auto; margin:0 15px 0 0;}
+.faq-top-part li a{ padding:10px;}
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1099px) {
+.logo{ margin:18px 0 0 7%;}
+.get-there-inner h2{ margin:18px 0 0 7%;}
+.home-sldier-inner ul li{ margin:0 10px;}
+.tap-app-ride-inner{ width:95%;}
+.people-going-way-mid-inner h2{font-size:31px; margin:0 0 20px;}
+.helping-cities-mid-inner{ width:80%;}
+.helping-cities-mid-inner h2{font-size:31px; margin:0 0 20px;}
+.Safety-people-text h2{font-size:31px; margin:0 0 20px;}
+.Safety-people-right-inner{ width:93%;}
+
+/****************inner**********************/
+
+.page-contant{ background-position:right -30px top 0;}
+.page-contant-inner{ margin:58px 0 0 15px; float:left; width:86%;}
+.create-account span b .select-wrapper, .select-wrapper select{ padding:15px 9px;}
+.time-period span a{ margin:0 10px 0 0; padding:0 10px 0 0;}
+
+.trip-detail-page-left{ width:50%;}
+.trip-detail-page-right{ width:48%;}
+.fare-breakdown-inner h3{ margin:0 0 16px;}
+
+.driver-vehicles-page li{ margin:0 20px 0 0; width:31%;}
+
+}
+
+@media screen and (min-width:1100px) and (max-width:1199px) {
+.logo{ margin:18px 0 0 7%;}
+.get-there-inner h2{ margin:18px 0 0 7%;}
+.tap-app-ride-inner{ width:95%;}
+.people-going-way-mid-inner h2{font-size:33px;}
+.helping-cities-mid-inner{ width:80%;}
+.helping-cities-mid-inner h2{font-size:33px;}
+.Safety-people-right-inner{ width:93%;}
+
+/****************inner**********************/
+.page-contant{ background-position:right -30px top 0;}
+.page-contant-inner{ margin:58px 0 0 15px; float:left; width:86%;}
+
+}

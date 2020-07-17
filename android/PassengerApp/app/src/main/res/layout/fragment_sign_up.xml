@@ -1,0 +1,291 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fadeScrollbars="false"
+    android:fillViewport="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context="com.fragments.SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="18dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/nameArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/fNameBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1" />
+
+                <include
+                    android:id="@+id/lNameBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/emailBox"
+                layout="@layout/editbox_form_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <include
+
+                android:id="@+id/passwordBox"
+                layout="@layout/editbox_form_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:id="@+id/mobileNoArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/yearSelectArea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <include
+                        android:id="@+id/countryBox"
+                        layout="@layout/editbox_form_design"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.30" />
+
+                    <ImageView
+                        android:id="@+id/countrydropimage"
+                        android:layout_width="20dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginBottom="15dp"
+                        android:clickable="false"
+                        android:src="@drawable/ic_arrow_down"
+                        android:tint="#bfbfbf" />
+
+                    <ImageView
+                        android:id="@+id/countrydropimagerror"
+                        android:layout_width="20dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginBottom="25dp"
+                        android:clickable="false"
+                        android:src="@drawable/ic_arrow_down"
+                        android:tint="#bfbfbf"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_weight="0.30"-->
+                <!--android:orientation="horizontal"-->
+
+                <!--&gt;-->
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<ImageView-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_width="28dp"-->
+                <!--android:layout_height="18dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:clickable="false" />-->
+
+                <!--<com.view.MTextView-->
+
+                <!--android:gravity="center"-->
+                <!--android:id="@+id/countryBox"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginStart="3dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:clickable="false"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="ENG"-->
+                <!--android:textAllCaps="true"-->
+                <!--android:textColor="@color/editBox_primary"-->
+                <!--android:textSize="14sp"-->
+                <!--app:customTypeFace="roboto_medium" />-->
+
+                <!--<ImageView-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="16dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:clickable="false"-->
+                <!--android:src="@drawable/ic_arrow_down"-->
+                <!--android:tint="#bfbfbf"-->
+                <!--android:id="@+id/imageView2" />-->
+                <!--<View-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/editBox_primary"/>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+
+                <include
+                    android:id="@+id/mobileBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.70" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/inviteCodeArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/invitecodeBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.70" />
+
+
+                <ImageView
+                    android:id="@+id/inviteQueryImg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_menu_help" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxTermsCond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#272727"
+                android:textSize="@dimen/txt_size_16" />
+
+            <com.view.MTextView
+                android:id="@+id/txtTermsCond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="start"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/txt_size_14"
+                app:customTypeFace="roboto_light" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/btn_type2"
+            layout="@layout/btn_type_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/all_btn_height"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="@color/light_back_color"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.view.MTextView
+                android:id="@+id/signbootomHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Already have an account"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_16"
+                app:customTypeFace="roboto_light" />
+
+            <com.view.MTextView
+                android:id="@+id/signbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:text="Sign In"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_16"
+                app:customTypeFace="roboto_light" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

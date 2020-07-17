@@ -1,0 +1,71 @@
+.radio-but{ margin:0; padding:0; float:left;}
+.radio-but b{ margin:0 25px 0 0; padding:0px; float:left; color:#000000; font-weight:normal;}
+
+/* Code for Checbox Starts */
+.radio-but b input[type="checkbox"] {
+    display:none;
+}
+ 
+.radio-but b input[type="checkbox"] + label {
+    color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+}
+ 
+.radio-but b input[type="checkbox"] + label::before {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:0px 4px 0 0;
+    vertical-align:middle;
+    background:#000;
+    border-radius:3px;
+    cursor:pointer;
+    content:"";
+    box-shadow: inset 0px 2px 3px 0px rgba(34, 41, 122, 0.3), 0px 1px 0px 0px rgba(116, 123, 175, 0.8);
+}
+ 
+.radio-but b input[type="checkbox"]:checked + label::before {
+ 
+    content: "\2713";
+    color: #FFDD94;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 18px;
+}
+/* Code for Checkbox ends */
+ 
+/* Code for radio buttons starts */
+.radio-but b input[type="radio"] {
+    display:none;
+}
+ 
+.radio-but b input[type="radio"] + label {
+    color:#000;
+    font-size:14px;
+}
+ 
+.radio-but b input[type="radio"] + label::before {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:-2px 8px 0 0;
+    vertical-align:middle;
+    background: #fff;
+    border-radius: 10px;
+    cursor:pointer;
+    content:"";
+	border:1px solid #cacaca;
+   
+}
+ 
+.radio-but b input[type="radio"]:checked + label::before {
+    content:"\2022";
+    color:#ff7e00;
+    font-size:30px;
+    text-align:center;
+    line-height:12px;
+}
+/* Code for radio buttons Ends */

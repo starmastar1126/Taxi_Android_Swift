@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/gendercancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@mipmap/met_ic_clear"
+            android:tint="@android:color/white" />
+
+        <com.view.MTextView
+            android:id="@+id/genderTitleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="Select Your gender to continue"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_size_18" />
+
+        <LinearLayout
+            android:id="@+id/male_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gendermale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/male" />
+
+            <com.view.MTextView
+                android:id="@+id/maleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="male"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_size_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/female_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/genderfemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/female" />
+
+            <com.view.MTextView
+                android:id="@+id/femaleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="female"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_size_18" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

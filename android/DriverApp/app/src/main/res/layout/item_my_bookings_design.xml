@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.view.MTextView
+            android:id="@+id/myBookingNoHTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:text="Booking#"
+            android:textColor="#2E2E2E"
+            android:textSize="@dimen/txt_size_18" />
+
+        <com.view.MTextView
+            android:id="@+id/myBookingNoVTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:maxLines="1"
+            android:text="4545454"
+            android:textColor="@color/appThemeColor_2"
+            android:textSize="@dimen/txt_size_16" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#ffffff">
+
+        <LinearLayout
+            android:id="@+id/contentArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="start|center_vertical"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<com.view.MTextView-->
+                <!--android:id="@+id/historyNoHTxt"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:maxLines="1"-->
+                <!--android:text="Booking#"-->
+                <!--android:textColor="#2E2E2E"-->
+                <!--android:textSize="@dimen/txt_size_18" />-->
+
+                <!--<com.view.MTextView-->
+                <!--android:id="@+id/historyNoVTxt"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginStart="5dp"-->
+                <!--android:maxLines="1"-->
+                <!--android:text="4545454"-->
+                <!--android:textColor="@color/appThemeColor_2"-->
+                <!--android:textSize="@dimen/txt_size_16" />-->
+                <!--</LinearLayout>-->
+
+                <com.view.MTextView
+                    android:id="@+id/dateTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_weight="0.5"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:textAlignment="textStart"
+                    android:textColor="#8F8F8F"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <com.view.MTextView
+                    android:id="@+id/etypeTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#8F8F8F"
+                    android:textSize="@dimen/txt_size_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/slecttypearea"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="3dp"
+                    android:id="@+id/SelectedTypeNameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/appThemeColor_2"
+                    android:textSize="@dimen/txt_size_16"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/srcimage"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@null"
+                        android:padding="3dp"
+                        android:src="@drawable/hcircle"
+                        android:tint="#6eb746" />
+
+                    <LinearLayout
+                        android:id="@+id/sourcearea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/srcimage"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical">
+
+                            <com.view.MTextView
+                                android:id="@+id/sourceAddressHTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center_vertical"
+                                android:maxLines="1"
+                                android:text="Source address"
+                                android:textAlignment="viewStart"
+                                android:textColor="#8F8F8F"
+                                android:textSize="@dimen/txt_size_14" />
+
+                            <com.view.MTextView
+                                android:id="@+id/sourceAddressTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:maxLines="3"
+                                android:minHeight="40dp"
+                                android:text="Source address"
+                                android:textAlignment="viewStart"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/txt_size_16" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/imagedest"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@+id/sourcearea"
+                        android:src="@mipmap/hmarker"
+                        android:tint="#d73030" />
+
+                    <LinearLayout
+
+                        android:id="@+id/destarea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sourcearea"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/imagedest"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <com.view.MTextView
+                                android:id="@+id/destAddressHTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center_vertical"
+                                android:maxLines="1"
+                                android:text="Dest address"
+                                android:textAlignment="viewStart"
+                                android:textColor="#8F8F8F"
+                                android:textSize="@dimen/txt_size_16" />
+
+                            <com.view.MTextView
+                                android:id="@+id/destAddressTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:maxLines="3"
+                                android:minHeight="40dp"                                android:text="Dest address"
+                                android:textAlignment="viewStart"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/txt_size_14" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+
+                        android:id="@+id/dashImage"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/imagedest"
+                        android:layout_below="@+id/srcimage"
+                        android:layout_marginBottom="-10dp"
+                        android:layout_marginStart="-6dp"
+                        android:layout_marginTop="-10dp"
+                        android:layerType="software"
+                        android:src="@drawable/dotted" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#E3E3E3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/statusArea"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.view.MTextView
+                        android:id="@+id/statusHTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Status"
+                        android:textColor="@color/appThemeColor_1"
+                        android:textSize="@dimen/txt_size_16" />
+
+                    <com.view.MTextView
+                        android:id="@+id/statusVTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:maxLines="1"
+                        android:text="Cancelled"
+                        android:textColor="#6eb746"
+                        android:textSize="@dimen/txt_size_16" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <include
+                    android:id="@+id/btn_type2_start"
+                    layout="@layout/btn_type_2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/all_btn_height"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1" />
+
+                <include
+                    android:id="@+id/btn_type2_cancel"
+                    layout="@layout/btn_type_2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/all_btn_height"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_list_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ListAddressActivity">
+
+    <LinearLayout
+        android:id="@+id/headrview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/design_toolbar_general" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/tw__light_gray"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.view.MTextView
+                android:id="@+id/chooseAddrTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:paddingStart="10dp"
+                android:text="Choose Address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_16"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/addDeliveryArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:layout_width="30dp"
+
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="#00978f"
+                    android:textSize="@dimen/txt_size_24"
+                    android:visibility="gone" />
+
+                <com.view.MTextView
+                    android:id="@+id/addDeliveryAddrTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="start|center"
+                    android:text="address"
+                    android:textColor="#00978f"
+                    android:textSize="@dimen/txt_size_14"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headrview"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/AddrListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/disable_color"></View>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/addressListPageLoader"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <com.view.MTextView
+        android:id="@+id/noAddrTxt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_16"
+        android:visibility="gone" />
+
+</RelativeLayout>

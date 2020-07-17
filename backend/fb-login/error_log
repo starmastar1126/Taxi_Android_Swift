@@ -1,0 +1,56 @@
+[31-Mar-2017 08:33:50 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 186
+[31-Mar-2017 08:35:01 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 186
+[31-Mar-2017 08:35:03 America/Chicago] PHP Catchable fatal error:  Object of class Facebook\FacebookRedirectLoginHelper could not be converted to string in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 19
+[31-Mar-2017 08:35:06 America/Chicago] PHP Catchable fatal error:  Object of class Facebook\FacebookRedirectLoginHelper could not be converted to string in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 19
+[31-Mar-2017 08:35:08 America/Chicago] PHP Catchable fatal error:  Object of class Facebook\FacebookRedirectLoginHelper could not be converted to string in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 19
+[31-Mar-2017 08:35:09 America/Chicago] PHP Catchable fatal error:  Object of class Facebook\FacebookRedirectLoginHelper could not be converted to string in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 19
+[31-Mar-2017 08:35:29 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 186
+[31-Mar-2017 08:39:54 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 186
+[31-Mar-2017 08:40:00 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 186
+[31-Mar-2017 08:41:11 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 186
+[31-Mar-2017 08:44:06 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 188
+[31-Mar-2017 08:44:18 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 188
+[31-Mar-2017 08:46:11 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 188
+[31-Mar-2017 08:46:52 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 187
+[31-Mar-2017 08:46:56 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 187
+[31-Mar-2017 08:47:34 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 187
+[31-Mar-2017 08:47:35 America/Chicago] PHP Fatal error:  Class 'Facebook\FacebookRedirectLoginHelper' not found in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 19
+[31-Mar-2017 08:47:36 America/Chicago] PHP Fatal error:  Class 'Facebook\FacebookRedirectLoginHelper' not found in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 19
+[31-Mar-2017 08:47:42 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 187
+[31-Mar-2017 08:48:01 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 187
+[31-Mar-2017 08:48:18 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 285
+[31-Mar-2017 08:48:24 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 187
+[31-Mar-2017 08:50:30 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 187
+[31-Mar-2017 08:50:36 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 187
+[31-Mar-2017 08:50:39 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 187
+[31-Mar-2017 08:50:47 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 187
+[31-Mar-2017 08:51:16 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 187
+[31-Mar-2017 08:51:23 America/Chicago] PHP Fatal error:  Cannot use object of type stdClass as array in /home3/eswweb/public_html/projects/leetglobal/dip/Facebook/FacebookRedirectLoginHelper.php on line 187
+[31-Mar-2017 09:21:32 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home3/eswweb/public_html/projects/leetglobal/dip/fbconnect.php on line 191
+[31-Mar-2017 09:38:15 America/Chicago] PHP Notice:  Undefined variable: obj in /home3/eswweb/public_html/projects/leetglobal/dip/fbconnect.php on line 41
+[31-Mar-2017 09:38:15 America/Chicago] PHP Fatal error:  Call to a member function MySQLSelect() on a non-object in /home3/eswweb/public_html/projects/leetglobal/dip/fbconnect.php on line 41
+[31-Mar-2017 09:50:50 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting catch (T_CATCH) in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 65
+[31-Mar-2017 09:51:14 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting catch (T_CATCH) in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 65
+[31-Mar-2017 09:51:17 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting catch (T_CATCH) in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 65
+[31-Mar-2017 10:04:10 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting catch (T_CATCH) in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 58
+[31-Mar-2017 10:05:27 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting catch (T_CATCH) in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 72
+[31-Mar-2017 23:31:21 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 61
+[01-Apr-2017 00:11:13 America/Chicago] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 79
+[01-Apr-2017 01:20:49 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 45
+[01-Apr-2017 01:20:49 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 86
+[01-Apr-2017 01:20:49 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 86
+[01-Apr-2017 01:20:49 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 86
+[01-Apr-2017 01:20:49 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 86
+[01-Apr-2017 01:20:49 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 86
+[01-Apr-2017 01:20:49 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 86
+[01-Apr-2017 04:14:22 America/Chicago] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 241
+[01-Apr-2017 04:17:13 America/Chicago] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 241
+[01-Apr-2017 04:17:17 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 289
+[01-Apr-2017 04:17:36 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 290
+[01-Apr-2017 04:17:39 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 290
+[01-Apr-2017 04:40:05 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 115
+[01-Apr-2017 04:40:05 America/Chicago] PHP Parse error:  syntax error, unexpected ''sess_iMemberI' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 190
+[01-Apr-2017 05:28:10 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 88
+[01-Apr-2017 05:28:14 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 306
+[01-Apr-2017 05:28:18 America/Chicago] PHP Parse error:  syntax error, unexpected '/' in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 306
+[01-Apr-2017 05:35:06 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting ')' in /home3/eswweb/public_html/projects/leetglobal/dip/fbconfig.php on line 224

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>FastCab Driver</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>FastCab Driver</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLIconFile</key>
+			<string></string>
+			<key>CFBundleURLName</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb2036086783325314</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.950155036734-jh7hhb9o0a46ahflemvvskl3i7ovhljc</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>twitterkit-uBsCtx2LRNMvgt2EZ8sa4E0Pv</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>2cb1c0f58f1003e523f0e3323238609ee6bd182f</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+		</array>
+	</dict>
+	<key>FacebookAppID</key>
+	<string>2036086783325314</string>
+	<key>FacebookDisplayName</key>
+	<string>FastCab Driver</string>
+	<key>GOOGLE_IOS_APP_KEY</key>
+	<string>AIzaSyCwjjWyXEwnK_vrN-8tih3u5H-_EI2Wdl4</string>
+	<key>GOOGLE_SERVER_KEY</key>
+	<string>AIzaSyAPlGLULDM0b3ff_38hpZvwWUsSi6MdDqU</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>googlechromes</string>
+		<string>comgooglemaps</string>
+		<string>twitter</string>
+		<string>fbauth2</string>
+		<string>comgooglemaps-x-callback</string>
+		<string>twitterauth</string>
+		<string>waze</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>akamaihd.net</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+			<key>facebook.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+			<key>fbcdn.net</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Application needs this access to choose the photo from your photo gallery to set your profile picture as well as upload the verification documents.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Application requires this access to show day wise bookings.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Application requires this access to take the photo for your profile picture as well as verification documents.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Application requires to access your contact list for sending emergency alerts to your selected contacts.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Your location will be traced at frequent intervals and stored in database of app for showing your availability to users in their location and also when you In route for service.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Your location will be traced at frequent intervals and stored in database of app for showing your availability to users in their location and also when you In route for service.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Your location will be traced at frequent intervals and stored in database of app for showing your availability to users in their location and also when you In route for service.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your location will be traced at frequent intervals and stored in database of app for showing your availability to users in their location and also when you In route for service.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Application needs this access to choose the photo from your photo gallery to set your profile picture as well as upload the verification documents.</string>
+	<key>TWITTER_CONSUMER_KEY</key>
+	<string>uBsCtx2LRNMvgt2EZ8sa4E0Pv</string>
+	<key>TWITTER_CONSUMER_SECRET_KEY</key>
+	<string>IET3DNeyY7bbCmKALSLCIOAaHYzLnZOrx9mzF5HLfdq8NAqNno</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Roboto-Black.ttf</string>
+		<string>Roboto-BlackItalic.ttf</string>
+		<string>Roboto-Bold.ttf</string>
+		<string>Roboto-BoldItalic.ttf</string>
+		<string>Roboto-Italic.ttf</string>
+		<string>Roboto-Light.ttf</string>
+		<string>Roboto-LightItalic.ttf</string>
+		<string>Roboto-Medium.ttf</string>
+		<string>Roboto-MediumItalic.ttf</string>
+		<string>Roboto-Regular.ttf</string>
+		<string>Roboto-Thin.ttf</string>
+		<string>Roboto-ThinItalic.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>location</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

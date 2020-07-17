@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_type2"
+            android:layout_below="@+id/topHeader"
+            android:visibility="visible">
+
+            <fragment
+                android:id="@+id/mapV2"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+
+            <RelativeLayout
+                android:id="@+id/locationMarker"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="42dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/pinImgView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/pin_source_select"
+                    android:tint="@color/appThemeColor_2" />
+
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/topHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/pickUpLocSearchArea"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:src="@mipmap/ic_search" />
+
+                <com.view.MTextView
+                    android:id="@+id/placeTxtView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ellipsize="end"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:textAlignment="viewStart"
+                    android:textColor="#1C1C1C"
+                    android:textSize="@dimen/txt_size_16" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/seperationLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#cecece"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/placeArea"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.view.MTextView
+                    android:id="@+id/homePlaceTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Home Place"
+                    android:textColor="#333"
+                    android:textSize="@dimen/txt_size_16"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:background="#cecece" />
+
+                <com.view.MTextView
+                    android:id="@+id/workPlaceTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Work Place"
+                    android:textColor="#333"
+                    android:textSize="@dimen/txt_size_16"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/btn_type2"
+            layout="@layout/btn_type_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/all_btn_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-8dp"
+            android:layout_marginStart="-8dp" />
+    </RelativeLayout>
+</LinearLayout>

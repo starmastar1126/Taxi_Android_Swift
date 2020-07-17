@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fragments.ProfileFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/nameArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/fNameBox"
+                layout="@layout/editbox_form_design"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/lNameBox"
+                layout="@layout/editbox_form_design"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/emailBox"
+            layout="@layout/editbox_form_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <include
+            android:id="@+id/mobileBox"
+            layout="@layout/editbox_form_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <include
+            android:id="@+id/langBox"
+            layout="@layout/editbox_form_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <include
+            android:id="@+id/currencyBox"
+            layout="@layout/editbox_form_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+
+    <com.view.MTextView
+        android:id="@+id/serviceDesHTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/appThemeColor_1"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text=""
+        android:textColor="@color/appThemeColor_TXT_2"
+        android:textSize="@dimen/txt_size_18"
+        android:visibility="gone" />
+
+    <com.view.MTextView
+        android:id="@+id/serviceDesVTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#2F2F2F"
+        android:textSize="@dimen/txt_size_16"
+        android:visibility="gone" />
+</LinearLayout>

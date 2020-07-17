@@ -1,0 +1,240 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	border: none;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+span#shadowbox {
+	position: absolute;
+	transition: ease-in-out .5s;
+}
+span#shadowbox.visible {
+	transition: ease-in-out .5s;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index:999;
+}
+
+/*nav {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	font-family: 'maven_proregular';
+	z-index:999;
+	left:0;
+}*/
+
+nav {
+	position:relative;
+	top: 0;
+	bottom: 0;
+	left:0;
+	right:0;
+	font-family: 'maven_proregular';
+	z-index:999;
+	margin:0 auto;
+	max-width:1560px;
+}
+
+nav button {
+	position:fixed;
+	padding:0;
+	left: 9;
+	top: 22px;
+	cursor:pointer;
+	transition:ease-in-out .3s;
+	width:20px;
+	height:34px;
+	background:none;
+	overflow:hidden;
+	margin:0 0 0 20px;
+}
+
+nav section {
+	position:relative;
+	padding:0;
+	left:20px;
+	top:10px;
+	cursor:pointer;
+	transition:ease-in-out .3s;
+	width:20px;
+	height:17px;
+	float:left;
+	background:none;
+}
+
+nav section div {
+	background:#fff;
+	width:100%;
+	height:3px;
+	margin:3px 0 0;
+	float:left;
+	transition:ease-in-out .12s;
+}
+nav section div:nth-child(3) {
+	/*margin: -5px 0 0 0;*/
+}
+
+nav section div:first-child {
+	margin:0;
+}
+
+nav section.navOpen {
+	/*left: 250px;*/
+	background:none;
+	transition: ease-in-out .3s;
+	/*position:absolute; */
+	margin:3px 0 0;
+}
+nav section.navOpen div {
+	/*width: 67% !important;*/
+	margin: 0;
+	transition: ease-in-out .3s;
+}
+nav section.navOpen div:nth-child(1), nav section.navOpen div:nth-child(4) {
+	background: transparent;
+}
+nav section.navOpen div:nth-child(2) {
+	transform: rotate(45deg);
+}
+nav section.navOpen div:nth-child(3) {
+	margin: -3px 0 0 0;
+	transform: rotate(-45deg);
+}
+
+.open-side-menu{ margin:0px; max-width:100%; position:fixed;}
+.open-side-menu button{ left:0;}
+
+nav button div {
+	background:#ffa523;
+	width:100%;
+	height:2px;
+	margin:3px 0 0;
+	float:left;
+	transition:ease-in-out .12s;
+}
+nav button div:nth-child(3) {
+	/*margin: -5px 0 0 0;*/
+}
+nav button div:first-child {
+	margin: 0;
+}
+nav button.navOpen {
+	/*left: 250px;*/
+	background:none;
+	transition: ease-in-out .3s;
+	/*position:absolute; */
+	position:fixed;
+	z-index:999;
+	margin:7px 0 0 20px;
+}
+nav button.navOpen div {
+	width: 67% !important;
+	margin: 0;
+	transition: ease-in-out .3s;
+}
+nav button.navOpen div:nth-child(1), nav button.navOpen div:nth-child(4) {
+	background: transparent;
+}
+nav button.navOpen div:nth-child(2) {
+	transform: rotate(45deg);
+}
+nav button.navOpen div:nth-child(3) {
+	margin: -3px 0 0 0;
+	transform: rotate(-45deg);
+}
+nav ul#listMenu {
+	position:absolute;
+	background:#fff;
+	width:/*340px*/30%;
+	top:0;
+	bottom:0;
+	left:-30%;
+	overflow:auto;
+	box-shadow:0 0 10px 0px rgba(0,0,0,0);
+	transition:ease-in-out .3s;
+}
+
+nav ul#listMenu.listOpen {
+	left:0px;
+	box-shadow:0 0 10px 0px rgba(0,0,0,.5);
+	transition:ease-in-out .3s;		
+}
+
+nav ul#listMenu .menu-left-new{
+    display:table;
+    margin:0 auto;
+    padding:10px 0 0;
+    width:90%;
+}
+
+nav ul#listMenu ul{margin:20px 0 0; padding:0px; float:left; width:100%;}
+	
+nav ul#listMenu li {
+	width:100%;
+	padding:0px;
+	float:left;
+	box-sizing:border-box;
+}
+
+nav ul#listMenu li a {
+	width:100%;
+	color:#000;
+	padding:12px 0;
+	border-bottom:none;
+	float:left;
+	box-sizing:border-box;
+	font-size:16px;
+	 -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+nav ul#listMenu li a:hover{color:#ffa523; border-color:#ffa523;}
+nav ul#listMenu .active{ color:#ff7e00; border-color:#ff7e00;}
+nav ul#listMenu li:last-child a{border:none;}
+nav ul#listMenu span{ margin:0px; padding:0px; float:left; width:100%;}
+nav ul#listMenu span b{ margin:20px 0 0; padding:0px; float:left; width:100%; font-weight:normal;}
+nav ul#listMenu span b a{ margin:20px auto 10px; padding:12px 0; float:left; width:100%; font-size:14px; color:#000; border:1px solid #222; text-align:center; display: list-item;
+font-family: 'maven_promedium'; text-transform:uppercase; font-weight:500; -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;}
+nav ul#listMenu span b a:hover{ color:#ff7e00; border-color:#ff7e00;}
+nav ul#listMenu li.logout{background:#ffdeaf; bottom:0; left:0; position:absolute; width:100%;}
+nav ul#listMenu span .menu-left-new li.logout b{ margin:0 10px 0 28px;}
+
+.menu-logo{ margin:0px; padding:20px 0; float:left; width:100%; position:relative; top:0px; left:0px; right:0; text-align:left; 
+background:url(../img/menu-bg.jpg) no-repeat top; background-size:100%;}
+.menu-logo strong{ margin:0 0 0 20px; padding:0px; float:left; width:70px;}
+.menu-logo p{color:#fff; float:left; font-size:15px; font-weight:600; margin:20px 0 0 25px; padding:0;}
+.menu-logo img{ margin:0 0 0 10%; padding:0px; float:left; border:none; border-radius:50%; width:70px;}
+.menu-logo label{margin:0 7% 0 0; padding:0px; float:right;}
+nav ul#listMenu .menu-logo label a{ color:#FFFFFF; border-color:#FFFFFF;}
+nav ul#listMenu .menu-logo label a:hover{ color:#000; border-color:#000;}
+nav ul#listMenu .menu-logo label a.active{color:#FFFFFF;}
+nav ul#listMenu .menu-logo label a.active:hover{color:#000;}
+.menu-logo label a i{color:#FFFFFF;}
+.menu-logo label a i:hover{color:#000;}
+
+.menu-logo a{ margin:0px; padding:0px; float:left; font-size:18px; color:#FFFFFF;}
+.menu-logo a:hover{ color:#000;}
+.menu-logo a:hover i{ color:#000; border-color:#000;}
+.menu-logo a i{border:2px solid #fff; border-radius:50%; font-size:15px; margin:0 10px 0 0; padding:8px 10px 9px;}
+.menu-logo .logo-left{float:left; font-size:18px; margin:0 0 0 7%;}
+.stop-scrolling {height:100%; overflow:hidden;}
+.menu-logo em{float:right; margin:0 20px 0 0; padding:0; width:38px;}
+.menu-logo em img{ border-radius:50%; width:100%; margin:0px; padding:0px; float:left;}
+
+.menu-logo .signin img{ width:auto; border-radius:unset;}
+
+nav ul#listMenu span .menu-left-new li b{ margin:0 12px 0 0; float:left; width:25px;}
+nav ul#listMenu span .menu-left-new li b img{ width:25px;}
+nav ul#listMenu span .menu-left-new li span{ margin:0px; width:auto;}

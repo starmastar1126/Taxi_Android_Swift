@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/appThemeColor_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/appThemeColor_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.view.MTextView
+                    android:id="@+id/driverAcceptedRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="start|center"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textAlignment="viewStart"
+                    android:textColor="#696969"
+                    android:textSize="@dimen/txt_size_14"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:id="@+id/btnArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <com.view.MTextView
+                        android:id="@+id/myOngoingTripBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/all_btn_height"
+                        android:layout_gravity="start|center"
+                        android:layout_marginStart="5dp"
+                        android:background="@color/appThemeColor_2"
+                        android:gravity="center"
+                        android:text="My Ongoing Trip"
+                        android:textAlignment="center"
+                        android:textColor="@color/appThemeColor_TXT_2"
+                        android:textSize="@dimen/txt_size_14"
+                        android:textStyle="normal" />
+
+                    <com.view.MTextView
+                        android:id="@+id/cancelBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/all_btn_height"
+                        android:layout_gravity="start|center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@color/appThemeColor_2"
+                        android:gravity="center"
+                        android:text="Cancel"
+                        android:textAlignment="center"
+                        android:textColor="@color/appThemeColor_TXT_2"
+                        android:textSize="@dimen/txt_size_14"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/appThemeColor_2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/appThemeColor_2" />
+    </LinearLayout>
+
+</LinearLayout>

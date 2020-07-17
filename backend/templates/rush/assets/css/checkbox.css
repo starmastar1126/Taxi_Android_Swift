@@ -1,0 +1,70 @@
+.checkbox-n{ margin:0 15px 0 0; padding:0px; float:left; width:20px;}
+
+/* Code for Checbox Starts */
+.checkbox-n input[type="checkbox"] {
+    display:none;
+}
+ 
+.checkbox-n input[type="checkbox"] + label {
+    color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+}
+ 
+.checkbox-n input[type="checkbox"] + label::before {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin:0;
+    vertical-align:middle;
+    background:#fff;
+    cursor:pointer;
+    content:"";
+	border:1px solid #cacaca;
+}
+ 
+.checkbox-n input[type="checkbox"]:checked + label::before {
+ 
+    content: "\2713";
+    color: #ff7e00;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+}
+/* Code for Checkbox ends */
+ 
+/* Code for radio buttons starts */
+.checkbox-n input[type="radio"] {
+    display:none;
+}
+ 
+.checkbox-n input[type="radio"] + label {
+    color:#f2f2f2;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+}
+ 
+.checkbox-n input[type="radio"] + label::before {
+    display:inline-block;
+    width:15px;
+    height:15px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background: #3C4B57;
+    border-radius: 10px;
+    cursor:pointer;
+    content:"";
+    box-shadow:inset 0px 2px 3px 0px rgba(34, 41, 122, 0.3), 0px 1px 0px 0px rgba(116, 123, 175, 0.8);
+}
+ 
+.checkbox-n input[type="radio"]:checked + label::before {
+    content:"\2022";
+    color:#FFDD94;
+    font-size:30px;
+    text-align:center;
+    line-height:15px;
+}
+/* Code for radio buttons Ends */

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmergencyContactsTVCell" rowHeight="116" id="zHN-45-hEq" customClass="EmergencyContactsTVCell" customModule="PassengerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zHN-45-hEq" id="D6E-92-h11">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="115.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eei-GW-1FJ">
+                        <rect key="frame" x="15" y="16" width="419" height="99.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjM-5g-7Ne" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                                <rect key="frame" x="26" y="21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0t2-gD-lb8" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                                <rect key="frame" x="26" y="60" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Medium"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_remove" translatesAutoresizingMaskIntoConstraints="NO" id="F6J-3x-HVO">
+                                <rect key="frame" x="361" y="30" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Ofu-NQ-Z4d"/>
+                                    <constraint firstAttribute="height" constant="40" id="kFd-4M-p1f"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cjM-5g-7Ne" firstAttribute="leading" secondItem="Eei-GW-1FJ" secondAttribute="leading" constant="26" id="2YV-f7-4Sz"/>
+                            <constraint firstItem="F6J-3x-HVO" firstAttribute="centerY" secondItem="Eei-GW-1FJ" secondAttribute="centerY" id="D65-VJ-7xn"/>
+                            <constraint firstItem="0t2-gD-lb8" firstAttribute="top" secondItem="cjM-5g-7Ne" secondAttribute="bottom" constant="18" id="DLD-Hj-oF5"/>
+                            <constraint firstItem="cjM-5g-7Ne" firstAttribute="top" secondItem="Eei-GW-1FJ" secondAttribute="top" constant="21" id="N0A-CV-Kmp"/>
+                            <constraint firstAttribute="trailing" secondItem="F6J-3x-HVO" secondAttribute="trailing" constant="18" id="gDR-wp-fO1"/>
+                            <constraint firstItem="0t2-gD-lb8" firstAttribute="leading" secondItem="cjM-5g-7Ne" secondAttribute="leading" id="wFo-Wn-O7l"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Eei-GW-1FJ" firstAttribute="leading" secondItem="D6E-92-h11" secondAttribute="leading" constant="15" id="Vuv-eG-9bO"/>
+                    <constraint firstAttribute="bottom" secondItem="Eei-GW-1FJ" secondAttribute="bottom" id="bPI-xV-2Kw"/>
+                    <constraint firstAttribute="trailing" secondItem="Eei-GW-1FJ" secondAttribute="trailing" constant="15" id="hNa-0I-7mY"/>
+                    <constraint firstItem="Eei-GW-1FJ" firstAttribute="top" secondItem="D6E-92-h11" secondAttribute="top" constant="16" id="ycw-VH-P5q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="contactNameLbl" destination="cjM-5g-7Ne" id="C5m-zJ-kjJ"/>
+                <outlet property="containerView" destination="Eei-GW-1FJ" id="kLF-VG-t6S"/>
+                <outlet property="myNumLbl" destination="0t2-gD-lb8" id="xwK-nY-4ul"/>
+                <outlet property="removeImgView" destination="F6J-3x-HVO" id="71E-nO-y28"/>
+            </connections>
+            <point key="canvasLocation" x="-157.5" y="-39"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_remove" width="72" height="72"/>
+    </resources>
+</document>

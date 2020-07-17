@@ -1,0 +1,266 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,500,700);
+@font-face {
+    font-family: OpenSansRegular;
+    src: url(font/OpenSans-Regular.ttf);
+}
+
+body {
+    background:#eee;
+    float: left;
+    width: 100%;
+	margin:0; 
+	padding:0;
+	font-size:14px;
+}
+
+.nobg {background: #fff none repeat scroll 0 0 !important;}
+
+.clear  { clear:both; }
+.body-div{ box-shadow: 1px 2px 4px 2px #dedede;}
+.inner { background: #fff; }
+.user-media .media-body { margin:0; width:100%; padding:0 12px; background:#09091A;}
+.padding_005 { padding:15px 20px 0px 20px;}
+.panel-fullscreen-wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: #FFF;
+}
+.panel-fullscreen-wrap .panel {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  margin: 0px;
+}
+.panel-fullscreen-wrap .panel .panel-body {
+  overflow-y: scroll;
+}
+ul.panel-controls {
+  float: right;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  position: relative;
+}
+ul.panel-controls > li {
+  float: left;
+}
+ul.panel-controls > li > a {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 28px;
+  margin-top: -3px;
+  color: #22262e;
+  border: 1px solid #BBB;
+  -moz-border-radius: 20%;
+  -webkit-border-radius: 20%;
+  border-radius: 20%;
+  margin-left: 3px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+ul.panel-controls > li > a.control-primary {
+  color: #1b1e24;
+  border-color: #1b1e24;
+}
+ul.panel-controls > li > a.control-success {
+  color: #95b75d;
+  border-color: #95b75d;
+}
+ul.panel-controls > li > a.control-info {
+  color: #1caf9a;
+  border-color: #1caf9a;
+}
+ul.panel-controls > li > a.control-warning {
+  color: #1caf9a;
+  border-color: #1caf9a;
+}
+ul.panel-controls > li > a.control-danger {
+  color: #E04B4A;
+  border-color: #E04B4A;
+}
+ul.panel-controls > li > a:hover {
+  border-color: #999;
+  color: #1b1e24;
+}
+ul.panel-controls > li > a.rounded {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+ul.panel-controls.panel-controls-title {
+  margin-top: 3px;
+}
+.panel-hidden-controls ul.panel-controls > li > a {
+  opacity: 0;
+  filter: alpha(opacity = 0);
+}
+.panel-hidden-controls:hover ul.panel-controls > li > a {
+  opacity: 0.8;
+  filter: alpha(opacity = 80);
+}
+.panel-hidden-controls:hover ul.panel-controls > li > a:hover {
+  opacity: 1;
+  filter: alpha(opacity = 100);
+}
+ul.panel-controls > li.label-control .label,
+.label-form {
+  display: inline-block;
+  font-size: 11px;
+  padding: 5px 10px;
+  line-height: 12px;
+  margin-top: 4px;
+}
+ul.panel-controls > li > .dropdown-menu {
+  left: auto;
+  right: 3px;
+}
+ul.panel-controls > li > .dropdown-menu:after,
+ul.panel-controls > li > .dropdown-menu:before {
+  left: auto;
+  right: 11px;
+}
+ul.panel-controls > li > .dropdown-menu:after {
+  margin-left: auto;
+  margin-right: -5px;
+}
+ul.panel-controls > li > .dropdown-menu:before {
+  margin-left: auto;
+  margin-right: -6px;
+}
+/* EOF PANEL CONTROLS */
+.panel-heading .label {
+  line-height: 16px;
+  padding: 4px 10px;
+  margin: 3px 0px 3px 5px;
+  font-size: 12px;
+  display: inline-block;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.panel-heading .label.pulsate {
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: pulsate 1s ease-out;
+  -moz-animation-iteration-count: infinite;
+  animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite;
+}
+
+.gmap-div {
+	border:1px solid #ccc;
+	padding:10px;
+	background-color:#fff;
+}
+.gmap-div .gmap3 {
+	min-height:500px;
+	min-width:100%;
+}
+.padding_set {
+	padding: 8px 15px !important;
+}
+.title_set {
+	padding-bottom: 10px;
+	text-decoration: underline;
+}
+.how_it_work_btn {
+	float: right;
+	margin: 0 15px 10px 0;
+}
+.modal-dialog.modal-large{
+    min-width: 50%;
+  }
+.modal-body p span img {left: 20.5%;position: relative;top: 10px;}
+
+/************* 6-Jan-2017 ***********/
+.loginPage .topNav {
+    position: static;
+    text-align: center;
+}
+.topNav {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 4px solid #3C8DBC;
+    color: #333;
+    display: block;
+    height: 39px;
+    margin: 0 0 0 -2px;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.userNav ul li a span {
+    color: #333;
+}
+.userNav {
+    float: right;
+    font-size: 11px; 
+}
+.userNav ul {
+    border-left: 1px solid #39454f;
+    border-right: 1px solid #39454f;
+    margin-right: -1px;
+}
+.userNav ul li {
+    border-left: 1px solid #d5d5d5;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    position: relative;
+}
+.userNav ul li a {
+    color: #333;
+    display: block;
+    float: left;
+    padding: 4px 14px;
+    text-decoration: none;
+}
+.userNav ul li a:hover {
+    background-color: #3C8DBC;
+    color: #fff;
+}
+.userNav ul li a i {
+    margin-top: 5px;
+}
+.userNav ul li a:hover span, .userNav ul li a:hover i {
+    color: #fff;
+}
+.userNav ul li span {
+    color: #595959;
+    display: block;
+    float: left;
+    font-size: 12px;
+}
+.userNav ul li img {
+    display: block;
+    float: left;
+    margin: 11px 2px 0 14px;
+}
+.loginPage .userNav ul li a {
+    font-size: 12px;
+    line-height: 27px;
+}
+.loginPage .userNav ul li a span {
+    text-decoration: none;
+}
+
+
+.invoice-right-bottom-img{ margin:0px; padding:0px; float:left; width:100%;}
+.invoice-right-bottom-img h3{ margin:0 0 15px; padding:0px; float:left; width:100%; font-size:18px;}
+.invoice-right-bottom-img b{ margin:0px; padding:0px; float:left; width:100%; overflow:hidden; height:200px;}
+
+.inner .invoice-email-but{ margin:15px 0 0; padding:0px; float:left; width:100%;}
+.inner .invoice-email-but span{ margin:0 15px 0 0; padding:0px; float:right;}
+.hide_cred001 { display: none; }
+.new_credentialDemo { margin-bottom: 10px; }
+.new_credentialDemo span{ cursor: pointer; }

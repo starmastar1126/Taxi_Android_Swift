@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f4"
+    android:orientation="vertical"
+    tools:context=".EmergencyContactActivity">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/noContactArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/notifyTxt"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:tint="#1c1c1c"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:src="@mipmap/ic_eme_banner" />
+
+            <com.view.MTextView
+                android:id="@+id/emeTitleTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/appThemeColor_1"
+                android:textSize="@dimen/txt_size_18"
+                app:customTypeFace="roboto_medium" />
+
+            <com.view.MTextView
+                android:id="@+id/emeSubTitleTxt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:textColor="#333333"
+                android:textSize="@dimen/txt_size_16"
+                app:customTypeFace="roboto_light" />
+
+            <com.view.MTextView
+                android:id="@+id/emeSubTitleTxt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:textColor="@color/appThemeColor_1"
+                android:textSize="@dimen/txt_size_16"
+                app:customTypeFace="roboto_light" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/dataContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/notifyTxt">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/emeContactRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+
+            <ProgressBar
+                android:id="@+id/loading"
+                style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+
+            <com.view.ErrorView
+
+                android:id="@+id/errorView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <com.view.MTextView
+            android:id="@+id/notifyTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomarea"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/appThemeColor_1"
+            android:textSize="@dimen/txt_size_16"
+            app:customTypeFace="roboto_medium" />
+
+        <LinearLayout
+            android:id="@+id/bottomarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="15dp">
+
+            <include
+                android:id="@+id/btn_type2"
+                layout="@layout/btn_type_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/all_btn_height" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

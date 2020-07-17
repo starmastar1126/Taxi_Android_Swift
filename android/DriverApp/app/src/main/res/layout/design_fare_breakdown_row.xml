@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/fair_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:stretchColumns="1,1">
+
+        <TableRow
+            android:id="@+id/FareDetailRow"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <com.view.MTextView
+                android:id="@+id/titleHTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingBottom="3dp"
+                android:text="Fare"
+                android:textAlignment="viewStart"
+                android:textColor="#696969"
+                android:textSize="@dimen/txt_size_16"
+                app:customTypeFace="roboto_light" />
+
+            <com.view.MTextView
+                android:id="@+id/titleVTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingBottom="3dp"
+                android:text=" $2"
+                android:textAlignment="viewEnd"
+                android:textColor="#000000"
+                android:textSize="@dimen/txt_size_16"
+                android:textStyle="bold"
+                app:customTypeFace="roboto_light" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

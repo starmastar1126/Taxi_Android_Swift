@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VerifyInfoActivity">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/smsView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <com.view.MTextView
+                            android:id="@+id/smsTitleTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/appThemeColor_2"
+                            android:textSize="@dimen/txt_size_18" />
+
+                        <com.view.MTextView
+                            android:id="@+id/smsHelpTitleTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="start|center_vertical"
+                            android:textColor="#2F2F2F"
+                            android:textSize="@dimen/txt_size_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <include
+                                android:id="@+id/codeBox"
+                                layout="@layout/editbox_form_design"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content" />
+
+                            <include
+                                android:id="@+id/okBtn"
+                                layout="@layout/btn_type_2"
+                                android:layout_width="80dp"
+                                android:layout_height="@dimen/all_btn_height"
+                                android:layout_marginStart="10dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="0"
+                                android:src="@mipmap/ic_mobile" />
+
+                            <com.view.MTextView
+                                android:id="@+id/smsSubTitleTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sms sent to: "
+                                android:textColor="#4B4B4B"
+                                android:textSize="@dimen/txt_size_18" />
+
+                            <com.view.MTextView
+                                android:id="@+id/phoneTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="+17111111"
+                                android:textColor="#4C4C4C"
+                                android:textSize="@dimen/txt_size_18" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="50dp"
+                            android:orientation="horizontal">
+
+
+
+                            <include
+                                android:id="@+id/editBtn"
+                                layout="@layout/btn_type_2"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/all_btn_height"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1" />
+                            <include
+                                android:id="@+id/resendBtn"
+                                layout="@layout/btn_type_2"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/all_btn_height"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/emailView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <com.view.MTextView
+                            android:id="@+id/emailTitleTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center_vertical"
+                            android:textColor="@color/appThemeColor_2"
+                            android:textSize="@dimen/txt_size_18" />
+
+                        <com.view.MTextView
+                            android:id="@+id/emailHelpTitleTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="start|center_vertical"
+                            android:textColor="#2F2F2F"
+                            android:textSize="@dimen/txt_size_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <include
+                                android:id="@+id/emailCodeBox"
+                                layout="@layout/editbox_form_design"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content" />
+
+                            <include
+                                android:id="@+id/emailOkBtn"
+                                layout="@layout/btn_type_2"
+                                android:layout_width="80dp"
+                                android:layout_height="@dimen/all_btn_height"
+                                android:layout_marginStart="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="0"
+                                android:src="@mipmap/ic_verify_email" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <com.view.MTextView
+                                    android:id="@+id/emailSubTitleTxt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Email sent to: "
+                                    android:textColor="#4B4B4B"
+                                    android:textSize="@dimen/txt_size_18" />
+
+                                <com.view.MTextView
+                                    android:id="@+id/emailTxt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="abc@gmail.com"
+                                    android:textColor="#4C4C4C"
+                                    android:textSize="@dimen/txt_size_18" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="50dp"
+                            android:orientation="horizontal">
+
+
+
+                            <include
+                                android:id="@+id/emailEditBtn"
+                                layout="@layout/btn_type_2"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/all_btn_height"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1" />
+
+                            <include
+                                android:id="@+id/emailResendBtn"
+                                layout="@layout/btn_type_2"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/all_btn_height"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/loading"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.view.MTextView
+        android:id="@+id/helpOTPTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textColor="#FFFFFF"
+        android:background="#4cb74c"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:textSize="@dimen/txt_size_16"
+        android:text="@string/demo_mobile_help"/>
+</LinearLayout>

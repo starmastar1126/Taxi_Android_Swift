@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/deliveryAddrArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/radioImg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:paddingEnd="3dp"
+            android:tint="@color/appThemeColor_1"
+            app:srcCompat="@drawable/ic_non_selected" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:id="@+id/aprtArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:id="@+id/vApartmentTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <com.view.MTextView
+                    android:id="@+id/tAddressTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="addr"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_14" />
+            </LinearLayout>
+
+            <com.view.MTextView
+                android:id="@+id/vAreaTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:text="area"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_14"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.view.MTextView
+                    android:id="@+id/vCityTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="city"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <com.view.MTextView
+                    android:id="@+id/vPostcodeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="postcode"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_14" />
+            </LinearLayout>
+
+            <com.view.MTextView
+                android:id="@+id/vContryTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:text="country"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_14"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgdelete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0"
+            android:tint="@color/black"
+            app:srcCompat="@drawable/ic_delete_black_24dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/disable_color"></View>
+</LinearLayout>

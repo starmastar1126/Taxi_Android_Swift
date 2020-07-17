@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/recentAdapterView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_recent_loc" />
+
+        <com.view.MTextView
+            android:id="@+id/recentAddrTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="start|center"
+            android:gravity="start|center"
+            android:text="address"
+            android:textAlignment="viewStart" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/disable_color" />
+</LinearLayout>

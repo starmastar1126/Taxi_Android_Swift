@@ -1,0 +1,44 @@
+<footer>
+    <div class="container">
+      <div class="row"> <a href="index.php"><img class="footer-logo" src="<?=$tconfig["tsite_home_images"]?>logo.png" alt=""></a> </div>
+      <div class="row footer-detail">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <h3>USING COMPANYNAME</h3>
+          <ul>
+            <li><a href="how_it_works.php">HOW IT WORK</a></li>
+            <li><a href="trust_safty_insurance.php">TRUST, SAFETY & INSURANCE</a></li>
+            <!-- <li><a href="#">RATING</a></li> -->
+            <li><a href="#">FAQ'S</a></li>
+            <li><a href="#">BLOGS</a></li>
+            <!-- <li><a href="#">DRIVE</a></li> -->
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <h3>OUR COMPANY</h3>
+          <ul>
+            <li><a href="about.php">ABOUT US</a></li>
+			<li><a href="contact_us.php">CONTACT US</a></li>
+            <li><a href="help_center.php">HELP CENTER</a></li>
+            <!-- <li><a href="#">CAREERS</a></li> -->
+            <li><a href="legal.php">LEGAL</a></li>
+            <li><a href="terms_condition.php">TERMS & CONDITIONS</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <h3>ADDRESS</h3>
+          <p>123, Lorem Ipsum content goes here,<br>
+            Lorem text goes and ipsum content,<br>
+            Lorem Ipsum - 123 456,<br>
+            Lorem. </p>
+          <b><img src="<?=$tconfig["tsite_home_images"]?>msg-box.png" alt="">&nbsp;&nbsp;&nbsp; <a href="#">info@companyname.com</a></b><br />
+          <b><img src="<?=$tconfig["tsite_home_images"]?>phone-icon.png" alt="">&nbsp;&nbsp;&nbsp; 123-456-7890</b> </div>
+      </div>
+	  <section class="main-footer">
+      <div class="row footer-copy-right">
+	  	<div class="col-md-12 col-sm-12 col-xs-12">
+        <h6>&copy; Copyright 2015 - <a href="#">www.companyname.com</a>. All rights are reserved.<br>
+          Site Design & Developed by : <span>companyname</span> </h6>
+      </div>
+    </div>
+	</section>
+  </footer>

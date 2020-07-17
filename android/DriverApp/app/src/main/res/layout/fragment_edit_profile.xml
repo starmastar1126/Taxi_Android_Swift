@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.fragments.EditProfileFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/nameArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/fNameBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1" />
+
+                <include
+                    android:id="@+id/lNameBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/emailBox"
+                layout="@layout/editbox_form_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:id="@+id/mobileNoArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/yearSelectArea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <include
+                        android:id="@+id/countryBox"
+                        layout="@layout/editbox_form_design"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.30" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="20dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginBottom="15dp"
+                        android:clickable="false"
+                        android:src="@drawable/ic_arrow_down"
+                        android:tint="#bfbfbf" />
+                </FrameLayout>
+
+                <include
+                    android:id="@+id/mobileBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.70" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/langSelectArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <include
+                    android:id="@+id/langBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="34dp" />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_arrow_down" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/currencySelectArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <include
+                    android:id="@+id/currencyBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="34dp" />
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:src="@mipmap/ic_arrow_down" />
+            </FrameLayout>
+
+            <include
+                android:id="@+id/profileDescriptionEditBox"
+                layout="@layout/editbox_form_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/btn_type2"
+                layout="@layout/btn_type_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/all_btn_height"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.view.anim.loader.AVLoadingIndicatorView
+        android:id="@+id/loaderView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        app:indicator="BallSpinFadeLoader"
+        app:indicator_color="@color/white" />
+
+
+</RelativeLayout>

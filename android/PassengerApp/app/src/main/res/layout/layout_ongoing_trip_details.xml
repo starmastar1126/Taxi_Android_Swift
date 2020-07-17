@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.view.ErrorView
+            android:id="@+id/errorView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/contentArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4E4E4"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <com.view.SelectableRoundedImageView
+
+                    android:id="@+id/user_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="1dp"
+                    app:sriv_border_color="@color/appThemeColor_1"
+                    app:sriv_border_width="2dip"
+                    app:sriv_left_bottom_corner_radius="20dip"
+                    app:sriv_left_top_corner_radius="20dip"
+                    app:sriv_oval="true"
+                    app:sriv_right_bottom_corner_radius="20dip"
+                    app:sriv_right_top_corner_radius="20dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical">
+
+                    <com.view.MTextView
+                        android:id="@+id/userNameTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:gravity="start|center"
+                        android:maxLines="1"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/appThemeColor_1"
+                        android:textSize="@dimen/txt_size_18"
+                        android:textStyle="bold" />
+
+                    <com.view.MTextView
+                        android:id="@+id/userAddressTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:gravity="start|center"
+                        android:textAlignment="viewStart"
+                        android:textColor="#1E1E1E"
+                        android:textSize="@dimen/txt_size_14"
+                        android:textStyle="normal" />
+                    <!--666666-->
+
+
+                    <com.view.simpleratingbar.SimpleRatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/gray_holo_light"
+                        android:clickable="false"
+                        android:textAlignment="viewStart"
+                        app:SRB_fillColor="@color/appThemeColor_1"
+                        app:SRB_isIndicator="true"
+                        app:SRB_starBackgroundColor="@color/gray_holo_light"
+                        app:SRB_starSize="18dp"
+                        app:SRB_stepSize="0.5" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pointImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bottom_strip_repeat"
+                android:tint="#E4E4E4" />
+
+            <com.view.MTextView
+                android:id="@+id/progressHinttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textColor="@color/appThemeColor_1"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:customTypeFace="@string/robotobold" />
+
+            <com.view.MTextView
+                android:id="@+id/timeTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="10dp"
+                android:background="#272727"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/appThemeColor_TXT_2"
+                android:textSize="@dimen/txt_size_16"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/onGoingTripsDetailListRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+
+            <LinearLayout
+                android:id="@+id/googlemaparea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:visibility="gone">
+
+                <fragment
+                    android:id="@+id/mapV2"
+                    android:name="com.fragments.CustomSupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+
+            android:id="@+id/loading_ongoing_trips_detail"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

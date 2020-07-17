@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_location"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fastcabtaxi.passenger.SearchLocationActivity">
+
+    <LinearLayout
+        android:id="@+id/headerview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/appThemeColor_1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/searchTxt"
+                layout="@layout/editbox_form_design"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_shape"
+                android:drawableStart="@mipmap/ic_search"
+                android:hint="search"
+                android:padding="5dp"
+                android:paddingEnd="25dp"
+                android:singleLine="true"
+                android:textAlignment="viewStart" />
+
+            <ImageView
+                android:id="@+id/imageCancel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="-40dp"
+                android:src="@mipmap/ic_cancel_cab_request"
+
+                android:tint="@android:color/black" />
+
+            <com.view.MTextView
+                android:id="@+id/cancelTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_18"
+                app:customTypeFace="roboto_light" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/placesarea"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerview"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:id="@+id/placearea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/appThemeColor_1"
+                    android:orientation="horizontal">
+
+                    <com.view.MTextView
+                        android:id="@+id/locPlacesTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="start"
+                        android:paddingStart="10dp"
+                        android:text="PLACES"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_size_16"
+                        android:textStyle="bold"
+                        app:customTypeFace="roboto_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:src="@mipmap/ic_home"
+                        android:tint="@color/appThemeColor_2" />
+
+                    <LinearLayout
+                        android:id="@+id/homeLocArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.view.MTextView
+                            android:id="@+id/homePlaceHTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="start|center_vertical"
+                            android:maxLines="1"
+                            android:text="Add Home"
+                            android:textAlignment="viewStart"
+                            android:textColor="#909090"
+                            android:textSize="@dimen/txt_size_12"
+                            android:visibility="gone"
+                            app:customTypeFace="roboto_light" />
+
+                        <com.view.MTextView
+                            android:id="@+id/homePlaceTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="start|center_vertical"
+                            android:maxLines="1"
+                            android:text="Add Home"
+                            android:textAlignment="viewStart"
+                            android:textColor="#909090"
+                            android:textSize="@dimen/txt_size_16"
+                            app:customTypeFace="roboto_light" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/homeActionImgView"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:tint="@color/appThemeColor_2" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#D4D4D4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:gravity="start|center_vertical"
+                        android:src="@mipmap/ic_work"
+                        android:textAlignment="viewStart"
+                        android:tint="#343d44" />
+
+                    <LinearLayout
+                        android:id="@+id/workLocArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.view.MTextView
+                            android:id="@+id/workPlaceHTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="start|center_vertical"
+                            android:maxLines="1"
+                            android:text="Add Work"
+                            android:textAlignment="viewStart"
+                            android:textColor="#909090"
+                            android:textSize="@dimen/txt_size_12"
+                            android:visibility="gone"
+                            app:customTypeFace="roboto_light" />
+
+                        <com.view.MTextView
+                            android:id="@+id/workPlaceTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="start|center_vertical"
+                            android:maxLines="1"
+                            android:text="Add Work"
+                            android:textAlignment="viewStart"
+                            android:textColor="#909090"
+                            android:textSize="@dimen/txt_size_16"
+                            app:customTypeFace="roboto_light" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/workActionImgView"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:tint="@color/appThemeColor_2" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:id="@+id/myLocationarea"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:src="@mipmap/hmarker" />
+
+                <com.view.MTextView
+                    android:id="@+id/mylocHTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:gravity="start|center"
+                    android:paddingStart="10dp"
+                    android:text="I want services at my current location"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_14"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:rotationY="@integer/angle_rtl_180"
+                    android:src="@mipmap/ic_arrow_right"
+                    android:tint="@color/black" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:id="@+id/mapLocArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/mapLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="3dp"
+
+                    android:background="#D4D4D4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/all_btn_height"
+                    android:background="@color/white"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/hmarker" />
+
+                    <com.view.MTextView
+                        android:id="@+id/mapLocTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:gravity="start|center"
+                        android:paddingStart="10dp"
+                        android:text="I want services at my current location"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_14"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:rotationY="@integer/angle_rtl_180"
+                        android:src="@mipmap/ic_arrow_right"
+                        android:tint="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/destinationLaterArea"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/mapLinedest"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="3dp"
+
+                    android:background="#D4D4D4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/all_btn_height"
+                    android:background="@color/white"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:padding="3dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/ic_dest_later" />
+
+                    <com.view.MTextView
+                        android:id="@+id/destHTxtView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:gravity="start|center"
+                        android:paddingStart="10dp"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_14"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:rotationY="@integer/angle_rtl_180"
+                        android:src="@mipmap/ic_arrow_right"
+                        android:tint="@color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.view.MTextView
+                    android:id="@+id/recentLocHTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/appThemeColor_1"
+                    android:gravity="start|center"
+                    android:paddingStart="10dp"
+                    android:text=""
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_16"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/recentScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/sourceLocationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/destLocationView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/placesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerview"
+        android:layout_margin="5dp"
+        android:visibility="gone" />
+
+    <com.view.MTextView
+        android:id="@+id/noPlacedata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="2sp"
+        android:text=""
+        android:textColor="#1c1c1c"
+        android:textSize="@dimen/txt_size_16"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RideHistoryUV" customModule="DriverApp" customModuleProvider="target">
+            <connections>
+                <outlet property="calendarHeightConstraint" destination="4QK-Kz-meL" id="FHz-sM-ILe"/>
+                <outlet property="calendarView" destination="r5x-BA-qNl" id="UpM-cA-dK4"/>
+                <outlet property="leftArrowImgView" destination="1ji-OS-JRf" id="4CN-eo-mH6"/>
+                <outlet property="monthHeaderView" destination="X9i-fL-sy9" id="E1A-M0-fbg"/>
+                <outlet property="rightArrowImgView" destination="JOb-O7-iUW" id="I8z-O3-MIC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r5x-BA-qNl" customClass="FSCalendar">
+                    <rect key="frame" x="0.0" y="-5" width="375" height="370"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="370" id="4QK-Kz-meL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9i-fL-sy9">
+                    <rect key="frame" x="0.0" y="-5" width="375" height="55"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="1ji-OS-JRf">
+                            <rect key="frame" x="0.0" y="2.5" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="K2k-LL-0pl"/>
+                                <constraint firstAttribute="width" constant="50" id="SqD-Pw-l3R"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="JOb-O7-iUW">
+                            <rect key="frame" x="325" y="2.5" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="fcs-6s-0Ot"/>
+                                <constraint firstAttribute="height" constant="50" id="pJp-xK-qKT"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="1ji-OS-JRf" firstAttribute="leading" secondItem="X9i-fL-sy9" secondAttribute="leading" id="DXh-H5-QNJ"/>
+                        <constraint firstItem="JOb-O7-iUW" firstAttribute="centerY" secondItem="X9i-fL-sy9" secondAttribute="centerY" id="FRR-2h-a2g"/>
+                        <constraint firstAttribute="trailing" secondItem="JOb-O7-iUW" secondAttribute="trailing" id="IPK-tz-b5e"/>
+                        <constraint firstAttribute="height" constant="55" id="Rnn-E8-ZXd"/>
+                        <constraint firstItem="1ji-OS-JRf" firstAttribute="centerY" secondItem="X9i-fL-sy9" secondAttribute="centerY" id="Ryt-1M-E04"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="r5x-BA-qNl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DTs-q9-HFk"/>
+                <constraint firstAttribute="trailing" secondItem="X9i-fL-sy9" secondAttribute="trailing" id="P7x-mo-6sH"/>
+                <constraint firstItem="X9i-fL-sy9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QAb-eu-NYk"/>
+                <constraint firstAttribute="trailing" secondItem="r5x-BA-qNl" secondAttribute="trailing" id="RCw-5g-6t3"/>
+                <constraint firstItem="r5x-BA-qNl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-5" id="Zcb-4E-jTf"/>
+                <constraint firstItem="X9i-fL-sy9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-5" id="jBn-9Z-FdV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_arrow_right" width="50" height="50"/>
+    </resources>
+</document>

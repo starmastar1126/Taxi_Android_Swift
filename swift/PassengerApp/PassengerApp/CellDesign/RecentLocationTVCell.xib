@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentLocationTVCell" rowHeight="60" id="ryJ-sv-S8J" customClass="RecentLocationTVCell" customModule="PassengerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ryJ-sv-S8J" id="wM6-m1-gLe">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_recent" translatesAutoresizingMaskIntoConstraints="NO" id="IrG-oB-ouL">
+                        <rect key="frame" x="10" y="19" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Xy8-wU-cy7"/>
+                            <constraint firstAttribute="width" constant="22" id="xLw-hL-nxh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSe-fq-ism" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                        <rect key="frame" x="42" y="5" width="331" height="49.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bSe-fq-ism" firstAttribute="leading" secondItem="IrG-oB-ouL" secondAttribute="trailing" constant="10" id="EjE-Cd-RbG"/>
+                    <constraint firstAttribute="trailing" secondItem="bSe-fq-ism" secondAttribute="trailing" constant="5" id="HPJ-vF-vMo"/>
+                    <constraint firstItem="IrG-oB-ouL" firstAttribute="centerY" secondItem="wM6-m1-gLe" secondAttribute="centerY" id="HTH-e8-nnR"/>
+                    <constraint firstItem="IrG-oB-ouL" firstAttribute="leading" secondItem="wM6-m1-gLe" secondAttribute="leading" constant="10" id="SiF-NF-Dql"/>
+                    <constraint firstAttribute="bottom" secondItem="bSe-fq-ism" secondAttribute="bottom" constant="5" id="Zbk-zs-hPA"/>
+                    <constraint firstItem="bSe-fq-ism" firstAttribute="top" secondItem="wM6-m1-gLe" secondAttribute="top" constant="5" id="gkK-Hm-Lm8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="recentAddressLbl" destination="bSe-fq-ism" id="R73-RW-Tre"/>
+            </connections>
+            <point key="canvasLocation" x="-30" y="-82"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_recent" width="100" height="100"/>
+    </resources>
+</document>

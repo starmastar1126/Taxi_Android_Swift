@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetPreferencesUV" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="genderChkBox" destination="wZg-i4-QUT" id="TtN-yP-CFU"/>
+                <outlet property="genderLbl" destination="zMY-1X-Rra" id="P2C-p6-wzd"/>
+                <outlet property="genderView" destination="FW0-jk-j9Z" id="uy2-aN-6j1"/>
+                <outlet property="genderViewHeight" destination="YhS-Db-rVr" id="jLl-Pw-lEH"/>
+                <outlet property="handiCapChkBox" destination="zQe-Ml-bIH" id="s6f-gY-tWg"/>
+                <outlet property="handiCapView" destination="Uj7-Hn-KNn" id="emj-pX-rqF"/>
+                <outlet property="handiCapViewHeight" destination="Exb-V2-RgR" id="YH6-DZ-VGi"/>
+                <outlet property="handiCaplbl" destination="mgH-Aa-7pQ" id="ChD-dZ-1Il"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FW0-jk-j9Z">
+                    <rect key="frame" x="15" y="15" width="345" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wZg-i4-QUT" customClass="BEMCheckBox">
+                            <rect key="frame" x="0.0" y="12.5" width="25" height="25"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="1IF-vr-gW5"/>
+                                <constraint firstAttribute="height" constant="25" id="kG0-m2-t9a"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMY-1X-Rra" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="35" y="15" width="300" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="YhS-Db-rVr"/>
+                        <constraint firstItem="wZg-i4-QUT" firstAttribute="centerY" secondItem="FW0-jk-j9Z" secondAttribute="centerY" id="bKH-oG-uR3"/>
+                        <constraint firstAttribute="trailing" secondItem="zMY-1X-Rra" secondAttribute="trailing" constant="10" id="jfP-eR-jGY"/>
+                        <constraint firstItem="wZg-i4-QUT" firstAttribute="leading" secondItem="FW0-jk-j9Z" secondAttribute="leading" id="jgO-OS-SYE"/>
+                        <constraint firstItem="zMY-1X-Rra" firstAttribute="centerY" secondItem="FW0-jk-j9Z" secondAttribute="centerY" id="pTT-Nj-zFd"/>
+                        <constraint firstItem="zMY-1X-Rra" firstAttribute="leading" secondItem="wZg-i4-QUT" secondAttribute="trailing" constant="10" id="x6F-C7-bJv"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uj7-Hn-KNn">
+                    <rect key="frame" x="15" y="80" width="345" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQe-Ml-bIH" customClass="BEMCheckBox">
+                            <rect key="frame" x="0.0" y="12.5" width="25" height="25"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="jna-Xk-Zuj"/>
+                                <constraint firstAttribute="height" constant="25" id="v3v-cb-dsG"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgH-Aa-7pQ" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                            <rect key="frame" x="35" y="15" width="300" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zQe-Ml-bIH" firstAttribute="leading" secondItem="Uj7-Hn-KNn" secondAttribute="leading" id="0AW-hA-CHw"/>
+                        <constraint firstItem="zQe-Ml-bIH" firstAttribute="centerY" secondItem="Uj7-Hn-KNn" secondAttribute="centerY" id="EPa-Ih-uyC"/>
+                        <constraint firstAttribute="height" constant="50" id="Exb-V2-RgR"/>
+                        <constraint firstItem="mgH-Aa-7pQ" firstAttribute="centerY" secondItem="Uj7-Hn-KNn" secondAttribute="centerY" id="k5s-29-p3P"/>
+                        <constraint firstItem="mgH-Aa-7pQ" firstAttribute="leading" secondItem="zQe-Ml-bIH" secondAttribute="trailing" constant="10" id="sFw-Hx-xkI"/>
+                        <constraint firstAttribute="trailing" secondItem="mgH-Aa-7pQ" secondAttribute="trailing" constant="10" id="t4d-fK-TQM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FW0-jk-j9Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="3M5-ft-8RK"/>
+                <constraint firstItem="FW0-jk-j9Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="9N9-CU-LbJ"/>
+                <constraint firstAttribute="trailing" secondItem="Uj7-Hn-KNn" secondAttribute="trailing" constant="15" id="BMp-qi-hAF"/>
+                <constraint firstAttribute="trailing" secondItem="FW0-jk-j9Z" secondAttribute="trailing" constant="15" id="OKQ-MR-9RC"/>
+                <constraint firstItem="Uj7-Hn-KNn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="lgt-UH-A23"/>
+                <constraint firstItem="Uj7-Hn-KNn" firstAttribute="top" secondItem="FW0-jk-j9Z" secondAttribute="bottom" constant="15" id="tdm-IX-nzw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+        </view>
+    </objects>
+</document>

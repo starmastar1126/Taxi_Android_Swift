@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManageVehiclesUV" customModule="DriverApp" customModuleProvider="target">
+            <connections>
+                <outlet property="addVehicleBtn" destination="oq5-0Y-2w8" id="o6p-H9-ewg"/>
+                <outlet property="noVehicleTitleLbl" destination="gfM-Cf-2Rm" id="EAr-br-mhq"/>
+                <outlet property="noVehiclesView" destination="9K9-vK-jB5" id="oyS-Bz-30D"/>
+                <outlet property="noVehiclesViewHeight" destination="QuQ-0i-R8D" id="yN7-pT-0OM"/>
+                <outlet property="tableView" destination="uFb-y9-MJU" id="mg6-X4-SJZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uFb-y9-MJU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9K9-vK-jB5">
+                    <rect key="frame" x="10" y="10" width="355" height="117"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfM-Cf-2Rm" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                            <rect key="frame" x="10" y="10" width="335" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oq5-0Y-2w8" customClass="MyButton" customModule="DriverApp" customModuleProvider="target">
+                            <rect key="frame" x="10" y="44" width="335" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="DoM-vr-nbf"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isAppTheme1" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="117" id="QuQ-0i-R8D"/>
+                        <constraint firstAttribute="trailing" secondItem="oq5-0Y-2w8" secondAttribute="trailing" constant="10" id="WhO-P6-cxo"/>
+                        <constraint firstItem="oq5-0Y-2w8" firstAttribute="top" secondItem="gfM-Cf-2Rm" secondAttribute="bottom" constant="14.5" id="gSj-38-HR7"/>
+                        <constraint firstItem="gfM-Cf-2Rm" firstAttribute="top" secondItem="9K9-vK-jB5" secondAttribute="top" constant="10" id="ij1-dj-Rig"/>
+                        <constraint firstItem="gfM-Cf-2Rm" firstAttribute="leading" secondItem="9K9-vK-jB5" secondAttribute="leading" constant="10" id="kHX-m3-oPJ"/>
+                        <constraint firstAttribute="trailing" secondItem="gfM-Cf-2Rm" secondAttribute="trailing" constant="10" id="uYo-oX-LUt"/>
+                        <constraint firstItem="oq5-0Y-2w8" firstAttribute="leading" secondItem="9K9-vK-jB5" secondAttribute="leading" constant="10" id="z2j-ji-z1P"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.89803921568627454" green="0.89803921568627454" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uFb-y9-MJU" secondAttribute="trailing" id="Hh5-jJ-FaL"/>
+                <constraint firstItem="9K9-vK-jB5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="RlS-O6-9JA"/>
+                <constraint firstAttribute="trailing" secondItem="9K9-vK-jB5" secondAttribute="trailing" constant="10" id="SqI-Zl-rnP"/>
+                <constraint firstItem="9K9-vK-jB5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ZHs-SK-QTC"/>
+                <constraint firstItem="uFb-y9-MJU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="m1H-Sy-ZOI"/>
+                <constraint firstItem="uFb-y9-MJU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nX9-TF-LDF"/>
+                <constraint firstAttribute="bottom" secondItem="uFb-y9-MJU" secondAttribute="bottom" id="ohN-Md-N31"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

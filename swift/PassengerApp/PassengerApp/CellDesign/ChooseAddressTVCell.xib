@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChooseAddressTVCell" rowHeight="65" id="DWf-7z-5Wd" customClass="ChooseAddressTVCell" customModule="PassengerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" tableViewCell="DWf-7z-5Wd" id="sTA-o6-fg2">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ri-Ta-gRR">
+                        <rect key="frame" x="10" y="0.0" width="367" height="54.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_select_false" translatesAutoresizingMaskIntoConstraints="NO" id="bC5-Ws-iFd">
+                                <rect key="frame" x="5" y="15" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="7Rc-Ag-ky7"/>
+                                    <constraint firstAttribute="width" constant="25" id="Myj-tf-uKd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2S4-Eu-nxg" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                                <rect key="frame" x="40" y="18" width="277" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_delete" translatesAutoresizingMaskIntoConstraints="NO" id="hfv-8Z-5FT">
+                                <rect key="frame" x="327" y="9" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="D41-cg-Ang"/>
+                                    <constraint firstAttribute="height" constant="35" id="wwB-OJ-p4O"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hfv-8Z-5FT" firstAttribute="leading" secondItem="2S4-Eu-nxg" secondAttribute="trailing" constant="10" id="30O-5l-EID"/>
+                            <constraint firstItem="bC5-Ws-iFd" firstAttribute="leading" secondItem="1Ri-Ta-gRR" secondAttribute="leading" constant="5" id="Sc6-x9-SWU"/>
+                            <constraint firstAttribute="trailing" secondItem="hfv-8Z-5FT" secondAttribute="trailing" constant="5" id="XdL-w8-Wck"/>
+                            <constraint firstItem="hfv-8Z-5FT" firstAttribute="centerY" secondItem="1Ri-Ta-gRR" secondAttribute="centerY" id="hsD-I2-Xgk"/>
+                            <constraint firstItem="2S4-Eu-nxg" firstAttribute="centerY" secondItem="1Ri-Ta-gRR" secondAttribute="centerY" id="kR8-nx-47I"/>
+                            <constraint firstItem="2S4-Eu-nxg" firstAttribute="leading" secondItem="bC5-Ws-iFd" secondAttribute="trailing" constant="10" id="m42-2g-zpC"/>
+                            <constraint firstItem="bC5-Ws-iFd" firstAttribute="centerY" secondItem="1Ri-Ta-gRR" secondAttribute="centerY" id="oZz-cU-M2D"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1Ri-Ta-gRR" firstAttribute="leading" secondItem="sTA-o6-fg2" secondAttribute="leading" constant="10" id="Egb-Qa-AXi"/>
+                    <constraint firstAttribute="bottom" secondItem="1Ri-Ta-gRR" secondAttribute="bottom" constant="10" id="O9V-qZ-9bX"/>
+                    <constraint firstAttribute="trailing" secondItem="1Ri-Ta-gRR" secondAttribute="trailing" constant="10" id="eKz-Md-jau"/>
+                    <constraint firstItem="1Ri-Ta-gRR" firstAttribute="top" secondItem="sTA-o6-fg2" secondAttribute="top" id="nSK-Fu-vpj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLbl" destination="2S4-Eu-nxg" id="lIu-kD-4It"/>
+                <outlet property="containerView" destination="1Ri-Ta-gRR" id="5z3-mc-Coq"/>
+                <outlet property="deleteImgView" destination="hfv-8Z-5FT" id="DsC-YD-uff"/>
+                <outlet property="selectImgView" destination="bC5-Ws-iFd" id="LcW-pS-RAl"/>
+            </connections>
+            <point key="canvasLocation" x="-143.5" y="-50.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_delete" width="80" height="80"/>
+        <image name="ic_select_false" width="128" height="128"/>
+    </resources>
+</document>

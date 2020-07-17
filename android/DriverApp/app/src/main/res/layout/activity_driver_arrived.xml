@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DriverArrivedActivity">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+
+    <RelativeLayout
+        android:id="@+id/rootRelView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/navigation_view" />
+
+
+    <RelativeLayout
+ android:layout_below="@+id/toolbar_include"
+        android:layout_width="match_parent"
+        android:layout_marginTop="-4dp"
+        android:layout_height="match_parent">
+
+
+        <fragment
+            android:id="@+id/mapV2"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:id="@+id/btnArea"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/errorLocArea"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <ProgressBar
+                    android:layout_marginBottom="-5dp"     android:id="@+id/mProgressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:background="@color/appThemeColor_TXT_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+
+                    <ImageView
+                        android:layout_marginStart="15dp"
+                        android:tint="#d74933"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@android:drawable/stat_notify_error"
+                        />
+                    <LinearLayout
+                        android:padding="5dp"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.view.MTextView
+                            android:textSize="@dimen/txt_size_16"
+                            android:id="@+id/errorTitleTxt"
+                            android:textAlignment="viewStart"
+                            android:gravity="start|center"
+                            android:text=""
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/btnarea"
+                            android:layout_alignParentEnd="true"
+                            android:tint="@color/appThemeColor_Accent" />
+
+                        <com.view.MTextView
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/txt_size_12"
+                            android:id="@+id/errorSubTitleTxt"
+                            android:textAlignment="viewStart"
+                            android:gravity="start|center"
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/btnarea"
+                            android:layout_alignParentEnd="true"
+                            android:tint="@color/appThemeColor_Accent" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/btn_type2"
+                    layout="@layout/btn_type_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/all_btn_height"
+                    />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/emeTapImgView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:tint="@color/pickup_req_later_btn"
+            android:src="@mipmap/ic_eme_alert"
+            />
+
+        <ImageView
+            android:id="@+id/googleImage"
+            android:layout_marginBottom="5dp"
+            android:layout_above="@+id/btnArea"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_google_logo"/>
+
+        <com.view.MTextView
+            android:id="@+id/timeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/navArrowImgView"
+            android:layout_gravity="center"
+            android:background="#272727"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/appThemeColor_TXT_2"
+            android:textSize="@dimen/txt_size_16" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/no_gps_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="visible">
+
+            <include
+                layout="@layout/desgin_no_locatin_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

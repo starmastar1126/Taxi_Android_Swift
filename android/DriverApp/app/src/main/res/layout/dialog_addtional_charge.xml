@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:elevation="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:id="@+id/addtionalchargearea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <com.view.MTextView
+
+                    android:id="@+id/additionalchargeHTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:text="would you like to add addtional charge and discount ?"
+                    android:textAlignment="textStart"
+                    android:textColor="#292929"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:id="@+id/currentchargeHTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:text="Fare"
+                    android:textAlignment="viewStart"
+                    android:textColor="#292929"
+                    android:textSize="@dimen/txt_size_16" />
+
+                <com.view.MTextView
+                    android:id="@+id/currentchargeVTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center"
+                    android:paddingEnd="13dp"
+                    android:text="$"
+                    android:textColor="#292929"
+                    android:textSize="@dimen/txt_size_16" />
+
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="0"
+                    android:src="@mipmap/ic_edit"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:id="@+id/matrialfeeHTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:text="Fare"
+                    android:textAlignment="viewStart"
+                    android:textColor="#292929"
+                    android:textSize="@dimen/txt_size_16" />
+
+                <com.view.MTextView
+                    android:id="@+id/matrialfeeSTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="start|center"
+
+                    android:textAlignment="viewStart"
+                    android:textColor="#292929"
+                    android:textSize="@dimen/txt_size_16" />
+
+                <com.view.MTextView
+                    android:id="@+id/matrialfeeCurrancyTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="$"
+                    android:textAlignment="center"
+                    android:textColor="#292929"
+                    android:textSize="@dimen/txt_size_16"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <include
+                        android:id="@+id/timatrialfeeVTxt"
+                        layout="@layout/editbox_form_design_payment"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <ImageView
+
+                    android:id="@+id/matrialeditImgView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="0"
+                    android:src="@mipmap/ic_edit"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:id="@+id/miscfeeHTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:text="Fare"
+                    android:textAlignment="viewStart"
+                    android:textColor="#292929"
+                    android:textSize="@dimen/txt_size_16" />
+
+                <com.view.MTextView
+                    android:id="@+id/miscfeeSTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="start|center"
+
+                    android:textAlignment="viewStart"
+                    android:textColor="#292929"
+                    android:textSize="@dimen/txt_size_16" />
+
+                <com.view.MTextView
+                    android:id="@+id/miscfeeCurrancyTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="$"
+                    android:textColor="#292929"
+                    android:textSize="@dimen/txt_size_16"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <include
+                        android:id="@+id/miscfeeVTxt"
+                        layout="@layout/editbox_form_design_payment"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/miseeditImgView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="0"
+                    android:src="@mipmap/ic_edit"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:id="@+id/discountHTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:text="Fare"
+                    android:textAlignment="viewStart"
+                    android:textColor="#292929"
+                    android:textSize="@dimen/txt_size_16" />
+
+                <com.view.MTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="start|center"
+                    android:text="-"
+                    android:textAlignment="viewStart"
+                    android:textColor="#292929"
+                    android:textSize="@dimen/txt_size_16" />
+
+                <com.view.MTextView
+                    android:id="@+id/discountSTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="start|center"
+                    android:textAlignment="viewStart"
+                    android:textColor="#292929"
+                    android:textSize="@dimen/txt_size_16" />
+
+                <com.view.MTextView
+                    android:id="@+id/discountCurrancyTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="start|center"
+                    android:text="$"
+                    android:textAlignment="viewStart"
+                    android:textColor="#292929"
+                    android:textSize="@dimen/txt_size_16"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <include
+                        android:id="@+id/discountVTxt"
+                        layout="@layout/editbox_form_design_payment"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <ImageView
+
+                    android:id="@+id/discounteditImgView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="0"
+                    android:clickable="true"
+                    android:src="@mipmap/ic_edit"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d8d8d8"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.view.MTextView
+                android:id="@+id/finalHTxt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:gravity="start|center"
+                android:text="Fare"
+                android:textAlignment="viewStart"
+                android:textColor="#292929"
+                android:textSize="@dimen/txt_size_16" />
+
+
+            <com.view.MTextView
+                android:id="@+id/finalvalTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:gravity="start"
+                android:singleLine="true"
+                android:text="$0.0"
+                android:textAlignment="textStart"
+                android:textColor="@color/appThemeColor_1"
+                android:textSize="@dimen/txt_size_18" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <com.view.MTextView
+                android:id="@+id/btnskip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:padding="5dp"
+                android:text="skip"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp" />
+
+            <com.view.MTextView
+                android:id="@+id/btnsubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:padding="5dp"
+                android:text="submit"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="#292929"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagecancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:tint="@color/appThemeColor_1"
+        app:srcCompat="@drawable/ic_cancel_black_24dp" />
+</RelativeLayout>

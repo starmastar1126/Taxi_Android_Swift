@@ -1,0 +1,45 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="txt_size_24">24sp</dimen> <!-- for banner -->
+    <dimen name="txt_size_20">20sp</dimen> <!-- for other cases -->
+    <dimen name="txt_size_17">17sp</dimen>
+    <dimen name="txt_size_18">18sp</dimen> <!-- for title -->
+    <dimen name="txt_size_16">16sp</dimen> <!-- for All text -->
+    <dimen name="txt_size_15">15sp</dimen>
+    <dimen name="txt_size_14">14sp</dimen> <!-- for Form -->
+    <dimen name="txt_size_12">12sp</dimen>
+
+    <dimen name="inner_components_spacing">8dp</dimen>
+    <dimen name="bottom_ellipsis_height">4dp</dimen>
+    <dimen name="floating_label_text_size">16sp</dimen>
+    <dimen name="bottom_text_size">12sp</dimen>
+
+    <dimen name="all_btn_height">45dp</dimen>
+    <dimen name="all_EditBox_height">60dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!-- dateTitleLayout -->
+    <dimen name="dateTitleTextSize">18sp</dimen>
+    <!--<dimen name="dateTitlePaddingBottom">5dp</dimen>-->
+    <!-- weekLayout -->
+    <dimen name="dayOfWeekTextSize">16sp</dimen>
+    <!-- weekRowLayout -->
+    <!--<dimen name="week_bottom_padding">5dp</dimen>-->
+    <!-- Day of the month -->
+    <dimen name="underline_weight">6dp</dimen>
+    <dimen name="underline_height">2dp</dimen>
+    <dimen name="day_of_month_background_size">32dp</dimen>
+    <dimen name="dayOfMonthIndicatorSize">3dp</dimen>
+    <dimen name="dayOfMonthImageMarginTop">20dp</dimen>
+    <dimen name="padding">8dp</dimen>
+
+
+    <!--New dimens-->
+    <dimen name="weekTitlePaddingTop">8dp</dimen>
+    <dimen name="weekTitlePaddingBottom">8dp</dimen>
+    <dimen name="minDayCellHeight">40dp</dimen>
+</resources>

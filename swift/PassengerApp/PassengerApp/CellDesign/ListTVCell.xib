@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListTVCell" id="xhh-hP-R9H" customClass="ListTVCell" customModule="DriverApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xhh-hP-R9H" id="QER-VL-tcf">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypg-VV-Pe6" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                        <rect key="frame" x="20" y="10" width="335" height="23.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Regular"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ypg-VV-Pe6" firstAttribute="top" secondItem="QER-VL-tcf" secondAttribute="topMargin" constant="2" id="Bf7-Df-Clv"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ypg-VV-Pe6" secondAttribute="bottom" constant="2" id="SDL-rt-KHv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ypg-VV-Pe6" secondAttribute="trailing" constant="12" id="nX8-ci-Bxo"/>
+                    <constraint firstItem="Ypg-VV-Pe6" firstAttribute="leading" secondItem="QER-VL-tcf" secondAttribute="leadingMargin" constant="12" id="zEc-nq-FZD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="listLabelTxt" destination="Ypg-VV-Pe6" id="f5F-KR-8fQ"/>
+            </connections>
+            <point key="canvasLocation" x="21" y="10"/>
+        </tableViewCell>
+    </objects>
+</document>

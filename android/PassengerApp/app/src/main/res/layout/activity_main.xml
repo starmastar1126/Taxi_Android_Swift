@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+        android:id="@+id/rootRelView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <com.view.slidinguppanel.SlidingUpPanelLayout
+            android:id="@+id/sliding_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            app:umanoDragView="@+id/dragView"
+            app:umanoInitialState="collapsed"
+            app:umanoOverlay="true"
+            app:umanoPanelHeight="100dp"
+            app:umanoParallaxOffset="0dp"
+            app:umanoShadowHeight="0dp">
+
+            <RelativeLayout
+                android:id="@+id/mainArea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+
+                <FrameLayout
+                    android:id="@+id/mainContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <fragment
+                        android:id="@+id/mapV2"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/locationMarker"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="42dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginStart="25dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/pinImgView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/deliveryArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/rideArea"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1">
+
+
+                            <ImageView
+                                android:id="@+id/rideImg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitEnd"
+                                android:src="@mipmap/ride_on"
+                                android:visibility="gone" />
+
+                            <com.view.SelectableRoundedImageView
+                                android:id="@+id/rideImgView"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_above="@+id/rideTxt"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="5dp"
+                                android:elevation="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/ic_car_lux"
+                                android:visibility="gone"
+                                app:sriv_border_color="@android:color/white"
+                                app:sriv_border_width="1dp"
+                                app:sriv_left_bottom_corner_radius="30dip"
+                                app:sriv_left_top_corner_radius="30dip"
+                                app:sriv_oval="true"
+                                app:sriv_right_bottom_corner_radius="30dip"
+                                app:sriv_right_top_corner_radius="30dip" />
+
+                            <com.view.SelectableRoundedImageView
+                                android:id="@+id/rideImgViewsel"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_above="@+id/rideTxt"
+                                android:layout_alignParentEnd="true"
+                                android:elevation="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/ic_car_lux"
+                                app:sriv_border_color="@android:color/white"
+                                app:sriv_border_width="1dp"
+                                app:sriv_left_bottom_corner_radius="35dip"
+                                app:sriv_left_top_corner_radius="35dip"
+                                app:sriv_oval="true"
+                                app:sriv_right_bottom_corner_radius="35dip"
+                                app:sriv_right_top_corner_radius="35dip" />
+
+                            <com.view.MTextView
+                                android:id="@+id/rideTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="16dp"
+                                android:elevation="10dp"
+                                android:gravity="end"
+                                android:singleLine="true"
+                                android:text="RIDE"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/txt_size_16"
+                                android:textStyle="bold"
+                                app:customTypeFace="roboto_light" />
+
+
+                            <com.view.MTextView
+                                android:id="@+id/selrideTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="16dp"
+                                android:elevation="10dp"
+                                android:gravity="end"
+                                android:singleLine="true"
+                                android:text="RIDE"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/txt_size_16"
+                                android:textStyle="bold"
+                                android:visibility="gone"
+                                app:customTypeFace="roboto_light" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/deliverArea"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/deliverImg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitStart"
+                                android:src="@mipmap/delivery_off"
+                                android:visibility="gone" />
+
+                            <com.view.MTextView
+                                android:id="@+id/deliverTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentStart="true"
+                                android:elevation="10dp"
+                                android:singleLine="true"
+                                android:text="DELIVER"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/txt_size_16"
+                                android:textStyle="bold"
+                                app:customTypeFace="roboto_light" />
+
+                            <com.view.SelectableRoundedImageView
+                                android:id="@+id/deliverImgView"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_above="@+id/deliverTxt"
+                                android:layout_alignParentStart="true"
+                                android:elevation="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/ic_package"
+                                android:tint="@android:color/black"
+                                app:sriv_border_color="@android:color/white"
+                                app:sriv_border_width="1dp"
+                                app:sriv_left_bottom_corner_radius="30dip"
+                                app:sriv_left_top_corner_radius="30dip"
+                                app:sriv_oval="true"
+                                app:sriv_right_bottom_corner_radius="30dip"
+                                app:sriv_right_top_corner_radius="30dip" />
+
+                            <com.view.SelectableRoundedImageView
+                                android:id="@+id/deliverImgViewsel"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_above="@+id/deliverTxt"
+                                android:layout_alignParentStart="true"
+                                android:elevation="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/ic_package"
+                                android:tint="@android:color/black"
+                                android:visibility="gone"
+                                app:sriv_border_color="@android:color/white"
+                                app:sriv_border_width="1dp"
+                                app:sriv_left_bottom_corner_radius="35dip"
+                                app:sriv_left_top_corner_radius="35dip"
+                                app:sriv_oval="true"
+                                app:sriv_right_bottom_corner_radius="35dip"
+                                app:sriv_right_top_corner_radius="35dip" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/otherArea"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_weight="1"
+                            android:visibility="gone">
+
+
+                            <com.view.MTextView
+                                android:id="@+id/otherTxt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="8dp"
+                                android:elevation="10dp"
+                                android:singleLine="true"
+                                android:text="OTHER"
+                                android:textAllCaps="true"
+                                android:textColor="#000000"
+                                android:textSize="@dimen/txt_size_16"
+                                android:textStyle="bold"
+                                app:customTypeFace="roboto_light" />
+
+                            <com.view.SelectableRoundedImageView
+                                android:id="@+id/otherImageView"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_above="@+id/otherTxt"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="4dp"
+                                android:elevation="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/other"
+                                android:tint="@android:color/black"
+                                app:sriv_border_color="@android:color/white"
+                                app:sriv_border_width="1dp"
+                                app:sriv_left_bottom_corner_radius="30dip"
+                                app:sriv_left_top_corner_radius="30dip"
+                                app:sriv_oval="true"
+                                app:sriv_right_bottom_corner_radius="30dip"
+                                app:sriv_right_top_corner_radius="30dip" />
+
+                            <com.view.SelectableRoundedImageView
+                                android:id="@+id/otherImageViewsel"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_above="@+id/otherTxt"
+                                android:layout_alignParentStart="true"
+                                android:elevation="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/other"
+                                android:tint="@android:color/black"
+                                android:visibility="gone"
+                                app:sriv_border_color="@android:color/white"
+                                app:sriv_border_width="1dp"
+                                app:sriv_left_bottom_corner_radius="35dip"
+                                app:sriv_left_top_corner_radius="35dip"
+                                app:sriv_oval="true"
+                                app:sriv_right_bottom_corner_radius="35dip"
+                                app:sriv_right_top_corner_radius="35dip" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/prefBtnImageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="70dp"
+                    android:src="@mipmap/pref" />
+
+                <ImageView
+                    android:id="@+id/userLocBtnImgView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@mipmap/ic_my_location"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/headerContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent" />
+
+                <ProgressBar
+                    android:id="@+id/LoadingMapProgressBar"
+                    style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/emeTapImgView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/headerContainer"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/ic_eme_alert"
+                    android:tint="@color/pickup_req_later_btn"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dragView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:visibility="visible" />
+
+        </com.view.slidinguppanel.SlidingUpPanelLayout>
+
+        <RelativeLayout
+            android:id="@+id/uberXDriverListArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:background="#ffffff"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/driverListAreaLoader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/uberXOnlineDriversRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical" />
+
+            <com.view.MTextView
+                android:id="@+id/uberXNoDriverTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="No Driver Online"
+                android:textColor="#1C1C1C"
+                android:textSize="@dimen/txt_size_16"
+                android:visibility="gone"
+                app:customTypeFace="roboto_light" />
+
+            <com.view.MTextView
+                android:id="@+id/searchingDriverTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/driverListAreaLoader"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="#1C1C1C"
+                android:textSize="@dimen/txt_size_16"
+                android:visibility="gone"
+                app:customTypeFace="roboto_light" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/driver_detail_bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <include layout="@layout/design_driver_bottom_detail" />
+        </LinearLayout>
+
+
+        <com.view.anim.loader.AVLoadingIndicatorView
+            android:id="@+id/loaderView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            app:indicator="BallSpinFadeLoader"
+            app:indicator_color="#000000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/noloactionview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include
+
+            layout="@layout/no_location_view" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/menu_drawer_design"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+
+
+    <LinearLayout
+        android:id="@+id/ridelaterView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ridelaterHandleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+
+            <include layout="@layout/uberx_ride_later_view" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_add_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".AddAddressActivity">
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/design_toolbar_general" />
+
+        <com.view.MTextView
+            android:id="@+id/AddrareaTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#f5f5f5"
+            android:gravity="start|center"
+            android:paddingStart="10dp"
+            android:text="Area of Service"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_16"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/header"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/loc_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:id="@+id/locAddrTxtView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:clickable="false"
+                    android:gravity="start|center"
+                    android:paddingStart="10dp"
+                    android:text=""
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_16"
+                    android:textStyle="bold" />
+
+                <ImageView
+
+                    android:id="@+id/locationImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/ic_my_location_black_24dp" />
+
+            </LinearLayout>
+
+            <com.view.MTextView
+                android:id="@+id/serviceAddrHederTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/loc_area"
+                android:background="#f5f5f5"
+                android:gravity="start|center"
+                android:paddingStart="10dp"
+                android:textAlignment="viewStart"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_16"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp">
+
+                <include
+                    android:id="@+id/buildingBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <include
+                    android:id="@+id/landmarkBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <include
+                    android:id="@+id/addrtypeBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <include
+                    android:id="@+id/apartmentLocNameBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/mobileBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" />
+
+                <FrameLayout
+
+                    android:id="@+id/countrySelectArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/vContryBox"
+                        layout="@layout/editbox_form_design"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" />
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:src="@mipmap/ic_arrow_down" />
+                </FrameLayout>
+
+                <include
+                    android:id="@+id/companyBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/postCodeBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/addr2Box"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/deliveryIntructionBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+
+                <include
+                    android:id="@+id/btn_type2"
+                    layout="@layout/btn_type_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/all_btn_height"
+                    android:layout_gravity="bottom" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

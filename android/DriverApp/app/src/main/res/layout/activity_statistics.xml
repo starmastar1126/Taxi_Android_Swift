@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StatisticsActivity">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <LinearLayout
+        android:id="@+id/toparea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_include"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/yearSelectArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <include
+                android:id="@+id/yearBox"
+                layout="@layout/editbox_form_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="34dp" />
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:src="@mipmap/ic_arrow_down" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <com.view.chart.view.LineChartView
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/montharea"
+        android:layout_below="@+id/toparea"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/montharea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/monthHTxt"
+        android:background="#f2f2f4"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+
+    <com.view.MTextView
+        android:id="@+id/monthHTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomarea"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/appThemeColor_1"
+        android:textSize="@dimen/txt_size_18"
+        app:customTypeFace="roboto_light" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/bottomarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#f2f2f4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:id="@+id/noTripHTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:paddingStart="15dp"
+                    android:textSize="@dimen/txt_size_16"
+                    app:customTypeFace="roboto_light" />
+
+                <com.view.MTextView
+                    android:id="@+id/noTripVTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:paddingEnd="15dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_size_16"
+                    app:customTypeFace="roboto_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:id="@+id/totalearnHTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|start"
+                    android:paddingStart="15dp"
+                    android:textSize="@dimen/txt_size_16"
+                    app:customTypeFace="roboto_light" />
+
+                <com.view.MTextView
+                    android:id="@+id/totalearnVTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:paddingEnd="15dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_size_16"
+                    app:customTypeFace="roboto_light" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <com.view.anim.loader.AVLoadingIndicatorView
+
+        android:id="@+id/loaderView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        app:indicator="BallSpinFadeLoader"
+        app:indicator_color="@color/appThemeColor_1" />
+
+    <com.view.ErrorView
+        android:id="@+id/errorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

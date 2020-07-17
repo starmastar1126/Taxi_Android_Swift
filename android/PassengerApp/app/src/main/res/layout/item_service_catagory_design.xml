@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/catagoryArea"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mdtp_white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/disable_color"></View>
+
+    <LinearLayout
+        android:id="@+id/uberXServiceAreaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/catagoryRadioBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:buttonTint="@color/appThemeColor_1"
+                android:gravity="start|center"
+                android:maxLines="1"
+                android:paddingStart="5dp"
+                android:text="content"
+                android:textAlignment="viewStart"
+                android:textColor="#030303"
+                android:textSize="@dimen/txt_size_14"
+                android:textStyle="bold" />
+
+            <com.view.MTextView
+                android:id="@+id/priceTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="end|center"
+                android:text="price"
+                android:textColor="@color/appThemeColor_1"
+                android:textSize="@dimen/txt_size_14" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/countingArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/leftImgView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:rotationY="@integer/angle_rtl_180"
+                android:src="@mipmap/ic_left_arrow_rounded" />
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+                    android:id="@+id/QTYNumberTxtView"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="5dp"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <com.view.MTextView
+                    android:id="@+id/QTYTxtView"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="qty"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_14" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/rightImgView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:rotationY="@integer/angle_rtl_180"
+                android:src="@mipmap/ic_right_arrow_rounded" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fareDetailArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:visibility="gone">
+
+            <com.view.MTextView
+                android:id="@+id/fareHeadingTxtView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/disable_color"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/txt_size_16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp">
+
+                <com.view.MTextView
+                    android:id="@+id/fPricePerKMTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:text="Price per KM"
+                    android:textColor="#030303"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <com.view.MTextView
+                    android:id="@+id/fPricePerKMValueTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="area"
+                    android:textColor="@color/appThemeColor_1"
+                    android:textSize="@dimen/txt_size_14" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp">
+
+                <com.view.MTextView
+                    android:id="@+id/fPricePerMinTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:text="Price per MIN"
+                    android:textColor="#030303"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <com.view.MTextView
+                    android:id="@+id/fPricePerMinValueTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="area"
+                    android:textColor="@color/appThemeColor_1"
+                    android:textSize="@dimen/txt_size_14" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp">
+
+                <com.view.MTextView
+                    android:id="@+id/iBaseFareTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:text="Base Fare"
+                    android:textColor="#030303"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <com.view.MTextView
+                    android:id="@+id/iBaseFareValueTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="area"
+                    android:textColor="@color/appThemeColor_1"
+                    android:textSize="@dimen/txt_size_14" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp">
+
+                <com.view.MTextView
+                    android:id="@+id/iMinFareTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:text="MIN Fare"
+                    android:textColor="#030303"
+                    android:textSize="@dimen/txt_size_14" />
+
+                <com.view.MTextView
+                    android:id="@+id/iMinFareValueTxtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="area"
+                    android:textColor="@color/appThemeColor_1"
+                    android:textSize="@dimen/txt_size_14" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

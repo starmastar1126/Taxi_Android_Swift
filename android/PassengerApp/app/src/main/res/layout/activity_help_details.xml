@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F4F4">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#F4F4F4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">-->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="#F4F4F4">
+
+                        <com.view.MTextView
+                            android:id="@+id/headerTitleTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="left"
+                            android:text="Hello Dummy Text"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_18"
+                            app:customTypeFace="roboto_medium" />
+
+                        <com.view.MTextView
+                            android:id="@+id/descriptionTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/headerTitleTxt"
+                            android:layout_marginTop="8dp"
+                            android:gravity="left"
+                            android:text="Hello Dummy Text"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_16"
+                            app:customTypeFace="roboto_light" />
+                    </RelativeLayout>
+
+                <!--</LinearLayout>
+            </android.support.v7.widget.CardView>-->
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_holo_light"
+                android:visibility="visible" />
+
+
+            <!--<android.support.v7.widget.CardView
+                android:id="@+id/contactCardViewArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#F4F4F4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">-->
+
+                    <RelativeLayout
+                        android:id="@+id/helpContactslayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="#F4F4F4">
+
+                        <com.view.MTextView
+                            android:id="@+id/contactTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="left"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_18"
+                            app:customTypeFace="roboto_light" />
+
+                        <com.view.MTextView
+                            android:id="@+id/reasonContactTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/contactTxt"
+                            android:layout_marginTop="10dp"
+                            android:gravity="left"
+                            android:text="Reason To Contact "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_16"
+                            app:customTypeFace="roboto_light" />
+
+                        <LinearLayout
+                            android:id="@+id/categoryarea"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_below="@+id/reasonContactTxt"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/language_border"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="28dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:visibility="gone" />
+
+                            <com.view.MTextView
+                                android:id="@+id/categoryText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="3dp"
+                                android:layout_weight="1"
+                                android:clickable="false"
+                                android:gravity="center|start"
+                                android:paddingStart="14dp"
+                                android:singleLine="true"
+                                android:text="Category Name"
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="17sp"
+                                app:customTypeFace="roboto_medium" />
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="20dp"
+                                android:layout_height="16dp"
+                                android:layout_gravity="center"
+                                android:clickable="false"
+                                android:src="@drawable/ic_arrow_down"
+                                android:tint="@android:color/white" />
+                        </LinearLayout>
+
+
+                        <com.view.MTextView
+                            android:id="@+id/additionalCommentTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/categoryarea"
+                            android:gravity="left"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/txt_size_16"
+                            app:customTypeFace="roboto_light" />
+
+                        <include
+                            android:id="@+id/contentBox"
+                            layout="@layout/editbox_form_design"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_below="@+id/additionalCommentTxt"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="15dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/contentBox">
+
+                            <include
+                                android:id="@+id/btn_type2"
+                                layout="@layout/btn_type_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/all_btn_height"
+                                android:layout_marginTop="5dp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                <!--</LinearLayout>
+            </android.support.v7.widget.CardView>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseServiceDateUV" customModule="PassengerApp" customModuleProvider="target">
+            <connections>
+                <outlet property="chooseDateHLbl" destination="1dS-Td-uZu" id="RQF-Yp-sf3"/>
+                <outlet property="chooseDateHLblTopMargin" destination="X7R-sj-tlg" id="mMV-p8-dAW"/>
+                <outlet property="collectionView" destination="fdf-ks-2eb" id="o16-bI-lrX"/>
+                <outlet property="nextBtn" destination="kj2-c7-FKA" id="ef1-DA-QwU"/>
+                <outlet property="serviceLocHLbl" destination="9Rd-lM-KLX" id="Lum-YO-K4O"/>
+                <outlet property="serviceLocVLbl" destination="czs-6B-YpK" id="I8T-2P-t6T"/>
+                <outlet property="timeCollectionView" destination="kHV-Ye-9ep" id="htB-D7-nJC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rd-lM-KLX" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jaE-fO-SXM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Medium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dS-Td-uZu" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="69.5" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="GQT-18-Y2J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Medium"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czs-6B-YpK" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="40" width="375" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fdf-ks-2eb">
+                    <rect key="frame" x="0.0" y="114.5" width="375" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="onp-iZ-hrR"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bn5-0K-PeC">
+                        <size key="itemSize" width="80" height="80"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kj2-c7-FKA" customClass="MyButton" customModule="PassengerApp" customModuleProvider="target">
+                    <rect key="frame" x="15" y="602" width="345" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="MpK-3B-UdY"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kHV-Ye-9ep">
+                    <rect key="frame" x="5" y="199.5" width="365" height="387.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="T2l-mF-h53">
+                        <size key="itemSize" width="99" height="38"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kj2-c7-FKA" firstAttribute="top" secondItem="kHV-Ye-9ep" secondAttribute="bottom" constant="15" id="1HV-jI-Woe"/>
+                <constraint firstItem="kHV-Ye-9ep" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="7Rm-x8-sRB"/>
+                <constraint firstAttribute="trailing" secondItem="kHV-Ye-9ep" secondAttribute="trailing" constant="5" id="9D3-kq-fmv"/>
+                <constraint firstAttribute="trailing" secondItem="fdf-ks-2eb" secondAttribute="trailing" id="I1x-nY-FFT"/>
+                <constraint firstAttribute="bottom" secondItem="kj2-c7-FKA" secondAttribute="bottom" constant="15" id="KfM-zI-liq"/>
+                <constraint firstItem="czs-6B-YpK" firstAttribute="top" secondItem="9Rd-lM-KLX" secondAttribute="bottom" id="Kpz-5f-8ZD"/>
+                <constraint firstAttribute="trailing" secondItem="kHV-Ye-9ep" secondAttribute="trailing" constant="5" id="Qe5-Em-7eI"/>
+                <constraint firstItem="9Rd-lM-KLX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UwV-s8-Gdv"/>
+                <constraint firstAttribute="trailing" secondItem="kj2-c7-FKA" secondAttribute="trailing" constant="15" id="VyC-BG-bnG"/>
+                <constraint firstItem="1dS-Td-uZu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vze-mG-bHa"/>
+                <constraint firstItem="1dS-Td-uZu" firstAttribute="top" secondItem="czs-6B-YpK" secondAttribute="bottom" constant="10" id="X7R-sj-tlg"/>
+                <constraint firstAttribute="trailing" secondItem="czs-6B-YpK" secondAttribute="trailing" id="XYs-4g-nNW"/>
+                <constraint firstAttribute="trailing" secondItem="1dS-Td-uZu" secondAttribute="trailing" id="c7v-po-73h"/>
+                <constraint firstItem="fdf-ks-2eb" firstAttribute="top" secondItem="1dS-Td-uZu" secondAttribute="bottom" constant="5" id="fpA-DN-Czp"/>
+                <constraint firstAttribute="trailing" secondItem="fdf-ks-2eb" secondAttribute="trailing" id="gSi-v4-tim"/>
+                <constraint firstAttribute="trailing" secondItem="9Rd-lM-KLX" secondAttribute="trailing" id="gcw-v2-YHW"/>
+                <constraint firstItem="9Rd-lM-KLX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hqY-qX-HgZ"/>
+                <constraint firstItem="kj2-c7-FKA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="jTl-JH-w53"/>
+                <constraint firstItem="kHV-Ye-9ep" firstAttribute="top" secondItem="fdf-ks-2eb" secondAttribute="bottom" constant="5" id="k8x-Pe-5J7"/>
+                <constraint firstItem="czs-6B-YpK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mkL-me-efC"/>
+                <constraint firstItem="fdf-ks-2eb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="y39-a3-78q"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="59.5" y="59.5"/>
+        </view>
+    </objects>
+</document>

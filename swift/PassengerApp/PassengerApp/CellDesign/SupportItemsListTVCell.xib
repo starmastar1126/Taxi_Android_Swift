@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SupportItemsListTVCell" id="6Ro-aY-J9h" customClass="SupportItemsListTVCell" customModule="PassengerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Ro-aY-J9h" id="AdH-CP-Vpt">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iBN-1y-8Ko">
+                        <rect key="frame" x="16" y="5" width="343" height="34"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WW2-xy-7J4" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                                <rect key="frame" x="51" y="5" width="287" height="24"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ndT-0d-7Ez">
+                                <rect key="frame" x="0.0" y="-0.5" width="35" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Qao-nh-vQo"/>
+                                    <constraint firstAttribute="width" constant="35" id="naU-HB-mmi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WW2-xy-7J4" firstAttribute="leading" secondItem="ndT-0d-7Ez" secondAttribute="trailing" constant="16" id="l1t-Fn-CGk"/>
+                            <constraint firstAttribute="trailing" secondItem="WW2-xy-7J4" secondAttribute="trailing" constant="5" id="mtn-BM-vMo"/>
+                            <constraint firstItem="ndT-0d-7Ez" firstAttribute="centerY" secondItem="iBN-1y-8Ko" secondAttribute="centerY" id="rIK-SS-2VG"/>
+                            <constraint firstAttribute="bottom" secondItem="WW2-xy-7J4" secondAttribute="bottom" constant="5" id="teT-qc-eMg"/>
+                            <constraint firstItem="WW2-xy-7J4" firstAttribute="top" secondItem="iBN-1y-8Ko" secondAttribute="top" constant="5" id="thb-mY-f0p"/>
+                            <constraint firstItem="ndT-0d-7Ez" firstAttribute="leading" secondItem="iBN-1y-8Ko" secondAttribute="leading" id="uVX-0q-gfh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="iBN-1y-8Ko" secondAttribute="bottom" constant="5" id="7d5-qI-jFv"/>
+                    <constraint firstItem="iBN-1y-8Ko" firstAttribute="leading" secondItem="AdH-CP-Vpt" secondAttribute="leading" constant="16" id="KiU-2Y-gN7"/>
+                    <constraint firstAttribute="trailing" secondItem="iBN-1y-8Ko" secondAttribute="trailing" constant="16" id="SiX-xN-DK5"/>
+                    <constraint firstItem="iBN-1y-8Ko" firstAttribute="top" secondItem="AdH-CP-Vpt" secondAttribute="top" constant="5" id="hyl-3E-fZE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="menuImgView" destination="ndT-0d-7Ez" id="PZF-H8-uLm"/>
+                <outlet property="menuLbl" destination="WW2-xy-7J4" id="BAZ-Lt-sC8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

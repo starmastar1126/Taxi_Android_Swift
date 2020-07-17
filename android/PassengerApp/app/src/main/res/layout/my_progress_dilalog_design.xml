@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="85dp"
+        android:background="@drawable/material_card"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="12dp">
+
+        <com.view.ProgressWheel
+            android:id="@+id/progress_wheel"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            app:matProg_barColor="@color/appThemeColor_1"
+            app:matProg_barWidth="5dp"
+            app:matProg_fillRadius="true"
+            app:matProg_progressIndeterminate="true" />
+
+
+        <com.view.MTextView
+            android:id="@+id/msgTxt"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="20dp"
+            android:gravity="start|center_vertical"
+            android:text="loading.."
+            android:textAlignment="viewStart"
+            android:textColor="#333"
+            android:textSize="@dimen/txt_size_16"
+            app:customTypeFace="roboto_light" />
+
+    </LinearLayout>
+
+</LinearLayout>

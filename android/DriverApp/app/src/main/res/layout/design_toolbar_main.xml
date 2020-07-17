@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/appThemeColor_1"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/headerLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:src="@mipmap/logo" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/menuImgView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_drawer_menu" />
+
+                <com.view.MTextView
+                    android:id="@+id/leftTitleTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/menuImgView"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:textColor="@drawable/app_theme_color_txt_1"
+                    android:textSize="@dimen/txt_size_16"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.view.MTextView
+                android:id="@+id/rightTitleTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:textColor="@drawable/app_theme_color_txt_1"
+                android:textSize="@dimen/txt_size_16"
+                android:visibility="gone" />
+
+            <ImageView
+               android:visibility="gone"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/menuImgRightView"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:rotationY="@integer/angle_rtl_180"
+                android:tint="@android:color/white"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_menu_logout" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>

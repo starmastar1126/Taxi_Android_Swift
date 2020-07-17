@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyOnGoingTripDetailsTVCell" rowHeight="179" id="umI-So-AlC" customClass="MyOnGoingTripDetailsTVCell" customModule="DriverApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="umI-So-AlC" id="8Rw-eV-c9i">
+                <rect key="frame" x="0.0" y="0.0" width="472" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNb-f8-Mqz">
+                        <rect key="frame" x="10" y="17.5" width="45" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWA-JG-AJc" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Bold"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HWA-JG-AJc" firstAttribute="top" secondItem="vNb-f8-Mqz" secondAttribute="top" id="9e3-1F-M9k"/>
+                            <constraint firstAttribute="bottom" secondItem="HWA-JG-AJc" secondAttribute="bottom" id="C9b-rU-JFm"/>
+                            <constraint firstItem="HWA-JG-AJc" firstAttribute="leading" secondItem="vNb-f8-Mqz" secondAttribute="leading" id="GKY-K1-a78"/>
+                            <constraint firstAttribute="trailing" secondItem="HWA-JG-AJc" secondAttribute="trailing" id="bRT-I3-iiW"/>
+                            <constraint firstAttribute="height" constant="45" id="olY-tu-reM"/>
+                            <constraint firstAttribute="width" constant="45" id="qf6-il-Rgy"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrw-hx-8Bf" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                        <rect key="frame" x="65" y="30" width="357.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Medium"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwl-LN-7f1" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                        <rect key="frame" x="432.5" y="32" width="34.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="RM1-46-s7B"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <color key="textColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdI-wj-Y40">
+                        <rect key="frame" x="0.0" y="78.5" width="472" height="1"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="X0a-CA-B30"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6t-Hq-wmP" customClass="MyLabel" customModule="DriverApp" customModuleProvider="target">
+                        <rect key="frame" x="55" y="40" width="0.0" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="width" id="yty-yx-jPQ"/>
+                            <constraint firstAttribute="height" id="zgl-jb-fzp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TdI-wj-Y40" secondAttribute="bottom" id="2sO-nA-1yK"/>
+                    <constraint firstItem="lrw-hx-8Bf" firstAttribute="centerY" secondItem="8Rw-eV-c9i" secondAttribute="centerY" id="4pY-bg-a1j"/>
+                    <constraint firstAttribute="trailing" secondItem="TdI-wj-Y40" secondAttribute="trailing" id="OEb-6d-GDL"/>
+                    <constraint firstItem="W6t-Hq-wmP" firstAttribute="leading" secondItem="vNb-f8-Mqz" secondAttribute="trailing" id="R6a-ku-dvU"/>
+                    <constraint firstAttribute="trailing" secondItem="Gwl-LN-7f1" secondAttribute="trailing" constant="5" id="SS7-OI-kwN"/>
+                    <constraint firstItem="lrw-hx-8Bf" firstAttribute="leading" secondItem="vNb-f8-Mqz" secondAttribute="trailing" constant="10" id="TBR-Nh-S2Z"/>
+                    <constraint firstItem="W6t-Hq-wmP" firstAttribute="centerY" secondItem="8Rw-eV-c9i" secondAttribute="centerY" id="UA5-RT-FQU"/>
+                    <constraint firstItem="TdI-wj-Y40" firstAttribute="leading" secondItem="8Rw-eV-c9i" secondAttribute="leading" id="arl-is-sYR"/>
+                    <constraint firstItem="Gwl-LN-7f1" firstAttribute="leading" secondItem="lrw-hx-8Bf" secondAttribute="trailing" constant="10" id="iCy-GE-f2o"/>
+                    <constraint firstItem="Gwl-LN-7f1" firstAttribute="centerY" secondItem="8Rw-eV-c9i" secondAttribute="centerY" id="qLD-1b-8Ic"/>
+                    <constraint firstItem="vNb-f8-Mqz" firstAttribute="centerY" secondItem="8Rw-eV-c9i" secondAttribute="centerY" id="rXg-ic-kdz"/>
+                    <constraint firstItem="vNb-f8-Mqz" firstAttribute="leading" secondItem="8Rw-eV-c9i" secondAttribute="leading" constant="10" id="vhQ-al-wSO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="noLbl" destination="HWA-JG-AJc" id="e4d-Cm-TtV"/>
+                <outlet property="noView" destination="vNb-f8-Mqz" id="Rfz-l1-d3C"/>
+                <outlet property="progressMsgLbl" destination="lrw-hx-8Bf" id="y0H-nf-z1V"/>
+                <outlet property="progressPastTimeLbl" destination="Gwl-LN-7f1" id="n4d-xM-unt"/>
+                <outlet property="progressTimeLbl" destination="W6t-Hq-wmP" id="Bcs-Nl-GQE"/>
+            </connections>
+            <point key="canvasLocation" x="-102" y="12"/>
+        </tableViewCell>
+    </objects>
+</document>

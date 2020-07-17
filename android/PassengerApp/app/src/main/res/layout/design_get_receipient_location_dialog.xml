@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#881C1C1C" />
+
+        <ProgressBar
+            android:id="@+id/mProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp" />
+
+        <LinearLayout
+            android:id="@+id/retryBtnArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mProgressBar"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.view.MTextView
+                android:id="@+id/receiverLocNotUpdatedNotifyTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:maxLines="5"
+                android:minHeight="50dp"
+                android:padding="5dp"
+                android:text="Receiver's location not updated yet.You can skip and try again OR retry."
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txt_size_16" />
+
+            <include
+                android:id="@+id/btn_type2"
+                layout="@layout/btn_type_2"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/all_btn_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/cancelImgView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/ic_cancel_cab_request"
+            android:tint="@color/appThemeColor_1" />
+    </RelativeLayout>
+</LinearLayout>

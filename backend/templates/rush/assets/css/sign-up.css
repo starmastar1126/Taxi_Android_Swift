@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,500,700);
+
+body {
+    padding-top: 0px;
+    padding-bottom: 40px;
+	font-family: 'Raleway', sans-serif;
+}
+.sign-up-body{margin:0px; padding:0px; float:left; width:100%; height:auto; background:#0a091b; z-index:-1;}
+.sign-up{ padding:0; background:#0a091b;}
+.sign-up-ride-body{ height:auto;}
+.text-center{margin:20px 0 0; padding:0 0 20px; border-bottom:1px solid #3a3a48; }
+.sign-up-heading{margin:40px 0 20px; padding:0px; color:#fff; text-align:center; font-size:26px; }
+.sign-up-heading h3{margin:0px; padding:0px; color:#fff; text-align:center; font-size:26px; font-weight:500;}
+.sign-up-heading p{margin:0px; padding:7px 0 0; color:#1fbad6; text-align:center; font-size:18px; }
+
+.sign-up-body-form-part{margin:0px; padding:0px; float:left; width:100%;}
+.sign-up-body-form{margin:0 auto 50px; width:50%; padding:0px; background-color:#fff; border:1px solid #cdcdd3;}
+.sign-up-body-form .content{margin:0px; padding:0px; width:100%;}
+.sign-up-body-form .content ul{padding:0; margin:0px auto; width:90%;}
+.sign-up-body-form .content li{padding:0; margin:0 0 20px 0; width:100%; list-style:none; font-size:16px; font-weight:500; display:inline-block;}
+.sign-up-body-form .content ul h2{margin:0 0 15px; padding:0 15px; text-align:center; color:#1fbad6; font-size:18px; font-weight:600; /*background:url("../img/sign-up-heading-border.png") no-repeat scroll right center;*/}
+.sign-up-body-form .content ul h3{margin:0px 0 25px 0; padding:0 15px; text-align:center; color:#1fbad6; font-size:18px; font-weight:600; /*background:url("../img/sign-up-heading-border-2.png") no-repeat scroll right center;*/}
+.sign-up-body-form .content ul h4{margin:0px 0 25px 0; padding:0 15px; text-align:center; color:#1fbad6; font-size:18px; font-weight:600; /*background:url("../img/sign-up-heading-border-3.png") no-repeat scroll right center;*/}
+.sign-up-body-form .content li .form-control{border-radius:0; margin:5px 0 0; padding:0 0 0 10px; height:40px;}
+.sign-up-body-form .content li .form-select,.form-select-2,.form-select-3{margin:0px; padding:10px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; border: 1px solid #cccccc;}
+.sign-up-body-form .content li .form-select,.form-select-2{height:40px; width:40%; float:left; margin:0 15px 0 0;}
+.sign-up-body-form .content li .form-select,.form-select-21{height:40px; width:40%; float:left; padding:10px; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; border: 1px solid #cccccc;}
+.sign-up-body-form .content li .form-select option,.form-select-2 option,.form-select-3 option{margin:0px; padding:2px 0 2px 27px; width:100%; float:left;}
+.sign-up-body-form .content li .bottom-text-1{margin:0px; padding:0px; width:100%; color:#0e0e0e; font-size:14px; letter-spacing:0.5px;}
+.sign-up-body-form .content li .bottom-text-2{margin:0 0 20px; padding:0px; width:100%; color:#0e0e0e; font-size:12px; letter-spacing:0.5px;}
+.sign-up-body-form .content li .bottom-text-2 a{margin:0px; padding:0px; width:100%; color:#1fbad6; font-size:12px; letter-spacing:0.5px; text-decoration:none;}
+.sign-up-body-form .content li .submit {margin:0 auto; padding:0px; width:60%; height:58px; border:none; border-radius:0; font-size:16px; font-weight:600; color:#fff; background-color:#1fbad6; display:list-item; float:none; border-radius:3px;}
+.sign-up-body-form .content li .submit:hover{background-color:#0099CC;}
+
+.sign-up-inner-heading{width:100%; white-space: nowrap; display:table; padding-top:26px;}
+.sign-up-inner-heading::before, .sign-up-inner-heading::after {border-top: 1px solid #999999; content: ""; display: table-cell; position: relative; top: 0.8em; width: 50%;}
+
+.Individual-d{ margin:0px; padding:0px; float:left; width:100%; text-align:center;}
+.Individual-d span{ margin:0 0 10px; padding:0px; float:left; width:100%; text-align:left; font-size:16px; font-weight:500;}
+.Individual-d span b{ margin:0 14px; padding:0px; display:inline-table; width:auto; font-weight:normal; font-size:15px;}
+.Individual-d span b .form-control{ width:auto; margin:0 5px 0 0; display:inline-table;}
+.sign-up-body-form .content li .terms-checkbox{ float:left; margin:2px 5px 0 0;}
+.sign-up-inner-heading-2{width:100%; white-space: nowrap; display:table; padding-top:33px;}
+.sign-up-inner-heading-2::before, .sign-up-inner-heading-2::after {border-top: 1px solid #999999; content: ""; display: table-cell; position: relative; top: 0.8em; width: 50%;}
+
+.sign-up-body-form .content li .date-birth1{border: 1px solid #cccccc; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; float: left; height: 40px; padding: 10px; width:30%;}
+.sign-up-body-form .content li .date-birth2{border: 1px solid #cccccc; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; float: left; height: 40px; padding: 10px; width:20%;}
+.sign-up-body-form .content li .date-birth3{border: 1px solid #cccccc; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset; float: left; height: 40px; padding: 10px; width:15%;}
+.contact-fb-but{display:list-item; float:none; margin:9px auto 0; text-align:center;}
+
+/**************sign-in *****************/
+
+.signin-part{ margin:0; padding:0px; float:left; width:100%;  min-height:550px;}
+.signin-part-inner{ margin:0 auto; padding:20px; width:50%; background:#FFFFFF;}
+.signin-part-left{ margin:0px; padding:0px; float:left; width:100%; position:relative;}
+.signin-part-left h3{ margin:0 0 10px; padding:0px; float:left; width:100%; font-size:20px;}
+.signin-part-left p{ margin:0 0 20px; padding:0px; float:left; width:100%; font-size:16px; line-height:21px;}
+.signin-part-left span{ margin:0px; padding:0px; float:left; text-align:center; width:100%;}
+.signin-part-left span a{ margin:0px; padding:10px; float:none; background:#1fbad6; text-decoration:none; color:#FFFFFF; font-size:15px; font-weight:600; text-transform:uppercase;
+border-radius:3px; display:inline-table;}
+.signin-part-left span a:hover{ background:#0099cc;}
+
+.signin-part-right{ margin:30px 0 0; padding:0px; float:left; width:100%; position:relative;}
+.signin-part-right h3{ margin:0 0 10px; padding:0px; float:left; width:100%; font-size:20px;}
+.signin-part-right p{ margin:0 0 20px; padding:0px; float:left; width:100%; font-size:16px; line-height:21px;}
+.signin-part-right span{ margin:0px; padding:0px; float:left; text-align:center; width:100%;}
+.signin-part-right span a{ margin:0px; padding:10px; float:none; display:inline-table; background:#1fbad6; text-decoration:none; color:#FFFFFF; font-size:15px; font-weight:600; text-transform:uppercase;border-radius:3px;}
+.signin-part-right span a:hover{ background:#0099cc;}
+
+@media only screen and (max-width: 767px) {
+.sign-up-body-form{width:100%}
+.sign-up-body-form .content ul{width:80%;}
+}
+
+a:focus {
+    outline: thin dotted;
+    outline-offset: -2px;}
+
+.sign-up .alert{padding:7px;font-size:13px;}

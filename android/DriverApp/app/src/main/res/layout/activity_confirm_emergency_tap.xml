@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fastcabtaxi.driver.ConfirmEmergencyTapActivity">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appThemeColor_1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/ic_eme_alert" />
+
+        <com.view.MTextView
+            android:id="@+id/pageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_size_16"
+            app:customTypeFace="roboto_light"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#ECECEC" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/policeContactArea"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:tint="@color/appThemeColor_1"
+            android:id="@+id/phoneImgView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="0"
+            android:padding="8dp"
+            android:src="@mipmap/ic_contact_phone" />
+
+        <com.view.MTextView
+
+            android:id="@+id/callPoliceTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="#2f2f2f"
+            android:textSize="@dimen/txt_size_16"
+            app:customTypeFace="roboto_light" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#ECECEC" />
+
+    <LinearLayout
+        android:id="@+id/emeContactArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:tint="@color/appThemeColor_1"
+            android:id="@+id/alertImgView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_weight="0"
+            android:padding="8dp"
+            android:src="@mipmap/msg_alert" />
+
+        <com.view.MTextView
+            android:id="@+id/sendAlertTxt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="#2f2f2f"
+            android:textSize="@dimen/txt_size_16"
+            app:customTypeFace="roboto_light" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#ECECEC" />
+</LinearLayout>

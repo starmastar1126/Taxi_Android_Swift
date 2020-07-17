@@ -1,0 +1,267 @@
+@media print {
+* {
+	text-shadow: none!important;
+	color: #000!important;
+	background: transparent!important;
+	box-shadow: none!important
+}
+a, a:visited {
+	text-decoration: underline
+}
+a[href]:after {
+	content: " (" attr(href) ")"
+}
+abbr[title]:after {
+	content: " (" attr(title) ")"
+}
+.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+	content: ""
+}
+pre, blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid
+}
+thead {
+	display: table-header-group
+}
+tr, img {
+	page-break-inside: avoid
+}
+img {
+	max-width: 100%!important
+}
+@page {
+    margin:.5cm
+}
+p, h2, h3 {
+	orphans: 3;
+	widows: 3
+}
+h2, h3 {
+	page-break-after: avoid
+}
+
+}
+
+@media screen and (min-width:1px) and (max-width:767px) {
+#main-uber-page{max-width:98%;}
+nav button{ left:20%;}
+
+.logo{ margin:14px 0 0 9%;}
+.get-there{ margin:60px 0 0;}
+.get-there-inner h2{ margin:18px 0 0; width:100%;}
+.get-there-inner span{ display:none;}
+.home-hero-page{ margin:30px 0 0;}
+.home-hero-page-left-text{ width:95%;}
+.home-sldier-inner ul li{margin:0 20px 30px;}
+
+.top-link{ display:none;}
+.top-right-button span a{ display:none;}
+.top-right-button span .active{ display:block;}
+
+.people-going-way-mid-inner{ margin:11.5% auto 0; width:90%;}
+.people-going-way-mid-inner h2{font-size:24px; margin:0 0 20px; width:100%;}
+.people-going-way-left{ width:10%;}
+.people-going-way-mid{ width:40%;}
+.people-going-way-right{ width:50%;}
+
+.tap-app-ride-inner{ margin:; width:95%;}
+
+.helping-cities-left{ width:50%;}
+.helping-cities-mid{ width:40%;}
+.helping-cities-mid-inner{ width:90%; margin:11.5% auto 0;}
+.helping-cities-mid-inner h2{font-size:27px; margin:0 0 20px;}
+.helping-cities-right{ width:10%;}
+
+.Safety-people-text h2{font-size:27px; margin:0 0 10px;}
+.Safety-people-right-inner{ width:96%;}
+.Safety-people-left{ width:10%;}
+.Safety-people-right{ width:88%;}
+.Safety-people-img{ width:56%;}
+.Safety-people-img img{ width:100%;}
+
+.footer-inner{ width:98%;}
+.footer-box1{ width:35%;}
+.footer-box2{ width:53%;}
+}
+
+
+
+@media screen and (min-width:1px) and (max-width:567px) {
+
+.home-hero-page-left{ background-size:cover; min-height:inherit; padding:0 0 40px;}
+.home-hero-page-right{ background-size:cover; min-height:342px;}
+.home-hero-page-right-text{ height:170px;}
+.home-hero-page-right-text span{ margin:14px 0 0 25px;}
+.home-hero-page-left-text{ width:90%;}
+.home-sldier{ margin:40px 0 0;}
+.home-sldier-inner ul li{ margin:0 6px 20px;}
+
+.home-hero-page-left{ min-height:342px; background-size:100%;}
+.home-hero-page-left-text{ display:none;}
+.home-hero-page-right-text{ display:none;}
+
+
+.people-going-way{ height:auto; margin:20px 0 0;}
+.people-going-way-left{background-size:cover; height:500px; width:20%;}
+.people-going-way-mid{ width:80%;}
+.people-going-way-mid-inner{width:95%; margin:9% auto 0;}
+.people-going-way-right{ width:100%; background-size:cover; height:450px; float:left; margin:10px 0;} 
+
+.helping-cities{ height:auto;}
+.helping-cities-left{ width:100%; margin:0 0 10px; background-size:cover; height:450px;}
+.helping-cities-mid{ width:80%;}
+.helping-cities-mid-inner{width:95%; margin:9% auto 0;}
+.helping-cities-right{background-size:cover; height:auto; width:20%; min-height:350px;}
+
+.Safety-people-left{ width:20%; min-height:590px;  background-size:cover;}
+.Safety-people-right{ width:80%;}
+.Safety-people-right-inner{ margin:9% auto 0;}
+.Safety-people-text{ width:100%;}
+.Safety-people-img{ width:100%; margin:20px 0 0;}	
+.footer{ height:auto; padding:0 0 15px;}
+.footer-top-part{ height:auto; padding:0 0 14px;}
+.footer-box1{ width:100%; margin:0 0 10px;}
+.footer-box1 .lang{ margin:0 0 10px;}
+.footer-box1 span{ margin:10px 0 0;}
+.footer-box2{ width:78%;}
+
+}
+
+
+@media screen and (min-width:1px) and (max-width:414px) {
+.home-sldier-inner ul li{ margin:0 0 20px; width:228px;}
+.people-going-way-mid-inner h3{font-size:22px;}
+.people-going-way-mid-inner h2{font-size:22px; margin:0 0 10px;}
+.people-going-way-mid-inner p{ font-size:17px; line-height:30px;}
+
+.helping-cities-mid-inner h3{font-size:22px;}
+.helping-cities-mid-inner h2{font-size:22px; margin:0 0 10px;}
+.helping-cities-mid-inner p{ font-size:17px; line-height:30px;}
+
+.Safety-people{ min-height:inherit;}
+.Safety-people-left{min-height: 510px;}
+.Safety-people-text h3{font-size:22px;}
+.Safety-people-text h2{font-size:22px; margin:0 0 10px;}
+.Safety-people-text p{ font-size:17px; line-height:30px;}
+
+.Safety-people-right{ min-height:inherit;}
+
+.footer-box1{ margin:10px 0;}
+.footer-box2{ width:100%;}
+.footer-box3{ margin:15px 0 5px; width:100%; text-align:center;}
+.footer-box3 span{ width:auto; float:none;}
+
+.footer-bottom-part span{ width:100%; float:left; text-align:center; margin:0 0 5px;}
+.footer-bottom-part p{ width:100%; float:left; text-align:center;}
+
+
+}
+
+@media screen and (min-width:568px) and (max-width:666px) {
+
+.home-hero-page-left{ background-size:cover; min-height:inherit; padding:0 0 40px;}
+.home-hero-page-right{ background-size:cover; min-height:342px;}
+.home-hero-page-right-text{ height:170px;}
+.home-hero-page-right-text span{ margin:14px 0 0 25px;}
+.home-hero-page-left-text{ width:90%;}
+.home-sldier{ margin:40px 0 0;}
+
+.people-going-way{ height:auto; margin:20px 0 0;}
+.people-going-way-left{background-size:cover; height:450px; width: 20%;}
+.people-going-way-mid{ width:80%;}
+.people-going-way-mid-inner{width:95%; margin:9% auto 0;}
+.people-going-way-right{ width:100%; background-size:cover; height:450px; float:left; margin:10px 0;} 
+
+.helping-cities{ height:auto;}
+.helping-cities-left{ width:100%; margin:0 0 10px; background-size:cover; height:450px;}
+.helping-cities-mid{ width:80%;}
+.helping-cities-mid-inner{width:95%; margin:9% auto 0;}
+.helping-cities-right{background-size:cover; height:auto; width:20%; min-height:350px;}
+
+.Safety-people-left{ width:20%; min-height:590px;  background-size:cover;}
+.Safety-people-right{ width:80%;}
+.Safety-people-right-inner{ margin:9% auto 0;}
+.Safety-people-text{ width:100%;}
+.Safety-people-img{ width:100%; margin:20px 0 0;}	
+.footer{ height:auto; padding:0 0 15px;}
+.footer-top-part{ height:auto; padding:0 0 14px;}
+.footer-box1{ width:100%; margin:0 0 10px;}
+.footer-box1 .lang{ margin:0 0 10px;}
+.footer-box1 span{ margin:10px 0 0;}
+.footer-box2{ width:78%;}
+}
+
+
+@media screen and (min-width:667px) and (max-width:767px) {
+.people-going-way-mid-inner{width:91%;}
+.people-going-way-mid{ width:45%;}
+.people-going-way-right{ width:45%;}
+.helping-cities-left{ width:45%;}
+.helping-cities-mid{ width:45%;}
+.Safety-people-right{ width:89%;}
+.Safety-people-text{ width:45%;}
+.Safety-people-img{ width:54%;}
+.footer{ height:auto; padding:0 0 15px;}
+.footer-top-part{ height:auto; padding:0 0 14px;}
+.footer-box1{ width:100%; margin:0 0 10px;}
+.footer-box1 .lang{ margin:0 0 10px;}
+.footer-box1 span{ margin:10px 0 0;}
+.footer-box2{ width:78%;}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+.logo{ margin:18px 0 0 7%;}
+.get-there-inner h2{ margin:18px 0 0 7%; width:70%;}
+.home-hero-page-left-text{ width:95%;}
+.home-sldier-inner ul li{margin:0 10px 20px;}
+
+.people-going-way-mid-inner{ margin:11.5% auto 0; width:90%;}
+.people-going-way-mid-inner h2{font-size:27px; margin:0 0 20px;}
+.people-going-way-left{ width:10%;}
+.people-going-way-mid{ width:40%;}
+.people-going-way-right{ width:50%;}
+
+.tap-app-ride-inner{ margin:; width:95%;}
+
+.helping-cities-left{ width:50%;}
+.helping-cities-mid{ width:40%;}
+.helping-cities-mid-inner{ width:90%; margin:11.5% auto 0;}
+.helping-cities-mid-inner h2{font-size:27px; margin:0 0 20px;}
+.helping-cities-right{ width:10%;}
+
+.Safety-people-text h2{font-size:27px; margin:0 0 10px;}
+.Safety-people-right-inner{ width:96%;}
+.Safety-people-left{ width:10%;}
+.Safety-people-right{ width:88%;}
+.Safety-people-img{ width:56%;}
+.Safety-people-img img{ width:100%;}
+
+.footer-inner{ width:98%;}
+.footer-box1{ width:35%;}
+.footer-box2{ width:53%;}
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1099px) {
+.logo{ margin:18px 0 0 7%;}
+.get-there-inner h2{ margin:18px 0 0 7%;}
+.home-sldier-inner ul li{ margin:0 10px;}
+.tap-app-ride-inner{ width:95%;}
+.people-going-way-mid-inner h2{font-size:31px; margin:0 0 20px;}
+.helping-cities-mid-inner{ width:80%;}
+.helping-cities-mid-inner h2{font-size:31px; margin:0 0 20px;}
+.Safety-people-text h2{font-size:31px; margin:0 0 20px;}
+.Safety-people-right-inner{ width:93%;}
+
+}
+
+@media screen and (min-width:1100px) and (max-width:1199px) {
+.logo{ margin:18px 0 0 7%;}
+.get-there-inner h2{ margin:18px 0 0 7%;}
+.tap-app-ride-inner{ width:95%;}
+.people-going-way-mid-inner h2{font-size:33px;}
+.helping-cities-mid-inner{ width:80%;}
+.helping-cities-mid-inner h2{font-size:33px;}
+.Safety-people-right-inner{ width:93%;}
+}

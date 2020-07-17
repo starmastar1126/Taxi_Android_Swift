@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyBookingsActivity">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <com.view.MaterialTabs
+        android:id="@+id/material_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:background="#F0F4F5"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:mtIndicatorColor="@color/black"
+        app:mtPaddingMiddle="false"
+        app:mtSameWeightTabs="true"
+        app:mtTabPaddingLeftRight="20dp"
+        app:mtTextColorSelected="#242424"
+        app:mtTextColorUnSelected="#878787" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/appLogin_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        tools:context=".MyBookingsActivity" />
+</LinearLayout>

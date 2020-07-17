@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appThemeColor_TXT_2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <com.view.SelectableRoundedImageView
+                android:id="@+id/bottomViewdriverImgView"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center|top"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="20dp"
+                android:scaleType="centerCrop"
+                app:sriv_border_color="@color/appThemeColor_2"
+                app:sriv_border_width="2dip"
+                app:sriv_left_bottom_corner_radius="20dip"
+                app:sriv_left_top_corner_radius="20dip"
+                app:sriv_oval="true"
+                app:sriv_right_bottom_corner_radius="20dip"
+                app:sriv_right_top_corner_radius="20dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:orientation="vertical">
+
+                <com.view.MTextView
+                    android:id="@+id/bottomViewnameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/seperationLine"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text=" Name "
+                    android:textAlignment="viewStart"
+                    android:textColor="#464646"
+                    android:textSize="@dimen/txt_size_18"
+                    android:textStyle="bold" />
+
+                <com.view.MTextView
+                    android:id="@+id/bottomViewmilesTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/seperationLine"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:text="  "
+                    android:textAlignment="viewStart"
+                    android:textColor="#898989"
+                    android:textSize="@dimen/txt_size_16"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.view.simpleratingbar.SimpleRatingBar
+                        android:id="@+id/bottomViewratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:backgroundTint="@color/gray_holo_light"
+                        android:padding="2dp"
+                        app:SRB_fillColor="@color/appThemeColor_1"
+                        app:SRB_isIndicator="true"
+                        app:SRB_numberOfStars="5"
+                        app:SRB_starBackgroundColor="@color/gray_holo_light"
+                        app:SRB_starSize="18sp"
+                        app:SRB_stepSize="0.1" />
+
+                    <com.view.MTextView
+                        android:id="@+id/bottomViewpriceTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@id/seperationLine"
+                        android:gravity="end"
+                        android:maxLines="1"
+                        android:text="$ 200"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/appThemeColor_1"
+                        android:textSize="@dimen/txt_size_14"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <com.view.MTextView
+                    android:id="@+id/bottomViewinfoTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/appThemeColor_2"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="6dp"
+                    android:text="More Info"
+                    android:textAllCaps="true"
+                    android:textColor="@color/appThemeColor_TXT_2"
+                    android:textSize="@dimen/txt_size_16"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomViewll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/bottomViewarrowImgView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="start"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="0"
+                android:src="@mipmap/ic_arrow_down"
+                android:tint="@color/appThemeColor_2" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F9F9F9"
+    android:orientation="vertical"
+    tools:context="com.fragments.CabSelectionFragment">
+
+    <View
+        android:id="@+id/shadowView"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/below_shadow"
+        android:visibility="gone" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/carTypeRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+
+    <LinearLayout
+        android:id="@+id/rideBtnContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/all_btn_height"
+        android:layout_weight="0"
+        android:background="@color/appThemeColor_2"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/ride_later_btn"
+            layout="@layout/btn_type_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            android:background="@color/appThemeColor_TXT_2" />
+
+        <include
+            android:id="@+id/ride_now_btn"
+            layout="@layout/btn_type_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detail_area_taxi_selection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/cab_selection_drawer_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.view.MTextView
+                    android:id="@+id/etaHTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="eta"
+                    android:textColor="#6B6B76"
+                    android:textSize="@dimen/txt_size_16" />
+
+                <com.view.MTextView
+                    android:id="@+id/etaVTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#1C1C1C"
+                    android:textSize="@dimen/txt_size_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/bg_line_vertical"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#9D9DA3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.view.MTextView
+                    android:id="@+id/personSizeHTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Max. Size"
+                    android:textColor="#6B6B76"
+                    android:textSize="@dimen/txt_size_16" />
+
+                <com.view.MTextView
+                    android:id="@+id/personSizeVTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#1C1C1C"
+                    android:textSize="@dimen/txt_size_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9D9DA3" />
+
+        <LinearLayout
+            android:id="@+id/minFareArea"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <com.view.MTextView
+                android:id="@+id/minFareHTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Min. Fare"
+                android:textColor="#6B6B76"
+                android:textSize="@dimen/txt_size_16" />
+
+            <com.view.MTextView
+                android:id="@+id/minFareVTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="#1C1C1C"
+                android:textSize="@dimen/txt_size_16"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9D9DA3" />
+
+        <com.view.MTextView
+            android:id="@+id/fareEstimateTxt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Get Fare Estimate"
+            android:textColor="#1C1C1C"
+            android:textSize="@dimen/txt_size_16" />
+    </LinearLayout>
+
+
+</LinearLayout>

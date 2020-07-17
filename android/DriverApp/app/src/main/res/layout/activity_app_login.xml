@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".AppLoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_app_login" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <com.view.MTextView
+                android:id="@+id/introductondetailstext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginStart="23dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="@dimen/txt_size_14"
+                app:customTypeFace="roboto_light" />
+
+
+            <LinearLayout
+                android:id="@+id/languageCurrancyArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginStart="23dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/languagearea"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/language_border"
+                    android:orientation="horizontal"
+                    android:paddingEnd="10dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:visibility="gone" />
+
+                    <com.view.MTextView
+                        android:id="@+id/languageText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:gravity="center|start"
+                        android:paddingStart="14dp"
+                        android:singleLine="true"
+                        android:text="ENG"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="true"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        app:customTypeFace="roboto_medium" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="20dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:src="@drawable/ic_arrow_down"
+                        android:tint="@android:color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/currencyarea"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/language_border"
+                    android:orientation="horizontal"
+                    android:paddingEnd="10dp"
+
+                    >
+
+                    <com.view.MTextView
+                        android:id="@+id/currancyText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:gravity="center|start"
+                        android:paddingStart="14dp"
+                        android:singleLine="true"
+                        android:text="USD"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="true"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        app:customTypeFace="roboto_medium" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="20dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:clickable="false"
+                        android:src="@drawable/ic_arrow_down"
+                        android:tint="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginStart="23dp"
+                android:orientation="horizontal">
+
+                <com.view.MTextView
+
+                    android:id="@+id/loginbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/unselected_border"
+                    android:gravity="center"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:singleLine="true"
+                    android:text="Login"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    app:customTypeFace="roboto_light" />
+
+                <com.view.MTextView
+                    android:id="@+id/registerbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selected_border"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Register"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    app:customTypeFace="roboto_light" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.view.anim.loader.AVLoadingIndicatorView
+            android:id="@+id/loaderView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:visibility="visible"
+            app:indicator="BallSpinFadeLoader"
+            app:indicator_color="#ffffff" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+nav button div{background:#3F2860;}
+.top-link span a:hover{color:#f04c40; border-bottom:2px solid #f04c40;}
+.get-there-inner h2{ color:#F04C40;}
+.get-there-inner span .active {color:#3F2860; border-color:#3F2860;}
+.get-there-inner span a:hover {color:#F04C40;border-color:#F04C40;}
+.home-hero-page-right-text{ background:#3F2860;}
+.home-hero-page-right-text span a:hover {border-color:#F04C40; color:#F04C40;}
+.home-hero-page-left-text span a:hover{border-color:#F04C40; color:#F04C40;}
+.home-hero-page-left-text{background:#3F2860;}
+.tap-app-ride-inner h2::after{ background:#F04C40 none repeat scroll 0 0;}
+.people-going-way-mid-inner h3::after{ background:#F04C40 none repeat scroll 0 0;}
+.people-going-way-mid-inner span a{background:#3F2860;}
+.people-going-way-mid-inner span a:hover { background:#F04C40;}
+.helping-cities-mid-inner h3:after{background:#F04C40 none repeat scroll 0 0;}
+.Safety-people-text h3::after{background:#F04C40 none repeat scroll 0 0;}
+.footer{ background:#3f2860;}
+.footer-box1 .lang b{ background:#3f2860  url(../img/arrow-lang.png) no-repeat scroll right 9px top 19px; border: 1px solid #7c59ad;}
+.footer-box1 .lang b a:hover{ color:#F04C40;}
+.footer-box2 ul li a:hover{  color:#F04C40;}
+.footer-bottom-part{ border-top: 1px solid #654592;}
+.footer-box1 span a .fa:hover{ color:#F04C40;}
+nav ul#listMenu .active {color:#F04C40;border-color:#F04C40;}
+nav ul#listMenu li a:hover{ color:#F04C40;border-color:#F04C40;}
+nav ul#listMenu span b a:hover{ color:#F04C40;border-color:#F04C40;}
+.header-page{ color:#F04C40;}
+.sign-in-driver span a{ background:#3f2860;}
+.sign-in-driver span a:hover{background:#F04C40;}
+.sign-in-rider span a{ background:#3f2860;}
+.sign-in-rider span a:hover{ background:#F04C40;}
+.top-link span .active{color:#F04C40;border-bottom:2px solid #F04C40;}
+.create-account span abbr a{color:#F04C40;}
+.create-account p .submit{ background:#3f2860;}
+.create-account p .submit:hover{ background:#F04C40;}
+.login-form-left b .submit-but{ background:#3f2860;}
+.login-form-left b .submit-but:hover{ background:#F04C40;}
+.login-form-left b a{color:#F04C40;}
+.login-form-right span a{border: 1px solid #3f2860; color:#3f2860;}
+.login-form-right span a:hover{border: 1px solid #F04C40; color:#F04C40;}
+.demo-warning p{ color:#F04C40;}
+.driver-profile-img span{border: 3px solid #F04C40;}
+.driver-profile-info span a{background:#F04C40;}
+.driver-profile-info span a:hover{background:#3f2860;}
+.user-part-login span a{ color:#F04C40;}
+.driver-profile-mid-part ul li .driver-profile-mid-inner span a{background:#F04C40;}
+.driver-profile-mid-part ul li .driver-profile-mid-inner span a:hover{background:#3f2860;}
+.required-documents-bottom-part ul li a{ color:#F04C40;}
+.required-documents-bottom-part .last a{background:#3f2860;}
+.required-documents-bottom-part .last a:hover{background:#F04C40;}
+.top-link-login span .active{color:#F04C40;border-bottom:2px solid #F04C40;}
+.accordionheading h3{color:#F04C40 !important;}
+.accordionheading span b .active{color:#F04C40!important;;border:1px solid #F04C40!important;}
+.accordionheading span b .active2{color:#3f2860!important;;border:1px solid #3f2860!important;}
+.accordionheading span b .active:hover{color:#3f2860!important;;border:1px solid #3f2860!important;}
+.add-car-vehicle a{background:#3f2860;}
+.add-car-vehicle a:hover{background:#F04C40; color:#fff;}
+.mytrip-page span a{ color:#F04C40;}
+.mytrip-page span a:hover{color:#3f2860;}
+.mytrip-page span b .driver-trip-btn{background:#F04C40;}
+.mytrip-page span b .driver-trip-btn:hover{background:#3f2860;}
+.trips-table-inner table th{background:#e2d8f2;color:#F04C40;}
+.trips-table-inner table.dataTable thead .sorting::after {color:#3f2860;}
+.paging_simple_numbers .current{ background:#3f2860;}
+.paging_simple_numbers a:hover{background:#F04C40;}
+.payment-tabs ul li .active{border-color:#3f2860; background:#3f2860;}
+.payment-tabs ul li a:hover{border-color:#3f2860; background:#3f2860;}
+.payment-tabs ul{border-bottom:1px solid #3f2860;}
+.trips-table-inner table .last_row_record .last_record_row{background:#3f2860;border-left:1px solid #F04C40;border-right:1px solid #F04C40;}
+.singlerow-login-log a{background:#F04C40;}
+.singlerow-login-log a:hover{background:#3f2860;}
+.your-requestd{ color:#3f2860;}
+.time-period span a{color:#3f2860;}
+.time-period span a:hover{color:#F04C40;}
+.time-period b .driver-trip-btn{ background:#F04C40;}
+.time-period b .driver-trip-btn:hover{ background:#3f2860;}
+.footer-box1 .lang-all ul li .active{background:#3f2860;}
+.footer-box1 .lang-all{background:#3f2860;border: 1px solid #7c59ad;}
+.footer-box1 .lang-all ul li a{color:#fff;border: 1px solid #7c59ad;}
+.footer-box1 .lang-all ul li a:hover{background:#F04C40;}
+.footer-box1 .lang-all ul li:nth-last-child(-n+5) a{background:#3f2860;}
+.footer-box1 .lang-all ul li:nth-last-child(-n+5) a:hover{background:#F04C40;}
+.footer-box1 .lang-all ul li:nth-last-child(1) a{ color:#fff;}
+.contact-form b .submit-but{background:#F04C40;}
+.contact-form b .submit-but:hover{background:#3f2860;}
+.faq-top-part li.Active a{ color:#F04C40; border-color:#F04C40;}
+.faq-top-part li a{color:#3f2860; border:2px solid #3f2860;}
+.faq-top-part li a:hover{color:#F04C40; border:2px solid #F04C40;}
+a:hover, a:focus{color:#F04C40;}
+nav ul#listMenu{ background:#3f2860;}
+nav ul#listMenu li a{border-bottom:1px solid #654592;}
+nav section div{ background:#F04C40;}
+nav ul#listMenu span b a{border:1px solid #654592;}
+.home-hero-page-right-text span a{ background:none;padding: 10px 15px 10px 10px}
+.home-hero-page-right-text span a:hover{ background:none;}
+.home-hero-page-left-text span a{ background:none;padding: 10px 15px 10px 10px;}
+.home-hero-page-left-text span a:hover{ background:none;}
+.profile-Password h3{color: #F04C40;}
+.profile-Password span .profile-Password-save{ background:#F04C40;}
+.profile-Password span .profile-Password-save:hover{ background:#3f2860;}
+.profile-Password span .profile-Password-cancel:hover{background:#3f2860;}
+.upload-content .btn-file > input{background:#3f2860;}
+.popup-box2 .save{background:#F04C40;}
+.popup-box2 .cancel:hover{ background:#3f2860;}
+.upload-content .btn-file{ background:#3f2860;}
+.popup-box3 .save{ background:#F04C40;}
+.popup-box3 .save:hover{ background:#3f2860;}
+.popup-box3 .cancel:hover{background:#F04C40;}
+.trip-detail a{background:#F04C40;}
+.trip-detail a:hover{background:#3f2860;}
+.trips-table-inner table td .btn-primary{background:#F04C40;}
+.trips-table-inner table td .btn-primary:hover{background:#3f2860;}
+.driver-vehicles-page li h4{ color:#F04C40;}
+.driver-vehicles-page li span a{border:1px solid #F04C40;color:#F04C40;}
+.driver-vehicles-page li span a:hover{border:1px solid #3f2860;color:#3f2860;}
+.driver-action-page-right p .save-but{background:#F04C40;}
+.driver-action-page-right p .save-but:hover{background:#3f2860;}
+.driver-vehicles-page-new li h4{color:#F04C40 !important;}
+.driver-vehicles-page-new li .select-image1 .fileupload-new{border:1px solid #F04C40!important;color:#F04C40!important;}
+.driver-vehicles-page-new li .select-image1:hover{border-bottom:1px solid #3f2860!important;}
+.has-switch span.switch-success{background:#3f2860!important;}
+.car-type strong .save-vehicle{background:#F04C40;}
+.car-type strong .save-vehicle:hover{background:#3f2860;}
+.driver-info{background:#3f2860;}
+.fare-breakdown-inner h3{ color:#3f2860;}
+.fare-breakdown-inner span em{color:#3f2860;}
+.driver-vehicles-page-new abbr .save-document{background:#F04C40!important;}
+.driver-vehicles-page-new li .select-image1{border-bottom:1px solid #F04C40!important;}
+.driver-vehicles-page-new abbr .save-document:hover{background:#3f2860!important;}
+.top-link-login span .active i { margin-right:10px; color:#F04C40;}
+.top-link-login span a i{ margin-right:10px;color:#3f2860;}
+.top-link-login span a i:hover{ margin-right:10px;color:#F04C40;}
+.popup-box1 .save{background:#F04C40;}
+.popup-box1 .cancel:hover{background:#3f2860;}
+.driver-profile-img b a i{background:#F04C40;}
+.driver-profile-img b a i:hover{background:#3f2860;}
+.edit-profile-detail-form-inner p .save-but{background: #f04c40;}
+.edit-profile-detail-form-inner p .save-but:hover{background: #3f2860;}
+.profile-icon i{ margin:0; padding:0;background: #3f2860;color: white;font-size: 50px;border-radius: 60px;height: 80px;line-height: 1.6; width:80px;}
+.profile-icon i:hover{background:#f04c40;}
+.profile-Password h3 i{ color:#3f2860;}
+.show-edit-profile-part p .save-but{ background:#f04c40;}
+.show-edit-profile-part p .save-but:hover{ background:#3f2860;}
+.show-edit-profile-part p .cancel-but{ background:#3f2860;}
+.show-edit-profile-part p .cancel-but:hover{ background:#f04c40;}
+.edit-profile-detail-form-inner p .cancel-but{background:#3f2860;}
+.edit-profile-detail-form-inner p .cancel-but:HOVER{background:#f04c40;}
+.driver-vehicles-page li span:hover{border-bottom:1px solid #3f2860;}
+.driver-info p{ color:#f04c40;}
+.fare-breakdown-inner h3 b{ color:#f04c40;}
+.fare-breakdown-inner ul li b{color:#f04c40;}
+.sign-in-rider h3:after{background:#f04c40;}
+.sign-in-driver h3:after{background:#f04c40;}
+.driver-profile-bottom-part h3:after{background:#f04c40;}
+.header-page p:before{background:#f04c40;}
+.individual-driver span .radio-but b input[type="radio"]:checked + label::before{color:#f04c40;}
+.create-account h3:after{background:#f04c40;}
+.create-account h3::before { background:#f04c40;}
+.driver-signup-page .line-dro h3::before { background:#f04c40;}
+.driver-vehicles-page li span{border-bottom:1px solid #f04c40;}
+.exp-date .input-group-addon .icon-calendar{color:#3f2860;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{color:#3f2860;}
+.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus 
+ { border: 1px solid #3f2860;	background:#3f2860;	color:#ffffff;}

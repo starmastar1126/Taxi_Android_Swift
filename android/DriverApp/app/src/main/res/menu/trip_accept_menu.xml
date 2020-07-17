@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_passenger_detail"
+        android:title="View Passenger Detail"
+        android:visible="false" />
+
+
+    <item
+        android:id="@+id/menu_call"
+        android:title="Call" />
+    <item
+        android:id="@+id/menu_message"
+        android:title="Message" />
+    <item
+        android:id="@+id/menu_waybill_trip"
+        android:title="Way Bill"
+        android:visible="false" />
+
+
+    <item
+        android:id="@+id/menu_specialInstruction"
+        android:title="Special Instruction"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/menu_sos"
+        android:title="Emergency or SOS" />
+    <item
+        android:id="@+id/menu_cancel_trip"
+        android:title="Cancel Trip" />
+
+
+</menu>

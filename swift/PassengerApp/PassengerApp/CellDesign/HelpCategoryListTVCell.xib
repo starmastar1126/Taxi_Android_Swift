@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HelpCategoryListTVCell" rowHeight="70" id="Sms-ax-Cyf" customClass="HelpCategoryListTVCell" customModule="PassengerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sms-ax-Cyf" id="AFm-NC-7Lg">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMC-oH-Ihb">
+                        <rect key="frame" x="10" y="18" width="361" height="51.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lF7-VP-Gfh" customClass="MyLabel" customModule="PassengerApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="13.5" width="281" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.15294117647058825" green="0.15294117647058825" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontFamilyName" value="Roboto-Medium"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="hCI-Du-zfg">
+                                <rect key="frame" x="311" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Gq-TW-qBJ"/>
+                                    <constraint firstAttribute="width" constant="50" id="7SE-Au-XRl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lF7-VP-Gfh" firstAttribute="centerY" secondItem="YMC-oH-Ihb" secondAttribute="centerY" id="4uH-eh-RS0"/>
+                            <constraint firstItem="lF7-VP-Gfh" firstAttribute="leading" secondItem="YMC-oH-Ihb" secondAttribute="leading" constant="20" id="JId-HK-21q"/>
+                            <constraint firstAttribute="trailing" secondItem="hCI-Du-zfg" secondAttribute="trailing" id="JV7-7r-in2"/>
+                            <constraint firstItem="hCI-Du-zfg" firstAttribute="centerY" secondItem="YMC-oH-Ihb" secondAttribute="centerY" id="mc8-2r-9XA"/>
+                            <constraint firstItem="hCI-Du-zfg" firstAttribute="leading" secondItem="lF7-VP-Gfh" secondAttribute="trailing" constant="10" id="mvs-vo-Rj0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.89803921568627454" green="0.89803921568627454" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" red="0.92941176470588238" green="0.92941176470588238" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="YMC-oH-Ihb" firstAttribute="top" secondItem="AFm-NC-7Lg" secondAttribute="top" constant="18" id="APl-Wi-lsM"/>
+                    <constraint firstAttribute="trailing" secondItem="YMC-oH-Ihb" secondAttribute="trailing" constant="10" id="OQW-ln-1qN"/>
+                    <constraint firstAttribute="bottom" secondItem="YMC-oH-Ihb" secondAttribute="bottom" id="bFa-EC-hbP"/>
+                    <constraint firstItem="YMC-oH-Ihb" firstAttribute="leading" secondItem="AFm-NC-7Lg" secondAttribute="leading" constant="10" id="vFB-Zz-yaj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="categoryNameLbl" destination="lF7-VP-Gfh" id="mo8-Hc-Jt1"/>
+                <outlet property="rightImgView" destination="hCI-Du-zfg" id="snD-3Y-ieB"/>
+            </connections>
+            <point key="canvasLocation" x="40.5" y="59"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_arrow_right" width="50" height="50"/>
+    </resources>
+</document>

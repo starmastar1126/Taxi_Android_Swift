@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DriverApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1EEC7F271ED42FB6002DAF56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1EEC7F3B1ED42FB7002DAF56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1EEC7F461ED42FB7002DAF56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fastcabtaxi.driver.HailActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbararea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/design_toolbar_general" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rootRelView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbararea"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <com.view.slidinguppanel.SlidingUpPanelLayout
+            android:id="@+id/sliding_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            app:umanoDragView="@+id/dragView"
+            app:umanoInitialState="collapsed"
+            app:umanoOverlay="true"
+            app:umanoPanelHeight="100dp"
+            app:umanoParallaxOffset="0dp"
+            app:umanoShadowHeight="0dp">
+
+            <RelativeLayout
+                android:id="@+id/mainArea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+
+                <FrameLayout
+                    android:id="@+id/mainContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <fragment
+                        android:id="@+id/mapV2"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/locationMarker"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="42dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginStart="25dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/pinImgView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/pin_dest_select"
+
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/userLocBtnImgView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@mipmap/ic_my_location"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/headerContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent" />
+
+                <ProgressBar
+                    android:id="@+id/LoadingMapProgressBar"
+                    style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dragView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:visibility="visible" />
+
+        </com.view.slidinguppanel.SlidingUpPanelLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/destarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbararea"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/imagemarkerdest2"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="0"
+                    android:background="@color/appThemeColor_1" />
+
+                <com.view.MTextView
+                    android:id="@+id/destLocHTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:gravity="start|center"
+                    android:maxLines="1"
+                    android:text="hello"
+                    android:textAlignment="viewStart"
+                    android:textColor="#757575"
+                    android:textSize="12sp"
+                    app:customTypeFace="roboto_light" />
+            </LinearLayout>
+
+            <com.view.MTextView
+                android:id="@+id/destLocTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:maxLines="1"
+                android:text="ghy"
+                android:textAlignment="viewStart"
+                android:textColor="#757575"
+                android:textSize="@dimen/txt_size_14"
+                app:customTypeFace="roboto_light" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/addDestLocImgView1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0"
+            android:clickable="false"
+
+            android:src="@mipmap/plus" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/mProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbararea"
+        android:layout_marginTop="-6dp"
+        />
+
+
+</RelativeLayout>

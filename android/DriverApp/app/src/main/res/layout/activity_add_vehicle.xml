@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddVehicleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_type2"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/design_toolbar_general" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/NotInUFXView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <FrameLayout
+                        android:id="@+id/vehicleTypeArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:visibility="gone">
+
+                        <include
+                            android:id="@+id/vehicleTypeBox"
+                            layout="@layout/editbox_form_design"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="34dp" />
+
+                        <ImageView
+                            android:layout_width="29dp"
+                            android:layout_height="29dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_marginEnd="5dp"
+                            android:gravity="center"
+                            android:src="@mipmap/ic_arrow_down" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/makeSelectArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <include
+                            android:id="@+id/makeBox"
+                            layout="@layout/editbox_form_design"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="34dp" />
+
+                        <ImageView
+                            android:layout_width="29dp"
+                            android:layout_height="29dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_marginEnd="5dp"
+                            android:gravity="center"
+                            android:src="@mipmap/ic_arrow_down" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/modelSelectArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <include
+                            android:id="@+id/modelBox"
+                            layout="@layout/editbox_form_design"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="34dp" />
+
+                        <ImageView
+                            android:layout_width="29dp"
+                            android:layout_height="29dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_marginEnd="5dp"
+                            android:gravity="center"
+                            android:src="@mipmap/ic_arrow_down" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/yearSelectArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <include
+                            android:id="@+id/yearBox"
+                            layout="@layout/editbox_form_design"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="34dp" />
+
+                        <ImageView
+                            android:layout_width="29dp"
+                            android:layout_height="29dp"
+                            android:layout_gravity="center_vertical|end"
+                            android:layout_marginEnd="5dp"
+                            android:gravity="center"
+                            android:src="@mipmap/ic_arrow_down" />
+                    </FrameLayout>
+
+                    <include
+                        android:id="@+id/licencePlateBox"
+                        layout="@layout/editbox_form_design"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp" />
+
+
+                    <include
+                        android:id="@+id/colorPlateBox"
+                        layout="@layout/editbox_form_design"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:textAlignment="viewStart"
+                    android:id="@+id/checkboxHandicap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:buttonTint="@color/appThemeColor_1"
+                    android:textColor="#272727"
+                    android:textSize="@dimen/txt_size_16" />
+
+                <LinearLayout
+                    android:id="@+id/serviceSelectArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/btn_type2"
+        layout="@layout/btn_type_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/all_btn_height"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
